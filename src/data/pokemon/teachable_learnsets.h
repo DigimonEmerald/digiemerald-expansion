@@ -23448,8 +23448,8 @@ static const u16 sWaruseadramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-static const u16 sArchenTeachableLearnset[] = {
+#if P_FAMILY_ETEMON_CHAOS
+static const u16 sEtemon_chaosTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -23508,7 +23508,7 @@ static const u16 sArcheopsTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
 static const u16 sTrubbishTeachableLearnset[] = {

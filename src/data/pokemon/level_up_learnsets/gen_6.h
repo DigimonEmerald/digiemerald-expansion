@@ -13164,8 +13164,8 @@ static const struct LevelUpMove sWaruseadramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-static const struct LevelUpMove sArchenLevelUpLearnset[] = {
+#if P_FAMILY_ETEMON_CHAOS
+static const struct LevelUpMove sEtemon_chaosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_WING_ATTACK),
@@ -13209,7 +13209,7 @@ static const struct LevelUpMove sArcheopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_THRASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
 static const struct LevelUpMove sTrubbishLevelUpLearnset[] = {

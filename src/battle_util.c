@@ -11212,7 +11212,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_MUSYAMON:
         case SPECIES_SHAYMIN:
         case SPECIES_WEREGARURUMON:
-        case SPECIES_ARCHEN:
+        case SPECIES_ETEMON_CHAOS:
         case SPECIES_DUCKLETT:
         case SPECIES_RUFFLET:
         case SPECIES_VULLABY:

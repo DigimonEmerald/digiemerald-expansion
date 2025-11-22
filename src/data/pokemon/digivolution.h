@@ -4580,3 +4580,8 @@ static const struct Digivolution sRosemonDigivolveTable[] = {
 //     {298, 197, 197, 165, 157, 133, SPECIES_CHAOSDRAMON},
 //     DIGIVOLUTION_END,
 // };
+
+static const struct Digivolution sEtemon_chaosDigivolveTable[] = {
+    {178, 59, 149, 137, 161, 53, SPECIES_METALETEMON},
+    DIGIVOLUTION_END,
+};

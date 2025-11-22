@@ -3698,15 +3698,15 @@ Cry_Waruseadramon::
 	.incbin "sound/direct_sound_samples/cries/waruseadramon.bin"
 .endif @ P_FAMILY_WARUMONZAEMON
 
-.if P_FAMILY_ARCHEN == TRUE
+.if P_FAMILY_ETEMON_CHAOS == TRUE
 	.align 2
-Cry_Archen::
-	.incbin "sound/direct_sound_samples/cries/archen.bin"
+Cry_Etemon_chaos::
+	.incbin "sound/direct_sound_samples/cries/etemon_chaos.bin"
 
 	.align 2
 Cry_Archeops::
 	.incbin "sound/direct_sound_samples/cries/archeops.bin"
-.endif @ P_FAMILY_ARCHEN
+.endif @ P_FAMILY_ETEMON_CHAOS
 
 .if P_FAMILY_TRUBBISH == TRUE
 	.align 2

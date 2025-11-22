@@ -4439,8 +4439,8 @@ static const u16 sWarumonzaemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-static const u16 sArchenEggMoveLearnset[] = {
+#if P_FAMILY_ETEMON_CHAOS
+static const u16 sEtemon_chaosEggMoveLearnset[] = {
     MOVE_STEEL_WING,
     MOVE_DEFOG,
     MOVE_DRAGON_PULSE,
@@ -4452,7 +4452,7 @@ static const u16 sArchenEggMoveLearnset[] = {
     MOVE_SWITCHEROO,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
 static const u16 sTrubbishEggMoveLearnset[] = {

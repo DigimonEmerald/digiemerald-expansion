@@ -17300,20 +17300,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-    const u32 gMonFrontPic_Archen[] = INCBIN_U32("graphics/pokemon/archen/anim_front.4bpp.smol");
-    const u16 gMonPalette_Archen[] = INCBIN_U16("graphics/pokemon/archen/normal.gbapal");
-    const u32 gMonBackPic_Archen[] = INCBIN_U32("graphics/pokemon/archen/back.4bpp.smol");
-    const u16 gMonShinyPalette_Archen[] = INCBIN_U16("graphics/pokemon/archen/shiny.gbapal");
-    const u8 gMonIcon_Archen[] = INCBIN_U8("graphics/pokemon/archen/icon.4bpp");
+#if P_FAMILY_ETEMON_CHAOS
+    const u32 gMonFrontPic_Etemon_chaos[] = INCBIN_U32("graphics/pokemon/etemon_chaos/anim_front.4bpp.smol");
+    const u16 gMonPalette_Etemon_chaos[] = INCBIN_U16("graphics/pokemon/etemon_chaos/normal.gbapal");
+    const u32 gMonBackPic_Etemon_chaos[] = INCBIN_U32("graphics/pokemon/etemon_chaos/back.4bpp.smol");
+    const u16 gMonShinyPalette_Etemon_chaos[] = INCBIN_U16("graphics/pokemon/etemon_chaos/shiny.gbapal");
+    const u8 gMonIcon_Etemon_chaos[] = INCBIN_U8("graphics/pokemon/etemon_chaos/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Archen[] = INCBIN_U8("graphics/pokemon/archen/footprint.1bpp");
+    const u8 gMonFootprint_Etemon_chaos[] = INCBIN_U8("graphics/pokemon/etemon_chaos/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Archen[] = INCBIN_COMP("graphics/pokemon/archen/overworld.4bpp");
+    const u32 gObjectEventPic_Etemon_chaos[] = INCBIN_COMP("graphics/pokemon/etemon_chaos/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Archen[] = INCBIN_U16("graphics/pokemon/archen/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Archen[] = INCBIN_U16("graphics/pokemon/archen/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Etemon_chaos[] = INCBIN_U16("graphics/pokemon/etemon_chaos/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Etemon_chaos[] = INCBIN_U16("graphics/pokemon/etemon_chaos/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17332,7 +17332,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Archeops[] = INCBIN_U16("graphics/pokemon/archeops/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
     const u32 gMonFrontPic_Trubbish[] = INCBIN_U32("graphics/pokemon/trubbish/anim_front.4bpp.smol");

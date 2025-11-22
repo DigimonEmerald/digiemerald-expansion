@@ -1408,10 +1408,10 @@ gCryTable::
 	cry Cry_Warumonzaemon
 	cry Cry_Waruseadramon
 .endif @ P_FAMILY_WARUMONZAEMON
-.if P_FAMILY_ARCHEN == TRUE
-	cry Cry_Archen
+.if P_FAMILY_ETEMON_CHAOS == TRUE
+	cry Cry_Etemon_chaos
 	cry Cry_Archeops
-.endif @ P_FAMILY_ARCHEN
+.endif @ P_FAMILY_ETEMON_CHAOS
 .if P_FAMILY_TRUBBISH == TRUE
 	cry Cry_Trubbish
 	cry Cry_Garbodor
@@ -3835,10 +3835,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Warumonzaemon
 	cry_reverse Cry_Waruseadramon
 .endif @ P_FAMILY_WARUMONZAEMON
-.if P_FAMILY_ARCHEN == TRUE
-	cry_reverse Cry_Archen
+.if P_FAMILY_ETEMON_CHAOS == TRUE
+	cry_reverse Cry_Etemon_chaos
 	cry_reverse Cry_Archeops
-.endif @ P_FAMILY_ARCHEN
+.endif @ P_FAMILY_ETEMON_CHAOS
 .if P_FAMILY_TRUBBISH == TRUE
 	cry_reverse Cry_Trubbish
 	cry_reverse Cry_Garbodor

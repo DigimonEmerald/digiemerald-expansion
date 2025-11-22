@@ -6232,42 +6232,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-    [SPECIES_ARCHEN] =
+#if P_FAMILY_ETEMON_CHAOS
+    [SPECIES_ETEMON_CHAOS] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 112,
-        .baseDefense   = 45,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
+        .baseHP        = 90,
+        .baseAttack    = 45,
+        .baseDefense   = 120,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 130,
+        .types = MON_TYPES(TYPE_DARK, TYPE_ELECTRIC),
+        .attribute = TYPE_UKNOWN,
         .catchRate = 95,
-        .expYield = 71,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_SpDefense = 3,
+        .evYield_Defense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_DEFEATIST, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Archen"),
-        .cryId = CRY_ARCHEN,
-        .natDexNum = NATIONAL_DEX_ARCHEN,
-        .categoryName = _("First Bird"),
-        .height = 5,
-        .weight = 95,
+        .abilities = { ABILITY_BERSERK, ABILITY_BAD_DREAMS, ABILITY_ELECTRIC_SURGE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Etemon"),
+        .cryId = CRY_ETEMON_CHAOS,
+        .natDexNum = NATIONAL_DEX_ETEMON_CHAOS,
+        .categoryName = _("Disorder"),
+        .height = 250,
+        .weight = 6481,
         .description = COMPOUND_STRING(
-            "Said to be the ancestor of all bird\n"
-            "Pokémon, Archen itself could not actually\n"
-            "fly but moved by hopping from treetop\n"
-            "to treetop."),
+            "Etemon (Chaos) is the fused form of\n"
+            "Etemon and the Dark Network. It is said\n"
+            "that fusing with the Dark Network feels\n"
+            "like falling for the rest of time"),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Archen,
+        .frontPic = gMonFrontPic_Etemon_chaos,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -6276,30 +6278,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Archen,
+        .backPic = gMonBackPic_Etemon_chaos,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Archen,
-        .shinyPalette = gMonShinyPalette_Archen,
-        .iconSprite = gMonIcon_Archen,
+        .palette = gMonPalette_Etemon_chaos,
+        .shinyPalette = gMonShinyPalette_Etemon_chaos,
+        .iconSprite = gMonIcon_Etemon_chaos,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, -2, SHADOW_SIZE_S)
-        FOOTPRINT(Archen)
+        FOOTPRINT(Etemon_chaos)
         OVERWORLD(
-            sPicTable_Archen,
+            sPicTable_Etemon_chaos,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Archen,
-            gShinyOverworldPalette_Archen
+            gOverworldPalette_Etemon_chaos,
+            gShinyOverworldPalette_Etemon_chaos
         )
-        .levelUpLearnset = sArchenLevelUpLearnset,
-        .teachableLearnset = sArchenTeachableLearnset,
-        .eggMoveLearnset = sArchenEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_ARCHEOPS}),
+        .levelUpLearnset = sEtemon_chaosLevelUpLearnset,
+        .teachableLearnset = sEtemon_chaosTeachableLearnset,
+        .eggMoveLearnset = sEtemon_chaosEggMoveLearnset,
+        .digivolutions = sEtemon_chaosDigivolveTable,
     },
 
     [SPECIES_ARCHEOPS] =
@@ -6374,7 +6376,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sArcheopsLevelUpLearnset,
         .teachableLearnset = sArcheopsTeachableLearnset,
     },
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
     [SPECIES_TRUBBISH] =

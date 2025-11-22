@@ -4064,14 +4064,14 @@ static const struct SpriteFrameImage sPicTable_Waruseadramon[] = {
 };
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-static const struct SpriteFrameImage sPicTable_Archen[] = {
-    overworld_ascending_frames(gObjectEventPic_Archen, 4, 4),
+#if P_FAMILY_ETEMON_CHAOS
+static const struct SpriteFrameImage sPicTable_Etemon_chaos[] = {
+    overworld_ascending_frames(gObjectEventPic_Etemon_chaos, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Archeops[] = {
     overworld_ascending_frames(gObjectEventPic_Archeops, 4, 4),
 };
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
 static const struct SpriteFrameImage sPicTable_Trubbish[] = {

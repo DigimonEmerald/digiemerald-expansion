@@ -572,7 +572,7 @@
 #define SPECIES_MYOTISMON                              563
 #define SPECIES_WARUMONZAEMON                                564
 #define SPECIES_WARUSEADRAMON                              565
-#define SPECIES_ARCHEN                                  566
+#define SPECIES_ETEMON_CHAOS                                  566
 #define SPECIES_ARCHEOPS                                567
 #define SPECIES_TRUBBISH                                568
 #define SPECIES_GARBODOR                                569

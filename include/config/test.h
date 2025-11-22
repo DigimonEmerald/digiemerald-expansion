@@ -602,8 +602,8 @@
 #define P_FAMILY_TEKKAMON                  TRUE
 #undef P_FAMILY_WARUMONZAEMON
 #define P_FAMILY_WARUMONZAEMON                TRUE
-#undef P_FAMILY_ARCHEN
-#define P_FAMILY_ARCHEN                  TRUE
+#undef P_FAMILY_ETEMON_CHAOS
+#define P_FAMILY_ETEMON_CHAOS                  TRUE
 #undef P_FAMILY_TRUBBISH
 #define P_FAMILY_TRUBBISH                TRUE
 #undef P_FAMILY_ZORUA

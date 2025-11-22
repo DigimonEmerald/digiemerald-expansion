@@ -7052,8 +7052,8 @@ static const union AnimCmd sAnim_Waruseadramon_1[] =
 };
 #endif //P_FAMILY_WARUMONZAEMON
 
-#if P_FAMILY_ARCHEN
-static const union AnimCmd sAnim_Archen_1[] =
+#if P_FAMILY_ETEMON_CHAOS
+static const union AnimCmd sAnim_Etemon_chaos_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 46),
@@ -7073,7 +7073,7 @@ static const union AnimCmd sAnim_Archeops_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 
 #if P_FAMILY_TRUBBISH
 static const union AnimCmd sAnim_Trubbish_1[] =
@@ -11761,10 +11761,10 @@ SINGLE_ANIMATION(Vermilimon);
 SINGLE_ANIMATION(Warumonzaemon);
 SINGLE_ANIMATION(Waruseadramon);
 #endif //P_FAMILY_WARUMONZAEMON
-#if P_FAMILY_ARCHEN
-SINGLE_ANIMATION(Archen);
+#if P_FAMILY_ETEMON_CHAOS
+SINGLE_ANIMATION(Etemon_chaos);
 SINGLE_ANIMATION(Archeops);
-#endif //P_FAMILY_ARCHEN
+#endif //P_FAMILY_ETEMON_CHAOS
 #if P_FAMILY_TRUBBISH
 SINGLE_ANIMATION(Trubbish);
 SINGLE_ANIMATION(Garbodor);
