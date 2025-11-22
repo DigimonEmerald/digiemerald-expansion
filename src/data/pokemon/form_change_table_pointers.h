@@ -169,6 +169,22 @@ const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
     // [SPECIES_ICEDEVIMON_ENHANCEMENT_ABSORBENT] = sDigimonFusionTable,
     // [SPECIES_DAIPENMON] = sDigimonFusionTable,
     // [SPECIES_ICEDEVIMON_DAIPENMON_ENHANCEMENT_ABSORBENT] = sDigimonFusionTable,
+    // [SPECIES_MONZAEMON] = sDigimonFusionTable,
+    // [SPECIES_WARUMONZAEMON] = sDigimonFusionTable,
+    // [SPECIES_GIGAWARUMONZAEMON] = sDigimonFusionTable,
+    // [SPECIES_DARKKNIGHTMON] = sDigimonFusionTable,
+    // [SPECIES_SKULLGREYMON] = sDigimonFusionTable,
+    // [SPECIES_SUPERDARKKNIGHTMON] = sDigimonFusionTable,
+    // [SPECIES_ANGEWOMON] = sDigimonFusionTable,
+    // [SPECIES_LADYDEVIMON] = sDigimonFusionTable,
+    // [SPECIES_MASTEMON] = sDigimonFusionTable,
+    // [SPECIES_TRICERAMON] = sDigimonFusionTable,
+    // [SPECIES_ASTAMON_XROS_UP_TRICERAMON] = sDigimonFusionTable,
+    [SPECIES_KIMERAMON] = sDigimonFusionTable,
+    [SPECIES_MACHINEDRAMON] = sDigimonFusionTable,
+    [SPECIES_MILLENNIUMMON] = sDigimonFusionTable,
+    // [SPECIES_WISEMON] = sDigimonFusionTable,
+    // [SPECIES_KNIGHTMON_WISE_SWORD_MODE] = sDigimonFusionTable,
 };
 
 #if P_FUSION_FORMS
