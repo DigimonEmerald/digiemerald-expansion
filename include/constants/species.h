@@ -309,7 +309,7 @@
 #define SPECIES_BIRDRAMON                                  300
 #define SPECIES_BLACKGAOGAMON                                301
 #define SPECIES_BLACKGARGOMON                                 302
-#define SPECIES_BLACKGARURUMON                                  303
+#define SPECIES_GARURUMON_BLACK                                  303
 #define SPECIES_BLACKGATOMON                                    304
 #define SPECIES_BLACKGATOMON_UVER                                  305
 #define SPECIES_BLACKGROWLMON                                  306
@@ -938,7 +938,7 @@
 #define SPECIES_TERRIERMON_X_MEGA                           929
 #define SPECIES_ARCADIAMON_CHAMPION_MEGA                          930
 #define SPECIES_BLACKGARGOMON_MEGA                            931
-#define SPECIES_BLACKGARURUMON_MEGA                             932
+#define SPECIES_GARURUMON_BLACK_MEGA                             932
 #define SPECIES_BLACKGROWLMON_MEGA                             933
 #define SPECIES_BLIMPMON_MEGA                           934
 #define SPECIES_BOMBERNANIMON_MEGA                          935

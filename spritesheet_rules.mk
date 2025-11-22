@@ -1966,10 +1966,10 @@ $(POKEMONGFXDIR)/blackgargomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/blackgargomon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blackgarurumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/garurumon_black/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blackgarurumon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/garurumon_black/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/blackgatomon/overworld.4bpp: %.4bpp: %.png

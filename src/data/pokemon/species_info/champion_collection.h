@@ -2964,14 +2964,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
+#if P_FAMILY_GARURUMON_BLACK
 #if P_UPDATED_TYPES >= GEN_6
-    #define BLACKGARURUMON_TYPES { TYPE_STEEL, TYPE_FAIRY }
+    #define GARURUMON_BLACK_TYPES { TYPE_STEEL, TYPE_FAIRY }
 #else
-    #define BLACKGARURUMON_TYPES { TYPE_STEEL, TYPE_STEEL }
+    #define GARURUMON_BLACK_TYPES { TYPE_STEEL, TYPE_STEEL }
 #endif
 
-    [SPECIES_BLACKGARURUMON] =
+    [SPECIES_GARURUMON_BLACK] =
     {
         .baseHP        = 70,
         .baseAttack    = 75,
@@ -2993,21 +2993,21 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_DARK_AURA, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("BlkGarurumon"),
-        .cryId = CRY_BLACKGARURUMON,
-        .natDexNum = NATIONAL_DEX_BLACKGARURUMON,
+        .cryId = CRY_GARURUMON_BLACK,
+        .natDexNum = NATIONAL_DEX_GARURUMON_BLACK,
         .categoryName = _("canine"),
         .height = 56,
         .weight = 653,
         .description = COMPOUND_STRING(
             "Other than being more vicious than\n"
-            "normal Garurumon, BlackGarurumon's blades\n"
+            "normal Garurumon, Garurumon_black's blades\n"
             "on its shoulders are sharp enough to\n"
             "dice up just about anything."),
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Blackgarurumon,
+        .frontPic = gMonFrontPic_Garurumon_black,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3020,36 +3020,36 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Blackgarurumon,
+        .backPic = gMonBackPic_Garurumon_black,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 7,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Blackgarurumon,
-        .shinyPalette = gMonShinyPalette_Blackgarurumon,
-        .iconSprite = gMonIcon_Blackgarurumon,
+        .palette = gMonPalette_Garurumon_black,
+        .shinyPalette = gMonShinyPalette_Garurumon_black,
+        .iconSprite = gMonIcon_Garurumon_black,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 4, SHADOW_SIZE_L)
-        FOOTPRINT(Blackgarurumon)
+        FOOTPRINT(Garurumon_black)
         OVERWORLD(
-            sPicTable_Blackgarurumon,
+            sPicTable_Garurumon_black,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Blackgarurumon,
-            gShinyOverworldPalette_Blackgarurumon
+            gOverworldPalette_Garurumon_black,
+            gShinyOverworldPalette_Garurumon_black
         )
-        .levelUpLearnset = sBlackgarurumonLevelUpLearnset,
-        .teachableLearnset = sBlackgarurumonTeachableLearnset,
-        .eggMoveLearnset = sBlackgarurumonEggMoveLearnset,
-        .formSpeciesIdTable = sBlackgarurumonFormSpeciesIdTable,
-        .formChangeTable = sBlackgarurumonFormChangeTable,
-        .digivolutions = sBlackgarurumonDigivolveTable,
+        .levelUpLearnset = sGarurumon_blackLevelUpLearnset,
+        .teachableLearnset = sGarurumon_blackTeachableLearnset,
+        .eggMoveLearnset = sGarurumon_blackEggMoveLearnset,
+        .formSpeciesIdTable = sGarurumon_blackFormSpeciesIdTable,
+        .formChangeTable = sGarurumon_blackFormChangeTable,
+        .digivolutions = sGarurumon_blackDigivolveTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_BLACKGARURUMON_MEGA] =
+    [SPECIES_GARURUMON_BLACK_MEGA] =
     {
         .baseHP        = 50,
         .baseAttack    = 105,
@@ -3057,7 +3057,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 95,
-        .types = BLACKGARURUMON_TYPES,
+        .types = GARURUMON_BLACK_TYPES,
         .catchRate = 45,
         .expYield = 168,
         .evYield_Attack = 1,
@@ -3070,8 +3070,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("BlkGarurumon"),
-        .cryId = CRY_BLACKGARURUMON_MEGA,
-        .natDexNum = NATIONAL_DEX_BLACKGARURUMON,
+        .cryId = CRY_GARURUMON_BLACK_MEGA,
+        .natDexNum = NATIONAL_DEX_GARURUMON_BLACK,
         .categoryName = _("Deceiver"),
         .height = 10,
         .weight = 235,
@@ -3084,42 +3084,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BlackgarurumonMega,
+        .frontPic = gMonFrontPic_Garurumon_blackMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_BlackgarurumonMega,
+        .backPic = gMonBackPic_Garurumon_blackMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_BlackgarurumonMega,
-        .shinyPalette = gMonShinyPalette_BlackgarurumonMega,
-        .iconSprite = gMonIcon_BlackgarurumonMega,
+        .palette = gMonPalette_Garurumon_blackMega,
+        .shinyPalette = gMonShinyPalette_Garurumon_blackMega,
+        .iconSprite = gMonIcon_Garurumon_blackMega,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Blackgarurumon)
+        FOOTPRINT(Garurumon_black)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_BlackgarurumonMega,
+            sPicTable_Garurumon_blackMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BlackgarurumonMega,
-            gShinyOverworldPalette_BlackgarurumonMega
+            gOverworldPalette_Garurumon_blackMega,
+            gShinyOverworldPalette_Garurumon_blackMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sBlackgarurumonLevelUpLearnset,
-        .teachableLearnset = sBlackgarurumonTeachableLearnset,
-        .eggMoveLearnset = sBlackgarurumonEggMoveLearnset,
-        .formSpeciesIdTable = sBlackgarurumonFormSpeciesIdTable,
-        .formChangeTable = sBlackgarurumonFormChangeTable,
+        .levelUpLearnset = sGarurumon_blackLevelUpLearnset,
+        .teachableLearnset = sGarurumon_blackTeachableLearnset,
+        .eggMoveLearnset = sGarurumon_blackEggMoveLearnset,
+        .formSpeciesIdTable = sGarurumon_blackFormSpeciesIdTable,
+        .formChangeTable = sGarurumon_blackFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
     [SPECIES_BLACKGATOMON] =
@@ -10368,7 +10368,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGarurumonLevelUpLearnset,
         .teachableLearnset = sGarurumonTeachableLearnset,
         .digivolutions = sGarurumonDigivolveTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLACKGARURUMON},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_GARURUMON_BLACK},
                                 // {EVO_ITEM, ITEM_MEDAL, SPECIES_GARURUMETAL},
                                 {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GARURUMON_X}),
     },

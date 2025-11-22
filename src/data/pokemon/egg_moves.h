@@ -2690,8 +2690,8 @@ static const u16 sBlackgargomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const u16 sBlackgarurumonEggMoveLearnset[] = {
+#if P_FAMILY_GARURUMON_BLACK
+static const u16 sGarurumon_blackEggMoveLearnset[] = {
     MOVE_POISON_FANG,
     MOVE_ANCIENT_POWER,
     MOVE_TICKLE,
@@ -2709,7 +2709,7 @@ static const u16 sBlackgarurumonEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const u16 sBlackgatomonEggMoveLearnset[] = {

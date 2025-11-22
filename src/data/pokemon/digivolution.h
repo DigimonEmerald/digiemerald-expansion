@@ -883,7 +883,7 @@ static const struct Digivolution sBearmonDigivolveTable[] = {
     // {58, 33, 25, 25, 21, 21, SPECIES_GRIZZLYMON},
     // {58, 33, 25, 25, 21, 21, SPECIES_MIKEMON},
     {58, 33, 25, 33, 21, 21, SPECIES_DOBERMON},
-    {58, 36, 25, 31, 21, 21, SPECIES_BLACKGARURUMON},
+    {58, 36, 25, 31, 21, 21, SPECIES_GARURUMON_BLACK},
     // {58, 33, 25, 25, 21, 21, SPECIES_GLADIMON},
     {58, 38, 30, 25, 21, 21, SPECIES_HYOGAMON},
     DIGIVOLUTION_END,
@@ -960,7 +960,7 @@ static const struct Digivolution sBlackagumon_xDigivolveTable[] = {
 };
 
 static const struct Digivolution sBlackgabumonDigivolveTable[] = {
-    {50, 27, 29, 31, 33, 27, SPECIES_BLACKGARURUMON},
+    {50, 27, 29, 31, 33, 27, SPECIES_GARURUMON_BLACK},
     {50, 35, 29, 31, 33, 27, SPECIES_BLACKGAOGAMON},
     {55, 29, 29, 31, 33, 27, SPECIES_DORULUMON},
     {50, 27, 29, 36, 33, 32, SPECIES_SABERDRAMON},
@@ -1239,7 +1239,7 @@ static const struct Digivolution sElecmonDigivolveTable[] = {
     {50, 25, 21, 29, 21, 35, SPECIES_LEOMON},
     // {50, 25, 21, 29, 21, 35, SPECIES_RUNNERMON},
     {50, 30, 21, 29, 26, 35, SPECIES_AEGIOMON},
-    {50, 25, 21, 37, 21, 35, SPECIES_BLACKGARURUMON},
+    {50, 25, 21, 37, 21, 35, SPECIES_GARURUMON_BLACK},
     {50, 33, 21, 29, 21, 35, SPECIES_DARKTYRANNOMON},
     {58, 25, 21, 29, 21, 35, SPECIES_RAREMON},
     DIGIVOLUTION_END,
@@ -1992,7 +1992,7 @@ static const struct Digivolution sStarmon_2010DigivolveTable[] = {
 static const struct Digivolution sStrabimonDigivolveTable[] = {
     // {50, 27, 27, 27, 25, 27, SPECIES_LOBOMON},
     // {50, 27, 27, 27, 25, 27, SPECIES_GRIZZLYMON},
-    {50, 27, 27, 35, 25, 27, SPECIES_BLACKGARURUMON},
+    {50, 27, 27, 35, 25, 27, SPECIES_GARURUMON_BLACK},
     {50, 27, 27, 33, 30, 27, SPECIES_DOBERMON},
     {50, 27, 27, 27, 25, 35, SPECIES_FANGMON},
     {50, 35, 27, 27, 25, 27, SPECIES_GARGOMON},
@@ -2492,7 +2492,7 @@ static const struct Digivolution sBlackgargomonDigivolveTable[] = {
     DIGIVOLUTION_END,
 };
 
-static const struct Digivolution sBlackgarurumonDigivolveTable[] = {
+static const struct Digivolution sGarurumon_blackDigivolveTable[] = {
     // {106, 65, 61, 77, 61, 61, SPECIES_WEREGARURUMON_BLACK},
     {106, 65, 61, 77, 61, 78, SPECIES_ICELEOMON},
     // {106, 65, 61, 77, 61, 61, SPECIES_PANDAMON},

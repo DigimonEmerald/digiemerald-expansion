@@ -206,7 +206,7 @@
 #define P_FAMILY_BIOTHUNDERBIRDMON                P_GEN_3_POKEMON
 #define P_FAMILY_BIRDRAMON                  P_GEN_3_POKEMON
 #define P_FAMILY_BLACKGARGOMON                 P_GEN_3_POKEMON
-#define P_FAMILY_BLACKGARURUMON                  P_GEN_3_POKEMON
+#define P_FAMILY_GARURUMON_BLACK                  P_GEN_3_POKEMON
 #define P_FAMILY_BLACKGATOMON                    P_GEN_3_POKEMON
 #define P_FAMILY_BLADEKUWAGAMON                P_GEN_3_POKEMON
 #define P_FAMILY_BOARMON               P_GEN_3_POKEMON

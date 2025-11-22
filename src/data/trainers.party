@@ -1407,7 +1407,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Blackgarurumon
+Garurumon_black
 Level: 46
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1487,7 +1487,7 @@ Angelamon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Blackgarurumon
+Garurumon_black
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1708,7 +1708,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Blackgarurumon
+Garurumon_black
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass

@@ -14465,8 +14465,8 @@ static const u16 sBlackgargomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const u16 sBlackgarurumonTeachableLearnset[] = {
+#if P_FAMILY_GARURUMON_BLACK
+static const u16 sGarurumon_blackTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -14511,7 +14511,7 @@ static const u16 sBlackgarurumonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const u16 sBlackgatomonTeachableLearnset[] = {

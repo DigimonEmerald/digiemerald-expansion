@@ -2450,18 +2450,18 @@ static const struct SpriteFrameImage sPicTable_BlackgargomonMega[] = {
 #endif // OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const struct SpriteFrameImage sPicTable_Blackgarurumon[] = {
-    overworld_ascending_frames(gObjectEventPic_Blackgarurumon, 4, 4),
+#if P_FAMILY_GARURUMON_BLACK
+static const struct SpriteFrameImage sPicTable_Garurumon_black[] = {
+    overworld_ascending_frames(gObjectEventPic_Garurumon_black, 4, 4),
 };
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_BlackgarurumonMega[] = {
-    overworld_ascending_frames(gObjectEventPic_BlackgarurumonMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_Garurumon_blackMega[] = {
+    overworld_ascending_frames(gObjectEventPic_Garurumon_blackMega, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const struct SpriteFrameImage sPicTable_Blackgatomon[] = {

@@ -312,7 +312,7 @@ BioThunderbirdmon - Nosepass
 Birdramon - Skitty
 BlackGaogamon - Delcatty
 BlackGargomon - Sableye
-BlackGarurumon - Mawile
+Garurumon_black - Mawile
 BlackGatomon (Uver) - Lairon
 BlackGatomon - Aron
 BlackGrowlmon - Aggron

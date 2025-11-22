@@ -2325,17 +2325,17 @@ Cry_BlackgargomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLACKGARGOMON
 
-.if P_FAMILY_BLACKGARURUMON == TRUE
+.if P_FAMILY_GARURUMON_BLACK == TRUE
 	.align 2
-Cry_Blackgarurumon::
-	.incbin "sound/direct_sound_samples/cries/blackgarurumon.bin"
+Cry_Garurumon_black::
+	.incbin "sound/direct_sound_samples/cries/garurumon_black.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlackgarurumonMega::
-	.incbin "sound/direct_sound_samples/cries/blackgarurumon_mega.bin"
+Cry_Garurumon_blackMega::
+	.incbin "sound/direct_sound_samples/cries/garurumon_black_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLACKGARURUMON
+.endif @ P_FAMILY_GARURUMON_BLACK
 
 .if P_FAMILY_BLACKGATOMON == TRUE
 	.align 2

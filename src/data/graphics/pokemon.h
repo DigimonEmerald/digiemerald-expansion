@@ -11179,53 +11179,53 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
+#if P_FAMILY_GARURUMON_BLACK
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Blackgarurumon[] = INCBIN_U32("graphics/pokemon/blackgarurumon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/normal.gbapal");
-    const u32 gMonBackPic_Blackgarurumon[] = INCBIN_U32("graphics/pokemon/blackgarurumon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/shiny.gbapal");
+    const u32 gMonFrontPic_Garurumon_black[] = INCBIN_U32("graphics/pokemon/garurumon_black/anim_front.4bpp.smol");
+    const u16 gMonPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/normal.gbapal");
+    const u32 gMonBackPic_Garurumon_black[] = INCBIN_U32("graphics/pokemon/garurumon_black/back.4bpp.smol");
+    const u16 gMonShinyPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/shiny.gbapal");
 #else
-    const u32 gMonFrontPic_Blackgarurumon[] = INCBIN_U32("graphics/pokemon/blackgarurumon/anim_front_gba.4bpp.smol");
-    const u16 gMonPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/normal_gba.gbapal");
-    const u32 gMonBackPic_Blackgarurumon[] = INCBIN_U32("graphics/pokemon/blackgarurumon/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/shiny_gba.gbapal");
+    const u32 gMonFrontPic_Garurumon_black[] = INCBIN_U32("graphics/pokemon/garurumon_black/anim_front_gba.4bpp.smol");
+    const u16 gMonPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/normal_gba.gbapal");
+    const u32 gMonBackPic_Garurumon_black[] = INCBIN_U32("graphics/pokemon/garurumon_black/back_gba.4bpp.smol");
+    const u16 gMonShinyPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Blackgarurumon[] = INCBIN_U8("graphics/pokemon/blackgarurumon/icon.4bpp");
+    const u8 gMonIcon_Garurumon_black[] = INCBIN_U8("graphics/pokemon/garurumon_black/icon.4bpp");
 #else
-    const u8 gMonIcon_Blackgarurumon[] = INCBIN_U8("graphics/pokemon/blackgarurumon/icon_gba.4bpp");
+    const u8 gMonIcon_Garurumon_black[] = INCBIN_U8("graphics/pokemon/garurumon_black/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
 #if !P_GBA_STYLE_SPECIES_FOOTPRINTS
-    const u8 gMonFootprint_Blackgarurumon[] = INCBIN_U8("graphics/pokemon/blackgarurumon/footprint.1bpp");
+    const u8 gMonFootprint_Garurumon_black[] = INCBIN_U8("graphics/pokemon/garurumon_black/footprint.1bpp");
 #else
-    const u8 gMonFootprint_Blackgarurumon[] = INCBIN_U8("graphics/pokemon/blackgarurumon/footprint_gba.1bpp");
+    const u8 gMonFootprint_Garurumon_black[] = INCBIN_U8("graphics/pokemon/garurumon_black/footprint_gba.1bpp");
 #endif //P_GBA_STYLE_SPECIES_FOOTPRINTS
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Blackgarurumon[] = INCBIN_COMP("graphics/pokemon/blackgarurumon/overworld.4bpp");
+    const u32 gObjectEventPic_Garurumon_black[] = INCBIN_COMP("graphics/pokemon/garurumon_black/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Blackgarurumon[] = INCBIN_U16("graphics/pokemon/blackgarurumon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Garurumon_black[] = INCBIN_U16("graphics/pokemon/garurumon_black/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_BlackgarurumonMega[] = INCBIN_U32("graphics/pokemon/blackgarurumon/mega/front.4bpp.smol");
-    const u16 gMonPalette_BlackgarurumonMega[] = INCBIN_U16("graphics/pokemon/blackgarurumon/mega/normal.gbapal");
-    const u32 gMonBackPic_BlackgarurumonMega[] = INCBIN_U32("graphics/pokemon/blackgarurumon/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_BlackgarurumonMega[] = INCBIN_U16("graphics/pokemon/blackgarurumon/mega/shiny.gbapal");
-    const u8 gMonIcon_BlackgarurumonMega[] = INCBIN_U8("graphics/pokemon/blackgarurumon/mega/icon.4bpp");
+    const u32 gMonFrontPic_Garurumon_blackMega[] = INCBIN_U32("graphics/pokemon/garurumon_black/mega/front.4bpp.smol");
+    const u16 gMonPalette_Garurumon_blackMega[] = INCBIN_U16("graphics/pokemon/garurumon_black/mega/normal.gbapal");
+    const u32 gMonBackPic_Garurumon_blackMega[] = INCBIN_U32("graphics/pokemon/garurumon_black/mega/back.4bpp.smol");
+    const u16 gMonShinyPalette_Garurumon_blackMega[] = INCBIN_U16("graphics/pokemon/garurumon_black/mega/shiny.gbapal");
+    const u8 gMonIcon_Garurumon_blackMega[] = INCBIN_U8("graphics/pokemon/garurumon_black/mega/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BlackgarurumonMega[] = INCBIN_COMP("graphics/pokemon/blackgarurumon/mega/overworld.4bpp");
+    const u32 gObjectEventPic_Garurumon_blackMega[] = INCBIN_COMP("graphics/pokemon/garurumon_black/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BlackgarurumonMega[] = INCBIN_U16("graphics/pokemon/blackgarurumon/mega/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BlackgarurumonMega[] = INCBIN_U16("graphics/pokemon/blackgarurumon/mega/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Garurumon_blackMega[] = INCBIN_U16("graphics/pokemon/garurumon_black/mega/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Garurumon_blackMega[] = INCBIN_U16("graphics/pokemon/garurumon_black/mega/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 #if !P_GBA_STYLE_SPECIES_GFX

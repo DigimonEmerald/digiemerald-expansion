@@ -799,15 +799,15 @@ static const u16 sBlackgargomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const u16 sBlackgarurumonFormSpeciesIdTable[] = {
-    SPECIES_BLACKGARURUMON,
+#if P_FAMILY_GARURUMON_BLACK
+static const u16 sGarurumon_blackFormSpeciesIdTable[] = {
+    SPECIES_GARURUMON_BLACK,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_BLACKGARURUMON_MEGA,
+    SPECIES_GARURUMON_BLACK_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const u16 sBlackgrowlmonFormSpeciesIdTable[] = {

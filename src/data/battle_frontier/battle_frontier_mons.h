@@ -1064,8 +1064,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
         .nature = NATURE_IMPISH
     },
-    [FRONTIER_MON_BLACKGARURUMON] = {
-        .species = SPECIES_BLACKGARURUMON,
+    [FRONTIER_MON_GARURUMON_BLACK] = {
+        .species = SPECIES_GARURUMON_BLACK,
         .moves = {MOVE_CRUNCH, MOVE_FAKE_TEARS, MOVE_IRON_DEFENSE, MOVE_BATON_PASS},
         .heldItem = ITEM_BRIGHT_POWDER,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),

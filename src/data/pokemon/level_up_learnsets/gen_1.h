@@ -5786,8 +5786,8 @@ static const struct LevelUpMove sBlackgargomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const struct LevelUpMove sBlackgarurumonLevelUpLearnset[] = {
+#if P_FAMILY_GARURUMON_BLACK
+static const struct LevelUpMove sGarurumon_blackLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 6, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE(11, MOVE_BITE),
@@ -5802,7 +5802,7 @@ static const struct LevelUpMove sBlackgarurumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_SPIT_UP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const struct LevelUpMove sBlackgatomonLevelUpLearnset[] = {

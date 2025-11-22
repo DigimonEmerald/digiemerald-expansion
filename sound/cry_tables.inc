@@ -827,12 +827,12 @@ gCryTable::
 	cry Cry_BlackgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLACKGARGOMON
-.if P_FAMILY_BLACKGARURUMON == TRUE
-	cry Cry_Blackgarurumon
+.if P_FAMILY_GARURUMON_BLACK == TRUE
+	cry Cry_Garurumon_black
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BlackgarurumonMega
+	cry Cry_Garurumon_blackMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLACKGARURUMON
+.endif @ P_FAMILY_GARURUMON_BLACK
 .if P_FAMILY_BLACKGATOMON == TRUE
 	cry Cry_Blackgatomon
 	cry Cry_Blackgatomon_uver
@@ -3254,12 +3254,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_BlackgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLACKGARGOMON
-.if P_FAMILY_BLACKGARURUMON == TRUE
-	cry_reverse Cry_Blackgarurumon
+.if P_FAMILY_GARURUMON_BLACK == TRUE
+	cry_reverse Cry_Garurumon_black
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BlackgarurumonMega
+	cry_reverse Cry_Garurumon_blackMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLACKGARURUMON
+.endif @ P_FAMILY_GARURUMON_BLACK
 .if P_FAMILY_BLACKGATOMON == TRUE
 	cry_reverse Cry_Blackgatomon
 	cry_reverse Cry_Blackgatomon_uver

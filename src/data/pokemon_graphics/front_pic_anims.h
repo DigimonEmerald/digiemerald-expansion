@@ -4056,8 +4056,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlackgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLACKGARURUMON
-static const union AnimCmd sAnim_Blackgarurumon_1[] =
+#if P_FAMILY_GARURUMON_BLACK
+static const union AnimCmd sAnim_Garurumon_black_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4070,9 +4070,9 @@ static const union AnimCmd sAnim_Blackgarurumon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlackgarurumonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Garurumon_blackMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 
 #if P_FAMILY_BLACKGATOMON
 static const union AnimCmd sAnim_Blackgatomon_1[] =
@@ -11152,12 +11152,12 @@ SINGLE_ANIMATION(Blackgargomon);
 SINGLE_ANIMATION(BlackgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLACKGARGOMON
-#if P_FAMILY_BLACKGARURUMON
-SINGLE_ANIMATION(Blackgarurumon);
+#if P_FAMILY_GARURUMON_BLACK
+SINGLE_ANIMATION(Garurumon_black);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlackgarurumonMega);
+SINGLE_ANIMATION(Garurumon_blackMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLACKGARURUMON
+#endif //P_FAMILY_GARURUMON_BLACK
 #if P_FAMILY_BLACKGATOMON
 SINGLE_ANIMATION(Blackgatomon);
 SINGLE_ANIMATION(Blackgatomon_uver);
