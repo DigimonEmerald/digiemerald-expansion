@@ -21647,6 +21647,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0}
     },
 
+    [MOVE_NIGHT_RAID] =
+    {
+        .name = COMPOUND_STRING("Night Raid"),
+        .description = COMPOUND_STRING(
+            "Manipulates a bat swarm to\n"
+            "attack. May lower accuracy."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_DARK,
+        .accuracy = 90,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_NightDaze,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
