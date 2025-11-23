@@ -11781,13 +11781,19 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
     {
         effect = TRUE;
     }
-    // If the attacker has the ability No Guard and they aren't targeting a Pokemon involved in a Sky Drop with the move Sky Drop, move hits.
+    // If the attacker has the ability No Guard/Omega InForce and they aren't targeting a Pokemon involved in a Sky Drop with the move Sky Drop, move hits.
     else if (abilityAtk == ABILITY_NO_GUARD
           && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER
           && (moveEffect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[battlerDef] == SKY_DROP_NO_TARGET))
     {
         effect = TRUE;
         ability = ABILITY_NO_GUARD;
+    }
+    else if (abilityAtk == ABILITY_OMEGA_INFORCE
+          && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER
+          && (moveEffect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[battlerDef] == SKY_DROP_NO_TARGET))
+    {
+        effect = TRUE;
     }
     // If the target has the ability No Guard and they aren't involved in a Sky Drop or the current move isn't Sky Drop, move hits.
     else if (abilityDef == ABILITY_NO_GUARD

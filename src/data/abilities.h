@@ -2444,4 +2444,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Lowers the foe's stats."),
         .aiRating = 7,
     },
+
+    [ABILITY_OMEGA_INFORCE] =
+    {
+        .name = _("Omega InForce"),
+        .description = COMPOUND_STRING("Ensures that all moves hit."),
+        .aiRating = 8,
+    },
 };

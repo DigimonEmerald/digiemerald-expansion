@@ -11053,6 +11053,7 @@ static void Cmd_tryKO(void)
             lands = NO_HIT;
         else if ((gBattleMons[gBattlerTarget].volatiles.lockOn && gDisableStructs[gBattlerTarget].battlerWithSureHit == gBattlerAttacker)
               || IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_NO_GUARD)
+              || IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_OMEGA_INFORCE)
               || IsAbilityAndRecord(gBattlerTarget, targetAbility, ABILITY_NO_GUARD))
             lands = SURE_HIT;
         else if (IsSemiInvulnerable(gBattlerTarget, CHECK_ALL))
