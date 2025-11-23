@@ -3,20 +3,20 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_GLAIVE_RUSH].effect == EFFECT_GLAIVE_RUSH);
+    ASSUME(GetMoveEffect(MOVE_GLAIVE_RUSH) == EFFECT_GLAIVE_RUSH);
 }
 
 SINGLE_BATTLE_TEST("If Glaive Rush is successful moves targeted at the user do not check accuracy")
 {
     PASSES_RANDOMLY(100, 100, RNG_ACCURACY);
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_MEGA_PUNCH].accuracy == 85);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveAccuracy(MOVE_MEGA_PUNCH) == 85);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_MEGA_PUNCH); }
     } SCENE {
-        MESSAGE("Lopmonx used Glaive Rush!");
+        MESSAGE("Wobbuffet used Glaive Rush!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEGA_PUNCH, opponent);
     }
@@ -28,17 +28,17 @@ SINGLE_BATTLE_TEST("If Glaive Rush is successful, moves targeted at the user dea
     s16 normalDmg;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_TACKLE); }
-        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &glaiveRushEffectedDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &normalDmg);
     } THEN {
         EXPECT_MUL_EQ(normalDmg, Q_4_12(2.0), glaiveRushEffectedDmg);
@@ -51,16 +51,16 @@ SINGLE_BATTLE_TEST("If Glaive Rush is successful, moves targeted at the user dea
     s16 normalDmg;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_GLAIVE_RUSH); }
-        TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_CELEBRATE);  }
+        TURN { MOVE(opponent, MOVE_SCRATCH); MOVE(player, MOVE_GLAIVE_RUSH); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); MOVE(player, MOVE_CELEBRATE);  }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &normalDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &glaiveRushEffectedDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
     } THEN {
@@ -76,16 +76,16 @@ SINGLE_BATTLE_TEST("If Glaive Rush isn't successful moves targeted at the user d
     PARAMETRIZE { missesGlaiveRush = TRUE; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_BRIGHT_POWDER); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); }
     } WHEN {
-        TURN { MOVE(player, MOVE_GLAIVE_RUSH, hit: missesGlaiveRush); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_GLAIVE_RUSH, hit: missesGlaiveRush); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         if (!missesGlaiveRush)
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         else
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -96,20 +96,20 @@ SINGLE_BATTLE_TEST("Glaive Rush doesn't affect the user if the effect is blocked
 {
     u32 species;
 
-    PARAMETRIZE { species = SPECIES_PUYOMON; }
-    PARAMETRIZE { species = SPECIES_SHELLOS; } // Closest mon in both Defense and Sp. Defense
+    PARAMETRIZE { species = SPECIES_FIDOUGH; }
+    PARAMETRIZE { species = SPECIES_MAGNEMITE; } // Closest mon in both Defense and Sp. Defense
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Attack(50); }
     } WHEN {
-        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
-        if (species == SPECIES_PUYOMON)
+        if (species == SPECIES_FIDOUGH)
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
         else
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
@@ -122,20 +122,20 @@ SINGLE_BATTLE_TEST("Glaive Rush status last until the the user's next turn")
     s16 normalDmgSecondHit;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_TACKLE); }
-        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
-        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_GLAIVE_RUSH); MOVE(opponent, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GLAIVE_RUSH, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &normalDmgFristHit);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &normalDmgSecondHit);
     } THEN {
         EXPECT_EQ(normalDmgFristHit, normalDmgSecondHit);
