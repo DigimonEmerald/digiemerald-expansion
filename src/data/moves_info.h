@@ -21627,6 +21627,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0}
     },
 
+    [MOVE_MUGEN_CANNON] =
+    {
+        .name = COMPOUND_STRING("Mugen Cannon"),
+        .description = COMPOUND_STRING(
+            "Fires superdreadnaught-\n"
+            "class energy waves."),
+        .effect = EFFECT_HIT,
+        .power = 150,
+        .type = TYPE_STEEL,
+        .accuracy = 90,
+        .pp = 5,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

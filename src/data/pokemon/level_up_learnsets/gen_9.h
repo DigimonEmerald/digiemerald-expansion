@@ -14316,7 +14316,7 @@ static const struct LevelUpMove sMachinedramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(73, MOVE_GIGA_IMPACT),
     LEVEL_UP_MOVE(76, MOVE_SEARING_SHOT),
-    LEVEL_UP_MOVE(80, MOVE_HYPER_VOICE), // Mugen Cannon
+    LEVEL_UP_MOVE(80, MOVE_MUGEN_CANNON),
     LEVEL_UP_END
 };
 
