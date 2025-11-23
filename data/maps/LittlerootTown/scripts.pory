@@ -1021,5 +1021,7 @@ script LittlerootTown_EventScript_Test {
     lock
     msgbox(format("I forgot to remove some testing stuff"))
 	givemon(SPECIES_CREEPYMON, 20)
+	giveitem(ITEM_TOXIC_ORB)
+	setflag(FLAG_BADGE08_GET)
     release
 }

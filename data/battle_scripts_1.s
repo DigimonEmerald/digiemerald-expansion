@@ -9853,3 +9853,20 @@ BattleScript_DeathEvolutionInReverse::
 	modifybattlerstatstage BS_TARGET, STAT_SPDEF, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
 	call BattleScript_TryDeathEvolutionHoldEffects
 	goto BattleScript_DeathEvolutionLoopIncrement
+
+BattleScript_SinOfSloth::
+	setbyte cMULTISTRING_CHOOSER, 0
+	copybyte gEffectBattler, gBattlerAttacker
+	call BattleScript_AbilityEffectSinOfSloth
+	end2
+
+BattleScript_AbilityEffectSinOfSloth::
+	statusanimation BS_ATTACKER
+	printfromtable gFellAsleepStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UpdateAbilityEffectSinOfSlothIconRet::
+	updatestatusicon BS_ATTACKER
+	waitstate
+	trytriggerstatusform
+	flushtextbox
+	return

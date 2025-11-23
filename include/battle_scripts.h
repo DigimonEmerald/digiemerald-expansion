@@ -873,5 +873,6 @@ extern const u8 BattleScript_EffectFullMoon[];
 extern const u8 BattleScript_DeathEvolutionActivates[];
 extern const u8 BattleScript_DeathEvolutionPrevented[];
 extern const u8 BattleScript_DeathEvolutionInReverse[];
+extern const u8 BattleScript_SinOfSloth[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

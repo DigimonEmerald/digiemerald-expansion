@@ -3594,6 +3594,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
             }
             break;
+        case ABILITY_SIN_OF_SLOTH:
+                gBattleMons[gBattlerAttacker].status1 = STATUS1_SLEEP;
+                BattleScriptExecute(BattleScript_SinOfSloth);
+                break;
         case ABILITY_IMPOSTER:
             {
                 u32 diagonalBattler = BATTLE_OPPOSITE(battler);
