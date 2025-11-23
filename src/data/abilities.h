@@ -2451,4 +2451,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ensures that all moves hit."),
         .aiRating = 8,
     },
+
+    [ABILITY_SIN_OF_WRATH] =
+    {
+        .name = _("Sin of Wrath"),
+        .description = COMPOUND_STRING("Reflects status moves."),
+        .aiRating = 9,
+        .breakable = TRUE,
+    },
 };

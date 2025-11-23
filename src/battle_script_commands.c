@@ -1212,7 +1212,7 @@ static void Cmd_attackcanceler(void)
     {
         u32 battler = gBattlerTarget;
 
-        if (abilityDef == ABILITY_MAGIC_BOUNCE)
+        if (abilityDef == ABILITY_MAGIC_BOUNCE || ABILITY_SIN_OF_WRATH)
         {
             battler = gBattlerTarget;
             gBattleStruct->bouncedMoveIsUsed = TRUE;
@@ -1220,6 +1220,13 @@ static void Cmd_attackcanceler(void)
         else if (IsDoubleBattle()
               && GetBattlerMoveTargetType(battler, gCurrentMove) == MOVE_TARGET_OPPONENTS_FIELD
               && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) == ABILITY_MAGIC_BOUNCE)
+        {
+            gBattlerTarget = battler = BATTLE_PARTNER(gBattlerTarget);
+            gBattleStruct->bouncedMoveIsUsed = TRUE;
+        }
+        else if (IsDoubleBattle()
+              && GetBattlerMoveTargetType(battler, gCurrentMove) == MOVE_TARGET_OPPONENTS_FIELD
+              && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) == ABILITY_SIN_OF_WRATH)
         {
             gBattlerTarget = battler = BATTLE_PARTNER(gBattlerTarget);
             gBattleStruct->bouncedMoveIsUsed = TRUE;
@@ -10414,6 +10421,19 @@ static u32 ChangeStatBuffs(u32 battler, s8 statValue, u32 statId, union StatChan
             return STAT_CHANGE_DIDNT_WORK;
         }
         else if (battlerAbility == ABILITY_MIRROR_ARMOR && !flags.mirrorArmored && gBattlerAttacker != gBattlerTarget && battler == gBattlerTarget)
+        {
+            if (flags.allowPtr)
+            {
+                SET_STATCHANGER(statId, GET_STAT_BUFF_VALUE(statValue) | STAT_BUFF_NEGATIVE, TRUE);
+                BattleScriptPush(BS_ptr);
+                gBattleScripting.battler = battler;
+                gBattlerAbility = battler;
+                gBattlescriptCurrInstr = BattleScript_MirrorArmorReflect;
+                RecordAbilityBattle(battler, gBattleMons[battler].ability);
+            }
+            return STAT_CHANGE_DIDNT_WORK;
+        }
+        else if (battlerAbility == ABILITY_SIN_OF_WRATH && !flags.mirrorArmored && gBattlerAttacker != gBattlerTarget && battler == gBattlerTarget)
         {
             if (flags.allowPtr)
             {
