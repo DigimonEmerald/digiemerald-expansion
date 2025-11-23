@@ -2528,3 +2528,7 @@
 	.byte \gen
 	.4byte \jumpInstr
 	.endm
+	
+	.macro jumpifdeathevolutionabilityprevented
+	callnative BS_JumpIfDeathEvolutionAbilityPrevented
+	.endm

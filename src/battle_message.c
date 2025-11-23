@@ -900,6 +900,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_FULLMOON]                             = COMPOUND_STRING("A Full Moon has set on the battlefield"),
     [STRINGID_FULLMOONSTOPPED]                      = COMPOUND_STRING("The full moon ended."),
     [STRINGID_FULLMOONCONTINUES]                    = COMPOUND_STRING("The moon continues to shine."),
+    [STRINGID_PKMNCUTSSTATSWITH]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} cuts {B_DEF_NAME_WITH_PREFIX2}'s Stats!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

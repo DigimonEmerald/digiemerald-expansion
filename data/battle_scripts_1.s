@@ -9771,3 +9771,82 @@ BattleScript_EffectFullMoon::
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_FULL_MOON
 	goto BattleScript_MoveWeatherChange
+
+BattleScript_TryDeathEvolutionHoldEffects:
+	itemstatchangeeffects BS_TARGET
+	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryDeathEvolutionHoldEffectsRet
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_TryDeathEvolutionHoldEffectsRet
+	setstatchanger STAT_SPEED, 1, FALSE
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryDeathEvolutionHoldEffectsRet
+	copybyte sBATTLER, gBattlerTarget
+	setlastuseditem BS_TARGET
+	printstring STRINGID_USINGITEMSTATOFPKMNROSE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+BattleScript_TryDeathEvolutionHoldEffectsRet:
+	return
+
+BattleScript_DeathEvolutionActivates::
+	savetarget
+	call BattleScript_AbilityPopUp
+	setbyte gBattlerTarget, 0
+BattleScript_DeathEvolutionLoop:
+	jumpiftargetally BattleScript_DeathEvolutionLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_DeathEvolutionLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_DeathEvolutionLoopIncrement
+	jumpifdeathevolutionabilityprevented
+BattleScript_DeathEvolutionEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	setstatchanger STAT_ATK, 1, TRUE
+	setstatchanger STAT_DEF, 1, TRUE
+	setstatchanger STAT_SPEED, 1, TRUE
+	setstatchanger STAT_SPATK, 1, TRUE
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_DeathEvolutionLoopIncrement
+	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_DeathEvolutionContrary
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DeathEvolutionWontDecrease
+	printstring STRINGID_PKMNCUTSSTATSWITH
+BattleScript_DeathEvolutionEffect_WaitString:
+	waitmessage B_WAIT_TIME_LONG
+	saveattacker
+	savetarget
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_TryDeathEvolutionHoldEffects
+	restoreattacker
+	restoretarget
+BattleScript_DeathEvolutionLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_DeathEvolutionLoop
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	restoretarget
+	restoreattacker
+	pause B_WAIT_TIME_MED
+	end3
+
+BattleScript_DeathEvolutionPrevented::
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
+	goto BattleScript_DeathEvolutionEffect_WaitString
+
+BattleScript_DeathEvolutionWontDecrease:
+	printstring STRINGID_STATSWONTDECREASE
+	goto BattleScript_DeathEvolutionEffect_WaitString
+
+BattleScript_DeathEvolutionContrary:
+	printfromtable gStatUpStringIds
+	goto BattleScript_DeathEvolutionEffect_WaitString
+
+BattleScript_DeathEvolutionInReverse::
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUpTarget
+	pause B_WAIT_TIME_SHORT
+	modifybattlerstatstage BS_TARGET, STAT_ATK, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
+	modifybattlerstatstage BS_TARGET, STAT_DEF, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
+	modifybattlerstatstage BS_TARGET, STAT_SPEED, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
+	modifybattlerstatstage BS_TARGET, STAT_SPATK, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
+	modifybattlerstatstage BS_TARGET, STAT_SPDEF, INCREASE, 1, BattleScript_DeathEvolutionLoopIncrement, ANIM_ON
+	call BattleScript_TryDeathEvolutionHoldEffects
+	goto BattleScript_DeathEvolutionLoopIncrement

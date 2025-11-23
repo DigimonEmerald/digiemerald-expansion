@@ -2437,4 +2437,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts ally's Sp. Atk and Atk."),
         .aiRating = 0,
     },
+
+    [ABILITY_DEATH_EVOLUTION] =
+    {
+        .name = _("Death Evolution"),
+        .description = COMPOUND_STRING("Lowers the foe's stats."),
+        .aiRating = 7,
+    },
 };
