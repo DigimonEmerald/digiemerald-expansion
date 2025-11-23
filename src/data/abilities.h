@@ -2466,4 +2466,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Infatuates on contact."),
         .aiRating = 2,
     },
+
+    [ABILITY_SIN_OF_ENVY] =
+    {
+        .name = _("Sin of Envy"),
+        .description = COMPOUND_STRING("Copies foe's stat change."),
+        .aiRating = 5,
+    },
 };

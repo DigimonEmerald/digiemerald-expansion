@@ -5127,6 +5127,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect = 1;
                 }
                 break;
+            case ABILITY_SIN_OF_ENVY:
+                if (gProtectStructs[battler].activateOpportunist == 2)
+                {
+                    gBattleScripting.battler = battler;
+                    gProtectStructs[battler].activateOpportunist--;
+                    ChooseStatBoostAnimation(battler);
+                    BattleScriptPushCursorAndCallback(BattleScript_OpportunistCopyStatChange);
+                    effect = 1;
+                }
+                break;
             }
         }
         break;
