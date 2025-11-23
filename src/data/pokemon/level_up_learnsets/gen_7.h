@@ -1179,7 +1179,7 @@ static const struct LevelUpMove sBukamonLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sBudmonAlolaLevelUpLearnset[] = {
+static const struct LevelUpMove sKodokugumon_itLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 4, MOVE_GROWL),

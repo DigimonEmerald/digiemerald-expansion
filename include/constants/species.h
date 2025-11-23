@@ -969,7 +969,7 @@
 #define SPECIES_POYOMON_ALOLA                         960
 #define SPECIES_RELEMON_ALOLA                            961
 #define SPECIES_SAKUMON_ALOLA                         962
-#define SPECIES_BUDMON_ALOLA                           963
+#define SPECIES_KODOKUGUMON_IT                           963
 #define SPECIES_BUKAMON_ALOLA                           964
 #define SPECIES_CALUMON_ALOLA                            965
 #define SPECIES_CHAPMON_ALOLA                           966

@@ -412,16 +412,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_BUDMON
-
-#if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define BUKAMON_EXP_YIELD 149
-#elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define BUKAMON_EXP_YIELD 142
-#else
-    #define BUKAMON_EXP_YIELD 153
-#endif
-
     [SPECIES_BUDMON] =
     {
         .baseHP        = 25,
@@ -576,72 +566,72 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
                                 {EVO_ITEM, ITEM_SUN_STONE, SPECIES_CORONAMON}),
     },
 
-#if P_ALOLAN_FORMS
-    [SPECIES_BUDMON_ALOLA] =
+    [SPECIES_KODOKUGUMON_IT] =
     {
-        .baseHP        = 10,
-        .baseAttack    = 55,
-        .baseDefense   = 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 35,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 45,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 45,
         .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 81,
-        .evYield_Speed = 1,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 200,
+        .expYield = 70,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_TANGLING_HAIR, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Budmon"),
+        .abilities = { ABILITY_SWARM, ABILITY_STICKY_HOLD, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Kodokugumon"),
         .cryId = CRY_BUDMON,
         .natDexNum = NATIONAL_DEX_BUDMON,
-        .categoryName = _("Mole"),
-        .height = 2,
-        .weight = 10,
+        .categoryName = _("Spider"),
+        .height = 7,
+        .weight = 35,
         .description = COMPOUND_STRING(
-            "The metal-rich geology of its habitat\n"
-            "caused it to develop steel whiskers on its\n"
-            "head that change shape depending on its\n"
-            "mood and when communicating with others."),
+            "Kodokugumon is ranked as one of the\n"
+            "worst digimon to encounter as they are\n"
+            "never alone and will swarm their prey\n"
+            "while a Dokugumon watches over them."),
         .pokemonScale = 833,
         .pokemonOffset = 25,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BudmonAlola,
+        .frontPic = gMonFrontPic_Kodokugumon_it,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 19,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_BudmonAlola,
+        .backPic = gMonBackPic_Kodokugumon_it,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 14,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_BudmonAlola,
-        .shinyPalette = gMonShinyPalette_BudmonAlola,
-        .iconSprite = gMonIcon_BudmonAlola,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Kodokugumon_it,
+        .shinyPalette = gMonShinyPalette_Kodokugumon_it,
+        .iconSprite = gMonIcon_Kodokugumon_it,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         NO_SHADOW
         FOOTPRINT(Budmon)
         OVERWORLD(
-            sPicTable_BudmonAlola,
+            sPicTable_Kodokugumon_it,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BudmonAlola,
-            gShinyOverworldPalette_BudmonAlola
+            gOverworldPalette_Kodokugumon_it,
+            gShinyOverworldPalette_Kodokugumon_it
         )
-        .isAlolanForm = TRUE,
-        .levelUpLearnset = sBudmonAlolaLevelUpLearnset,
-        .teachableLearnset = sBudmonAlolaTeachableLearnset,
-        .eggMoveLearnset = sBudmonAlolaEggMoveLearnset,
+        .levelUpLearnset = sKodokugumon_itLevelUpLearnset,
+        .teachableLearnset = sKodokugumon_itTeachableLearnset,
+        .eggMoveLearnset = sKodokugumon_itEggMoveLearnset,
         .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BUKAMON_ALOLA}),
+        .digivolutions = sKodokugumon_itDigivolveTable,
     },
 
     [SPECIES_BUKAMON_ALOLA] =
@@ -654,7 +644,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 50,
-        .expYield = BUKAMON_EXP_YIELD,
+        .expYield = 155,
         .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -709,8 +699,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sBukamonAlolaTeachableLearnset,
         .formSpeciesIdTable = sBukamonFormSpeciesIdTable,
     },
-#endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_CALUMON
     [SPECIES_CALUMON] =

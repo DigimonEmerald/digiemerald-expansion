@@ -172,7 +172,7 @@ static const u16 sSakumonFormSpeciesIdTable[] = {
 static const u16 sBudmonFormSpeciesIdTable[] = {
     SPECIES_BUDMON,
 #if P_ALOLAN_FORMS
-    SPECIES_BUDMON_ALOLA,
+    SPECIES_KODOKUGUMON_IT,
 #endif
     FORM_SPECIES_END,
 };

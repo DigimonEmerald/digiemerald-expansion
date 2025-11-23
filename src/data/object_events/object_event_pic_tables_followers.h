@@ -434,8 +434,8 @@ static const struct SpriteFrameImage sPicTable_Bukamon[] = {
     overworld_ascending_frames(gObjectEventPic_Bukamon, 4, 4),
 };
 #if P_ALOLAN_FORMS
-static const struct SpriteFrameImage sPicTable_BudmonAlola[] = {
-    overworld_ascending_frames(gObjectEventPic_BudmonAlola, 4, 4),
+static const struct SpriteFrameImage sPicTable_Kodokugumon_it[] = {
+    overworld_ascending_frames(gObjectEventPic_Kodokugumon_it, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_BukamonAlola[] = {
     overworld_ascending_frames(gObjectEventPic_BukamonAlola, 4, 4),

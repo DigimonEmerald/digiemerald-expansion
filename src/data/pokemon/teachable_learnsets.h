@@ -2339,7 +2339,7 @@ static const u16 sBukamonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sBudmonAlolaTeachableLearnset[] = {
+static const u16 sKodokugumon_itTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

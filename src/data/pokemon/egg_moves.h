@@ -425,7 +425,7 @@ static const u16 sBudmonEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #if P_ALOLAN_FORMS
-static const u16 sBudmonAlolaEggMoveLearnset[] = {
+static const u16 sKodokugumon_itEggMoveLearnset[] = {
     MOVE_ANCIENT_POWER,
     MOVE_BEAT_UP,
     MOVE_ENDURE,

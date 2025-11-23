@@ -792,7 +792,7 @@ static const union AnimCmd sAnim_Bukamon_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BudmonAlola);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Kodokugumon_it);
 PLACEHOLDER_ANIM_SINGLE_FRAME(BukamonAlola);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
@@ -10352,7 +10352,7 @@ SINGLE_ANIMATION(Bosamon);
 SINGLE_ANIMATION(Budmon);
 SINGLE_ANIMATION(Bukamon);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(BudmonAlola);
+SINGLE_ANIMATION(Kodokugumon_it);
 SINGLE_ANIMATION(BukamonAlola);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON

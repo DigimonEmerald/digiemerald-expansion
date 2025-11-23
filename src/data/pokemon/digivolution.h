@@ -4585,3 +4585,8 @@ static const struct Digivolution sEtemon_chaosDigivolveTable[] = {
     {178, 59, 149, 137, 161, 53, SPECIES_METALETEMON},
     DIGIVOLUTION_END,
 };
+
+static const struct Digivolution sKodokugumon_itDigivolveTable[] = {
+    {27, 12, 14, 14, 14, 10, SPECIES_KODOKUGUMON},
+    DIGIVOLUTION_END,
+};

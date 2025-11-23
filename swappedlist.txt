@@ -56,6 +56,7 @@ Babydmon - Parasect
 Bibimon - Venonat
 Bosamon - Venomoth
 Budmon - Diglett
+KoDokugumon - Diglet (Alolan)
 Bukamon - Dugtrio
 Calumon - Meowth
 Chapmon - Persian

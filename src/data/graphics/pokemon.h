@@ -2046,16 +2046,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_BudmonAlola[] = INCBIN_U32("graphics/pokemon/budmon/alola/front.4bpp.smol");
-    const u16 gMonPalette_BudmonAlola[] = INCBIN_U16("graphics/pokemon/budmon/alola/normal.gbapal");
-    const u32 gMonBackPic_BudmonAlola[] = INCBIN_U32("graphics/pokemon/budmon/alola/back.4bpp.smol");
-    const u16 gMonShinyPalette_BudmonAlola[] = INCBIN_U16("graphics/pokemon/budmon/alola/shiny.gbapal");
-    const u8 gMonIcon_BudmonAlola[] = INCBIN_U8("graphics/pokemon/budmon/alola/icon.4bpp");
+    const u32 gMonFrontPic_Kodokugumon_it[] = INCBIN_U32("graphics/pokemon/kodokugumon_it/front.4bpp.smol");
+    const u16 gMonPalette_Kodokugumon_it[] = INCBIN_U16("graphics/pokemon/kodokugumon_it/normal.gbapal");
+    const u32 gMonBackPic_Kodokugumon_it[] = INCBIN_U32("graphics/pokemon/kodokugumon_it/back.4bpp.smol");
+    const u16 gMonShinyPalette_Kodokugumon_it[] = INCBIN_U16("graphics/pokemon/kodokugumon_it/shiny.gbapal");
+    const u8 gMonIcon_Kodokugumon_it[] = INCBIN_U8("graphics/pokemon/kodokugumon_it/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BudmonAlola[] = INCBIN_COMP("graphics/pokemon/budmon/alola/overworld.4bpp");
+    const u32 gObjectEventPic_Kodokugumon_it[] = INCBIN_COMP("graphics/pokemon/kodokugumon_it/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BudmonAlola[] = INCBIN_U16("graphics/pokemon/budmon/alola/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BudmonAlola[] = INCBIN_U16("graphics/pokemon/budmon/alola/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kodokugumon_it[] = INCBIN_U16("graphics/pokemon/kodokugumon_it/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kodokugumon_it[] = INCBIN_U16("graphics/pokemon/kodokugumon_it/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

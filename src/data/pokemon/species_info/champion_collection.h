@@ -7336,7 +7336,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Dokugumon,
         .shinyPalette = gMonShinyPalette_Dokugumon,
         .iconSprite = gMonIcon_Dokugumon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_DokugumonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
