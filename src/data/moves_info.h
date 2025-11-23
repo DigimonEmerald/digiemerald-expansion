@@ -21672,6 +21672,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_NightDaze,
     },
 
+    [MOVE_BOLT_BREAK] =
+    {
+        .name = COMPOUND_STRING("Bolt Break"),
+        .description = COMPOUND_STRING(
+            "Forces out all the power of\n"
+            "a digicore fainting the user"),
+        .effect = EFFECT_EXPLOSION,
+        .power = 200,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .parentalBondBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Explosion,
+        .validApprenticeMove = TRUE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

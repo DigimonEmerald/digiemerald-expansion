@@ -9219,8 +9219,7 @@ static const struct LevelUpMove sWizardmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DISABLE),
     LEVEL_UP_MOVE(36, MOVE_MUD_BOMB),
     LEVEL_UP_MOVE(40, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(44, MOVE_WILD_CHARGE), // Bolt Break
-    LEVEL_UP_END
+    LEVEL_UP_MOVE(44, MOVE_BOLT_BREAK),
 };
 
 static const struct LevelUpMove sWoodmonLevelUpLearnset[] = {
