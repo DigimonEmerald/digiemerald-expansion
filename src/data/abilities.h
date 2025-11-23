@@ -2423,4 +2423,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts accuracy at night."),
         .aiRating = 6,
     },
+
+    [ABILITY_PURE_EVIL] =
+    {
+        .name = _("Pure Evil"),
+        .description = COMPOUND_STRING("Ups Dark moves in a pinch."),
+        .aiRating = 5,
+    },
 };
