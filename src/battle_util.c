@@ -8390,6 +8390,12 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             if (IsBattleMoveSpecial(move))
                 modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
+        case ABILITY_DIGI_ENTELECHY:
+            if (IsBattleMoveSpecial(move))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            else if (IsBattleMovePhysical(move))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            break;
         case ABILITY_POWER_SPOT:
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;

@@ -2430,4 +2430,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ups Dark moves in a pinch."),
         .aiRating = 5,
     },
+
+    [ABILITY_DIGI_ENTELECHY] =
+    {
+        .name = _("Digi-Entelechy"),
+        .description = COMPOUND_STRING("Boosts ally's Sp. Atk and Atk."),
+        .aiRating = 0,
+    },
 };
