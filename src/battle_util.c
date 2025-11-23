@@ -202,6 +202,15 @@ static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
         .continuesMessage = B_MSG_WEATHER_TURN_STRONG_WINDS,
         .animation = B_ANIM_STRONG_WINDS,
     },
+
+    [BATTLE_WEATHER_FULL_MOON] =
+    {
+        .flag = B_WEATHER_FULL_MOON,
+        .rock = HOLD_EFFECT_NONE,
+        .endMessage = B_MSG_WEATHER_END_FULL_MOON,
+        .continuesMessage = B_MSG_WEATHER_TURN_FULL_MOON,
+        .animation = B_ANIM_RAIN_CONTINUES, // TODO: ANIMATION
+    },
 };
 
 // Helper function for actual dmg calcs during battle. For simulated AI dmg, CalcTypeEffectivenessMultiplier should be used directly
@@ -9021,6 +9030,12 @@ static uq4_12_t GetWeatherDamageModifier(struct DamageContext *ctx)
         if (ctx->moveType != TYPE_FIRE && ctx->moveType != TYPE_WATER)
             return UQ_4_12(1.0);
         return (ctx->moveType == TYPE_WATER) ? UQ_4_12(0.5) : UQ_4_12(1.5);
+    }
+    if (ctx->weather & B_WEATHER_FULL_MOON)
+    {
+        if (ctx->moveType != TYPE_DARK)
+            return UQ_4_12(1.0);
+        return UQ_4_12(1.5);
     }
     return UQ_4_12(1.0);
 }

@@ -9763,3 +9763,11 @@ BattleScript_MoveEffectConverted::
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_SNOW
 	goto BattleScript_MoveWeatherChange
+
+BattleScript_EffectFullMoon::
+	attackcanceler
+	attackstring
+	ppreduce
+	call BattleScript_CheckPrimalWeather
+	setfieldweather BATTLE_WEATHER_FULL_MOON
+	goto BattleScript_MoveWeatherChange

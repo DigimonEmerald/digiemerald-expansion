@@ -869,5 +869,6 @@ extern const u8 BattleScript_ForfeitBattleGaveMoney[];
 extern const u8 BattleScript_AbilityPopUp[];
 extern const u8 BattleScript_EffectBlessing[];
 extern const u8 BattleScript_MoveEffectConverted[];
+extern const u8 BattleScript_EffectFullMoon[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

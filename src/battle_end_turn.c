@@ -266,6 +266,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             }
         }
         break;
+    case BATTLE_WEATHER_FULL_MOON:
     }
 
     return effect;

@@ -4107,6 +4107,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
         }
         break;
     }
+    case MOVE_EFFECT_FULL_MOON:
     }
 
     gBattleScripting.moveEffect = 0;
@@ -9228,6 +9229,8 @@ static void RemoveAllWeather(void)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_SNOW;
     else if (gBattleWeather & B_WEATHER_FOG)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_FOG;
+    else if (gBattleWeather & B_WEATHER_FULL_MOON)
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_FULL_MOON;
     else
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_COUNT;  // failsafe
 
@@ -9845,6 +9848,9 @@ static void Cmd_setfieldweather(void)
         break;
     case BATTLE_WEATHER_SNOW:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SNOW;
+        break;
+    case BATTLE_WEATHER_FULL_MOON:
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_FULL_MOON;
         break;
     }
 

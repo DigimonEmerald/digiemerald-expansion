@@ -2255,4 +2255,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 5,
         .encourageEncore = TRUE,
     },
+    [EFFECT_FULL_MOON] =
+    {
+        .battleScript = BattleScript_EffectFullMoon,
+        .battleTvScore = 4,
+        .encourageEncore = TRUE,
+    },
 };

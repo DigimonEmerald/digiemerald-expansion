@@ -83,64 +83,64 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_VEEMON"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_SKULLGREYMON"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_AIRDRAMON"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_DEVIMON"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_OMNIMON"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_ROSEMON_BURSTMODE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_VEEMON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VEEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VEEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VEEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VEEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_VEEMON"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_TINKERMON"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_TOYAGUMON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TINKERMON"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_TOYAGUMON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TINKERMON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_TOYAGUMON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TINKERMON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_TOYAGUMON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TINKERMON"
               }
             ]
           }

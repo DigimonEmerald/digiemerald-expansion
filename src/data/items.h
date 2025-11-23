@@ -14595,9 +14595,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("X Antibody"),
         .price = 2100,
         .description = COMPOUND_STRING(
-            "Mutates some\n"
-            "species of\n"
-            "Digimon."),
+            "An antibody that\n"
+            "provides resistance\n"
+            "against Program X."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -14611,9 +14611,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Dark Digitron"),
         .price = 2100,
         .description = COMPOUND_STRING(
-            "Mutates some\n"
-            "species of\n"
-            "Digimon."),
+            "A mysterious\n"
+            "secretion that\n"
+            "mutates digimon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -14627,9 +14627,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Egg of Courage"),
         .price = 2100,
         .description = COMPOUND_STRING(
-            "Allows Digimon\n"
-            "to draw on\n"
-            "external power."),
+            "An ancient item\n"
+            "that allows new\n"
+            "evolutions."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,

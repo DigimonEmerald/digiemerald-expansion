@@ -21298,16 +21298,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The user breathes out spicy\n"
             "flames that always burn."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 55,
         .type = TYPE_FIRE,
         .accuracy = 100,
-        .pp = 30,
+        .pp = 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 100,
+            .chance = 50,
         }),
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -21322,7 +21322,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The user breathes out ice-cold\n"
             "flames that may burn."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 55,
         .type = TYPE_ICE,
         .accuracy = 100,
         .pp = 30,
@@ -21491,8 +21491,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Celestial Cross"),
         .description = COMPOUND_STRING(
-            "The user passes judgement with\n"
-            "with a holy sword. Converts for"),
+            "The user passes judgement\n"
+            "with a holy sword. Converts foe"),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_LIGHT,
@@ -21579,6 +21579,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
+    },
+
+    [MOVE_FULL_MOON] =
+    {
+        .name = COMPOUND_STRING("Full Moon"),
+        .description = COMPOUND_STRING(
+            "Boosts the power of Dark-\n"
+            "type moves for 5 turns."),
+        .effect = EFFECT_FULL_MOON,
+        .power = 0,
+        .type = TYPE_DARK,
+        .accuracy = 0,
+        .pp = 5,
+        .target = MOVE_TARGET_ALL_BATTLERS,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = COMBO_STARTER_RAIN_DANCE,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_RainDance,
+        .validApprenticeMove = TRUE,
     },
     
 
