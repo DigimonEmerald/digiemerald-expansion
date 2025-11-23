@@ -2473,4 +2473,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Copies foe's stat change."),
         .aiRating = 5,
     },
+
+    [ABILITY_SIN_OF_GREED] =
+    {
+        .name = _("Sin of Greed"),
+        .description = COMPOUND_STRING("Prevents item theft."),
+        .aiRating = 3,
+        .breakable = TRUE,
+    },
 };

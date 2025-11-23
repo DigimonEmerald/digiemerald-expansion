@@ -427,6 +427,7 @@ BattleScript_EffectCorrosiveGas::
 	attackanimation
 	waitanimation
 	jumpifability BS_TARGET, ABILITY_STICKY_HOLD, BattleScript_StickyHoldActivates
+	jumpifability BS_TARGET, ABILITY_SIN_OF_GREED, BattleScript_StickyHoldActivates
 	setlastuseditem BS_TARGET
 	removeitem BS_TARGET
 	printstring STRINGID_PKMNITEMMELTED
@@ -9123,6 +9124,7 @@ BattleScript_RemoveTerrain::
 BattleScript_Pickpocket::
 	call BattleScript_AbilityPopUp
 	jumpifability BS_ATTACKER, ABILITY_STICKY_HOLD, BattleScript_PickpocketPrevented
+	jumpifability BS_ATTACKER, ABILITY_SIN_OF_GREED, BattleScript_PickpocketPrevented
 	swapattackerwithtarget
 	copybyte gEffectBattler, gBattlerTarget
 	call BattleScript_ItemSteal

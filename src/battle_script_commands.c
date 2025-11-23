@@ -3501,7 +3501,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
             gBattlescriptCurrInstr++;
         }
         else if (GetItemPocket(gBattleMons[gEffectBattler].item) == POCKET_BERRIES
-            && battlerAbility != ABILITY_STICKY_HOLD)
+            && battlerAbility != ABILITY_STICKY_HOLD && battlerAbility != ABILITY_SIN_OF_GREED)
         {
             // target loses their berry
             gLastUsedItem = gBattleMons[gEffectBattler].item;
@@ -5652,7 +5652,8 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
                  && CanStealItem(battlerAtk, i, gBattleMons[i].item)
                  && !(gWishFutureKnock.knockedOffMons[GetBattlerSide(i)] & (1u << gBattlerPartyIndexes[i]))
                  && !DoesSubstituteBlockMove(battlerAtk, i, move)
-                 && (GetBattlerAbility(i) != ABILITY_STICKY_HOLD || !IsBattlerAlive(i)))
+                 && (GetBattlerAbility(i) != ABILITY_STICKY_HOLD || !IsBattlerAlive(i))
+                 && (GetBattlerAbility(i) != ABILITY_SIN_OF_GREED || !IsBattlerAlive(i)))
                 {
                     magicianTargets |= 1u << i;
                     numMagicianTargets++;
@@ -5828,7 +5829,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
         {
             effect = FALSE;
         }
-        else if (GetBattlerAbility(gBattlerTarget) == ABILITY_STICKY_HOLD)
+        else if (GetBattlerAbility(gBattlerTarget) == ABILITY_STICKY_HOLD || ABILITY_SIN_OF_GREED)
         {
             BattleScriptCall(BattleScript_NoItemSteal);
             gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
@@ -6888,7 +6889,8 @@ static void Cmd_moveend(void)
                     {
                         gBattlerTarget = gBattlerAbility = battler;
                         // Battle scripting is super brittle so we shall do the item exchange now (if possible)
-                        if (GetBattlerAbility(gBattlerAttacker) != ABILITY_STICKY_HOLD)
+                        if (GetBattlerAbility(gBattlerAttacker) != ABILITY_STICKY_HOLD 
+                            && GetBattlerAbility(gBattlerAttacker) != ABILITY_SIN_OF_GREED)
                             StealTargetItem(gBattlerTarget, gBattlerAttacker);  // Target takes attacker's item
 
                         gEffectBattler = gBattlerAttacker;
@@ -8409,6 +8411,11 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
             moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * 2 * trainerMoney;
         else
             moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney;
+            if (GetBattlerAbility(gEffectBattler) == ABILITY_SIN_OF_GREED)
+            {
+                moneyReward = moneyReward * 3;
+            }
+            
     }
 
     return moneyReward;
@@ -12995,7 +13002,7 @@ static void Cmd_tryswapitems(void)
             gBattlescriptCurrInstr = cmd->failInstr;
         }
         // check if ability prevents swapping
-        else if (GetBattlerAbility(gBattlerTarget) == ABILITY_STICKY_HOLD)
+        else if (GetBattlerAbility(gBattlerTarget) == ABILITY_STICKY_HOLD && GetBattlerAbility(gBattlerTarget) == ABILITY_SIN_OF_GREED)
         {
             gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
             gLastUsedAbility = gBattleMons[gBattlerTarget].ability;

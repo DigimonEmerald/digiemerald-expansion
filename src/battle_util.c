@@ -4476,6 +4476,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_SIN_OF_GREED:
+            if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
+            {
+                gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
+                gBattlerAbility = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
+                effect++;
+            }
+            break;
         case ABILITY_JUSTIFIED:
             if (IsBattlerTurnDamaged(battler)
              && IsBattlerAlive(battler)
