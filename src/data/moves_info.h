@@ -21354,6 +21354,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        .punchingMove = TRUE,
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -21606,6 +21607,25 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
     
+    [MOVE_GATLING] =
+    {
+        .name = COMPOUND_STRING("Gatling"),
+        .description = COMPOUND_STRING(
+            "A barrage of bullets shoot\n"
+            "randomly at any foes."),
+        .effect = EFFECT_HIT,
+        .power = 65,
+        .type = TYPE_STEEL,
+        .accuracy = 90,
+        .pp = 15,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
