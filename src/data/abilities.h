@@ -2459,4 +2459,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 9,
         .breakable = TRUE,
     },
+
+    [ABILITY_SIN_OF_LUST] =
+    {
+        .name = _("Sin of Lust"),
+        .description = COMPOUND_STRING("Infatuates on contact."),
+        .aiRating = 2,
+    },
 };
