@@ -2495,4 +2495,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Always holds a berry"),
         .aiRating = 3,
     },
+
+    [ABILITY_SIN_OF_PRIDE] =
+    {
+        .name = _("Sin of Pride"),
+        .description = COMPOUND_STRING("KOs heals user."),
+        .aiRating = 7,
+    },
 };

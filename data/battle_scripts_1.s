@@ -9864,3 +9864,14 @@ BattleScript_UpdateAbilityEffectSinOfSlothIconRet::
 	trytriggerstatusform
 	flushtextbox
 	return
+
+BattleScript_SinOfPrideActivates::
+	copybyte gBattlerAbility, gBattlerAttacker
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_SINOFPRIDEHPUP
+	waitmessage B_WAIT_TIME_LONG
+	statusanimation BS_ATTACKER
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	end2

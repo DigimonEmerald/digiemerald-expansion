@@ -5718,6 +5718,24 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
             }
         }
         break;
+    case ABILITY_SIN_OF_PRIDE:
+        {
+            if (!IsBattlerAlive(battlerAtk) || NoAliveMonsForEitherParty())
+                break;
+            
+            u32 numMonsFainted = NumFaintedBattlersByAttacker(battlerAtk);
+
+            if (!IsBattlerAtMaxHp(battlerAtk) && !gBattleMons[battlerAtk].volatiles.healBlock && numMonsFainted)
+            {
+                gBattleStruct->moveDamage[battlerAtk] = GetNonDynamaxMaxHP(battlerAtk) / 4;
+                if (gBattleStruct->moveDamage[battlerAtk] == 0)
+                    gBattleStruct->moveDamage[battlerAtk] = 1;
+                gBattleStruct->moveDamage[battlerAtk] *= -1;
+                BattleScriptExecute(BattleScript_SinOfPrideActivates);
+                effect = TRUE;
+            }
+        }
+        break;
     case ABILITY_BATTLE_BOND:
         {
             if (!IsBattlerAlive(battlerAtk)
@@ -10402,20 +10420,7 @@ static u32 ChangeStatBuffs(u32 battler, s8 statValue, u32 statId, union StatChan
             }
             return STAT_CHANGE_DIDNT_WORK;
         }
-        else if (battlerAbility == ABILITY_MIRROR_ARMOR && !flags.mirrorArmored && gBattlerAttacker != gBattlerTarget && battler == gBattlerTarget)
-        {
-            if (flags.allowPtr)
-            {
-                SET_STATCHANGER(statId, GET_STAT_BUFF_VALUE(statValue) | STAT_BUFF_NEGATIVE, TRUE);
-                BattleScriptPush(BS_ptr);
-                gBattleScripting.battler = battler;
-                gBattlerAbility = battler;
-                gBattlescriptCurrInstr = BattleScript_MirrorArmorReflect;
-                RecordAbilityBattle(battler, gBattleMons[battler].ability);
-            }
-            return STAT_CHANGE_DIDNT_WORK;
-        }
-        else if (battlerAbility == ABILITY_SIN_OF_WRATH && !flags.mirrorArmored && gBattlerAttacker != gBattlerTarget && battler == gBattlerTarget)
+        else if ((battlerAbility == ABILITY_MIRROR_ARMOR || ABILITY_SIN_OF_WRATH) && !flags.mirrorArmored && gBattlerAttacker != gBattlerTarget && battler == gBattlerTarget)
         {
             if (flags.allowPtr)
             {
