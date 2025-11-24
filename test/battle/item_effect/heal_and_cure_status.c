@@ -17,18 +17,14 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures any primary s
     PARAMETRIZE { status = STATUS1_SLEEP; }
     PARAMETRIZE { status = STATUS1_NONE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(300); Status1(status); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(300); Status1(status); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Lopmonx had its HP restored!");
-=======
-        MESSAGE("Lopmonx had its HP restored.");
->>>>>>> upstream/master
+        MESSAGE("Wobbuffet had its HP restored.");
         if (status != STATUS1_NONE) {
-            MESSAGE("Lopmonx had its status healed!"); // The message is not printed if status wasn't healed.
+            MESSAGE("Wobbuffet had its status healed!"); // The message is not printed if status wasn't healed.
         }
     } THEN {
         EXPECT_EQ(player->hp, player->maxHP);
@@ -47,24 +43,20 @@ SINGLE_BATTLE_TEST("Full Restore restores a party members HP and cures any prima
     PARAMETRIZE { status = STATUS1_SLEEP; }
     PARAMETRIZE { status = STATUS1_NONE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(300); Status1(status); }
-        PLAYER(SPECIES_EXVEEMON) { HP(1); MaxHP(300); Status1(status); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(100); MaxHP(300); Status1(status); }
+        PLAYER(SPECIES_WYNAUT) { HP(100); MaxHP(300); Status1(status); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 1); }
         TURN { SWITCH(player, 1); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Exveemon had its HP restored!");
-=======
-        MESSAGE("Exveemon had its HP restored.");
->>>>>>> upstream/master
+        MESSAGE("Wynaut had its HP restored.");
         if (status != STATUS1_NONE) {
-            MESSAGE("Exveemon had its status healed!"); // The message is not printed if status wasn't healed.
+            MESSAGE("Wynaut had its status healed!"); // The message is not printed if status wasn't healed.
         }
     } THEN {
         EXPECT_EQ(player->hp, player->maxHP);
-        EXPECT_EQ(player->species, SPECIES_EXVEEMON);
+        EXPECT_EQ(player->species, SPECIES_WYNAUT);
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }
 }
@@ -79,18 +71,13 @@ SINGLE_BATTLE_TEST("Full Restore heals a battler from any primary status")
     PARAMETRIZE { status = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status = STATUS1_SLEEP; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Status1(status); }
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
     } SCENE {
-<<<<<<< HEAD
-        NOT MESSAGE("Lopmonx had its HP restored!"); // The message is not printed if mon has max HP.
-        MESSAGE("Lopmonx had its status healed!");
-=======
-        NOT MESSAGE("Lopmonx had its HP restored."); // The message is not printed if mon has max HP.
-        MESSAGE("Lopmonx had its status healed!");
->>>>>>> upstream/master
+        NOT MESSAGE("Wobbuffet had its HP restored."); // The message is not printed if mon has max HP.
+        MESSAGE("Wobbuffet had its status healed!");
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }
@@ -106,22 +93,17 @@ SINGLE_BATTLE_TEST("Full Restore heals a party member from any primary status")
     PARAMETRIZE { status = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status = STATUS1_SLEEP; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON) { Status1(status); }
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT) { Status1(status); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 1); }
         TURN { SWITCH(player, 1); }
     } SCENE {
-<<<<<<< HEAD
-        NOT MESSAGE("Exveemon had its HP restored!"); // The message is not printed if mon has max HP.
-        MESSAGE("Exveemon had its status healed!");
-=======
-        NOT MESSAGE("Exveemon had its HP restored."); // The message is not printed if mon has max HP.
-        MESSAGE("Exveemon had its status healed!");
->>>>>>> upstream/master
+        NOT MESSAGE("Wynaut had its HP restored."); // The message is not printed if mon has max HP.
+        MESSAGE("Wynaut had its status healed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_EXVEEMON);
+        EXPECT_EQ(player->species, SPECIES_WYNAUT);
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }
 }
@@ -129,20 +111,15 @@ SINGLE_BATTLE_TEST("Full Restore heals a party member from any primary status")
 SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures confusion")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(300); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(300); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN{ MOVE(opponent, MOVE_CONFUSE_RAY); }
         TURN{ USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
         TURN{ MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Lopmonx had its HP restored!");
-        NONE_OF { MESSAGE("Lopmonx is confused!"); }
-=======
-        MESSAGE("Lopmonx had its HP restored.");
-        NONE_OF { MESSAGE("Lopmonx is confused!"); }
->>>>>>> upstream/master
+        MESSAGE("Wobbuffet had its HP restored.");
+        NONE_OF { MESSAGE("Wobbuffet is confused!"); }
     } THEN {
         EXPECT_EQ(player->hp, player->maxHP);
     }
@@ -151,22 +128,16 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures confusion")
 SINGLE_BATTLE_TEST("Full Restore resets Toxic Counter")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC); }
         TURN { ; }
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx used Toxic!");
-        MESSAGE("Lopmonx had its HP restored!");
-        MESSAGE("Lopmonx had its status healed!");
-=======
-        MESSAGE("The opposing Lopmonx used Toxic!");
-        MESSAGE("Lopmonx had its HP restored.");
-        MESSAGE("Lopmonx had its status healed!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet used Toxic!");
+        MESSAGE("Wobbuffet had its HP restored.");
+        MESSAGE("Wobbuffet had its status healed!");
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }
