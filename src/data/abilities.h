@@ -2487,6 +2487,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Sin of Sloth"),
         .description = COMPOUND_STRING("Starts battle asleep."),
         .aiRating = 3,
-        .breakable = TRUE,
+    },
+
+    [ABILITY_SIN_OF_GLUTTONY] =
+    {
+        .name = _("Sin of Gluttony"),
+        .description = COMPOUND_STRING("Always holds a berry"),
+        .aiRating = 3,
     },
 };

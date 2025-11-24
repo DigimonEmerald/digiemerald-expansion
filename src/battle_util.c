@@ -113,6 +113,62 @@ struct BattleWeatherInfo
     u8 animation;
 };
 
+struct GluttonyItem
+{
+    u16 itemId;
+    u8 percentage[10];
+};
+
+static const struct GluttonyItem sGluttonyTable[] =
+{//   Item                      1+  11+  21+  31+  41+  51+  61+  71+  81+  91+   Levels
+    { ITEM_AGUAV_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_APICOT_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_ASPEAR_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_BABIRI_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CHARTI_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CHERI_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CHESTO_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CHILAN_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CHOPLE_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_COBA_BERRY,       {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_COLBUR_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_CUSTAP_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_ENIGMA_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_FIGY_BERRY,       {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_HABAN_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_IAPAPA_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_JABOCA_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_KASIB_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_KEBIA_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_KEE_BERRY,        {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_LANSAT_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_LEPPA_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_LIECHI_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_LUM_BERRY,        {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_MAGO_BERRY,       {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_MARANGA_BERRY,    {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_MICLE_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_OCCA_BERRY,       {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_ORAN_BERRY,       {  6,   6,   6,   6,   6,   6,   6,   6,   6,   6, } },
+    { ITEM_PASSHO_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_PAYAPA_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_PECHA_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_PERSIM_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_PETAYA_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_RAWST_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_RINDO_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_ROSELI_BERRY,     {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_ROWAP_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_SALAC_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_SHUCA_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_SITRUS_BERRY,     {  6,   6,   6,   6,   6,   6,   6,   6,   6,   6, } },
+    { ITEM_STARF_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_TANGA_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_WACAN_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_WIKI_BERRY,       {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+    { ITEM_YACHE_BERRY,      {  2,   2,   2,   2,   2,   2,   2,   2,   2,   2, } },
+};
+
 static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
 {
     [BATTLE_WEATHER_RAIN] =
@@ -5050,6 +5106,25 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 BattleScriptCall(BattleScript_AbilityStatusEffect);
                 effect++;
             }
+            break;
+        case ABILITY_SIN_OF_GLUTTONY:
+            if (IsBattlerAlive(gBattlerAttacker)
+                && gBattleMons[battler].item == ITEM_NONE)
+                {
+                    u32 rand = Random() % 100;
+                    u32 percentTotal = 0;
+                    u8 lvlDivBy10;
+                    lvlDivBy10 = (GetMonData(&gPlayerParty[i], MON_DATA_LEVEL)-1) / 10;
+
+                    for (j = 0; j < ARRAY_COUNT(sGluttonyTable); j++)
+                    {
+                        percentTotal += sGluttonyTable[j].percentage[lvlDivBy10];
+                        if (rand < percentTotal)
+                        {
+                            SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sGluttonyTable[j].itemId);
+                        }
+                    }
+                }
             break;
         case ABILITY_TOXIC_CHAIN:
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
@@ -12202,3 +12277,4 @@ bool32 IsAffectedByPowderMove(u32 battler, u32 ability, enum ItemHoldEffect hold
         return FALSE;
     return TRUE;
 }
+
