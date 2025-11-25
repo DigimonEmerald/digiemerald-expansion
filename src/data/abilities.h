@@ -2537,4 +2537,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Confuses foe on contact."),
         .aiRating = 4,
     },
+
+    [ABILITY_MESSAGE_RECIEVED] =
+    {
+        .name = _("Message Recieved"),
+        .description = COMPOUND_STRING("Contact moves go first."),
+        .aiRating = 7,
+    },
 };

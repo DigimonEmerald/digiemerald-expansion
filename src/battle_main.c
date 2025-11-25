@@ -4866,6 +4866,10 @@ s32 GetBattleMovePriority(u32 battler, u32 ability, u32 move)
     {
         priority += 3;
     }
+    else if (ability == ABILITY_MESSAGE_RECIEVED && MoveMakesContact(move))
+    {
+        priority += 1;
+    }
 
     return priority;
 }
