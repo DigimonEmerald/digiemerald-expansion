@@ -2516,4 +2516,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Increases EXP."),
         .aiRating = 3,
     },
+
+    [ABILITY_BIG_HEAD] =
+    {
+        .name = _("Big Head"),
+        .description = COMPOUND_STRING("Boosts head moves."),
+        .aiRating = 6,
+    },
 };

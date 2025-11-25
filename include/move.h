@@ -102,6 +102,7 @@ struct MoveInfo
     bool32 ignoresTargetAbility:1;
     bool32 ignoresTargetDefenseEvasionStages:1;
     bool32 damagesUnderground:1;
+    bool32 headMove:1;
     // end of word
     bool32 damagesUnderwater:1;
     bool32 damagesAirborne:1;
@@ -609,6 +610,11 @@ static inline const u8 *GetMoveBattleScript(u32 moveId)
         return gBattleMoveEffects[EFFECT_PLACEHOLDER].battleScript;
     }
     return gBattleMoveEffects[GetMoveEffect(moveId)].battleScript;
+}
+
+static inline bool32 IsHeadMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].headMove;
 }
 
 #endif // GUARD_MOVES_H
