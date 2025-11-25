@@ -2523,4 +2523,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts head moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_GOD_OF_THUNDER] =
+    {
+        .name = _("God of Thunder"),
+        .description = COMPOUND_STRING("Boosts electric moves."),
+        .aiRating = 2,
+    },
 };
