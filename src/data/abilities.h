@@ -2502,4 +2502,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("KOs heals user."),
         .aiRating = 7,
     },
+
+    [ABILITY_MILLIONAIRE] =
+    {
+        .name = _("Millionaire"),
+        .description = COMPOUND_STRING("Doubles earnings."),
+        .aiRating = 3,
+    },
+
+    [ABILITY_EXP_BOOST] =
+    {
+        .name = _("EXP Boost"),
+        .description = COMPOUND_STRING("Increases EXP."),
+        .aiRating = 3,
+    },
 };

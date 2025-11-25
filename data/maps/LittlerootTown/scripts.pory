@@ -1020,8 +1020,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 script LittlerootTown_EventScript_Test {
     lock
     msgbox(format("I forgot to remove some testing stuff"))
-	givemon(SPECIES_CREEPYMON, 20)
-	giveitem(ITEM_TOXIC_ORB)
+	givemon(SPECIES_PLATINUMSUKAMON, 20)
+	giveitem(ITEM_ABILITY_PATCH)
 	setflag(FLAG_BADGE08_GET)
     release
 }

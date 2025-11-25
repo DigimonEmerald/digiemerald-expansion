@@ -8427,6 +8427,10 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
             {
                 moneyReward = moneyReward * 3;
             }
+            if (GetBattlerAbility(gEffectBattler) == ABILITY_MILLIONAIRE)
+            {
+                moneyReward = moneyReward * 2;
+            }
             
     }
 
@@ -15144,6 +15148,7 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
     enum ItemHoldEffect holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
+    u32 partner = BATTLE_PARTNER(gBattlerAttacker);
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
@@ -15154,7 +15159,12 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
     if (B_AFFECTION_MECHANICS == TRUE && GetMonAffectionHearts(&gPlayerParty[expGetterMonId]) >= AFFECTION_FOUR_HEARTS)
         *expAmount = (*expAmount * 4915) / 4096;
     if (CheckBagHasItem(ITEM_EXP_CHARM, 1)) //is also for other exp boosting Powers if/when implemented
+        *expAmount = (*expAmount * 150) / 100; 
+    if (GetBattlerAbility(gBattlerAttacker) == ABILITY_EXP_BOOST)
         *expAmount = (*expAmount * 150) / 100;
+    if (IsDoubleBattle() && IsAbilityOnSide(partner, ABILITY_EXP_BOOST))
+        *expAmount = (*expAmount * 150) / 100;
+    
 
     if (B_SCALED_EXP >= GEN_5 && B_SCALED_EXP != GEN_6)
     {
