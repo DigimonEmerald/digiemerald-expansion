@@ -2530,4 +2530,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts electric moves."),
         .aiRating = 2,
     },
+
+    [ABILITY_DRUNKEN_AROMA] =
+    {
+        .name = _("Drunken Aroma"),
+        .description = COMPOUND_STRING("Confuses foe on contact."),
+        .aiRating = 4,
+    },
 };
