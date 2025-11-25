@@ -3665,10 +3665,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
             }
             break;
-        case ABILITY_SIN_OF_SLOTH:
-                gBattleMons[gBattlerAttacker].status1 = STATUS1_SLEEP;
-                BattleScriptExecute(BattleScript_SinOfSloth);
-                break;
         case ABILITY_IMPOSTER:
             {
                 u32 diagonalBattler = BATTLE_OPPOSITE(battler);
@@ -4025,17 +4021,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_DEATH_EVOLUTION:
-            if (!gSpecialStatuses[battler].switchInAbilityDone && !IsOpposingSideEmpty(battler))
-            {
-                SaveBattlerAttacker(gBattlerAttacker);
-                gBattlerAttacker = battler;
-                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                SET_STATCHANGER(STAT_ATK, 1, TRUE);
-                BattleScriptPushCursorAndCallback(BattleScript_DeathEvolutionActivates);
-                effect++;
-            }
-            break;
         case ABILITY_SUPERSWEET_SYRUP:
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && !GetBattlerPartyState(battler)->supersweetSyrup
@@ -4301,6 +4286,21 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_DEATH_EVOLUTION:
+            if (!gSpecialStatuses[battler].switchInAbilityDone && !IsOpposingSideEmpty(battler))
+            {
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_ATK, 1, TRUE);
+                BattleScriptPushCursorAndCallback(BattleScript_DeathEvolutionActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_SIN_OF_SLOTH:
+                gBattleMons[gBattlerAttacker].status1 = STATUS1_SLEEP;
+                BattleScriptExecute(BattleScript_SinOfSloth);
+                break;
         }
         break;
     case ABILITYEFFECT_ENDTURN:
@@ -4542,16 +4542,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         switch (gLastUsedAbility)
         {
         case ABILITY_STICKY_HOLD:
-            if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
-            {
-                gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
-                gBattlerAbility = gBattlerTarget;
-                BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
-                effect++;
-            }
-            break;
-        case ABILITY_SIN_OF_GREED:
             if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
             {
                 gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
@@ -4915,21 +4905,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_SIN_OF_LUST:
-            if (IsBattlerAlive(gBattlerAttacker)
-             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
-             && IsBattlerTurnDamaged(gBattlerTarget)
-             && IsBattlerAlive(gBattlerTarget)
-             && !(gBattleMons[gBattlerAttacker].volatiles.infatuation)
-             && !IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_OBLIVIOUS)
-             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
-             && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL))
-            {
-                gBattleMons[gBattlerAttacker].volatiles.infatuation = INFATUATED_WITH(gBattlerTarget);
-                BattleScriptCall(BattleScript_CuteCharmActivates);
-                effect++;
-            }
-            break;
         case ABILITY_ILLUSION:
             if (gBattleStruct->illusion[gBattlerTarget].state == ILLUSION_ON && IsBattlerTurnDamaged(gBattlerTarget))
             {
@@ -5083,6 +5058,31 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gBattlerAttacker = gBattlerTarget;
                 gBattlerTarget = BATTLE_OPPOSITE(gBattlerAttacker);
                 BattleScriptCall(BattleScript_ToxicDebrisActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_SIN_OF_LUST:
+            if (IsBattlerAlive(gBattlerAttacker)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerAlive(gBattlerTarget)
+             && !(gBattleMons[gBattlerAttacker].volatiles.infatuation)
+             && !IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_OBLIVIOUS)
+             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+             && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL))
+            {
+                gBattleMons[gBattlerAttacker].volatiles.infatuation = INFATUATED_WITH(gBattlerTarget);
+                BattleScriptCall(BattleScript_CuteCharmActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_SIN_OF_GREED:
+            if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
+            {
+                gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
+                gBattlerAbility = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
                 effect++;
             }
             break;
@@ -8638,18 +8638,18 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             if (IsBattleMoveSpecial(move))
                 modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
-        case ABILITY_DIGI_ENTELECHY:
-            if (IsBattleMoveSpecial(move))
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-            else if (IsBattleMovePhysical(move))
-                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
-            break;
         case ABILITY_POWER_SPOT:
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
         case ABILITY_STEELY_SPIRIT:
             if (moveType == TYPE_STEEL)
                 modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_DIGI_ENTELECHY:
+            if (IsBattleMoveSpecial(move))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            else if (IsBattleMovePhysical(move))
+                modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
         }
     }
@@ -8896,10 +8896,6 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (moveType == TYPE_LIGHT && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_PURE_EVIL:
-        if (moveType == TYPE_DARK && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-        break;
     case ABILITY_PLUS:
         if (IsBattleMoveSpecial(move) && IsBattlerAlive(BATTLE_PARTNER(battlerAtk)))
         {
@@ -8984,6 +8980,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
     case ABILITY_HADRON_ENGINE:
         if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && IsBattleMoveSpecial(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3333));
+        break;
+    case ABILITY_PURE_EVIL:
+        if (moveType == TYPE_DARK && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     }
 
@@ -12026,12 +12026,6 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         effect = TRUE;
         ability = ABILITY_NO_GUARD;
     }
-    else if (abilityAtk == ABILITY_OMEGA_INFORCE
-          && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER
-          && (moveEffect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[battlerDef] == SKY_DROP_NO_TARGET))
-    {
-        effect = TRUE;
-    }
     // If the target has the ability No Guard and they aren't involved in a Sky Drop or the current move isn't Sky Drop, move hits.
     else if (abilityDef == ABILITY_NO_GUARD
           && (moveEffect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[battlerDef] == SKY_DROP_NO_TARGET))
@@ -12074,6 +12068,12 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         effect = TRUE;
     }
     else if (GetMoveAccuracy(move) == 0)
+    {
+        effect = TRUE;
+    }
+    else if (abilityAtk == ABILITY_OMEGA_INFORCE
+          && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER
+          && (moveEffect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[battlerDef] == SKY_DROP_NO_TARGET))
     {
         effect = TRUE;
     }

@@ -1219,19 +1219,12 @@ static void Cmd_attackcanceler(void)
         }
         else if (IsDoubleBattle()
               && GetBattlerMoveTargetType(battler, gCurrentMove) == MOVE_TARGET_OPPONENTS_FIELD
-              && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) == ABILITY_MAGIC_BOUNCE)
+              && (GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) == ABILITY_MAGIC_BOUNCE || ABILITY_SIN_OF_WRATH))
         {
             gBattlerTarget = battler = BATTLE_PARTNER(gBattlerTarget);
             gBattleStruct->bouncedMoveIsUsed = TRUE;
         }
-        else if (IsDoubleBattle()
-              && GetBattlerMoveTargetType(battler, gCurrentMove) == MOVE_TARGET_OPPONENTS_FIELD
-              && GetBattlerAbility(BATTLE_PARTNER(gBattlerTarget)) == ABILITY_SIN_OF_WRATH)
-        {
-            gBattlerTarget = battler = BATTLE_PARTNER(gBattlerTarget);
-            gBattleStruct->bouncedMoveIsUsed = TRUE;
-        }
-
+        
         if (gBattleStruct->bouncedMoveIsUsed)
         {
             ClearDamageCalcResults();
