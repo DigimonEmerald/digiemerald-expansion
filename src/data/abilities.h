@@ -2544,4 +2544,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Contact moves go first."),
         .aiRating = 7,
     },
+
+    [ABILITY_BIO_HYBRID_DNA] =
+    {
+        .name = _("Bio-Hybird DNA"),
+        .description = COMPOUND_STRING("Body is toxic to others."),
+        .aiRating = 3,
+    },
 };

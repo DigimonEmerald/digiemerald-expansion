@@ -5086,6 +5086,23 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_BIO_HYBRID_DNA:
+            u32 abilityAtk = GetBattlerAbility(gBattlerAttacker);
+            if (IsBattlerAlive(gBattlerAttacker)
+            && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+            && IsBattlerTurnDamaged(gBattlerTarget)
+            && IsBitingMove(gCurrentMove)
+            && CanBePoisoned(gBattlerTarget, gBattlerAttacker, gLastUsedAbility, abilityAtk)
+            && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, abilityAtk, GetBattlerHoldEffect(gBattlerAttacker, TRUE), move))
+            {
+                gEffectBattler = gBattlerAttacker;
+                gBattleScripting.battler = gBattlerTarget;
+                gBattleScripting.moveEffect = MOVE_EFFECT_TOXIC;
+                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                BattleScriptCall(BattleScript_AbilityStatusEffect);
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_ATTACKER: // Same as above, but for attacker
