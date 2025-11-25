@@ -4301,7 +4301,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gBattleMons[gBattlerAttacker].status1 = STATUS1_SLEEP;
                 BattleScriptExecute(BattleScript_SinOfSloth);
                 break;
-        }
         case ABILITY_HOLY_AURA:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
@@ -4320,6 +4319,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        }
         break;
     case ABILITYEFFECT_ENDTURN:
         if (IsBattlerAlive(battler))

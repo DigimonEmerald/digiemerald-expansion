@@ -4870,7 +4870,10 @@ s32 GetBattleMovePriority(u32 battler, u32 ability, u32 move)
     {
         priority += 1;
     }
-
+    else if (ability == ABILITY_KINGS_PRIVILEGE && gDisableStructs[battler].isFirstTurn)
+{
+        priority += 3;
+    }
     return priority;
 }
 

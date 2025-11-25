@@ -2565,4 +2565,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts Ghost moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_KINGS_PRIVILEGE] =
+    {
+        .name = _("King's Privilege"),
+        .description = COMPOUND_STRING("Goes first on first turn."),
+        .aiRating = 7,
+    },
 };
