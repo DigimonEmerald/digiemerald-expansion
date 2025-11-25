@@ -4302,6 +4302,24 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 BattleScriptExecute(BattleScript_SinOfSloth);
                 break;
         }
+        case ABILITY_HOLY_AURA:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_HOLYAURA;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
+        case ABILITY_DEATH_AURA:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_DEATHAURA;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
         break;
     case ABILITYEFFECT_ENDTURN:
         if (IsBattlerAlive(battler))
@@ -8668,6 +8686,12 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.75));
         else
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.33));
+    }
+
+    if ((IsAbilityOnField(ABILITY_HOLY_AURA) && moveType == TYPE_LIGHT)
+     || (IsAbilityOnField(ABILITY_DEATH_AURA) && moveType == TYPE_GHOST))
+    {
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.33));
     }
 
     // attacker partner's abilities

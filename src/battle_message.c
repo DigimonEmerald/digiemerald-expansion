@@ -902,6 +902,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_FULLMOONCONTINUES]                    = COMPOUND_STRING("The moon continues to shine."),
     [STRINGID_PKMNCUTSSTATSWITH]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} cuts {B_DEF_NAME_WITH_PREFIX2}'s Stats!"),
     [STRINGID_SINOFPRIDEHPUP]                       = COMPOUND_STRING("The destruction healed {B_ATK_NAME_WITH_PREFIX2} a little bit!"),
+    [STRINGID_HOLYAURAENTERS]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a holy aura!"),
+    [STRINGID_DEATHAURAENTERS]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a deathly aura!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -999,6 +1001,8 @@ const u16 gSwitchInAbilityStringIds[] =
     [B_MSG_SWITCHIN_CURIOUS_MEDICINE] = STRINGID_CURIOUSMEDICINEENTERS,
     [B_MSG_SWITCHIN_PASTEL_VEIL] = STRINGID_PASTELVEILENTERS,
     [B_MSG_SWITCHIN_NEUTRALIZING_GAS] = STRINGID_NEUTRALIZINGGASENTERS,
+    [B_MSG_SWITCHIN_HOLYAURA] = STRINGID_HOLYAURAENTERS,
+    [B_MSG_SWITCHIN_DEATHAURA] = STRINGID_DEATHAURAENTERS,
 };
 
 const u16 gMissStringIds[] =

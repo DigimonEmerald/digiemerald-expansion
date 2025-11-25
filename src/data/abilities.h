@@ -2551,4 +2551,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Body is toxic to others."),
         .aiRating = 3,
     },
+
+    [ABILITY_HOLY_AURA] =
+    {
+        .name = _("Holy Aura"),
+        .description = COMPOUND_STRING("Boosts Light moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_DEATH_AURA] =
+    {
+        .name = _("Death Aura"),
+        .description = COMPOUND_STRING("Boosts Ghost moves."),
+        .aiRating = 6,
+    },
 };
