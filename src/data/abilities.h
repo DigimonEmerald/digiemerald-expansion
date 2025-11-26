@@ -2572,4 +2572,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Goes first on first turn."),
         .aiRating = 7,
     },
+
+    [ABILITY_SOUND_BOOST] =
+    {
+        .name = _("Sound Boost"),
+        .description = COMPOUND_STRING("Boosts sound moves."),
+        .aiRating = 6,
+    },
 };

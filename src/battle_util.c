@@ -8676,6 +8676,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (moveType == TYPE_ELECTRIC)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_SOUND_BOOSTS:
+        if (IsSoundMove(move))
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
     }
 
     // field abilities
