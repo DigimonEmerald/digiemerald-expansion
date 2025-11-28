@@ -2671,4 +2671,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Dealing damage heals user."),
         .aiRating = 3,
     },
+
+    [ABILITY_GROUNDED] =
+    {
+        .name = _("Grounded"),
+        .description = COMPOUND_STRING("Hit by Ground attacks."),
+        .aiRating = 7,
+    },
 };

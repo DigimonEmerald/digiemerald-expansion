@@ -8026,6 +8026,8 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, u32 ability, enum Inver
         return TRUE;
     if (gBattleMons[battler].volatiles.smackDown)
         return TRUE;
+    if (ability == ABILITY_GROUNDED)
+        return TRUE;
     if (gBattleMons[battler].volatiles.telekinesis)
         return FALSE;
     if (gBattleMons[battler].volatiles.magnetRise)
@@ -8034,7 +8036,7 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, u32 ability, enum Inver
         return FALSE;
     if (ability == ABILITY_LEVITATE)
         return FALSE;
-    if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!(checkInverse == INVERSE_BATTLE) || !FlagGet(B_FLAG_INVERSE_BATTLE)))
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (ability != ABILITY_GROUNDED) && (!(checkInverse == INVERSE_BATTLE) || !FlagGet(B_FLAG_INVERSE_BATTLE)))
         return FALSE;
     return TRUE;
 }
