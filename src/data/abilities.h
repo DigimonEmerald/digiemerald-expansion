@@ -2586,4 +2586,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Traps Bug-types digimon."),
         .aiRating = 9,
     },
+
+    [ABILITY_ECLIPSE] =
+    {
+        .name = _("Eclipse"),
+        .description = COMPOUND_STRING("Summons full moon in battle."),
+        .aiRating = 9,
+    },
 };

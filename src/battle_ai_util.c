@@ -1800,6 +1800,8 @@ u32 AI_GetSwitchinWeather(struct BattlePokemon battleMon)
         return B_WEATHER_SANDSTORM;
     case ABILITY_SNOW_WARNING:
         return B_SNOW_WARNING >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
+    case ABILITY_ECLIPSE:
+        return B_WEATHER_FULL_MOON;
     default:
         return gBattleWeather;
     }
