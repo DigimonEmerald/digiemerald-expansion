@@ -2643,4 +2643,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Raises Ice attack accuracy."),
         .aiRating = 7,
     },
+
+    [ABILITY_STRONG_LEGS] =
+    {
+        .name = _("Strong Legs"),
+        .description = COMPOUND_STRING("Boosts kicking moves."),
+        .aiRating = 6,
+    },
 };
