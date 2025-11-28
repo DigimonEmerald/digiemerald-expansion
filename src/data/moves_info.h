@@ -5868,7 +5868,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A mystical fire attack that\n"
             "may inflict a burn."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_TWO_TYPED_MOVE,
         .power = 100,
         .type = TYPE_FIRE,
         .accuracy = 95,
@@ -5877,6 +5877,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .thawsUser = TRUE,
+        .argument { .type = TYPE_LIGHT },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
             .chance = 50,
@@ -6217,7 +6218,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "varies with the weather."),
         .effect = EFFECT_MORNING_SUN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_LIGHT,
         .accuracy = 0,
         .pp = 5,
         .target = MOVE_TARGET_USER,
@@ -13681,7 +13682,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Sacred Sword"),
         .description = sChipAwayDescription,
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_TWO_TYPED_MOVE,
         .power = 90,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
@@ -13693,6 +13694,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresTargetDefenseEvasionStages = TRUE,
         .slicingMove = TRUE,
         .hornMove = TRUE,
+        .argument { .type = TYPE_LIGHT },
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -15783,7 +15785,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "that also hurts the user."),
         .effect = EFFECT_RECOIL,
         .power = 140,
-        .type = TYPE_FAIRY,
+        .type = TYPE_LIGHT,
         .accuracy = 90,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
@@ -17568,9 +17570,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Dynamax Cannon"),
         .description = COMPOUND_STRING(
             "Unleashes core energy.\n"
-            "2x against Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+            "Damage is based on foes weight."),
+        .effect = EFFECT_LOW_KICK,
+        .power = 1,
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 5,
@@ -18031,10 +18033,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Blade"),
         .description = COMPOUND_STRING(
-            "Strikes as a sword. Deals 2x\n"
-            "damage to Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+            "Strikes as a sword. Deals\n"
+            "damage based on foes weight."),
+        .effect = EFFECT_LOW_KICK,
+        .power = 1,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 5,
@@ -18058,10 +18060,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Bash"),
         .description = COMPOUND_STRING(
-            "Attacks as a shield. Deals 2x\n"
-            "damage to Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+            "Attacks as a shield. Deals\n"
+            "damage based on foes weight."),
+        .effect = EFFECT_LOW_KICK,
+        .power = 1,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 5,
@@ -19942,7 +19944,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "and restores half of its HP."),
         .effect = EFFECT_REVIVAL_BLESSING,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_LIGHT,
         .accuracy = 0,
         .pp = 1,
         .target = MOVE_TARGET_USER,
