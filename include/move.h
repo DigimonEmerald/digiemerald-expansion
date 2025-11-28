@@ -103,6 +103,7 @@ struct MoveInfo
     bool32 ignoresTargetDefenseEvasionStages:1;
     bool32 damagesUnderground:1;
     bool32 headMove:1;
+    bool32 hornMove:1;
     // end of word
     bool32 damagesUnderwater:1;
     bool32 damagesAirborne:1;
@@ -615,6 +616,11 @@ static inline const u8 *GetMoveBattleScript(u32 moveId)
 static inline bool32 IsHeadMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].headMove;
+}
+
+static inline bool32 IsHornMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].hornMove;
 }
 
 #endif // GUARD_MOVES_H
