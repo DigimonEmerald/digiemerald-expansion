@@ -2593,4 +2593,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Summons full moon in battle."),
         .aiRating = 9,
     },
+
+    [ABILITY_THUNDER_BLADE] =
+    {
+        .name = _("Thunder Blade"),
+        .description = COMPOUND_STRING("Ups Electric and slashing moves moves."),
+        .aiRating = 6,
+    },
 };
