@@ -2037,12 +2037,14 @@ LittlerootTown_EventScript_Test::
 # 1022 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
 # 1023 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_PARROTMON, 20
+	givemon SPECIES_REDVEGIEMON, 20
 # 1024 "data/maps/LittlerootTown/scripts.pory"
-	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_ABILITY_PATCH
 # 1025 "data/maps/LittlerootTown/scripts.pory"
-	setflag FLAG_BADGE08_GET
+	giveitem ITEM_ABILITY_CAPSULE
 # 1026 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_BADGE08_GET
+# 1027 "data/maps/LittlerootTown/scripts.pory"
 	release
 	return
 

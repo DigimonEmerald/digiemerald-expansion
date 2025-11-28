@@ -2678,4 +2678,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Hit by Ground attacks."),
         .aiRating = 7,
     },
+
+    [ABILITY_CHILI_BODY] =
+    {
+        .name = _("Chili Body"),
+        .description = COMPOUND_STRING("Body burns foe when bitten."),
+        .aiRating = 3,
+    },
 };
