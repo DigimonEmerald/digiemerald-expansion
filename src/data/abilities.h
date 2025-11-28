@@ -2579,4 +2579,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts sound moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_VENUS_FLYTRAP] =
+    {
+        .name = _("Venus Flytrap"),
+        .description = COMPOUND_STRING("Traps Bug-types digimon."),
+        .aiRating = 9,
+    },
 };

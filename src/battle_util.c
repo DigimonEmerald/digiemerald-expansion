@@ -5640,6 +5640,9 @@ u32 IsAbilityPreventingEscape(u32 battler)
 
         if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(battler, TYPE_STEEL))
             return battlerDef + 1;
+        
+        if (ability == ABILITY_VENUS_FLYTRAP && IS_BATTLER_OF_TYPE(battler, TYPE_BUG))
+            return battlerDef + 1;
     }
 
     return 0;
@@ -8676,7 +8679,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (moveType == TYPE_ELECTRIC)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_SOUND_BOOSTS:
+    case ABILITY_SOUND_BOOST:
         if (IsSoundMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;

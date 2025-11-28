@@ -499,6 +499,9 @@ bool32 IsBattlerTrapped(u32 battlerAtk, u32 battlerDef)
     if (AI_IsAbilityOnSide(battlerAtk, ABILITY_MAGNET_PULL)
         && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_STEEL))
         return TRUE;
+    if (AI_IsAbilityOnSide(battlerAtk, ABILITY_VENUS_FLYTRAP)
+        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_BUG))
+        return TRUE;
 
     return FALSE;
 }
@@ -1696,7 +1699,7 @@ s32 AI_DecideKnownAbilityForTurn(u32 battlerId)
         return gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability;
 
     // Abilities that prevent fleeing - treat as always known
-    if (knownAbility == ABILITY_SHADOW_TAG || knownAbility == ABILITY_MAGNET_PULL || knownAbility == ABILITY_ARENA_TRAP)
+    if (knownAbility == ABILITY_SHADOW_TAG || knownAbility == ABILITY_MAGNET_PULL || knownAbility == ABILITY_ARENA_TRAP || knownAbility == ABILITY_VENUS_FLYTRAP)
         return knownAbility;
 
     for (i = 0; i < NUM_ABILITY_SLOTS; i++)
