@@ -876,5 +876,6 @@ extern const u8 BattleScript_SinOfSloth[];
 extern const u8 BattleScript_AbilityEffectSinOfSloth[];
 extern const u8 BattleScript_SinOfPrideActivates[];
 extern const u8 BattleScript_EclipseActivates[];
+extern const u8 BattleScript_GravityFieldActivates[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

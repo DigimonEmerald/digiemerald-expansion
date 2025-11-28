@@ -2614,4 +2614,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Drill moves crit more often"),
         .aiRating = 3,
     },
+
+    [ABILITY_GRAVITY_FIELD] =
+    {
+        .name = _("Gravity Field"),
+        .description = COMPOUND_STRING("Applies gravity during battle."),
+        .aiRating = 8,
+    },
 };

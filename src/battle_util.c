@@ -4332,6 +4332,14 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_GRAVITY_FIELD:
+            if (!(gFieldStatuses & STATUS_FIELD_GRAVITY))
+            {
+            gFieldStatuses |= STATUS_FIELD_GRAVITY;
+            gFieldTimers.gravityTimer = gBattleTurnCounter + 5;
+            BattleScriptPushCursorAndCallback(BattleScript_GravityFieldActivates);
+            effect++;
+            }
         }
         break;
     case ABILITYEFFECT_ENDTURN:

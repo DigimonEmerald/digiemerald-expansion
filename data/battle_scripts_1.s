@@ -9883,3 +9883,11 @@ BattleScript_EclipseActivates::
 	playanimation BS_BATTLER_0, B_ANIM_RAIN_CONTINUES
 	call BattleScript_ActivateWeatherAbilities
 	end3
+
+BattleScript_GravityFieldActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_GRAVITYINTENSIFIED
+	waitstate
+	call BattleScript_ActivateWeatherAbilities
+	end3
