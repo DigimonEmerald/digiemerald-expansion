@@ -5696,7 +5696,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Parrotmon,
         .shinyPalette = gMonShinyPalette_Parrotmon,
         .iconSprite = gMonIcon_Parrotmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 9, SHADOW_SIZE_M)
         FOOTPRINT(Parrotmon)
