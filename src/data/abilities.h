@@ -2650,4 +2650,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts kicking moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_HIGH_HAZE] =
+    {
+        .name = _("High Haze"),
+        .description = COMPOUND_STRING("Confuses foe on contact."),
+        .aiRating = 4,
+    },
 };

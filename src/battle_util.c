@@ -5251,6 +5251,21 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_HIGH_HAZE:
+            if (IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && CanBeConfused(gBattlerTarget)
+             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+             && IsBattlerTurnDamaged(gBattlerTarget)) // Need to actually hit the target
+            {
+                gEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerAttacker;
+                gBattleScripting.moveEffect = MOVE_EFFECT_CONFUSION;
+                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                BattleScriptCall(BattleScript_AbilityStatusEffect);
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
