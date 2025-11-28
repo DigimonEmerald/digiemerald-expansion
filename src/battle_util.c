@@ -5266,6 +5266,30 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_SEALED_FISTS:
+            if (!gBattleMons[gBattlerAttacker].volatiles.healBlock
+                     && gBattleStruct->moveDamage[gBattlerTarget] > 0
+                     && IsBattlerAlive(gBattlerAttacker))
+                {
+                    gBattleStruct->moveDamage[gBattlerAttacker] = max(1, (gBattleStruct->moveDamage[gBattlerTarget] * 25 / 100));
+
+                    gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE | HITMARKER_PASSIVE_HP_UPDATE;
+                    effect = TRUE;
+                    if (GetBattlerAbility(gBattlerTarget) != ABILITY_LIQUID_OOZE)
+                    {
+                        gBattleStruct->moveDamage[gBattlerAttacker] *= -1;
+                        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB;
+                        BattleScriptCall(BattleScript_EffectAbsorb);
+                        effect++;
+                    }
+                    else
+                    {
+                        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB_OOZE;
+                        BattleScriptCall(BattleScript_EffectAbsorbLiquidOoze);
+                        effect++;
+                    }
+                }
+                break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
@@ -8730,6 +8754,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     case ABILITY_STRONG_LEGS:
         if (IsKickMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
+    case ABILITY_GREAT_PURGE:
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
         break;
     }
 

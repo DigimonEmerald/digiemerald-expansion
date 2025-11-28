@@ -2657,4 +2657,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Confuses foe on contact."),
         .aiRating = 4,
     },
+
+    [ABILITY_GREAT_PURGE] =
+    {
+        .name = _("Great Purge"),
+        .description = COMPOUND_STRING("Powers up against Dark-type Digimon."),
+        .aiRating = 1,
+    },
+
+    [ABILITY_SEALED_FISTS] =
+    {
+        .name = _("Sealed Fists"),
+        .description = COMPOUND_STRING("Dealing damage heals user."),
+        .aiRating = 3,
+    },
 };
