@@ -104,6 +104,7 @@ struct MoveInfo
     bool32 damagesUnderground:1;
     bool32 headMove:1;
     bool32 hornMove:1;
+    bool32 drillMove:1;
     // end of word
     bool32 damagesUnderwater:1;
     bool32 damagesAirborne:1;
@@ -621,6 +622,11 @@ static inline bool32 IsHeadMove(u32 moveId)
 static inline bool32 IsHornMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].hornMove;
+}
+
+static inline bool32 IsDrillMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].drillMove;
 }
 
 #endif // GUARD_MOVES_H

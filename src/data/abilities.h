@@ -2607,4 +2607,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Boosts horn moves."),
         .aiRating = 6,
     },
+
+    [ABILITY_POWER_DRILL] =
+    {
+        .name = _("Power Drill"),
+        .description = COMPOUND_STRING("Drill moves crit more often"),
+        .aiRating = 3,
+    },
 };
