@@ -10054,6 +10054,10 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
     {
         modifier = UQ_4_12(0.0);
     }
+    else if (ctx->moveType == TYPE_DARK && ctx->abilityDef == ABILITY_GALACTIC_BODY)
+    {
+        modifier = UQ_4_12(0.0);
+    }
 
     // Thousand Arrows ignores type modifiers for flying mons
     if (!IsBattlerGrounded(ctx->battlerDef)
@@ -10134,6 +10138,8 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 a
         if (ctx.moveType == TYPE_GROUND && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
             modifier = UQ_4_12(0.0);
         if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && GetMovePower(move) != 0)
+            modifier = UQ_4_12(0.0);
+        if (ctx.moveType == TYPE_DARK && abilityDef == ABILITY_GALACTIC_BODY)
             modifier = UQ_4_12(0.0);
     }
 
@@ -12260,6 +12266,14 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         break;
     case ABILITY_NIGHT_VISION:
         if (HasWeatherEffect() && gBattleWeather & B_WEATHER_FULL_MOON)
+            calc = (calc * 130) / 100;
+        break;
+    case ABILITY_PYROMANCER:
+        if (GetBattleMoveType(move) == TYPE_FIRE)
+            calc = (calc * 130) / 100;
+        break;
+    case ABILITY_CRYOMANCER:
+        if (GetBattleMoveType(move) == TYPE_ICE)
             calc = (calc * 130) / 100;
         break;
     }

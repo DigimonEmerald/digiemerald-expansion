@@ -5443,7 +5443,7 @@ static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
 static const struct LevelUpMove sVeemonLevelUpLearnset[] = {
     // LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
     // LEVEL_UP_MOVE( 5, MOVE_GROWL),
-    LEVEL_UP_MOVE(11, MOVE_ABSORB),
+    LEVEL_UP_MOVE(11, MOVE_BITE),
     // LEVEL_UP_MOVE(12, MOVE_HEADBUTT),
     // LEVEL_UP_MOVE(13, MOVE_MACH_PUNCH),
     // LEVEL_UP_MOVE(14, MOVE_QUICK_ATTACK),

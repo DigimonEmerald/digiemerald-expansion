@@ -2621,4 +2621,26 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Applies gravity during battle."),
         .aiRating = 8,
     },
+
+    [ABILITY_GALACTIC_BODY] =
+    {
+        .name = _("Galactic Body"),
+        .description = COMPOUND_STRING("Not hit by Dark attacks."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_PYROMANCER] =
+    {
+        .name = _("Pyromancer"),
+        .description = COMPOUND_STRING("Raises Fire attack accuracy."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_CRYOMANCER] =
+    {
+        .name = _("Cryomancer"),
+        .description = COMPOUND_STRING("Raises Ice attack accuracy."),
+        .aiRating = 7,
+    },
 };
