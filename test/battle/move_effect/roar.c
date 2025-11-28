@@ -10,16 +10,18 @@ SINGLE_BATTLE_TEST("Roar switches the target with a random non-fainted replaceme
 {
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ARGOMON_F);
-        OPPONENT(SPECIES_BOTAMON);
-        OPPONENT(SPECIES_CONOMON) { HP(0); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_BULBASAUR);
+        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
-        MESSAGE("The opposing Argomon_f was dragged out!");
+        MESSAGE("The opposing Bulbasaur was dragged out!");
+    } THEN {
+        EXPECT_EQ(gLastUsedMove, MOVE_ROAR);
     }
 }
 
@@ -27,30 +29,30 @@ DOUBLE_BATTLE_TEST("Roar switches the target with a random non-battler, non-fain
 {
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_ARGOMON_F);
-        OPPONENT(SPECIES_BOTAMON);
-        OPPONENT(SPECIES_CONOMON) { HP(0); }
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_BULBASAUR);
+        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROAR, target: opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, playerLeft);
-        MESSAGE("The opposing Argomon_f was dragged out!");
+        MESSAGE("The opposing Bulbasaur was dragged out!");
     }
 }
 
 SINGLE_BATTLE_TEST("Roar fails if no replacements")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
-        MESSAGE("Lopmonx used Roar!");
+        MESSAGE("Wobbuffet used Roar!");
         MESSAGE("But it failed!");
     }
 }
@@ -58,13 +60,13 @@ SINGLE_BATTLE_TEST("Roar fails if no replacements")
 SINGLE_BATTLE_TEST("Roar fails if replacements fainted")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
-        MESSAGE("Lopmonx used Roar!");
+        MESSAGE("Wobbuffet used Roar!");
         MESSAGE("But it failed!");
     }
 }
@@ -72,31 +74,17 @@ SINGLE_BATTLE_TEST("Roar fails if replacements fainted")
 SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_ROAR); }
-    } SCENE {
-        MESSAGE("Lopmonx used Roar!");
-        MESSAGE("But it failed!");
-    }
-}
-
-SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
-{
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_OKIDOGI) { Ability(ABILITY_GUARD_DOG); }
-        OPPONENT(SPECIES_BOTAMON);
+        OPPONENT(SPECIES_CHARMANDER);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
-            MESSAGE("The opposing Botamon was dragged out!");
+            MESSAGE("The opposing Charmander was dragged out!");
         }
-        MESSAGE("Lopmonx used Roar!");
+        MESSAGE("Wobbuffet used Roar!");
         MESSAGE("But it failed!");
     }
 }
@@ -104,16 +92,16 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 SINGLE_BATTLE_TEST("Roar fails to switch out target with Suction Cups")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_SUCTION_CUPS); }
-        OPPONENT(SPECIES_BOTAMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
+        OPPONENT(SPECIES_CHARMANDER);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
-        MESSAGE("Lopmonx used Roar!");
+        MESSAGE("Wobbuffet used Roar!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
         ABILITY_POPUP(opponent, ABILITY_SUCTION_CUPS);
-        MESSAGE("The opposing Pawnmon_white anchors itself with Suction Cups!");
-        NOT MESSAGE("The opposing Botamon was dragged out!");
+        MESSAGE("The opposing Octillery anchors itself with Suction Cups!");
+        NOT MESSAGE("The opposing Charmander was dragged out!");
     }
 }
