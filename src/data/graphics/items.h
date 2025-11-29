@@ -2170,3 +2170,6 @@ const u16 gItemIconPalette_WaterVial[] = INCBIN_U16("graphics/items/icon_palette
 
 const u32 gItemIcon_NoseRing[] = INCBIN_U32("graphics/items/icons/nose_ring.4bpp.smol");
 const u16 gItemIconPalette_NoseRing[] = INCBIN_U16("graphics/items/icon_palettes/nose_ring.gbapal");
+
+const u32 gItemIcon_Pacifier[] = INCBIN_U32("graphics/items/icons/pacifier.4bpp.smol");
+const u16 gItemIconPalette_Pacifier[] = INCBIN_U16("graphics/items/icon_palettes/pacifier.gbapal");

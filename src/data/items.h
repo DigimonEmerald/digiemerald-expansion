@@ -15025,6 +15025,23 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_NoseRing,
         .iconPalette = gItemIconPalette_NoseRing,
     },
+
+    [ITEM_PACIFIER] =
+    {
+        .name = ITEM_NAME("Pacifier"),
+        .price = 20,
+        .description = COMPOUND_STRING(
+            "Reminds Digimon of\n"
+            "simpler times at the\n"
+            "cost of SpDef."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
+        .effect = gItemEffect_GrepaBerry,
+        .flingPower = 10,
+        .iconPic = gItemIcon_Pacifier,
+        .iconPalette = gItemIconPalette_Pacifier,
+    },
 };
 
 #undef ITEM_NAME
