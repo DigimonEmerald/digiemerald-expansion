@@ -9252,6 +9252,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (IsBattleMoveSpecial(move) && GetActiveGimmick(battlerAtk) != GIMMICK_DYNAMAX)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case HOLD_EFFECT_WATER_VIAL:
+        if (atkBaseSpeciesId == SPECIES_WHAMON)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
     default:
         break;
     }

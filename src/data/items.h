@@ -14989,6 +14989,24 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_DigiPine,
         .iconPalette = gItemIconPalette_DigiPine,
     },
+
+    [ITEM_WATER_VIAL] =
+    {
+        .name = ITEM_NAME("Water Vial"),
+        .price = 1000,
+        .holdEffect = HOLD_EFFECT_WATER_VIAL,
+        .description = COMPOUND_STRING(
+            "A hold item that\n"
+            "raises the stats\n"
+            "of Whamon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_WaterVial,
+        .iconPalette = gItemIconPalette_WaterVial,
+    },
 };
 
 #undef ITEM_NAME

@@ -998,7 +998,6 @@
 // LEGEND PLATE
 
 // Digimon Additions
-// Evo Items
 
 #define ITEM_X_ANTIBODY 829
 #define ITEM_DARK_DIGITRON 830
@@ -1014,8 +1013,6 @@
 #define ITEM_MIRACLES_EGG 840
 #define ITEM_FATE_EGG 841
 
-// IV Items
-
 #define ITEM_ROTTEN_MEAT 842 // HP Down
 #define ITEM_CHOCOLATE 843 // ATK Down
 #define ITEM_COFFEE 844 // Def Down
@@ -1029,7 +1026,9 @@
 #define ITEM_HAWK_RADISH 852 // SPATK Up
 #define ITEM_DIGIPINE 853 // SPDEF Up
 
-#define ITEMS_COUNT 854
+#define ITEM_WATER_VIAL 854
+
+#define ITEMS_COUNT 855
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

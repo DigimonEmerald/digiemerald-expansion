@@ -3449,4 +3449,7 @@ extern const u32 gBattleIcons_Gfx2[];
 extern const u16 gBattleIcons_Pal1[];
 extern const u16 gBattleIcons_Pal2[];
 
+extern const u32 gItemIcon_WaterVial[];
+extern const u16 gItemIconPalette_WaterVial[];
+
 #endif //GUARD_GRAPHICS_H

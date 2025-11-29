@@ -2164,3 +2164,6 @@ const u16 gItemIconPalette_HawkRadish[] = INCBIN_U16("graphics/items/icon_palett
 
 const u32 gItemIcon_DigiPine[] = INCBIN_U32("graphics/items/icons/digipine.4bpp.lz");
 const u16 gItemIconPalette_DigiPine[] = INCBIN_U16("graphics/items/icon_palettes/digipine.gbapal.lz");
+
+const u32 gItemIcon_WaterVial[] = INCBIN_U32("graphics/items/icons/water_vial.4bpp.smol");
+const u16 gItemIconPalette_WaterVial[] = INCBIN_U16("graphics/items/icon_palettes/water_vial.gbapal");
