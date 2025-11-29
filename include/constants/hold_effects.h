@@ -143,6 +143,7 @@ enum ItemHoldEffect
     // Gen2 hold effect
     HOLD_EFFECT_BERSERK_GENE,
     HOLD_EFFECT_WATER_VIAL,
+    HOLD_EFFECT_NOSE_RING,
     HOLD_EFFECT_COUNT
 };
 

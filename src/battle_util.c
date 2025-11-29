@@ -9256,6 +9256,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (atkBaseSpeciesId == SPECIES_WHAMON)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
+    case HOLD_EFFECT_NOSE_RING:
+        if (atkBaseSpeciesId == SPECIES_MINOTARUMON)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
     default:
         break;
     }

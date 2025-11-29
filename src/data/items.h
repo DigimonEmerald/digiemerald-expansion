@@ -15007,6 +15007,24 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_WaterVial,
         .iconPalette = gItemIconPalette_WaterVial,
     },
+
+    [ITEM_NOSE_RING] =
+    {
+        .name = ITEM_NAME("Nose Ring"),
+        .price = 1000,
+        .holdEffect = HOLD_EFFECT_NOSE_RING,
+        .description = COMPOUND_STRING(
+            "A hold item that\n"
+            "raises the stats\n"
+            "of Minotarumon."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 30,
+        .iconPic = gItemIcon_NoseRing,
+        .iconPalette = gItemIconPalette_NoseRing,
+    },
 };
 
 #undef ITEM_NAME

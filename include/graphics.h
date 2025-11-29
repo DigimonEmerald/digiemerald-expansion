@@ -3451,5 +3451,7 @@ extern const u16 gBattleIcons_Pal2[];
 
 extern const u32 gItemIcon_WaterVial[];
 extern const u16 gItemIconPalette_WaterVial[];
+extern const u32 gItemIcon_NoseRing[];
+extern const u16 gItemIconPalette_NoseRing[];
 
 #endif //GUARD_GRAPHICS_H

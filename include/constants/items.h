@@ -1027,8 +1027,9 @@
 #define ITEM_DIGIPINE 853 // SPDEF Up
 
 #define ITEM_WATER_VIAL 854
+#define ITEM_NOSE_RING 855
 
-#define ITEMS_COUNT 855
+#define ITEMS_COUNT 856
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
