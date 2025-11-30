@@ -1110,6 +1110,12 @@ static const u16 sGiratinaFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GIRATINA
 
+static const u16 sMagnaangemonFormSpeciesIdTable[] = {
+    SPECIES_MAGNAANGEMON,
+    SPECIES_MAGNAANGEMON_PRIESTMODE,
+    FORM_SPECIES_END,
+};
+
 #if P_FAMILY_SHAYMIN
 static const u16 sShayminFormSpeciesIdTable[] = {
     SPECIES_SHAYMIN_LAND,

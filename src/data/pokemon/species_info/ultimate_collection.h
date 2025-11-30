@@ -1335,7 +1335,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sEtemonLevelUpLearnset,
         .teachableLearnset = sEtemonTeachableLearnset,
         .digivolutions = sEtemonDigivolveTable,
-        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_NETWORK_CABLE, SPECIES_ETEMON_CHAOS}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_NETWORK_CABLE, SPECIES_ETEMON_CHAOS}),
     },
 #endif //P_FAMILY_DIGITAMAMON
 
@@ -1553,6 +1553,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMagnaangemonLevelUpLearnset,
         .teachableLearnset = sMagnaangemonTeachableLearnset,
         .eggMoveLearnset = sMagnaangemonEggMoveLearnset,
+        .formChangeTable = sMagnaangemonFormChangeTable,
+        .formSpeciesIdTable = sMagnaangemonFormSpeciesIdTable,
         .digivolutions = sMagnaangemonDigivolveTable,
     },
 
@@ -1627,6 +1629,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMagnaangemon_priestmodeLevelUpLearnset,
         .teachableLearnset = sMagnaangemon_priestmodeTeachableLearnset,
+        .formChangeTable = sMagnaangemonFormChangeTable,
+        .formSpeciesIdTable = sMagnaangemonFormSpeciesIdTable,
         .digivolutions = sMagnaangemon_priestmodeDigivolveTable,
     },
 #endif //P_FAMILY_MAGNAANGEMON

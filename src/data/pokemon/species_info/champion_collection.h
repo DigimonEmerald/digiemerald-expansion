@@ -3192,6 +3192,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sBlackgatomonTeachableLearnset,
         .eggMoveLearnset = sBlackgatomonEggMoveLearnset,
         .digivolutions = sBlackgatomonDigivolveTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DELIVERY_LICENSE, SPECIES_BLACKGATOMON_UVER}),
     },
 
     [SPECIES_BLACKGATOMON_UVER] =
@@ -9028,7 +9029,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sEyesmon_scattermodeTeachableLearnset,
         .eggMoveLearnset = sEyesmon_scattermodeEggMoveLearnset,
         // .digivolutions = sEyesmon_scattermodeDigivolveTable,
-        // .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_EYESMON, CONDITIONS({IF_BAG_ITEM_COUNT, ITEM_SCATTERED_EYESMON, 100})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_EYESMON, CONDITIONS({IF_BAG_ITEM_COUNT, ITEM_SCATTERED_EYESMON, 100})}),
     },
 
     [SPECIES_FANGMON] =

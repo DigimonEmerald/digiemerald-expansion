@@ -6111,9 +6111,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formSpeciesIdTable = sDracomonFormSpeciesIdTable,
         .formChangeTable = sDracomonFormChangeTable,
         .digivolutions = sDracomonDigivolveTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_DRACOMON_X}),
-                                // {EVO_ITEM, ITEM_GREEN_MALACHITE, SPECIES_COREDRAMON_GREEN},
-                                // {EVO_ITEM, ITEM_BLUE_DIAMANTE, SPECIES_COREDRAMON_BLUE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_DRACOMON_X},
+                                {EVO_ITEM, ITEM_GREEN_MALACHITE, SPECIES_COREDRAMON_GREEN},
+                                {EVO_ITEM, ITEM_BLUE_DIAMANTE, SPECIES_COREDRAMON_BLUE}),
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -6250,8 +6250,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDracomon_xTeachableLearnset,
         .formSpeciesIdTable = sDracomon_xFormSpeciesIdTable,
         .digivolutions = sDracomon_xDigivolveTable,
-        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_GREEN_MALACHITE, SPECIES_COREDRAMON_GREEN},
-        //                         {EVO_ITEM, ITEM_BLUE_DIAMANTE, SPECIES_COREDRAMON_BLUE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_GREEN_MALACHITE, SPECIES_COREDRAMON_GREEN},
+                                {EVO_ITEM, ITEM_BLUE_DIAMANTE, SPECIES_COREDRAMON_BLUE}),
     },
 
 #if P_GALARIAN_FORMS

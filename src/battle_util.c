@@ -9254,10 +9254,14 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         break;
     case HOLD_EFFECT_WATER_VIAL:
         if (atkBaseSpeciesId == SPECIES_WHAMON)
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case HOLD_EFFECT_NOSE_RING:
         if (atkBaseSpeciesId == SPECIES_MINOTARUMON)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case HOLD_EFFECT_ESSENCE_OF_MIRACLES:
+        if (atkBaseSpeciesId == SPECIES_MAGNAMON)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     default:
