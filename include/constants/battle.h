@@ -378,6 +378,7 @@ enum __attribute__((packed)) MoveEffect
     MOVE_EFFECT_PARALYSIS = 5,
     MOVE_EFFECT_TOXIC = 6,
     MOVE_EFFECT_FROSTBITE = 7,
+    MOVE_EFFECT_CONVERTED = 8,
     MOVE_EFFECT_CONFUSION,
     MOVE_EFFECT_FLINCH,
     MOVE_EFFECT_TRI_ATTACK,
@@ -501,7 +502,6 @@ enum __attribute__((packed)) MoveEffect
     MOVE_EFFECT_LOWER_SPEED_2_SIDE,
     MOVE_EFFECT_FIRE_SPIN_SIDE,
     MOVE_EFFECT_FIXED_POWER,
-    MOVE_EFFECT_CONVERTED,
     MOVE_EFFECT_FULL_MOON,
     // Max move effects end. They can be used for (custom) normal moves.
 

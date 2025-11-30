@@ -9879,3 +9879,10 @@ BattleScript_GravityFieldActivates::
 	waitstate
 	call BattleScript_ActivateWeatherAbilities
 	end3
+
+BattleScript_AlreadyConverted::
+	setalreadystatusedmoveattempt
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNALREADYCONVERTED
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd

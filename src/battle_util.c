@@ -6109,6 +6109,16 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
             battleScript = BattleScript_NotAffected;
         }
         break;
+    case MOVE_EFFECT_CONVERTED:
+        if (gBattleMons[battlerDef].status1 & STATUS1_CONVERTED)
+        {
+            battleScript = BattleScript_AlreadyConverted;
+        }
+        else if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_LIGHT))
+        {
+            battleScript = BattleScript_NotAffected;
+        }
+        break;
     default:
         break;
     }

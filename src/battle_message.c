@@ -904,6 +904,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_SINOFPRIDEHPUP]                       = COMPOUND_STRING("The destruction healed {B_ATK_NAME_WITH_PREFIX2} a little bit!"),
     [STRINGID_HOLYAURAENTERS]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a holy aura!"),
     [STRINGID_DEATHAURAENTERS]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a deathly aura!"),
+    [STRINGID_PKMNALREADYCONVERTED]                 = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is already converted!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
