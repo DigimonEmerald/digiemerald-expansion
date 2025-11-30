@@ -273,16 +273,16 @@
 #define METATILE_Lavaridge_RockWall             0x274
 
 // gTileset_Lilycove
+#define METATILE_Lilycove_Chamblemon0      0x290
+#define METATILE_Lilycove_Chamblemon0_Alt  0x298
+#define METATILE_Lilycove_Chamblemon1      0x291
+#define METATILE_Lilycove_Chamblemon1_Alt  0x299
+#define METATILE_Lilycove_Chamblemon2      0x2A0
+#define METATILE_Lilycove_Chamblemon3      0x2A1
 #define METATILE_Lilycove_Door             0x246
 #define METATILE_Lilycove_Door_DeptStore   0x30C
 #define METATILE_Lilycove_Door_SafariZone  0x32D
 #define METATILE_Lilycove_Door_Wooden      0x28E
-#define METATILE_Lilycove_Chamblemon0         0x290
-#define METATILE_Lilycove_Chamblemon0_Alt     0x298
-#define METATILE_Lilycove_Chamblemon1         0x291
-#define METATILE_Lilycove_Chamblemon1_Alt     0x299
-#define METATILE_Lilycove_Chamblemon2         0x2A0
-#define METATILE_Lilycove_Chamblemon3         0x2A1
 
 // gTileset_LilycoveMuseum
 #define METATILE_LilycoveMuseum_Painting0_Left   0x25A
