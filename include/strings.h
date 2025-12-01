@@ -2430,4 +2430,13 @@ extern const u8 gText_CannotSendMonToBoxHM[];
 extern const u8 gText_CannotSendMonToBoxActive[];
 extern const u8 gText_CannotSendMonToBoxPartner[];
 
+// New Digimon Intro
+
+extern const u8 gText_Counselor_Welcome[];
+extern const u8 gText_Counselor_Safety[];
+extern const u8 gText_Counselor_Identity[];
+extern const u8 gText_Counselor_AreYouReady[];
+extern const u8 gText_Counselor_TimeSkip[];
+extern const u8 gText_Counselor_Panic[];
+
 #endif // GUARD_STRINGS_H

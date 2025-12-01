@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/SummerCamp/border.bin",
       "blockdata_filepath": "data/layouts/SummerCamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUMMER_CAMP_HOUSE",
+      "name": "SummerCamp_House_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SummerCamp_House/border.bin",
+      "blockdata_filepath": "data/layouts/SummerCamp_House/map.bin"
     }
   ]
 }

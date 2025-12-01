@@ -59,3 +59,53 @@ gText_Birch_AreYouReady::
 	.string "Well, I'll be expecting you later.\n"
 	.string "Come see me in my POKéMON LAB.\p"
 	.string "$"
+
+gText_Counselor_Welcome::
+	.string "Hey there! I'm your summer camp\p"
+	.string "group leader!\p"
+	.string "Before we begin, lets go\n"
+	.string "over basic safety while you\l"
+	.string "are staying here.\p"
+	.string "$"
+
+gText_Counselor_Safety::
+	.string "While we will try to make\n"
+	.string "every activity as safe as\l"
+	.string "possible, unexpected events\l"
+	.string "can happen.\p"
+	.string "The most important rule is to\n"
+	.string "stick to your group.\p"
+	.string "In the event of an\n"
+	.string "emergency, find your group\l"
+	.string "mates and make your way to\l"
+	.string "the nearest adult.\p"
+	.string "If no adult can be\n"
+	.string "found, head straight back\l"
+	.string "to your cabin where you\l"
+	.string "can shelter from the\l"
+	.string "elements and have access to\l"
+	.string "a phone to call for help.\p"
+	.string "$"
+
+gText_Counselor_Identity::
+	.string "Now I just need to double\p"
+	.string "check who you are.\p"
+	.string "$"
+	
+gText_Counselor_AreYouReady::
+	.string "All right, I'm going to head\p"
+	.string "confirm with admin, you guys\l"
+	.string "unpack and in a bit, we will\l"
+	.string "start summer camp in full.\p"
+	.string "$"
+
+gText_Counselor_TimeSkip::
+	.string "1 HOUR LATER.\n"
+	.string "$"
+
+gText_Counselor_Panic::
+	.string "Joe: Watch out everyone!\p"
+	.string "Its snowing hard, make sure\n"
+	.string "to gather at the lodge now\l"
+	.string "while we wait for the adults\p"
+	.string "$"
