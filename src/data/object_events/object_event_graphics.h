@@ -468,3 +468,11 @@ const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effe
 
 const u32 gObjectEventPic_Izzy[] = INCBIN_U32("graphics/object_events/pics/people/izzy.4bpp");
 const u16 gObjectEventPal_Izzy[] = INCBIN_U16("graphics/object_events/pics/people/izzy.gbapal");
+const u32 gObjectEventPic_Joe[] = INCBIN_U32("graphics/object_events/pics/people/joe.4bpp");
+const u16 gObjectEventPal_Joe[] = INCBIN_U16("graphics/object_events/pics/people/joe.gbapal");
+const u32 gObjectEventPic_Matt[] = INCBIN_U32("graphics/object_events/pics/people/matt.4bpp");
+const u16 gObjectEventPal_Matt[] = INCBIN_U16("graphics/object_events/pics/people/matt.gbapal");
+const u32 gObjectEventPic_Mimi[] = INCBIN_U32("graphics/object_events/pics/people/mimi.4bpp");
+const u16 gObjectEventPal_Mimi[] = INCBIN_U16("graphics/object_events/pics/people/mimi.gbapal");
+const u32 gObjectEventPic_TK[] = INCBIN_U32("graphics/object_events/pics/people/tk.4bpp");
+const u16 gObjectEventPal_TK[] = INCBIN_U16("graphics/object_events/pics/people/tk.gbapal");
