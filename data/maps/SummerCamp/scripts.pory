@@ -1,0 +1,21 @@
+mapscripts SummerCamp_MapScripts {
+}
+
+script SummerCamp_EventScript_Sign {
+    lock
+    msgbox(format("Remember to return to your cabin in an emergency if no adults are found!"))
+    setflag(FLAG_SYS_B_DASH)
+    release
+}
+
+script SummerCamp_EventScript_Exit {
+    lock
+    msgbox(format("You shouldn't leave the group during this snow storm!"))
+    applymovement(LOCALID_PLAYER, SummerCamp_Movement_StopPlayerLeaving)
+    waitmovement(0)
+    release
+}
+
+movement SummerCamp_Movement_StopPlayerLeaving {
+    walk_left
+}

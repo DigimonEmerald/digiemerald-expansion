@@ -1,0 +1,7 @@
+mapscripts SummerCamp_House_MapScripts {
+}
+
+script SummerCamp_House_EventScript_FoodReservers {
+    lock
+    msgbox(forcesave("It contains drinking water."))
+}
