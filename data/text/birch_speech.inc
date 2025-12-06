@@ -62,7 +62,7 @@ gText_Birch_AreYouReady::
 
 gText_Counselor_Welcome::
 	.string "Hey there! I'm your summer camp\p"
-	.string "group leader!\p"
+	.string "group leader!\l"
 	.string "Before we begin, lets go\n"
 	.string "over basic safety while you\l"
 	.string "are staying here.\p"
@@ -76,8 +76,8 @@ gText_Counselor_Safety::
 	.string "The most important rule is to\n"
 	.string "stick to your group.\p"
 	.string "In the event of an\n"
-	.string "emergency, find your group\l"
-	.string "mates and make your way to\l"
+	.string "emergency, find the rest of\l"
+	.string "your group and make your way to\l"
 	.string "the nearest adult.\p"
 	.string "If no adult can be\n"
 	.string "found, head straight back\l"
