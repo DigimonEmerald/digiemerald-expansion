@@ -253,6 +253,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Joe;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Matt;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mimi;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TK;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Portal;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -502,6 +503,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MATT] =                     &gObjectEventGraphicsInfo_Matt,
     [OBJ_EVENT_GFX_MIMI] =                     &gObjectEventGraphicsInfo_Mimi,
     [OBJ_EVENT_GFX_TK] =                       &gObjectEventGraphicsInfo_TK,
+    [OBJ_EVENT_GFX_PORTAL] =                   &gObjectEventGraphicsInfo_Portal,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

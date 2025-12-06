@@ -561,6 +561,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Matt,                  OBJ_EVENT_PAL_TAG_MATT},
     {gObjectEventPal_Mimi,                  OBJ_EVENT_PAL_TAG_MIMI},
     {gObjectEventPal_TK,                    OBJ_EVENT_PAL_TAG_TK},
+    {gObjectEventPal_Portal,                OBJ_EVENT_PAL_TAG_PORTAL},
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteLight,              OBJ_EVENT_PAL_TAG_LIGHT},
@@ -9475,6 +9476,9 @@ static void UpdateObjectEventOffscreen(struct ObjectEvent *objectEvent, struct S
 
     if ((s16)y >= DISPLAY_HEIGHT + 16 || (s16)y2 < -16)
         objectEvent->offScreen = TRUE;
+
+    if (FlagGet(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV))
+        objectEvent->offScreen = FALSE;
 }
 
 static void UpdateObjectEventSpriteVisibility(struct ObjectEvent *objectEvent, struct Sprite *sprite)

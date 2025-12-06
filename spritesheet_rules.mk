@@ -4966,3 +4966,5 @@ $(OBJEVENTGFXDIR)/people/mimi.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/tk.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/misc/portal.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 8 -mheight 8

@@ -1376,3 +1376,7 @@ static const struct SpriteFrameImage sPicTable_Mimi[] = {
 static const struct SpriteFrameImage sPicTable_TK[] = {
     overworld_ascending_frames(gObjectEventPic_TK, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Portal[] = {
+    overworld_ascending_frames(gObjectEventPic_Portal, 8, 8),
+};

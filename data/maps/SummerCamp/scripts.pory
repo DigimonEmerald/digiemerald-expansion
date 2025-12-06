@@ -1,4 +1,11 @@
 mapscripts SummerCamp_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+        switch (var(VAR_SUMMER_CAMP)) {
+            case 0: setweather(WEATHER_SNOW)
+            case 1: setweather(WEATHER_NONE)
+        }
+    }
 }
 
 script SummerCamp_EventScript_Sign {
@@ -16,6 +23,156 @@ script SummerCamp_EventScript_Exit {
     release
 }
 
+script SummerCamp_EventScript_Mimi {
+    lock
+    faceplayer
+    msgbox(format("Mimi: The snow is so pretty!"))
+    release
+}
+
+script SummerCamp_EventScript_Joe {
+    lock
+    faceplayer
+    msgbox(format("Joe: We really should go and find an adult."))
+    release
+}
+
+script SummerCamp_EventScript_TK {
+    lock
+    faceplayer
+    msgbox(format("T.K: Wow! Look at all the snow!"))
+    release
+}
+
+script SummerCamp_EventScript_Matt {
+    lock
+    faceplayer
+    msgbox(format("Matt: Slow down T.K before you hurt yourself."))
+    release
+}
+
+script SummerCamp_EventScript_OtherGender {
+    lock
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: call(SummerCamp_EventScript_Sora)
+            case 1: call(SummerCamp_EventScript_Tai)
+        }
+    release
+}
+
+script SummerCamp_EventScript_Sora {
+    lock
+    faceplayer
+    msgbox(format("Sora: I didn't think I'd have to bring a coat."))
+    release
+}
+
+script SummerCamp_EventScript_Tai {
+    lock
+    faceplayer
+    msgbox(format("Tai: It finally stopped."))
+    release
+}
+
+script SummerCamp_EventScript_Portal {
+    lock
+    addobject(12)
+    addobject(13)
+    addobject(14)
+    addobject(15)
+    addobject(17)
+    applymovement(12, SummerCamp_Movement_Joe_Portal)
+    delay(15)
+    applymovement(14, SummerCamp_Movement_TK_Portal)
+    delay(15)
+    applymovement(13, SummerCamp_Movement_Matt_Portal)
+    delay(15)
+    applymovement(17, SummerCamp_Movement_OtherGender_Portal)
+    delay(15)
+    applymovement(15, SummerCamp_Movement_Mimi_Portal)
+    waitmovement(0)
+    msgbox(format("Tai: Izzy, come and see this!"))
+    waitmessage
+    playse(SE_DOOR)
+    addobject(11)
+    delay(5)
+    applymovement(11, SummerCamp_Movement_Izzy_Portal)
+    waitmovement(11)
+    msgbox(format("T.K: Its an aurora!"))
+    msgbox(format("Izzy: I don't think thats correct"))
+    msgbox(format("Mimi: I don't care what it is, its beautiful!"))
+    msgbox(format("Joe: Well whatever it is, don't touch it! We should let the adults handle it."))
+    waitmessage
+    playse(SE_PIN)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("Suddenly seven blinding lights land next to the children."))
+    fadescreen(FADE_TO_WHITE)
+    playse(SE_BANG)
+    delay(45)
+    fadescreen(FADE_FROM_WHITE)
+    msgbox(format("Izzy: A meteorite?"))
+    msgbox(format("You pick up the weird glowing object"))
+    setflag(FLAG_SYS_POKEDEX_GET)
+	special(SetUnlockedPokedexFlags)
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    msgbox(format("{PLAYER} received a Digivice"))
+    waitmessage
+    msgbox(format("Sora: What is it?"))
+    msgbox(format("Izzy: It kind of looks like a pager."))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_WATERFALL)
+    msgbox(format("A sudden wave towers the children as they fall into an endless void."))
+    clearflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
+    release
+}
+
 movement SummerCamp_Movement_StopPlayerLeaving {
     walk_left
+}
+
+movement SummerCamp_Movement_Izzy_Portal{
+    walk_faster_down * 2
+    walk_faster_right * 8
+    walk_down
+    walk_right * 2
+    walk_up
+    face_up
+}
+
+movement SummerCamp_Movement_Joe_Portal{
+    walk_faster_down * 2
+    walk_fast_right * 11
+    walk_up
+}
+
+movement SummerCamp_Movement_Mimi_Portal{
+    walk_faster_down * 2
+    walk_fast_right * 8
+    walk_down
+    walk_right * 4
+    walk_up
+}
+
+movement SummerCamp_Movement_Matt_Portal{
+    walk_faster_down * 2
+    walk_fast_right * 9
+    face_up
+}
+
+movement SummerCamp_Movement_TK_Portal{
+    walk_faster_down * 2
+    walk_fast_right * 9
+    walk_up
+}
+
+movement SummerCamp_Movement_OtherGender_Portal{
+    walk_faster_down * 2
+    walk_fast_right * 8
+    walk_down
+    walk_right * 4
+    walk_up * 2
 }

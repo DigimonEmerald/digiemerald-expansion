@@ -22,6 +22,13 @@
 - Mikaelly
 - Void
 
+### Digimon Emerald Adventure: Origins
+
+# Tilesets
+- [Emerald Slide Snow Tileset](https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/tree/main/Tilesets/The%20Great%20Tileset%20Exchange/Full%20Tilesets/Emerald%20Slide)
+
+# Event Objects
+- [Pokemon LIFE Portal](https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/blob/main/Other/Pokemon%20LIFE/overworlds/Extras/0_102.png)
 
 ## RHH Credits ✨
 

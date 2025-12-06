@@ -1,7 +1,73 @@
 mapscripts SummerCamp_House_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
 }
 
 script SummerCamp_House_EventScript_FoodReservers {
     lock
-    msgbox(forcesave("It contains drinking water."))
+    msgbox(format("It contains drinking water."))
+    release
+}
+
+script SummerCamp_House_EventScript_MattandTK {
+    lock
+    msgbox(format("Matt: We can play in the snow after the storm has calmed down."))
+    msgbox(format("T.K: Thank you Big Bro."))
+    release
+}
+
+script SummerCamp_House_EventScript_Mimi {
+    lock
+    faceplayer
+    msgbox(format("Mimi: I want to go play in the snow soon! I've never played with snow in the summer"))
+    release
+}
+
+script SummerCamp_House_EventScript_Joe {
+    lock
+    faceplayer
+    msgbox(format("Joe: We should go and find an adult after the storm dies down!"))
+    release
+}
+
+script SummerCamp_House_EventScript_Izzy {
+    lock
+    faceplayer
+    msgbox(format("Izzy: I'm trying to get a signal on my laptop but no luck yet."))
+    release
+}
+
+script SummerCamp_House_EventScript_OtherGender {
+    lock
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: call(SummerCamp_House_EventScript_Sora)
+            case 1: call(SummerCamp_House_EventScript_Tai)
+        }
+    release
+}
+
+script SummerCamp_House_EventScript_Sora {
+    lock
+    faceplayer
+    msgbox(format("Sora: What happened to summer weather?"))
+    release
+}
+
+script SummerCamp_House_EventScript_Tai {
+    lock
+    faceplayer
+    msgbox(format("Tai: I hope the storm stops soon."))
+    release
+}
+
+script SummerCamp_House_EventScript_LeaveShelter {
+    setflag(FLAG_SUMMER_CAMP_HOUSE_HIDE_KIDS_IZZY)
+    setflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
+}
+
+script SummerCamp_House_EventScript_EnteredShelter {
+    setvar(VAR_SUMMER_CAMP, 1)
+    clearflag(FLAG_SUMMER_CAMP_ENABLE_KIDS)
 }

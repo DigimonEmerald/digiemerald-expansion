@@ -45,10 +45,10 @@
 
 #define FLAG_SUMMER_CAMP_HIDDEN_01    0x20 // Summer Camp Green Malachite Hidden Item 
 #define FLAG_SUMMER_CAMP_HIDDEN_02    0x21 // Summer Camp Green Delivery License Hidden Item 
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_SUMMER_CAMP_HOUSE_HIDE_KIDS_IZZY    0x22 // Hides all kids in the summer camp house except Izzy
+#define FLAG_SUMMER_CAMP_ENABLE_KIDS    0x23 // Enables kids in OW for summer camp
+#define FLAG_SUMMER_CAMP_HIDE_IZZY    0x24 // Hides Izzy for Summer Camp
+#define FLAG_FORCE_LOAD_OFFSCREEN_OBJEV    0x25 // Force load offscreen objects
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
