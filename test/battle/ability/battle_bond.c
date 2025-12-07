@@ -7,7 +7,7 @@ ASSUMPTIONS
 }
 
 // Battle Bond transforms the Pokémon when fainting any battler(opposing or partner), unless it's the last Pokémon and the battle ends.
-SINGLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon - Singles")
+SINGLE_BATTLE_TEST("Battle Bond transforms player's Greninja - Singles")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -17,14 +17,14 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon - Singles")
     PARAMETRIZE {monsCountPlayer = 2; monsCountOpponent = 2; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND);
+        WITH_CONFIG(CONFIG_BATTLE_BOND, GEN_8);
+        PLAYER(SPECIES_GRENINJA_BATTLE_BOND);
         if (monsCountPlayer == 2) {
-            PLAYER(SPECIES_LOPMONX);
+            PLAYER(SPECIES_WOBBUFFET);
         }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         if (monsCountOpponent == 2) {
-            OPPONENT(SPECIES_LOPMONX);
+            OPPONENT(SPECIES_WOBBUFFET);
         }
     } WHEN {
         if (monsCountOpponent == 2) {
@@ -35,31 +35,27 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon - Singles")
 
     } SCENE {
         HP_BAR(opponent);
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx fainted!");
-=======
-        MESSAGE("The opposing Lopmonx fainted!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet fainted!");
         if (monsCountOpponent != 1) {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
-            MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
-            MESSAGE("Biospinomon became Ash-Biospinomon!");
+            MESSAGE("Greninja became fully charged due to its bond with its trainer!");
+            MESSAGE("Greninja became Ash-Greninja!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
-                MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
+                MESSAGE("Greninja became fully charged due to its bond with its trainer!");
             }
         }
     } FINALLY {
         if (monsCountOpponent != 1) {
-            EXPECT(player->species == SPECIES_ROSEMON_BURSTMODE);
+            EXPECT(player->species == SPECIES_GRENINJA_ASH);
         } else {
-            EXPECT(player->species == SPECIES_BIOSPINOMON_BATTLE_BOND);
+            EXPECT(player->species == SPECIES_GRENINJA_BATTLE_BOND);
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biospinomon - Singles")
+SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Greninja - Singles")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -69,14 +65,14 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biospinomon - Singles")
     PARAMETRIZE {monsCountPlayer = 2; monsCountOpponent = 2; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        OPPONENT(SPECIES_BIOSPINOMON_BATTLE_BOND);
+        WITH_CONFIG(CONFIG_BATTLE_BOND, GEN_8);
+        OPPONENT(SPECIES_GRENINJA_BATTLE_BOND);
         if (monsCountOpponent == 2) {
-            OPPONENT(SPECIES_LOPMONX);
+            OPPONENT(SPECIES_WOBBUFFET);
         }
-        PLAYER(SPECIES_LOPMONX) {HP(1); }
+        PLAYER(SPECIES_WOBBUFFET) {HP(1); }
         if (monsCountPlayer == 2) {
-            PLAYER(SPECIES_LOPMONX);
+            PLAYER(SPECIES_WOBBUFFET);
         }
     } WHEN {
         if (monsCountPlayer == 2) {
@@ -87,27 +83,27 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biospinomon - Singles")
 
     } SCENE {
         HP_BAR(player);
-        MESSAGE("Lopmonx fainted!");
+        MESSAGE("Wobbuffet fainted!");
         if (monsCountPlayer != 1) {
             ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-            MESSAGE("The opposing Biospinomon became fully charged due to its bond with its trainer!");
-            MESSAGE("The opposing Biospinomon became Ash-Biospinomon!");
+            MESSAGE("The opposing Greninja became fully charged due to its bond with its trainer!");
+            MESSAGE("The opposing Greninja became Ash-Greninja!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-                MESSAGE("The opposing Biospinomon became fully charged due to its bond with its trainer!");
+                MESSAGE("The opposing Greninja became fully charged due to its bond with its trainer!");
             }
         }
     } FINALLY {
         if (monsCountPlayer != 1) {
-            EXPECT(opponent->species == SPECIES_ROSEMON_BURSTMODE);
+            EXPECT(opponent->species == SPECIES_GRENINJA_ASH);
         } else {
-            EXPECT(opponent->species == SPECIES_BIOSPINOMON_BATTLE_BOND);
+            EXPECT(opponent->species == SPECIES_GRENINJA_BATTLE_BOND);
         }
     }
 }
 
-DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon when fainting its Ally")
+DOUBLE_BATTLE_TEST("Battle Bond transforms player's Greninja when fainting its Ally")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -117,16 +113,16 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon when fainting it
     PARAMETRIZE {monsCountPlayer = 3; monsCountOpponent = 3; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND);
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        WITH_CONFIG(CONFIG_BATTLE_BOND, GEN_8);
+        PLAYER(SPECIES_GRENINJA_BATTLE_BOND);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         if (monsCountPlayer == 3) {
-            PLAYER(SPECIES_LOPMONX);
+            PLAYER(SPECIES_WOBBUFFET);
         }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
         if (monsCountOpponent == 3) {
-            OPPONENT(SPECIES_LOPMONX);
+            OPPONENT(SPECIES_WOBBUFFET);
         }
     } WHEN {
         if (monsCountPlayer == 3) {
@@ -137,30 +133,30 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon when fainting it
 
     } SCENE {
         HP_BAR(playerRight);
-        MESSAGE("Lopmonx fainted!");
+        MESSAGE("Wobbuffet fainted!");
         ABILITY_POPUP(playerLeft, ABILITY_BATTLE_BOND);
-        MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
-        MESSAGE("Biospinomon became Ash-Biospinomon!");
+        MESSAGE("Greninja became fully charged due to its bond with its trainer!");
+        MESSAGE("Greninja became Ash-Greninja!");
     } FINALLY {
-        EXPECT(playerLeft->species == SPECIES_ROSEMON_BURSTMODE);
+        EXPECT(playerLeft->species == SPECIES_GRENINJA_ASH);
     }
 }
 
 SINGLE_BATTLE_TEST("Battle Bond increases Atk, SpAtk and Speed by 1 stage (Gen9+)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
-        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
-        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
-        OPPONENT(SPECIES_LOPMON_X);
+        WITH_CONFIG(CONFIG_BATTLE_BOND, GEN_9);
+        PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_WATER_GUN); SEND_OUT(opponent, 1); }
     } SCENE {
         HP_BAR(opponent);
-        MESSAGE("The opposing Lopmon_x fainted!");
+        MESSAGE("The opposing Wobbuffet fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
-        EXPECT(player->species != SPECIES_ROSEMON_BURSTMODE);
+        EXPECT(player->species != SPECIES_GRENINJA_ASH);
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
@@ -170,10 +166,10 @@ SINGLE_BATTLE_TEST("Battle Bond increases Atk, SpAtk and Speed by 1 stage (Gen9+
 SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increased (Gen9+)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
-        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
-        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
-        OPPONENT(SPECIES_LOPMON_X);
+        WITH_CONFIG(CONFIG_BATTLE_BOND, GEN_9);
+        PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_DANCE); }
         TURN { MOVE(player, MOVE_DRAGON_DANCE); }
@@ -184,10 +180,10 @@ SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increas
         TURN { MOVE(player, MOVE_WATER_GUN); SEND_OUT(opponent, 1); }
     } SCENE {
         HP_BAR(opponent);
-        MESSAGE("The opposing Lopmon_x fainted!");
+        MESSAGE("The opposing Wobbuffet fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
-        EXPECT(player->species != SPECIES_ROSEMON_BURSTMODE);
+        EXPECT(player->species != SPECIES_GRENINJA_ASH);
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 6);
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 6);

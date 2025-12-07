@@ -1,7 +1,7 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from an opponent's move")
+SINGLE_BATTLE_TEST("Forecast transforms Castform in weather from an opponent's move")
 {
     u32 move;
     PARAMETRIZE { move = MOVE_SUNNY_DAY; }
@@ -9,32 +9,32 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from an opponent's m
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
         switch (move)
         {
         case MOVE_SUNNY_DAY:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SUNNY);
             break;
         case MOVE_RAIN_DANCE:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_RAINY);
             break;
         case MOVE_HAIL:
         case MOVE_SNOWSCAPE:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SNOWY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SNOWY);
             break;
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from its own move")
+SINGLE_BATTLE_TEST("Forecast transforms Castform in weather from its own move")
 {
     u32 move;
     PARAMETRIZE { move = MOVE_SUNNY_DAY; }
@@ -42,32 +42,32 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from its own move")
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
         switch (move)
         {
         case MOVE_SUNNY_DAY:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SUNNY);
             break;
         case MOVE_RAIN_DANCE:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_RAINY);
             break;
         case MOVE_HAIL:
         case MOVE_SNOWSCAPE:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SNOWY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SNOWY);
             break;
         }
     }
 }
 
-DOUBLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from a partner's move")
+DOUBLE_BATTLE_TEST("Forecast transforms Castform in weather from a partner's move")
 {
     u32 move;
     PARAMETRIZE { move = MOVE_SUNNY_DAY; }
@@ -75,34 +75,34 @@ DOUBLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from a partner's mov
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerRight, move); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, playerLeft);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
         switch (move)
         {
         case MOVE_SUNNY_DAY:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_SUNNY);
             break;
         case MOVE_RAIN_DANCE:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_RAINY);
             break;
         case MOVE_HAIL:
         case MOVE_SNOWSCAPE:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_SNOWY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_SNOWY);
             break;
         }
     }
 }
 
-DOUBLE_BATTLE_TEST("Forecast transforms all Dolphmons present in weather")
+DOUBLE_BATTLE_TEST("Forecast transforms all Castforms present in weather")
 {
     u32 move;
     PARAMETRIZE { move = MOVE_SUNNY_DAY; }
@@ -110,99 +110,95 @@ DOUBLE_BATTLE_TEST("Forecast transforms all Dolphmons present in weather")
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); Speed(10); }
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); Speed(5); }
-        OPPONENT(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); Speed(7); }
-        OPPONENT(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); Speed(1); }
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); Speed(10); }
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); Speed(5); }
+        OPPONENT(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); Speed(7); }
+        OPPONENT(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); Speed(1); }
     } WHEN {
         TURN { MOVE(playerRight, move); }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, playerLeft);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         ABILITY_POPUP(opponentLeft, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, opponentLeft);
-<<<<<<< HEAD
-        MESSAGE("Foe Dolphmon transformed!");
-=======
-        MESSAGE("The opposing Dolphmon transformed!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Castform transformed!");
         ABILITY_POPUP(playerRight, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, playerRight);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         ABILITY_POPUP(opponentRight, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, opponentRight);
-<<<<<<< HEAD
-        MESSAGE("Foe Dolphmon transformed!");
-=======
-        MESSAGE("The opposing Dolphmon transformed!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Castform transformed!");
     } THEN {
         switch (move)
         {
         case MOVE_SUNNY_DAY:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_SUNNY);
-            EXPECT_EQ(playerRight->species, SPECIES_DOLPHMON_SUNNY);
-            EXPECT_EQ(opponentLeft->species, SPECIES_DOLPHMON_SUNNY);
-            EXPECT_EQ(opponentRight->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_SUNNY);
+            EXPECT_EQ(playerRight->species, SPECIES_CASTFORM_SUNNY);
+            EXPECT_EQ(opponentLeft->species, SPECIES_CASTFORM_SUNNY);
+            EXPECT_EQ(opponentRight->species, SPECIES_CASTFORM_SUNNY);
             break;
         case MOVE_RAIN_DANCE:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_RAINY);
-            EXPECT_EQ(playerRight->species, SPECIES_DOLPHMON_RAINY);
-            EXPECT_EQ(opponentLeft->species, SPECIES_DOLPHMON_RAINY);
-            EXPECT_EQ(opponentRight->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_RAINY);
+            EXPECT_EQ(playerRight->species, SPECIES_CASTFORM_RAINY);
+            EXPECT_EQ(opponentLeft->species, SPECIES_CASTFORM_RAINY);
+            EXPECT_EQ(opponentRight->species, SPECIES_CASTFORM_RAINY);
             break;
         case MOVE_HAIL:
         case MOVE_SNOWSCAPE:
-            EXPECT_EQ(playerLeft->species, SPECIES_DOLPHMON_SNOWY);
-            EXPECT_EQ(playerRight->species, SPECIES_DOLPHMON_SNOWY);
-            EXPECT_EQ(opponentLeft->species, SPECIES_DOLPHMON_SNOWY);
-            EXPECT_EQ(opponentRight->species, SPECIES_DOLPHMON_SNOWY);
+            EXPECT_EQ(playerLeft->species, SPECIES_CASTFORM_SNOWY);
+            EXPECT_EQ(playerRight->species, SPECIES_CASTFORM_SNOWY);
+            EXPECT_EQ(opponentLeft->species, SPECIES_CASTFORM_SNOWY);
+            EXPECT_EQ(opponentRight->species, SPECIES_CASTFORM_SNOWY);
             break;
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from an ability")
+SINGLE_BATTLE_TEST("Forecast transforms Castform in weather from an ability")
 {
-    u32 species, ability;
-    PARAMETRIZE { species = SPECIES_GATOMON_X; ability = ABILITY_DRIZZLE; }
-    PARAMETRIZE { species = SPECIES_GEKOMON; ability = ABILITY_DROUGHT; }
+    u32 species;
+    enum Ability ability;
+    PARAMETRIZE { species = SPECIES_KYOGRE; ability = ABILITY_DRIZZLE; }
+    PARAMETRIZE { species = SPECIES_GROUDON; ability = ABILITY_DROUGHT; }
     PARAMETRIZE { species = SPECIES_ABOMASNOW; ability = ABILITY_SNOW_WARNING; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { SWITCH(opponent, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
         switch (ability)
         {
         case ABILITY_DROUGHT:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SUNNY);
             break;
         case ABILITY_DRIZZLE:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_RAINY);
             break;
         case ABILITY_SNOW_WARNING:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SNOWY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SNOWY);
+            break;
+        default:
             break;
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in primal weather")
+SINGLE_BATTLE_TEST("Forecast transforms Castform in primal weather")
 {
-    u32 species, item, ability;
-    PARAMETRIZE { species = SPECIES_GATOMON_X; ability = ABILITY_PRIMORDIAL_SEA; item = ITEM_BLUE_ORB; }
-    PARAMETRIZE { species = SPECIES_GEKOMON; ability = ABILITY_DESOLATE_LAND; item = ITEM_RED_ORB; }
+    u32 species, item;
+    enum Ability ability;
+    PARAMETRIZE { species = SPECIES_KYOGRE; ability = ABILITY_PRIMORDIAL_SEA; item = ITEM_BLUE_ORB; }
+    PARAMETRIZE { species = SPECIES_GROUDON; ability = ABILITY_DESOLATE_LAND; item = ITEM_RED_ORB; }
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(species) { Item(item); }
     } WHEN {
         TURN { SWITCH(opponent, 1); }
@@ -210,25 +206,27 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in primal weather")
         ABILITY_POPUP(opponent, ability);
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
         switch (ability)
         {
         case ABILITY_DESOLATE_LAND:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_SUNNY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_SUNNY);
             break;
         case ABILITY_PRIMORDIAL_SEA:
-            EXPECT_EQ(player->species, SPECIES_DOLPHMON_RAINY);
+            EXPECT_EQ(player->species, SPECIES_CASTFORM_RAINY);
+            break;
+        default:
             break;
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when weather expires")
+SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal when weather expires")
 {
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN {}
@@ -240,21 +238,21 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when weather exp
         // transforms
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         // back to normal
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_NORMAL);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_NORMAL);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when Sandstorm is active")
+SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal when Sandstorm is active")
 {
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN { MOVE(player, MOVE_SANDSTORM); }
@@ -262,35 +260,26 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when Sandstorm i
         // transforms
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         // back to normal
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_NORMAL);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_NORMAL);
     }
 }
 
-<<<<<<< HEAD
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Air Lock")
-=======
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Cloud Nine/Air Lock")
->>>>>>> upstream/master
+SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal under Cloud Nine/Air Lock")
 {
-    u32 species = 0, ability = 0;
-    PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
-    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
+    u32 species = 0;
+    enum Ability ability = 0;
+    PARAMETRIZE { species = SPECIES_PSYDUCK;  ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
     GIVEN {
-<<<<<<< HEAD
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GEOGREYMON);
-=======
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
->>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN { SWITCH(opponent, 1); }
@@ -298,23 +287,23 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Cloud Nine
         // transforms
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         // back to normal
         ABILITY_POPUP(opponent, ability);
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_NORMAL);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_NORMAL);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon on switch-in")
+SINGLE_BATTLE_TEST("Forecast transforms Castform on switch-in")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN { SWITCH(player, 1); }
@@ -324,17 +313,17 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon on switch-in")
         // turn 2
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_RAINY);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_RAINY);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when weather changes")
+SINGLE_BATTLE_TEST("Forecast transforms Castform when weather changes")
 {
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
@@ -342,22 +331,22 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when weather changes")
         // transforms
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         // transforms again
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_SUNNY);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_SUNNY);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when its ability is suppressed")
+SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal when its ability is suppressed")
 {
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
-        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { MOVE(opponent, MOVE_GASTRO_ACID); }
@@ -365,22 +354,22 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when its ability
         // transforms in sun
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         // back to normal
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_DOLPHMON_NORMAL);
+        EXPECT_EQ(player->species, SPECIES_CASTFORM_NORMAL);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it switches out")
+SINGLE_BATTLE_TEST("Forecast transforms Castform back when it switches out")
 {
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
-        PLAYER(SPECIES_DOLPHMON) { Ability(ABILITY_FORECAST); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { SWITCH(player, 1); }
@@ -388,25 +377,20 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it switches out")
         // transforms in sun
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-<<<<<<< HEAD
-        MESSAGE("Dolphmon transformed!");
-        MESSAGE("Dolphmon, that's enough! Come back!");
-=======
-        MESSAGE("Dolphmon transformed!");
-        SWITCH_OUT_MESSAGE("Dolphmon");
->>>>>>> upstream/master
+        MESSAGE("Castform transformed!");
+        SWITCH_OUT_MESSAGE("Castform");
     } THEN {
-        EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_DOLPHMON);
+        EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_CASTFORM);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it uses a move that forces it to switch out")
+SINGLE_BATTLE_TEST("Forecast transforms Castform back when it uses a move that forces it to switch out")
 {
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
-        PLAYER(SPECIES_DOLPHMON) { Ability(ABILITY_FORECAST); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
@@ -414,32 +398,33 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it uses a move that f
         // transforms in sun
         ABILITY_POPUP(player, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
     } THEN {
-        EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_DOLPHMON);
+        EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_CASTFORM);
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when Cloud Nine ability user leaves the field")
+SINGLE_BATTLE_TEST("Forecast transforms Castform when Cloud Nine ability user leaves the field")
 {
-    u32 species = 0, ability = 0;
-    PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
-    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
+    u32 species = 0;
+    enum Ability ability = 0;
+    PARAMETRIZE { species = SPECIES_PSYDUCK;  ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
 
     GIVEN {
-        PLAYER(SPECIES_DOLPHMON) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
         OPPONENT(species) { Ability(ability); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SUNNY_DAY); MOVE(opponent, MOVE_CELEBRATE); }
         TURN { SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUNNY_DAY, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
-        MESSAGE("2 sent out Lopmonx!");
+        MESSAGE("2 sent out Wobbuffet!");
         ABILITY_POPUP(player, ABILITY_FORECAST);
-        MESSAGE("Dolphmon transformed!");
+        MESSAGE("Castform transformed!");
     }
 }
 

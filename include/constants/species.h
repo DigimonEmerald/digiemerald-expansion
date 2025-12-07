@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_SPECIES_H
 
 // NOTE: The defines here are named in order to match Pokémon Showdown's naming conventions. This is done to avoid issues with trainerproc parsing species names. If a Pokémon does not have an entry on Showdown, use your best judgement.
-// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap does not always properly handle having multiple defines.
+// Additionally, we have tried to reduce down to as few defines as possible, because programs like porymap do not always properly handle having multiple defines.
 // Discussion: https://github.com/rh-hideout/pokeemerald-expansion/pull/5075#issuecomment-2384088602
 // Showdown: https://github.com/smogon/Pokemon-Showdown/blob/master/data/pokedex.ts
 
@@ -1637,8 +1637,34 @@
 #define SPECIES_EISCUE                                  1617
 #define SPECIES_INDEEDEE                                1618
 #define SPECIES_MORPEKO                                 1619
+#define SPECIES_CLEFABLE_MEGA                           1620
+#define SPECIES_VICTREEBEL_MEGA                         1621
+#define SPECIES_STARMIE_MEGA                            1622
+#define SPECIES_DRAGONITE_MEGA                          1623
+#define SPECIES_MEGANIUM_MEGA                           1624
+#define SPECIES_FERALIGATR_MEGA                         1625
+#define SPECIES_SKARMORY_MEGA                           1626
+#define SPECIES_FROSLASS_MEGA                           1627
+#define SPECIES_EMBOAR_MEGA                             1628
+#define SPECIES_EXCADRILL_MEGA                          1629
+#define SPECIES_SCOLIPEDE_MEGA                          1630
+#define SPECIES_SCRAFTY_MEGA                            1631
+#define SPECIES_EELEKTROSS_MEGA                         1632
+#define SPECIES_CHANDELURE_MEGA                         1633
+#define SPECIES_CHESNAUGHT_MEGA                         1634
+#define SPECIES_DELPHOX_MEGA                            1635
+#define SPECIES_GRENINJA_MEGA                           1636
+#define SPECIES_PYROAR_MEGA                             1637
+#define SPECIES_MALAMAR_MEGA                            1638
+#define SPECIES_DRAGALGE_MEGA                           1639
+#define SPECIES_HAWLUCHA_MEGA                           1640
+#define SPECIES_FLOETTE_MEGA                            1641
+#define SPECIES_BARBARACLE_MEGA                         1642
+#define SPECIES_ZYGARDE_MEGA                            1643
+#define SPECIES_DRAMPA_MEGA                             1644
+#define SPECIES_FALINKS_MEGA                            1645
 
-#define SPECIES_EGG                                     1620
+#define SPECIES_EGG                                     1646
 
 #define NUM_SPECIES SPECIES_EGG
 

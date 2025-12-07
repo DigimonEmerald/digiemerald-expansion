@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Battle Armor and Shell Armor block critical hits")
 {
     u32 species;
-    u32 ability;
+    enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_WANYAMON; ability = ABILITY_SHELL_ARMOR; }
     PARAMETRIZE { species = SPECIES_DOBERMON_X; ability = ABILITY_BATTLE_ARMOR; }

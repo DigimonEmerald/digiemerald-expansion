@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts the highest stat")
 {
     GIVEN {
         PLAYER(SPECIES_WALKING_WAKE) { Ability(ABILITY_PROTOSYNTHESIS); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
     } SCENE {
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts either Attack or Special Attack, not b
 
     GIVEN {
         PLAYER(species) { Ability(ABILITY_PROTOSYNTHESIS); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); MOVE(player, move); }
@@ -59,9 +59,9 @@ SINGLE_BATTLE_TEST("Protosynthesis ability pop up activates only once during the
     u16 turns;
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_ABILITY_WEATHER, GEN_6);
+        WITH_CONFIG(CONFIG_ABILITY_WEATHER, GEN_6);
         PLAYER(SPECIES_WALKING_WAKE) { Ability(ABILITY_PROTOSYNTHESIS); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); };
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); };
     } WHEN {
         for (turns = 0; turns < 5; turns++)
             TURN {}
@@ -88,9 +88,9 @@ SINGLE_BATTLE_TEST("Protosynthesis ability pop up activates only once during the
 SINGLE_BATTLE_TEST("Protosynthesis activates on switch-in")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_ROARING_MOON) { Ability(ABILITY_PROTOSYNTHESIS); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); };
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); };
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
@@ -111,7 +111,7 @@ SINGLE_BATTLE_TEST("Protosynthesis prioritizes stats in the case of a tie in the
     PARAMETRIZE { stats[4] = 255; stats[3] = 255; }
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Attack(stats[0]); Defense(stats[1]); SpAttack(stats[2]); SpDefense(stats[3]); Speed(stats[4]); }
-        OPPONENT(SPECIES_GEKOMON) { Ability(ABILITY_DROUGHT); Speed(5); }
+        OPPONENT(SPECIES_GROUDON) { Ability(ABILITY_DROUGHT); Speed(5); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -137,9 +137,9 @@ SINGLE_BATTLE_TEST("Protosynthesis prioritizes stats in the case of a tie in the
 SINGLE_BATTLE_TEST("Protosynthesis activates in Sun before Booster Energy")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); }
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
@@ -153,9 +153,9 @@ SINGLE_BATTLE_TEST("Protosynthesis activates in Sun before Booster Energy")
 SINGLE_BATTLE_TEST("Protosynthesis doesn't activate for a transformed battler")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); Item(ITEM_BOOSTER_ENERGY); }
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); Item(ITEM_BOOSTER_ENERGY); }
     } WHEN {
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TRANSFORM); }
     } SCENE {
@@ -174,7 +174,7 @@ SINGLE_BATTLE_TEST("Protosynthesis activates even if the Pokémon is holding an 
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_UTILITY_UMBRELLA); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); }
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -185,9 +185,10 @@ SINGLE_BATTLE_TEST("Protosynthesis activates even if the Pokémon is holding an 
 
 SINGLE_BATTLE_TEST("Protosynthesis doesn't activate if Cloud Nine/Air Lock is on the field")
 {
-    u32 species, ability;
-    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
-    PARAMETRIZE { species = SPECIES_DEMMERAMON; ability = ABILITY_CLOUD_NINE; }
+    u32 species;
+    enum Ability ability;
+    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
+    PARAMETRIZE { species = SPECIES_GOLDUCK; ability = ABILITY_CLOUD_NINE; }
 
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); }

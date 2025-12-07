@@ -7,9 +7,9 @@ SINGLE_BATTLE_TEST("Frostbite reduces the special attack by 50 percent")
     s16 normaleDamage;
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_FROSTBITE); }
+        ASSUME(GetMoveCategory(MOVE_SWIFT) == DAMAGE_CATEGORY_SPECIAL);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_FROSTBITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SWIFT); MOVE(player, MOVE_FLAME_WHEEL); }
         TURN { MOVE(opponent, MOVE_SWIFT); }
@@ -28,13 +28,13 @@ SINGLE_BATTLE_TEST("Frostbite deals 1/16th (Gen7+) or 1/8th damage to affected P
     s16 frostbiteDamage;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_FROSTBITE); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_FROSTBITE); }
     } WHEN {
         TURN {}
     } SCENE {
-        MESSAGE("The opposing Lopmonx was hurt by its frostbite!");
-        ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, opponent);
+        MESSAGE("The opposing Wobbuffet was hurt by its frostbite!");
+        ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRB, opponent);
         HP_BAR(opponent, captureDamage: &frostbiteDamage);
    } THEN { EXPECT_EQ(frostbiteDamage, opponent->maxHP / ((B_BURN_DAMAGE >= GEN_7) ? 16 : 8)); }
 }
@@ -50,18 +50,18 @@ SINGLE_BATTLE_TEST("Frostbite is healed if hit with a thawing move")
     PARAMETRIZE { move = MOVE_EMBER; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_FROSTBITE); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_FROSTBITE); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         if (move == MOVE_EMBER) {
             NONE_OF {
-                MESSAGE("The opposing Lopmonx's frostbite was cured!");
+                MESSAGE("The opposing Wobbuffet's frostbite was cured!");
             }
         } else {
-            MESSAGE("The opposing Lopmonx's frostbite was cured!");
+            MESSAGE("The opposing Wobbuffet's frostbite was cured!");
         }
    }
 }
@@ -77,20 +77,20 @@ SINGLE_BATTLE_TEST("Frostbite is healed when the user uses a thawing move")
     PARAMETRIZE { move = MOVE_EMBER; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FROSTBITE); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_FROSTBITE); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
         if (move == MOVE_EMBER) {
-            MESSAGE("Lopmonx was hurt by its frostbite!");
-            ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, player);
+            MESSAGE("Wobbuffet was hurt by its frostbite!");
+            ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRB, player);
         } else {
             NONE_OF {
-                MESSAGE("Lopmonx was hurt by its frostbite!");
-                ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, player);
+                MESSAGE("Wobbuffet was hurt by its frostbite!");
+                ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRB, player);
             }
         }
    }

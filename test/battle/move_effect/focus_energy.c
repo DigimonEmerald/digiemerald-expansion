@@ -11,20 +11,20 @@ SINGLE_BATTLE_TEST("Focus Energy increases the user's critical hit ratio by 1 st
     bool32 useFocusEnergy = 0;
     u32 genConfig = 0, chance = 0;
     for (u32 j = GEN_1; j <= GEN_9; j++) {
-        PARAMETRIZE { genConfig = j; useFocusEnergy = FALSE; chance = j >= GEN_7 ? 24 : 16; } // ~4.16%/6.25% with Lopmonx's base speed
+        PARAMETRIZE { genConfig = j; useFocusEnergy = FALSE; chance = j >= GEN_7 ? 24 : 16; } // ~4.16%/6.25% with Wobbuffet's base speed
         PARAMETRIZE { genConfig = j; useFocusEnergy = TRUE;
             if (j >= GEN_6)
                 chance = 2; // 50% / 25%
             else if (j >= GEN_3)
                 chance = 4; // 25%
             else
-                chance = 8; // 12.5% with Lopmonx's base speed
+                chance = 8; // 12.5% with Wobbuffet's base speed
         }
     }
     PASSES_RANDOMLY(1, chance, RNG_CRITICAL_HIT);
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, (genConfig == GEN_1)? GEN_2 : genConfig);
-        WITH_CONFIG(GEN_CONFIG_FOCUS_ENERGY_CRIT_RATIO, genConfig);
+        WITH_CONFIG(CONFIG_CRIT_CHANCE, (genConfig == GEN_1)? GEN_2 : genConfig);
+        WITH_CONFIG(CONFIG_FOCUS_ENERGY_CRIT_RATIO, genConfig);
         ASSUME(GetSpeciesBaseSpeed(SPECIES_WOBBUFFET) == 33);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -50,11 +50,11 @@ SINGLE_BATTLE_TEST("Focus Energy multiplies crit chance by 4 with gen 1 crit cha
     }
     PASSES_RANDOMLY(1, chance, RNG_CRITICAL_HIT);
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, GEN_1);
-        WITH_CONFIG(GEN_CONFIG_FOCUS_ENERGY_CRIT_RATIO, genConfig);
-        ASSUME(GetSpeciesBaseSpeed(SPECIES_LOPMONX) == 33);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_CRIT_CHANCE, GEN_1);
+        WITH_CONFIG(CONFIG_FOCUS_ENERGY_CRIT_RATIO, genConfig);
+        ASSUME(GetSpeciesBaseSpeed(SPECIES_WOBBUFFET) == 33);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useFocusEnergy)
             TURN { MOVE(player, MOVE_FOCUS_ENERGY); }

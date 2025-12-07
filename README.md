@@ -17,7 +17,7 @@
 If you use **`Digimon Emerald`**, please credit us alongside **RHH (Rom Hacking Hideout)** and **Pret**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's pokeemerald-expansion 1.13.3 https://github.com/rh-hideout/pokeemerald-expansion/
+Based off RHH's pokeemerald-expansion 1.14.1 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!

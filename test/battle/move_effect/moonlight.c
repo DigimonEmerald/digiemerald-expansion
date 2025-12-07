@@ -9,9 +9,9 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Moonlight recovers 1/2 of the user's max HP (Gen3+)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(200); }
-        OPPONENT(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(200); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_MOONLIGHT); }
     } SCENE {
@@ -22,9 +22,9 @@ SINGLE_BATTLE_TEST("Moonlight recovers 1/2 of the user's max HP (Gen3+)")
 SINGLE_BATTLE_TEST("Moonlight recovers 2/3 of the user's max HP in Sunlight (Gen3+)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(300); }
-        OPPONENT(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(300); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); MOVE(player, MOVE_MOONLIGHT); }
     } SCENE {
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Moonlight recovers 1/4 of the user's max HP in Rain, Sandsto
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(400); }
-        OPPONENT(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_TIME_OF_DAY_HEALING_MOVES, GEN_3);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(400); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_MOONLIGHT); }
     } SCENE {

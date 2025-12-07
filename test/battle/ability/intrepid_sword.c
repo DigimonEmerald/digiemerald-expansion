@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
     } WHEN {
         TURN { }
@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage")
 SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage every time it switches in (Gen8)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_INTREPID_SWORD, GEN_8);
-        PLAYER(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_INTREPID_SWORD, GEN_8);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -42,10 +42,10 @@ SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage every time it swit
 SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage only once per battle (Gen9+)")
 {
     GIVEN {
-        WITH_CONFIG(GEN_INTREPID_SWORD, GEN_9);
-        PLAYER(SPECIES_LOPMONX);
+        WITH_CONFIG(CONFIG_INTREPID_SWORD, GEN_9);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
-        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
@@ -66,22 +66,16 @@ SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage only once per batt
 SINGLE_BATTLE_TEST("Intrepid Sword activates when it's no longer effected by Neutralizing Gas")
 {
     GIVEN {
-        PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_NEUTRALIZING_GAS);
-<<<<<<< HEAD
-        MESSAGE("Neutralizing Gas filled the area!");
-        MESSAGE("Armadilmon, that's enough! Come back!");
-        MESSAGE("The effects of Neutralizing Gas wore off!");
-=======
         MESSAGE("Neutralizing gas filled the area!");
-        SWITCH_OUT_MESSAGE("Armadilmon");
+        SWITCH_OUT_MESSAGE("Weezing");
         MESSAGE("The effects of the neutralizing gas wore off!");
->>>>>>> upstream/master
         ABILITY_POPUP(opponent, ABILITY_INTREPID_SWORD);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("The opposing Zacian's Intrepid Sword raised its Attack!");
@@ -92,7 +86,7 @@ SINGLE_BATTLE_TEST("Intrepid Sword and Dauntless Shield both can be Skill Swappe
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
         OPPONENT(SPECIES_ZAMAZENTA) { Ability(ABILITY_DAUNTLESS_SHIELD); }
     } WHEN {
@@ -106,7 +100,7 @@ SINGLE_BATTLE_TEST("Intrepid Sword and Dauntless Shield both can be Skill Swappe
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, player);
         ABILITY_POPUP(player, ABILITY_INTREPID_SWORD);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Lopmonx's Intrepid Sword raised its Attack!");
+        MESSAGE("Wobbuffet's Intrepid Sword raised its Attack!");
 
         ABILITY_POPUP(opponent, ABILITY_DAUNTLESS_SHIELD);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
@@ -115,6 +109,6 @@ SINGLE_BATTLE_TEST("Intrepid Sword and Dauntless Shield both can be Skill Swappe
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, player);
         ABILITY_POPUP(player, ABILITY_DAUNTLESS_SHIELD);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Lopmonx's Dauntless Shield raised its Defense!");
+        MESSAGE("Wobbuffet's Dauntless Shield raised its Defense!");
     }
 }

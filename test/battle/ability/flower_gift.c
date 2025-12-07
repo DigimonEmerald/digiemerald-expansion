@@ -4,8 +4,8 @@
 SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim in harsh sunlight")
 {
     GIVEN {
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
     } SCENE {
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim in harsh sunlight")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
         MESSAGE("Cherrim transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_VEEDRAMON);
+        EXPECT_EQ(player->species, SPECIES_CHERRIM_SUNSHINE);
     }
 }
 
@@ -22,8 +22,8 @@ TO_DO_BATTLE_TEST("Flower Gift doesn't transform Cherrim if Cloud Nine/Air Lock 
 SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal when weather changes")
 {
     GIVEN {
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { MOVE(opponent, MOVE_RAIN_DANCE); }
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal when weather c
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
         MESSAGE("Cherrim transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_UNIMON);
+        EXPECT_EQ(player->species, SPECIES_CHERRIM_OVERCAST);
     }
 }
 
@@ -45,8 +45,8 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal when its abili
 {
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { MOVE(opponent, MOVE_GASTRO_ACID); }
@@ -59,18 +59,19 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal when its abili
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
         MESSAGE("Cherrim transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_UNIMON);
+        EXPECT_EQ(player->species, SPECIES_CHERRIM_OVERCAST);
     }
 }
 
 SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal under Cloud Nine/Air Lock")
 {
-    u32 species = 0, ability = 0;
-    PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
-    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
+    u32 species = 0;
+    enum Ability ability = 0;
+    PARAMETRIZE { species = SPECIES_PSYDUCK;  ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
     GIVEN {
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
@@ -86,7 +87,7 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back to normal under Cloud Ni
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
         MESSAGE("Cherrim transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_UNIMON);
+        EXPECT_EQ(player->species, SPECIES_CHERRIM_OVERCAST);
     }
 }
 
@@ -97,10 +98,10 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the attack of Cherrim and its allies b
     PARAMETRIZE { sunny = TRUE; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (sunny)
             TURN { MOVE(playerLeft, MOVE_SUNNY_DAY); }
@@ -132,10 +133,10 @@ DOUBLE_BATTLE_TEST("Flower Gift increases the Sp. Def of Cherrim and its allies 
     PARAMETRIZE { sunny = TRUE; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_HYPER_VOICE) == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_UNIMON) { Ability(ABILITY_FLOWER_GIFT); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_CHERRIM_OVERCAST) { Ability(ABILITY_FLOWER_GIFT); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (sunny)
             TURN { MOVE(playerLeft, MOVE_SUNNY_DAY); }
@@ -162,8 +163,8 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back when it switches out")
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
         PLAYER(SPECIES_CHERRIM) { Ability(ABILITY_FLOWER_GIFT); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { SWITCH(player, 1); }
@@ -183,8 +184,8 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim back when it uses a move that
     GIVEN {
         ASSUME(B_WEATHER_FORMS >= GEN_5);
         PLAYER(SPECIES_CHERRIM) { Ability(ABILITY_FLOWER_GIFT); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }

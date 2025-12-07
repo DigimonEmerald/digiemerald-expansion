@@ -37,7 +37,8 @@ SINGLE_BATTLE_TEST("Burn reduces Attack by 50%", s16 damage)
 
 AI_SINGLE_BATTLE_TEST("AI avoids Will-o-Wisp when it can not burn target")
 {
-    u32 species, ability;
+    u32 species;
+    enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_SHELLMON; ability = ABILITY_WATER_VEIL; }
     PARAMETRIZE { species = SPECIES_DEWPIDER; ability = ABILITY_WATER_BUBBLE; }

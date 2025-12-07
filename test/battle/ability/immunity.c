@@ -5,8 +5,8 @@ SINGLE_BATTLE_TEST("Immunity prevents Poison Sting poison")
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_POISON_STING, MOVE_EFFECT_POISON) == TRUE);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_STING); }
     } SCENE {
@@ -20,18 +20,14 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic bad poison")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {
-        MESSAGE("Lopmonx used Toxic!");
+        MESSAGE("Wobbuffet used Toxic!");
         ABILITY_POPUP(opponent, ABILITY_IMMUNITY);
-<<<<<<< HEAD
-        MESSAGE("Foe Dracomon's Immunity prevents poisoning!");
-=======
-        MESSAGE("The opposing Dracomon's Immunity prevents poisoning!");
->>>>>>> upstream/master
+        MESSAGE("It doesn't affect the opposing Snorlax…");
         NOT STATUS_ICON(opponent, poison: TRUE);
     }
 }
@@ -40,9 +36,9 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic Spikes poison")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
@@ -56,9 +52,9 @@ SINGLE_BATTLE_TEST("Immunity doesn't prevent Pokémon from being poisoned by Tox
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_DRAGON_TAIL) == EFFECT_HIT_SWITCH_TARGET);
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_LOPMON_X);
-        PLAYER(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
-        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
+        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }
