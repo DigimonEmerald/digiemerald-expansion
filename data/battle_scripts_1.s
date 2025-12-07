@@ -8892,30 +8892,23 @@ BattleScript_SwapToSubstituteReturn:
 @@@ TO BE REDONE
 BattleScript_EffectBlessing::
 	attackcanceler
-	attackstring
-	ppreduce
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_SNOW
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_MoveEffectConverted::
 	attackcanceler
-	attackstring
-	ppreduce
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_SNOW
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_EffectFullMoon::
 	attackcanceler
-	attackstring
-	ppreduce
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_FULL_MOON
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_TryDeathEvolutionHoldEffects:
-	itemstatchangeeffects BS_TARGET
 	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryDeathEvolutionHoldEffectsRet
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_TryDeathEvolutionHoldEffectsRet
 	setstatchanger STAT_SPEED, 1, FALSE
@@ -8947,7 +8940,7 @@ BattleScript_DeathEvolutionEffect:
 	setstatchanger STAT_SPDEF, 1, TRUE
 	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_DeathEvolutionLoopIncrement
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_DeathEvolutionContrary
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DeathEvolutionWontDecrease
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_DeathEvolutionWontDecrease
 	printstring STRINGID_PKMNCUTSSTATSWITH
 BattleScript_DeathEvolutionEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
@@ -9016,9 +9009,8 @@ BattleScript_SinOfPrideActivates::
 	printstring STRINGID_SINOFPRIDEHPUP
 	waitmessage B_WAIT_TIME_LONG
 	statusanimation BS_ATTACKER
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
-	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
 	end2
 
 BattleScript_EclipseActivates::

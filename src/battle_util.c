@@ -4718,6 +4718,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             BattleScriptPushCursorAndCallback(BattleScript_GravityFieldActivates);
             effect++;
             }
+            break;
         default:
             break;
         }
@@ -5469,7 +5470,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
              && IsBattlerAlive(gBattlerTarget)
              && !(gBattleMons[gBattlerAttacker].volatiles.infatuation)
              && !IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_OBLIVIOUS)
-             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
              && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL))
             {
                 gBattleMons[gBattlerAttacker].volatiles.infatuation = INFATUATED_WITH(gBattlerTarget);
@@ -5478,9 +5479,8 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             }
             break;
         case ABILITY_SIN_OF_GREED:
-            if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
+            if (IsBattlerAlive(gBattlerTarget))
             {
-                gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
                 gBattlerAbility = gBattlerTarget;
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
@@ -5494,7 +5494,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             && IsBattlerTurnDamaged(gBattlerTarget)
             && IsBitingMove(gCurrentMove)
             && CanBePoisoned(gBattlerTarget, gBattlerAttacker, gLastUsedAbility, abilityAtk)
-            && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, abilityAtk, GetBattlerHoldEffect(gBattlerAttacker, TRUE), move))
+            && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, abilityAtk, GetBattlerHoldEffect(gBattlerAttacker), move))
             {
                 gEffectBattler = gBattlerAttacker;
                 gBattleScripting.battler = gBattlerTarget;
@@ -5507,7 +5507,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
         case ABILITY_CHILI_BODY:
             if (IsBattlerAlive(gBattlerAttacker)
             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
-            && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+            && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
             && IsBattlerTurnDamaged(gBattlerTarget)
             && IsBitingMove(gCurrentMove)
             && CanBeBurned(gBattlerTarget, gBattlerAttacker, GetBattlerAbility(gBattlerAttacker)))
@@ -5611,7 +5611,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             if (IsBattlerAlive(gBattlerTarget)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
              && CanBeConfused(gBattlerTarget)
-             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
              && IsBattlerTurnDamaged(gBattlerTarget) // Need to actually hit the target
              && RandomPercentage(RNG_POISON_TOUCH, 30))
             {
@@ -5627,7 +5627,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             if (IsBattlerAlive(gBattlerTarget)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
              && CanBeConfused(gBattlerTarget)
-             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker, TRUE), move)
+             && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
              && IsBattlerTurnDamaged(gBattlerTarget)) // Need to actually hit the target
             {
                 gEffectBattler = gBattlerTarget;
@@ -5643,19 +5643,20 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                      && gBattleStruct->moveDamage[gBattlerTarget] > 0
                      && IsBattlerAlive(gBattlerAttacker))
                 {
-                    gBattleStruct->moveDamage[gBattlerAttacker] = max(1, (gBattleStruct->moveDamage[gBattlerTarget] * 25 / 100));
-
-                    gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE | HITMARKER_PASSIVE_HP_UPDATE;
+                    s32 healAmount = (gBattleStruct->moveDamage[gBattlerTarget] * GetMoveAbsorbPercentage(gCurrentMove) / 100);
+                    enum BattleMoveEffects moveEffect = GetMoveEffect(gCurrentMove);
                     effect = TRUE;
-                    if (GetBattlerAbility(gBattlerTarget) != ABILITY_LIQUID_OOZE)
+                    if ((moveEffect == EFFECT_DREAM_EATER && GetConfig(CONFIG_DREAM_EATER_LIQUID_OOZE) < GEN_5)
+                        || GetBattlerAbility(gBattlerTarget) != ABILITY_LIQUID_OOZE)
                     {
-                        gBattleStruct->moveDamage[gBattlerAttacker] *= -1;
+                        SetHealAmount(gBattlerAttacker, healAmount);
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB;
                         BattleScriptCall(BattleScript_EffectAbsorb);
                         effect++;
                     }
-                    else
+                    else // Liquid Ooze damage
                     {
+                        SetPassiveDamageAmount(gBattlerAttacker, healAmount);
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB_OOZE;
                         BattleScriptCall(BattleScript_EffectAbsorbLiquidOoze);
                         effect++;
@@ -5701,16 +5702,6 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
         {
         case ABILITY_OPPORTUNIST:
                 if (gProtectStructs[battler].activateOpportunist == 2)
-                {
-                    gBattleScripting.battler = battler;
-                    gProtectStructs[battler].activateOpportunist--;
-                    ChooseStatBoostAnimation(battler);
-                    BattleScriptPushCursorAndCallback(BattleScript_OpportunistCopyStatChange);
-                    effect = 1;
-                }
-                break;
-            case ABILITY_SIN_OF_ENVY:
-            if (gProtectStructs[battler].activateOpportunist == 2)
             {
                 gBattleScripting.battler = battler;
                 gProtectStructs[battler].activateOpportunist--;
@@ -5721,7 +5712,20 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                     BattleScriptCall(BattleScript_OpportunistCopyStatChange);
                 effect = 1;
             }
-            break;
+                break;
+        case ABILITY_SIN_OF_ENVY:
+                if (gProtectStructs[battler].activateOpportunist == 2)
+            {
+                gBattleScripting.battler = battler;
+                gProtectStructs[battler].activateOpportunist--;
+                ChooseStatBoostAnimation(battler);
+                if (caseID == ABILITYEFFECT_OPPORTUNIST_FIRST_TURN)
+                    BattleScriptPushCursorAndCallback(BattleScript_OpportunistCopyStatChangeEnd3);
+                else
+                    BattleScriptCall(BattleScript_OpportunistCopyStatChange);
+                effect = 1;
+            }
+                break;
         default:
             break;
         }
