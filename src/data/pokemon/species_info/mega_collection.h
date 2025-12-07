@@ -1055,12 +1055,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .enemyMonElevation = 9,
         .backPic = gMonBackPic_Marineangemon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 11,
+        .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_Marineangemon,
         .shinyPalette = gMonShinyPalette_Marineangemon,
         .iconSprite = gMonIcon_Marineangemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_S)
         FOOTPRINT(Marineangemon)

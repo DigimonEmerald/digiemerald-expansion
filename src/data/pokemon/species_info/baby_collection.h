@@ -2499,7 +2499,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Pabumon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 7),
             ANIMCMD_FRAME(0, 7),
@@ -2519,9 +2519,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Pabumon,
         .shinyPalette = gMonShinyPalette_Pabumon,
         .iconSprite = gMonIcon_Pabumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 4, SHADOW_SIZE_S)
+        SHADOW(-1, 3, SHADOW_SIZE_S)
         FOOTPRINT(Pabumon)
         OVERWORLD(
             sPicTable_Pabumon,
