@@ -16412,7 +16412,7 @@ static const struct LevelUpMove sZanbamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDragalgeLevelUpLearnset[] = {
+static const struct LevelUpMove sCthyllamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_TAIL),

@@ -1674,7 +1674,7 @@ gCryTable::
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_ZANBAMON == TRUE
 	cry Cry_Zanbamon
-	cry Cry_Dragalge
+	cry Cry_Cthyllamon
 .endif @ P_FAMILY_ZANBAMON
 .if P_FAMILY_CLAUNCHER == TRUE
 	cry Cry_Clauncher
@@ -4101,7 +4101,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_ZANBAMON == TRUE
 	cry_reverse Cry_Zanbamon
-	cry_reverse Cry_Dragalge
+	cry_reverse Cry_Cthyllamon
 .endif @ P_FAMILY_ZANBAMON
 .if P_FAMILY_CLAUNCHER == TRUE
 	cry_reverse Cry_Clauncher

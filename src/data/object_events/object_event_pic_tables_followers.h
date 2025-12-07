@@ -4872,8 +4872,8 @@ static const struct SpriteFrameImage sPicTable_Venommyotismon[] = {
 static const struct SpriteFrameImage sPicTable_Zanbamon[] = {
     overworld_ascending_frames(gObjectEventPic_Zanbamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Dragalge[] = {
-    overworld_ascending_frames(gObjectEventPic_Dragalge, 4, 4),
+static const struct SpriteFrameImage sPicTable_Cthyllamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Cthyllamon, 4, 4),
 };
 #endif //P_FAMILY_ZANBAMON
 

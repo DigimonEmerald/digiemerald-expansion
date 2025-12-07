@@ -4361,8 +4361,8 @@ Cry_Zanbamon::
 	.incbin "sound/direct_sound_samples/cries/zanbamon.bin"
 
 	.align 2
-Cry_Dragalge::
-	.incbin "sound/direct_sound_samples/cries/dragalge.bin"
+Cry_Cthyllamon::
+	.incbin "sound/direct_sound_samples/cries/cthyllamon.bin"
 .endif @ P_FAMILY_ZANBAMON
 
 .if P_FAMILY_CLAUNCHER == TRUE

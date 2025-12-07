@@ -3458,41 +3458,42 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggMoveLearnset = sZanbamonEggMoveLearnset,
     },
 
-    [SPECIES_DRAGALGE] =
+    [SPECIES_CTHYLLAMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 75,
-        .baseDefense   = 90,
-        .baseSpeed     = 44,
-        .baseSpAttack  = 97,
-        .baseSpDefense = 123,
-        .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
+        .baseHP        = 255,
+        .baseAttack    = 25,
+        .baseDefense   = 25,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
+        .attribute = TYPE_VIRUS,   
         .catchRate = 55,
-        .expYield = 173,
-        .evYield_SpDefense = 2,
+        .expYield = 250,
+        .evYield_HP = 6,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_POISON_POINT, ABILITY_POISON_TOUCH, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dragalge"),
-        .cryId = CRY_DRAGALGE,
-        .natDexNum = NATIONAL_DEX_DRAGALGE,
-        .categoryName = _("Mock Kelp"),
-        .height = 18,
-        .weight = 815,
+        .abilities = { ABILITY_WATER_BUBBLE, ABILITY_CURSED_BODY, ABILITY_NATURAL_CURE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Cthyllamon"),
+        .cryId = CRY_CTHYLLAMON,
+        .natDexNum = NATIONAL_DEX_CTHYLLAMON,
+        .categoryName = _("Sea Phantom"),
+        .height = 5,
+        .weight = 112,
         .description = COMPOUND_STRING(
-            "Their poison is strong enough to eat\n"
-            "through the hull of a tanker. Tales are\n"
-            "told of ships that wander into seas where\n"
-            "Dragalge live, never to return."),
+            "It gained the alias 'Phantom of the\n"
+            "Ocean' due to the fact that the skull\n"
+            "on Cthyllamon chest can be seen eerily\n"
+            "floating in the ocean."),
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Dragalge,
+        .frontPic = gMonFrontPic_Cthyllamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3502,28 +3503,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_FRONT_FLIP,
-        .backPic = gMonBackPic_Dragalge,
+        .backPic = gMonBackPic_Cthyllamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Dragalge,
-        .shinyPalette = gMonShinyPalette_Dragalge,
-        .iconSprite = gMonIcon_Dragalge,
-        .iconPalIndex = 5,
+        .palette = gMonPalette_Cthyllamon,
+        .shinyPalette = gMonShinyPalette_Cthyllamon,
+        .iconSprite = gMonIcon_Cthyllamon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-3, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Dragalge)
+        SHADOW(-3, 13, SHADOW_SIZE_S)
+        FOOTPRINT(Cthyllamon)
         OVERWORLD(
-            sPicTable_Dragalge,
+            sPicTable_Cthyllamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Dragalge,
-            gShinyOverworldPalette_Dragalge
+            gOverworldPalette_Cthyllamon,
+            gShinyOverworldPalette_Cthyllamon
         )
-        .levelUpLearnset = sDragalgeLevelUpLearnset,
-        .teachableLearnset = sDragalgeTeachableLearnset,
+        .levelUpLearnset = sCthyllamonLevelUpLearnset,
+        .teachableLearnset = sCthyllamonTeachableLearnset,
     },
 #endif //P_FAMILY_ZANBAMON
 

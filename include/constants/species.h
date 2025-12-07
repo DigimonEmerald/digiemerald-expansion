@@ -697,7 +697,7 @@
 #define SPECIES_SKULLMAMMOTHMON                                 688
 #define SPECIES_VENOMMYOTISMON                              689
 #define SPECIES_ZANBAMON                                  690
-#define SPECIES_DRAGALGE                                691
+#define SPECIES_CTHYLLAMON                                691
 #define SPECIES_CLAUNCHER                               692
 #define SPECIES_CLAWITZER                               693
 #define SPECIES_HELIOPTILE                              694
@@ -1656,7 +1656,7 @@
 #define SPECIES_GRENINJA_MEGA                           1636
 #define SPECIES_PYROAR_MEGA                             1637
 #define SPECIES_MALAMAR_MEGA                            1638
-#define SPECIES_DRAGALGE_MEGA                           1639
+#define SPECIES_CTHYLLAMON_MEGA                           1639
 #define SPECIES_HAWLUCHA_MEGA                           1640
 #define SPECIES_FLOETTE_MEGA                            1641
 #define SPECIES_BARBARACLE_MEGA                         1642

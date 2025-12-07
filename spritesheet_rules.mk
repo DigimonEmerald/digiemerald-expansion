@@ -3357,7 +3357,7 @@ $(POKEMONGFXDIR)/venommyotismon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/zanbamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/dragalge/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/cthyllamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/clauncher/overworld.4bpp: %.4bpp: %.png

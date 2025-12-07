@@ -20140,19 +20140,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Dragalge[] = INCBIN_U32("graphics/pokemon/dragalge/anim_front.4bpp.smol");
-    const u16 gMonPalette_Dragalge[] = INCBIN_U16("graphics/pokemon/dragalge/normal.gbapal");
-    const u32 gMonBackPic_Dragalge[] = INCBIN_U32("graphics/pokemon/dragalge/back.4bpp.smol");
-    const u16 gMonShinyPalette_Dragalge[] = INCBIN_U16("graphics/pokemon/dragalge/shiny.gbapal");
-    const u8 gMonIcon_Dragalge[] = INCBIN_U8("graphics/pokemon/dragalge/icon.4bpp");
+    const u32 gMonFrontPic_Cthyllamon[] = INCBIN_U32("graphics/pokemon/cthyllamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Cthyllamon[] = INCBIN_U16("graphics/pokemon/cthyllamon/normal.gbapal");
+    const u32 gMonBackPic_Cthyllamon[] = INCBIN_U32("graphics/pokemon/cthyllamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Cthyllamon[] = INCBIN_U16("graphics/pokemon/cthyllamon/shiny.gbapal");
+    const u8 gMonIcon_Cthyllamon[] = INCBIN_U8("graphics/pokemon/cthyllamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dragalge[] = INCBIN_U8("graphics/pokemon/dragalge/footprint.1bpp");
+    const u8 gMonFootprint_Cthyllamon[] = INCBIN_U8("graphics/pokemon/cthyllamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Dragalge[] = INCBIN_COMP("graphics/pokemon/dragalge/overworld.4bpp");
+    const u32 gObjectEventPic_Cthyllamon[] = INCBIN_COMP("graphics/pokemon/cthyllamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Dragalge[] = INCBIN_U16("graphics/pokemon/dragalge/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Dragalge[] = INCBIN_U16("graphics/pokemon/dragalge/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Cthyllamon[] = INCBIN_U16("graphics/pokemon/cthyllamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Cthyllamon[] = INCBIN_U16("graphics/pokemon/cthyllamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ZANBAMON

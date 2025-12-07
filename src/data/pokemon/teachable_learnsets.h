@@ -27648,7 +27648,7 @@ static const u16 sZanbamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDragalgeTeachableLearnset[] = {
+static const u16 sCthyllamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIVE,
     MOVE_DOUBLE_TEAM,
