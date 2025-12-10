@@ -452,7 +452,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Airdramon,
         .shinyPalette = gMonShinyPalette_Airdramon,
         .iconSprite = gMonIcon_Airdramon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 20, SHADOW_SIZE_L)
         FOOTPRINT(Airdramon)
@@ -612,7 +612,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Allomon,
         .shinyPalette = gMonShinyPalette_Allomon,
         .iconSprite = gMonIcon_Allomon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 5,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_AllomonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),

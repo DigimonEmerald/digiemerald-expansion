@@ -638,7 +638,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Angoramon,
         .shinyPalette = gMonShinyPalette_Angoramon,
         .iconSprite = gMonIcon_Angoramon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Angoramon)
@@ -1638,7 +1638,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Betamon,
         .shinyPalette = gMonShinyPalette_Betamon,
         .iconSprite = gMonIcon_Betamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 0, SHADOW_SIZE_L)
         FOOTPRINT(Betamon)
@@ -7499,7 +7499,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Gabumon,
         .shinyPalette = gMonShinyPalette_Gabumon,
         .iconSprite = gMonIcon_Gabumon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 3,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 9, SHADOW_SIZE_M)
         FOOTPRINT(Gabumon)
@@ -8161,7 +8161,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Gizamon,
         .shinyPalette = gMonShinyPalette_Gizamon,
         .iconSprite = gMonIcon_Gizamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, -1, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gizamon)
@@ -13202,7 +13202,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Palmon,
         .shinyPalette = gMonShinyPalette_Palmon,
         .iconSprite = gMonIcon_Palmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1s,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-1, -9, SHADOW_SIZE_M)
         FOOTPRINT(Palmon)
@@ -17140,7 +17140,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Wormmon,
         .shinyPalette = gMonShinyPalette_Wormmon,
         .iconSprite = gMonIcon_Wormmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(2, 6, SHADOW_SIZE_S)
         FOOTPRINT(Wormmon)
