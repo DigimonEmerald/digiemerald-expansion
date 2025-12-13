@@ -13202,7 +13202,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Palmon,
         .shinyPalette = gMonShinyPalette_Palmon,
         .iconSprite = gMonIcon_Palmon,
-        .iconPalIndex = 1s,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-1, -9, SHADOW_SIZE_M)
         FOOTPRINT(Palmon)
