@@ -154,7 +154,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Argomon_it,
         .shinyPalette = gMonShinyPalette_Argomon_it,
         .iconSprite = gMonIcon_Argomon_it,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(7, -11, SHADOW_SIZE_M)
         FOOTPRINT(Argomon_it)
@@ -228,7 +228,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Babydmon,
         .shinyPalette = gMonShinyPalette_Babydmon,
         .iconSprite = gMonIcon_Babydmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 2, SHADOW_SIZE_L)
         FOOTPRINT(Babydmon)
@@ -303,7 +303,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Bibimon,
         .shinyPalette = gMonShinyPalette_Bibimon,
         .iconSprite = gMonIcon_Bibimon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 5, SHADOW_SIZE_M)
         FOOTPRINT(Bibimon)
@@ -465,7 +465,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Budmon,
         .shinyPalette = gMonShinyPalette_Budmon,
         .iconSprite = gMonIcon_Budmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 1, SHADOW_SIZE_M)
         FOOTPRINT(Budmon)
@@ -756,7 +756,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Calumon,
         .shinyPalette = gMonShinyPalette_Calumon,
         .iconSprite = gMonIcon_Calumon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 3, SHADOW_SIZE_S)
         FOOTPRINT(Calumon)
@@ -1228,7 +1228,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Chicchimon,
         .shinyPalette = gMonShinyPalette_Chicchimon,
         .iconSprite = gMonIcon_Chicchimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, 2, SHADOW_SIZE_M)
         FOOTPRINT(Chicchimon)
