@@ -875,7 +875,7 @@ static void CB2_GiveStarter(void)
     ScriptGiveMon(starterMon, 5, ITEM_NONE);
     ResetTasks();
     PlayBattleBGM();
-    SetMainCallback2(CB2_StartFirstBattle);
+    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
     BattleTransition_Start(B_TRANSITION_BLUR);
 }
 

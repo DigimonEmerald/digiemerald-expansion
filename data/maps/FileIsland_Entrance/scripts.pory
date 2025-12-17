@@ -2,12 +2,61 @@ mapscripts FileIsland_Entrance_MapScripts {
 
 }
 
-script FileIsland_Entrance_Starter {
+script FileIsland_Entrance_EventScript_Starter1 {
     lock
     playse(SE_PIN)
+    setflag(FLAG_SYS_POKEMON_GET)
 	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
     delay(15)
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
+}
+
+script FileIsland_Entrance_EventScript_Starter2 {
+    lock
+    playse(SE_PIN)
+    setflag(FLAG_SYS_POKEMON_GET)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("From behind a tree, you see something moving."))
+    special(ChooseStarter)
+    waitstate
+}
+
+script FileIsland_Entrance_EventScript_Starter3 {
+    lock
+    playse(SE_PIN)
+    setflag(FLAG_SYS_POKEMON_GET)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("From behind a tree, you see something moving."))
+    special(ChooseStarter)
+    waitstate
+}
+
+script FileIsland_Entrance_EventScript_Starter4 {
+    lock
+    playse(SE_PIN)
+    setflag(FLAG_SYS_POKEMON_GET)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("From behind a tree, you see something moving."))
+    special(ChooseStarter)
+    waitstate
+}
+
+script FileIsland_Entrance_EventScript_Starter5 {
+    lock
+    playse(SE_PIN)
+    setflag(FLAG_SYS_POKEMON_GET)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("From behind a tree, you see something moving."))
+    special(ChooseStarter)
+    waitstate
+    call(FileIsland_Entrance_EventScript_StarterMeeting)
+}
+
+script FileIsland_Entrance_EventScript_StarterMeeting {
 }

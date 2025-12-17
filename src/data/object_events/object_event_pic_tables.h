@@ -1380,3 +1380,30 @@ static const struct SpriteFrameImage sPicTable_TK[] = {
 static const struct SpriteFrameImage sPicTable_Portal[] = {
     overworld_ascending_frames(gObjectEventPic_Portal, 8, 8),
 };
+
+static const struct SpriteFrameImage sPicTable_Koromon[] = {
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Koromon, 4, 4, 1),
+};
+
+static const struct SpriteFrameImage sPicTable_Nyaromon[] = {
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Nyaromon, 4, 4, 1),
+};
+
+static const struct SpriteFrameImage sPicTable_Tanemon[] = {
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Tanemon, 4, 4, 1),
+};
