@@ -1302,7 +1302,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Demimeramon,
         .shinyPalette = gMonShinyPalette_Demimeramon,
         .iconSprite = gMonIcon_Demimeramon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 6, SHADOW_SIZE_S)
         FOOTPRINT(Demimeramon)
@@ -1378,7 +1378,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Demiveemon,
         .shinyPalette = gMonShinyPalette_Demiveemon,
         .iconSprite = gMonIcon_Demiveemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-1, 1, SHADOW_SIZE_M)
         FOOTPRINT(Demiveemon)
@@ -1452,7 +1452,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Dorimon,
         .shinyPalette = gMonShinyPalette_Dorimon,
         .iconSprite = gMonIcon_Dorimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 7, SHADOW_SIZE_L)
         FOOTPRINT(Dorimon)
@@ -1592,7 +1592,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Frimon,
         .shinyPalette = gMonShinyPalette_Frimon,
         .iconSprite = gMonIcon_Frimon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 3,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 4, SHADOW_SIZE_M)
         FOOTPRINT(Frimon)
@@ -1663,7 +1663,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Gigimon,
         .shinyPalette = gMonShinyPalette_Gigimon,
         .iconSprite = gMonIcon_Gigimon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 3,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gigimon)
@@ -1870,7 +1870,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Gummymon,
         .shinyPalette = gMonShinyPalette_Gummymon,
         .iconSprite = gMonIcon_Gummymon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Gummymon)
@@ -2013,7 +2013,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Hiyarimon,
         .shinyPalette = gMonShinyPalette_Hiyarimon,
         .iconSprite = gMonIcon_Hiyarimon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 7, SHADOW_SIZE_L)
         FOOTPRINT(Hiyarimon)
