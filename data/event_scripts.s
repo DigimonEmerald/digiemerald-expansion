@@ -1162,3 +1162,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SummerCamp/scripts.inc"
 
 	.include "data/maps/SummerCamp_House/scripts.inc"
+
+	.include "data/maps/FileIsland_Entrance/scripts.inc"

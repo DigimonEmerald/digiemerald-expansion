@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorSumerCamp"
+    "gMapGroup_IndoorSumerCamp",
+    "gMapGroup_FileIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -625,5 +626,8 @@
   ],
   "gMapGroup_IndoorSumerCamp": [
     "SummerCamp_House"
+  ],
+  "gMapGroup_FileIsland": [
+    "FileIsland_Entrance"
   ]
 }

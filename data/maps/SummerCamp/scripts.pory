@@ -126,6 +126,7 @@ script SummerCamp_EventScript_Portal {
     fadescreen(FADE_TO_BLACK)
     playse(SE_M_WATERFALL)
     msgbox(format("A sudden wave towers the children as they fall into an endless void."))
+    warp(MAP_FILE_ISLAND_ENTRANCE, 16, 7)
     clearflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
     release
 }

@@ -252,211 +252,213 @@ SummerCamp_EventScript_Portal::
 # 128 "data/maps/SummerCamp/scripts.pory"
 	msgbox SummerCamp_EventScript_Portal_Text_11
 # 129 "data/maps/SummerCamp/scripts.pory"
-	clearflag FLAG_FORCE_LOAD_OFFSCREEN_OBJEV
+	warp MAP_FILE_ISLAND_ENTRANCE, 16, 7
 # 130 "data/maps/SummerCamp/scripts.pory"
+	clearflag FLAG_FORCE_LOAD_OFFSCREEN_OBJEV
+# 131 "data/maps/SummerCamp/scripts.pory"
 	release
 	return
 
 
-# 133 "data/maps/SummerCamp/scripts.pory"
-SummerCamp_Movement_StopPlayerLeaving:
 # 134 "data/maps/SummerCamp/scripts.pory"
+SummerCamp_Movement_StopPlayerLeaving:
+# 135 "data/maps/SummerCamp/scripts.pory"
 	walk_left
 	step_end
 
-# 137 "data/maps/SummerCamp/scripts.pory"
+# 138 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_Izzy_Portal:
-# 138 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 138 "data/maps/SummerCamp/scripts.pory"
+# 139 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_right
-# 139 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 140 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_right
 # 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 140 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_right
+# 141 "data/maps/SummerCamp/scripts.pory"
 	walk_down
-# 141 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 141 "data/maps/SummerCamp/scripts.pory"
+# 142 "data/maps/SummerCamp/scripts.pory"
 	walk_right
 # 142 "data/maps/SummerCamp/scripts.pory"
-	walk_up
+	walk_right
 # 143 "data/maps/SummerCamp/scripts.pory"
+	walk_up
+# 144 "data/maps/SummerCamp/scripts.pory"
 	face_up
 	step_end
 
-# 146 "data/maps/SummerCamp/scripts.pory"
+# 147 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_Joe_Portal:
-# 147 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 147 "data/maps/SummerCamp/scripts.pory"
+# 148 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 148 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 149 "data/maps/SummerCamp/scripts.pory"
 	walk_fast_right
 # 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 149 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 150 "data/maps/SummerCamp/scripts.pory"
 	walk_up
 	step_end
 
-# 152 "data/maps/SummerCamp/scripts.pory"
+# 153 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_Mimi_Portal:
-# 153 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 153 "data/maps/SummerCamp/scripts.pory"
+# 154 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 154 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 155 "data/maps/SummerCamp/scripts.pory"
 	walk_fast_right
 # 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 155 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 156 "data/maps/SummerCamp/scripts.pory"
 	walk_down
-# 156 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 156 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 156 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 156 "data/maps/SummerCamp/scripts.pory"
+# 157 "data/maps/SummerCamp/scripts.pory"
 	walk_right
 # 157 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 157 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 157 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 158 "data/maps/SummerCamp/scripts.pory"
 	walk_up
 	step_end
 
-# 160 "data/maps/SummerCamp/scripts.pory"
+# 161 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_Matt_Portal:
-# 161 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 161 "data/maps/SummerCamp/scripts.pory"
+# 162 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 162 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 163 "data/maps/SummerCamp/scripts.pory"
 	walk_fast_right
 # 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 163 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 164 "data/maps/SummerCamp/scripts.pory"
 	face_up
 	step_end
 
-# 166 "data/maps/SummerCamp/scripts.pory"
+# 167 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_TK_Portal:
-# 167 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 167 "data/maps/SummerCamp/scripts.pory"
+# 168 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 168 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 169 "data/maps/SummerCamp/scripts.pory"
 	walk_fast_right
 # 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 169 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 170 "data/maps/SummerCamp/scripts.pory"
 	walk_up
 	step_end
 
-# 172 "data/maps/SummerCamp/scripts.pory"
+# 173 "data/maps/SummerCamp/scripts.pory"
 SummerCamp_Movement_OtherGender_Portal:
-# 173 "data/maps/SummerCamp/scripts.pory"
-	walk_faster_down
-# 173 "data/maps/SummerCamp/scripts.pory"
+# 174 "data/maps/SummerCamp/scripts.pory"
 	walk_faster_down
 # 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
-	walk_fast_right
-# 174 "data/maps/SummerCamp/scripts.pory"
+	walk_faster_down
+# 175 "data/maps/SummerCamp/scripts.pory"
 	walk_fast_right
 # 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 175 "data/maps/SummerCamp/scripts.pory"
+	walk_fast_right
+# 176 "data/maps/SummerCamp/scripts.pory"
 	walk_down
-# 176 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 176 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 176 "data/maps/SummerCamp/scripts.pory"
-	walk_right
-# 176 "data/maps/SummerCamp/scripts.pory"
+# 177 "data/maps/SummerCamp/scripts.pory"
 	walk_right
 # 177 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 177 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 177 "data/maps/SummerCamp/scripts.pory"
+	walk_right
+# 178 "data/maps/SummerCamp/scripts.pory"
 	walk_up
-# 177 "data/maps/SummerCamp/scripts.pory"
+# 178 "data/maps/SummerCamp/scripts.pory"
 	walk_up
 	step_end
 

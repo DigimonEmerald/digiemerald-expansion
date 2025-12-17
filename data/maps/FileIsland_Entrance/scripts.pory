@@ -1,0 +1,13 @@
+mapscripts FileIsland_Entrance_MapScripts {
+
+}
+
+script FileIsland_Entrance_Starter {
+    lock
+    playse(SE_PIN)
+	applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("From behind a tree, you see something moving."))
+    special(ChooseStarter)
+    waitstate
+}
