@@ -11,6 +11,10 @@ script FileIsland_Entrance_EventScript_Starter1 {
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Starter1)
+    waitmovement(0)
+    setvar(VAR_STARTER_TILE, 9)
+    call(FileIsland_Entrance_EventScript_StarterTalk)
 }
 
 script FileIsland_Entrance_EventScript_Starter2 {
@@ -22,6 +26,8 @@ script FileIsland_Entrance_EventScript_Starter2 {
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
+    setvar(VAR_STARTER_TILE, 0)
+    call(FileIsland_Entrance_EventScript_StarterTalk)
 }
 
 script FileIsland_Entrance_EventScript_Starter3 {
@@ -33,6 +39,8 @@ script FileIsland_Entrance_EventScript_Starter3 {
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
+    setvar(VAR_STARTER_TILE, 1)
+    call(FileIsland_Entrance_EventScript_StarterTalk)
 }
 
 script FileIsland_Entrance_EventScript_Starter4 {
@@ -44,6 +52,10 @@ script FileIsland_Entrance_EventScript_Starter4 {
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Starter4)
+    waitmovement(0)
+    setvar(VAR_STARTER_TILE, 1)
+    call(FileIsland_Entrance_EventScript_StarterTalk)
 }
 
 script FileIsland_Entrance_EventScript_Starter5 {
@@ -55,8 +67,224 @@ script FileIsland_Entrance_EventScript_Starter5 {
     msgbox(format("From behind a tree, you see something moving."))
     special(ChooseStarter)
     waitstate
-    call(FileIsland_Entrance_EventScript_StarterMeeting)
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Starter5)
+    waitmovement(0)
+    setvar(VAR_STARTER_TILE, 1)
+    call(FileIsland_Entrance_EventScript_StarterTalk)
 }
 
-script FileIsland_Entrance_EventScript_StarterMeeting {
+script FileIsland_Entrance_EventScript_StarterTalk {
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: call(FileIsland_Entrance_EventScript_StarterTalkRight)
+        case 1: call(FileIsland_Entrance_EventScript_StarterTalkDown)
+    }
+}
+
+script FileIsland_Entrance_EventScript_StarterTalkRight {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: addobject(6)
+        case 1: addobject(5)
+        case 2: addobject(4)
+    }
+    call(FileIsland_Entrance_EventScript_StarterSpeak)
+}
+
+script FileIsland_Entrance_EventScript_StarterTalkDown {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: addobject(1)
+        case 1: addobject(2)
+        case 2: addobject(3)
+    }
+    call(FileIsland_Entrance_EventScript_StarterSpeak)
+    return
+}
+
+script FileIsland_Entrance_EventScript_StarterSpeak {
+    msgbox(format("{PLAYER}! You're finally here!"))
+    msgbox(format("{PLAYER}: It's talking..."))
+    msgbox(format("Weird Blob: This is so great {PLAYER}!"))
+    msgbox(format("{PLAYER}: Who are you?!"))
+    switch(var(VAR_STARTER_MON)) {
+        case 0: msgbox(format("I'm Koromon! I've been waiting for you!"))
+        case 1: msgbox(format("I'm Tanemon! I've been waiting for you!"))
+        case 2: msgbox(format("I'm Nyaromon! I've been waiting for you!"))
+    }
+    switch(var(VAR_STARTER_MON)) {
+        case 0: msgbox(format("{PLAYER}: Koromon? And you've been waiting for me?"))
+        case 1: msgbox(format("{PLAYER}: Tanemon? And you've been waiting for me?"))
+        case 2: msgbox(format("{PLAYER}: Nyaromon? And you've been waiting for me?"))
+    }
+    msgbox(format("{PLAYER}: What does that even mean?"))
+    msgbox(format("Izzy: {PLAYER}!"))
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: applymovement(7, FileIsland_Entrance_Movement_IzzyTree1)
+        case 1: applymovement(7, FileIsland_Entrance_Movement_IzzyTree2)
+    }
+    waitmovement(0)
+    msgbox(format("{PLAYER}: Oh, Izzy."))
+    msgbox(format("Izzy: Thank god, I thought I was alone."))
+    msgbox(format("Another Weird Blob: Whaddya talkin' about? I'm right here!"))
+    msgbox(format("{PLAYER}: Izzy, what is that?!"))
+    msgbox(format("Another Weird Blob: The name's Motimon."))
+    msgbox(format("Motimon: Nice ta meet ya!"))
+    msgbox(format("Izzy: He's been with me ever since I got here."))
+    msgbox(format("{PLAYER}: Where is 'here' anyway?"))
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_LookAround)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 1)
+    setflag(FLAG_FILEISLAND_ENTRACE_IZZY)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_StopJumpDown1 {
+    lock
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 2)
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: applymovement(7, FileIsland_Entrance_Movement_IzzyLedge1)
+        case 1: applymovement(7, FileIsland_Entrance_Movement_IzzyLedge2)
+    }
+    waitmovement(0)
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: call(FileIsland_Entrance_EventScript_StarterLedgeMovement2)
+        case 1: call(FileIsland_Entrance_EventScript_StarterLedgeMovement1)
+    }
+    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
+}
+
+script FileIsland_Entrance_EventScript_StopJumpDown2 {
+    lock
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 2)
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: applymovement(7, FileIsland_Entrance_Movement_IzzyLedge3)
+        case 1: applymovement(7, FileIsland_Entrance_Movement_IzzyLedge4)
+    }
+    waitmovement(0)
+    switch(var(VAR_STARTER_TILE)) {
+        case 0: call(FileIsland_Entrance_EventScript_StarterLedgeMovement4)
+        case 1: call(FileIsland_Entrance_EventScript_StarterLedgeMovement3)
+    }
+}
+
+script FileIsland_Entrance_EventScript_StarterLedgeMovement1 {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: applymovement(1, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
+        case 1: applymovement(2, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
+        case 2: applymovement(3, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
+    }
+    waitmovement(0)
+    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
+}
+
+script FileIsland_Entrance_EventScript_StarterLedgeMovement2 {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: applymovement(6, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
+        case 1: applymovement(5, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
+        case 2: applymovement(4, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
+    }
+    waitmovement(0)
+    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
+}
+
+script FileIsland_Entrance_EventScript_StarterLedgeMovement3 {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: applymovement(1, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
+        case 1: applymovement(2, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
+        case 2: applymovement(3, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
+    }
+    waitmovement(0)
+    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
+}
+
+script FileIsland_Entrance_EventScript_StarterLedgeMovement4 {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: applymovement(6, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
+        case 1: applymovement(5, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
+        case 2: applymovement(4, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
+    }
+    waitmovement(0)
+    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
+}
+
+script FileIsland_Entrance_EventScript_StarterLedgeTalk {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: msgbox(format("Koromon: This is File Island!"))
+        case 1: msgbox(format("Tanemon: This is File Island!"))
+        case 2: msgbox(format("Nyaromon: This is File Island!"))
+    }
+    msgbox(format("Izzy: So you guys say..."))
+    msgbox(format("{PLAYER}: We'll just have to check it out!"))
+    release
+}
+
+movement FileIsland_Entrance_Movement_Starter5 {
+    walk_left * 2
+    face_down
+}
+
+movement FileIsland_Entrance_Movement_Starter4 {
+    walk_left
+    face_down
+}
+
+movement FileIsland_Entrance_Movement_Starter1 {
+    walk_down
+    face_left
+}
+
+movement FileIsland_Entrance_Movement_IzzyTree1 {
+    walk_right * 6
+    walk_up * 2
+    face_right
+}
+
+movement FileIsland_Entrance_Movement_IzzyTree2 {
+    walk_right * 7
+
+}
+
+movement FileIsland_Entrance_Movement_LookAround {
+    face_up
+    face_down
+    face_right
+    face_left
+}
+
+movement FileIsland_Entrance_Movement_IzzyLedge1 {
+    walk_down * 2
+}
+
+movement FileIsland_Entrance_Movement_IzzyLedge2 {
+    face_down
+}
+
+movement FileIsland_Entrance_Movement_IzzyLedge3 {
+    walk_down * 2
+    walk_left
+    face_down
+}
+
+movement FileIsland_Entrance_Movement_IzzyLedge4 {
+    walk_left
+    face_down
+}
+
+movement FileIsland_Entrance_EventScript_StarterApproachTrigger1 {
+    walk_down
+    walk_left * 2
+    face_down
+}
+
+movement FileIsland_Entrance_EventScript_StarterApproachTrigger2 {
+    walk_down * 4
+}
+
+movement FileIsland_Entrance_EventScript_StarterApproachTrigger3 {
+    walk_down
+    walk_left * 3
+    face_down
+}
+
+movement FileIsland_Entrance_EventScript_StarterApproachTrigger4 {
+    walk_down * 4
+    walk_left
+    face_down
 }
