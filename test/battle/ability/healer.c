@@ -18,7 +18,7 @@ DOUBLE_BATTLE_TEST("Healer cures adjacent ally's status condition 30% of the tim
         OPPONENT(SPECIES_LOPMONX) { Status1(status); }
         OPPONENT(SPECIES_BEARMON) { Ability(ABILITY_HEALER); }
     } WHEN {
-        TURN { }
+        TURN {}
     } SCENE {
         MESSAGE("The opposing Bearmon's Healer cured the opposing Lopmonx's problem!");
     }

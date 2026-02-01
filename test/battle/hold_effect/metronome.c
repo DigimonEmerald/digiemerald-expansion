@@ -109,8 +109,8 @@ SINGLE_BATTLE_TEST("Metronome Item counts charging turn of moves for its attacki
 {
     u32 item;
 
-    PARAMETRIZE {item = ITEM_NONE; }
-    PARAMETRIZE {item = ITEM_METRONOME; }
+    PARAMETRIZE { item = ITEM_NONE; }
+    PARAMETRIZE { item = ITEM_METRONOME; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SOLAR_BEAM].effect == EFFECT_SOLAR_BEAM);
         PLAYER(SPECIES_LOPMONX) { Item(item); }

@@ -33,8 +33,8 @@ SINGLE_BATTLE_TEST("Telekinesis ends after 3 turns")
         OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TELEKINESIS); }
-        TURN { }
-        TURN { }
+        TURN {}
+        TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Telekinesis!");
         MESSAGE("The opposing Exveemon was hurled into the air!");

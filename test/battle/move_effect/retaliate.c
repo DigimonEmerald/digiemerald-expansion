@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
         HP_BAR(opponent, captureDamage: &damage[0]);
         HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(2.0), damage[0]);
     }
 }
 
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
         HP_BAR(player, captureDamage: &damage[0]);
         HP_BAR(player, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(2.0), damage[0]);
     }
 }
 
@@ -89,7 +89,7 @@ DOUBLE_BATTLE_TEST("Retaliate works with passive damage")
         HP_BAR(opponentRight, captureDamage: &damage[0]);
         HP_BAR(opponentRight, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(2.0), damage[0]);
     }
 }
 
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Retaliate works with Perish Song")
         HP_BAR(opponent, captureDamage: &damage[0]);
         HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(2.0), damage[0]);
     }
 }
 
@@ -132,6 +132,6 @@ SINGLE_BATTLE_TEST("Retaliate works with self-inflicted fainting")
         HP_BAR(opponent, captureDamage: &damage[0]);
         HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
-        EXPECT_MUL_EQ(damage[1], Q_4_12(2), damage[0]);
+        EXPECT_MUL_EQ(damage[1], Q_4_12(2.0), damage[0]);
     }
 }

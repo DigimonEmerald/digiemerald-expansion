@@ -43,13 +43,6 @@ const u8 gLopmonPokedexText[] = _(
     "twin is often instrumental in making it\n"
     "feel better.");
 
-// Gen 3 families
-const u8 gGesomonNormalPokedexText[] = _(
-    "Gesomon emerged from a virus that came\n"
-    "from space. It is highly intelligent and\n"
-    "can shoot lasers from the crystalline\n"
-    "organ on its chest.");
-
 // Gen 4 families
 const u8 gMothimPokedexText[] = _(
     "It does not keep a nest. While it\n"

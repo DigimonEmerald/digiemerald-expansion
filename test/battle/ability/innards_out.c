@@ -107,7 +107,7 @@ SINGLE_BATTLE_TEST("Innards Out uses correct damage amount for Future Sight")
         OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
-        TURN { }
+        TURN {}
         TURN { SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, opponent);

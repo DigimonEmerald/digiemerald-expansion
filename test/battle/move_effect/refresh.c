@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_REFRESH].effect == EFFECT_REFRESH);
+    ASSUME(GetMoveEffect(MOVE_REFRESH) == EFFECT_REFRESH);
 }
 
 SINGLE_BATTLE_TEST("Refresh cures the user of burn, frostbite, poison, and paralysis")
@@ -15,12 +15,12 @@ SINGLE_BATTLE_TEST("Refresh cures the user of burn, frostbite, poison, and paral
     PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status1 = STATUS1_FROSTBITE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Status1(status1); };
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Status1(status1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Lopmonx's status returned to normal!");
+        MESSAGE("Wobbuffet's status returned to normal!");
         STATUS_ICON(player, none: TRUE);
     }
 }
@@ -29,15 +29,16 @@ SINGLE_BATTLE_TEST("Refresh does not cure the user of Freeze")
 {
     PASSES_RANDOMLY(20, 100, RNG_FROZEN);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_FREEZE); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Lopmonx used Refresh!");
-        NONE_OF { 
+        MESSAGE("Wobbuffet used Refresh!");
+        NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REFRESH, player);
-            STATUS_ICON(player, none: TRUE); }
+            STATUS_ICON(player, none: TRUE);
+        }
         MESSAGE("But it failed!");
     }
 }
@@ -45,24 +46,26 @@ SINGLE_BATTLE_TEST("Refresh does not cure the user of Freeze")
 SINGLE_BATTLE_TEST("Refresh does not cure sleep when used by Sleep Talk")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SPORE].effect == EFFECT_SLEEP);
-        ASSUME(gMovesInfo[MOVE_SLEEP_TALK].effect == EFFECT_SLEEP_TALK);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_SLEEP_TALK, MOVE_REFRESH); }
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_SLEEP_TALK, MOVE_REFRESH); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SLEEP_TALK); }
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Lopmonx used Spore!");
+        MESSAGE("Wobbuffet used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Lopmonx fell asleep!");
-        MESSAGE("The opposing Lopmonx used Sleep Talk!");
+        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Wobbuffet used Sleep Talk!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SLEEP_TALK, opponent);
-        MESSAGE("The opposing Lopmonx used Refresh!");
-        NONE_OF { 
+        MESSAGE("The opposing Wobbuffet used Refresh!");
+        NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REFRESH, player);
-            STATUS_ICON(player, none: TRUE); }
+            STATUS_ICON(player, none: TRUE);
+        }
         MESSAGE("But it failed!");
     }
 }

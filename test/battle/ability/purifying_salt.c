@@ -8,7 +8,7 @@ SINGLE_BATTLE_TEST("Purifying Salt halves damage from Ghost-type moves", s16 dam
     PARAMETRIZE { ability = ABILITY_PURIFYING_SALT; }
     GIVEN {
         ASSUME(GetMoveType(MOVE_SHADOW_BALL) == TYPE_GHOST);
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_GARGANACL) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SHADOW_BALL); }
@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Purifying Salt halves damage from dynamic Ghost-type moves",
     PARAMETRIZE { ability = ABILITY_PURIFYING_SALT; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
-        PLAYER(SPECIES_LOPMONX) { TeraType(TYPE_GHOST); }
+        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_GHOST); }
         OPPONENT(SPECIES_GARGANACL) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
@@ -40,8 +40,8 @@ SINGLE_BATTLE_TEST("Purifying Salt halves damage from dynamic Ghost-type moves",
 SINGLE_BATTLE_TEST("Purifying Salt makes Rest fail")
 {
     GIVEN {
-        PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); HP(1); MaxHP(100);}
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); HP(1); MaxHP(100); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_REST); }
     } SCENE {
@@ -70,15 +70,15 @@ SINGLE_BATTLE_TEST("Purifying Salt grants immunity to status effects")
         ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
         ASSUME(MoveHasAdditionalEffect(MOVE_POWDER_SNOW, MOVE_EFFECT_FREEZE_OR_FROSTBITE) == TRUE);
-        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_PURIFYING_SALT); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
         if (move != MOVE_POWDER_SNOW) {
             NOT ANIMATION(ANIM_TYPE_MOVE, move, opponent);
             ABILITY_POPUP(player, ABILITY_PURIFYING_SALT);
-            MESSAGE("It doesn't affect Lopmonx…");
+            MESSAGE("It doesn't affect Wobbuffet…");
             NOT STATUS_ICON(player, status);
         } else {
             NONE_OF {
@@ -92,9 +92,9 @@ SINGLE_BATTLE_TEST("Purifying Salt grants immunity to status effects")
 SINGLE_BATTLE_TEST("Purifying Salt user can't be poisoned by Toxic Spikes")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }
@@ -110,9 +110,9 @@ SINGLE_BATTLE_TEST("Purifying Salt doesn't prevent Pokémon from being poisoned 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_DRAGON_TAIL) == EFFECT_HIT_SWITCH_TARGET);
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
+        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }
@@ -127,7 +127,7 @@ SINGLE_BATTLE_TEST("Purifying Salt protects from secondary effect burn")
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_EMBER, MOVE_EFFECT_BURN));
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }
     } SCENE {

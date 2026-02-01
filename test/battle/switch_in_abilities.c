@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order at the battle's s
         PLAYER(SPECIES_PAFUMON) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_SAKUMON) { Speed(spdOpponent); Ability(ABILITY_DROUGHT); }
     } WHEN {
-        TURN { ; }
+        TURN {}
     } SCENE {
         if (spdPlayer > spdOpponent) {
             ABILITY_POPUP(player, ABILITY_INTIMIDATE);
@@ -38,7 +38,7 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order at the battle's s
         OPPONENT(SPECIES_RENAMON_X) { Speed(spdOpponent1); Ability(ABILITY_DOWNLOAD); }
         OPPONENT(SPECIES_TYUTYUMON) { Speed(spdOpponent2); Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
-        TURN { ; }
+        TURN {}
     } SCENE {
         if (spdPlayer1 == 5) {
             ABILITY_POPUP(playerLeft, ABILITY_DRIZZLE);
@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
         OPPONENT(SPECIES_RENAMON_X) { Speed(spdOpponent); Ability(ABILITY_DOWNLOAD); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
-        TURN { ; }
+        TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Explosion!");
         if (spdPlayer > spdOpponent) {
@@ -112,7 +112,7 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
-        TURN { ; }
+        TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Explosion!");
         if (spdPlayer1 == 5) {
@@ -153,7 +153,7 @@ MULTI_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swit
         MULTI_OPPONENT_B(SPECIES_VULPIX_ALOLA) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 1); SEND_OUT(opponentLeft, 1); SEND_OUT(playerRight, 4); SEND_OUT(opponentRight, 4); }
-        TURN { ; }
+        TURN {}
     } SCENE {
         MESSAGE("Wobbuffet used Explosion!");
         if (spdPlayer1 == 5) {

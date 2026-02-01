@@ -19,8 +19,8 @@ SINGLE_BATTLE_TEST("Counter is not affected by Protect effects")
     PARAMETRIZE { move = MOVE_OBSTRUCT; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_COUNTER); }
     } SCENE {
@@ -34,11 +34,11 @@ SINGLE_BATTLE_TEST("Counter is not affected by Protect effects")
             } else if (move == MOVE_BURNING_BULWARK) {
                 STATUS_ICON(player, STATUS1_BURN);
             } else if (move == MOVE_KINGS_SHIELD) {
-                MESSAGE("Lopmon_x's Attack fell!");
+                MESSAGE("Wobbuffet's Attack fell!");
             } else if (move == MOVE_SILK_TRAP) {
-                MESSAGE("Lopmon_x's Speed fell!");
+                MESSAGE("Wobbuffet's Speed fell!");
             } else if (move == MOVE_OBSTRUCT) {
-                MESSAGE("Lopmon_x's Defense harshly fell!");
+                MESSAGE("Wobbuffet's Defense harshly fell!");
             }
         }
     }
@@ -49,8 +49,8 @@ SINGLE_BATTLE_TEST("Counter will do twice as much damage received from the oppon
     s16 normalDmg;
     s16 counterDmg;
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POUND); MOVE(player, MOVE_COUNTER); }
     } SCENE {
@@ -66,10 +66,10 @@ SINGLE_BATTLE_TEST("Counter will do twice as much damage received from the oppon
 DOUBLE_BATTLE_TEST("Counter cannot affect ally Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_POUND, target: playerRight);
@@ -87,10 +87,10 @@ DOUBLE_BATTLE_TEST("Counter hits the last opponent that hit the user")
     s16 counterDmg;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_POUND, target: playerLeft);
@@ -111,10 +111,10 @@ DOUBLE_BATTLE_TEST("Counter hits the last opponent that hit the user")
 DOUBLE_BATTLE_TEST("Counter respects Follow me")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN {
             MOVE(opponentRight, MOVE_FOLLOW_ME);
@@ -129,13 +129,13 @@ DOUBLE_BATTLE_TEST("Counter respects Follow me")
     }
 }
 
-DOUBLE_BATTLE_TEST("Counter fails if mon that damaged counter user is no longer on the field")
+DOUBLE_BATTLE_TEST("Counter fails if mon that damaged Counter user is no longer on the field (Gen 1-4)")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX) { HP(1); };
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_POUND, target: playerLeft);
@@ -146,6 +146,24 @@ DOUBLE_BATTLE_TEST("Counter fails if mon that damaged counter user is no longer 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, playerRight);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_COUNTER, playerLeft);
+    }
+}
+
+SINGLE_BATTLE_TEST("Counter deals 1 damage when the attack received is blocked by Disguise")
+{
+    s16 counterDmg;
+    GIVEN {
+        ASSUME(GetMoveCategory(MOVE_SHADOW_SNEAK) == DAMAGE_CATEGORY_PHYSICAL);
+        PLAYER(SPECIES_MIMIKYU) { Ability(ABILITY_DISGUISE); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_SHADOW_SNEAK); MOVE(player, MOVE_COUNTER); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SHADOW_SNEAK, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_COUNTER, player);
+        HP_BAR(opponent, captureDamage: &counterDmg);
+    } THEN {
+        EXPECT_EQ(counterDmg, 1);
     }
 }
 

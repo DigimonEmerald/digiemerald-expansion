@@ -14,7 +14,7 @@ DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
 <<<<<<< HEAD
@@ -38,7 +38,7 @@ DOUBLE_BATTLE_TEST("Doodle can't copy a banned ability")
         OPPONENT(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NONE_OF {
 <<<<<<< HEAD
@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if user has a banned Ability")
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         MESSAGE("But it failed!");
@@ -82,7 +82,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if partner has a banned Ability")
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
+        TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         MESSAGE("But it failed!");

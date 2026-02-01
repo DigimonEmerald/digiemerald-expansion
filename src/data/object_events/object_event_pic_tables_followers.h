@@ -796,13 +796,13 @@ static const struct SpriteFrameImage sPicTable_Minidekachimon[] = {
 };
 #if P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_MinidekachimonF[] = {
-    overworld_ascending_frames(gObjectEventPic_MinidekachimonF, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_MinidekachimonF, 8, 8),
 };
 #endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_MinidekachimonMega[] = {
-    overworld_ascending_frames(gObjectEventPic_MinidekachimonMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_MinidekachimonMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -2994,7 +2994,7 @@ static const struct SpriteFrameImage sPicTable_Garurumon_x[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_Garurumon_xMega[] = {
-    overworld_ascending_frames(gObjectEventPic_Garurumon_xMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Garurumon_xMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -3007,7 +3007,7 @@ static const struct SpriteFrameImage sPicTable_Gatomon[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_GatomonMega[] = {
-    overworld_ascending_frames(gObjectEventPic_GatomonMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_GatomonMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -3020,7 +3020,7 @@ static const struct SpriteFrameImage sPicTable_Gatomon_x[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_PRIMAL_REVERSIONS
 static const struct SpriteFrameImage sPicTable_Gatomon_xPrimal[] = {
-    overworld_ascending_frames(gObjectEventPic_Gatomon_xPrimal, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_Gatomon_xPrimal, 8, 8),
 };
 #endif // P_PRIMAL_REVERSIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -3033,7 +3033,7 @@ static const struct SpriteFrameImage sPicTable_Gekomon[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_PRIMAL_REVERSIONS
 static const struct SpriteFrameImage sPicTable_GekomonPrimal[] = {
-    overworld_ascending_frames(gObjectEventPic_GekomonPrimal, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_GekomonPrimal, 8, 8),
 };
 #endif // P_PRIMAL_REVERSIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -3046,7 +3046,7 @@ static const struct SpriteFrameImage sPicTable_Geogreymon[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_GeogreymonMega[] = {
-    overworld_ascending_frames(gObjectEventPic_GeogreymonMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_GeogreymonMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS

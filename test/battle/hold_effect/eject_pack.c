@@ -10,16 +10,16 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new Pokémon to lose HP due to
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LIFE_ORB].holdEffect == HOLD_EFFECT_LIFE_ORB);
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OVERHEAT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Lopmonx is switched out with the Eject Pack!");
+        MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         SEND_IN_MESSAGE("Wynaut");
         NOT HP_BAR(player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
@@ -28,44 +28,29 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new Pokémon to lose HP due to
 
 SINGLE_BATTLE_TEST("Eject Pack does not activate if there are no Pokémon left to battle")
 {
-{
     GIVEN {
-    GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMON_X) { HP(0); }
-        PLAYER(SPECIES_LOPMON_X) { HP(0); }
-        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET) { HP(0); }
+        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
-    } WHEN {
-        TURN { }
-        TURN { }
-    } SCENE {
+        TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        NONE_OF {
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Lopmon_x is switched out with the Eject Pack!");
-            MESSAGE("Lopmon_x is switched out with the Eject Pack!");
-        }
+            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         }
     }
-    }
-}
 }
 
 SINGLE_BATTLE_TEST("Eject Pack is triggered by self-inflicting stat decreases")
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LIFE_ORB].holdEffect == HOLD_EFFECT_LIFE_ORB);
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMON_X)  { Item(ITEM_EJECT_PACK); }
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET)  { Item(ITEM_EJECT_PACK); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(player, 1); }
     } SCENE {
@@ -73,13 +58,8 @@ SINGLE_BATTLE_TEST("Eject Pack is triggered by self-inflicting stat decreases")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-<<<<<<< HEAD
-        MESSAGE("Lopmon_x is switched out with the Eject Pack!");
-        MESSAGE("Go! Exveemon!");
-=======
-        MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        SEND_IN_MESSAGE("Exveemon");
->>>>>>> upstream/master
+        MESSAGE("Wobbuffet is switched out with the Eject Pack!");
+        SEND_IN_MESSAGE("Wynaut");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
 }
@@ -87,10 +67,10 @@ SINGLE_BATTLE_TEST("Eject Pack is triggered by self-inflicting stat decreases")
 SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Emergency Exit was activated on target")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_GOLISOPOD) { Ability(ABILITY_EMERGENCY_EXIT); MaxHP(263); HP(133); };
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_GOLISOPOD) { Ability(ABILITY_EMERGENCY_EXIT); MaxHP(263); HP(133); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -98,45 +78,45 @@ SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Emergency 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Lopmonx is switched out with the Eject Pack!");
+            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         }
         ABILITY_POPUP(opponent, ABILITY_EMERGENCY_EXIT);
     } THEN {
-        EXPECT(player->species == SPECIES_LOPMONX);
-        EXPECT(opponent->species == SPECIES_EXVEEMON);
+        EXPECT(player->species == SPECIES_WOBBUFFET);
+        EXPECT(opponent->species == SPECIES_WYNAUT);
     }
 }
 
 SINGLE_BATTLE_TEST("Eject Pack activates once intimidate mon switches in")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponent, 1); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Lopmonx is switched out with the Eject Pack!");
+        MESSAGE("Wobbuffet is switched out with the Eject Pack!");
     }
 }
 
 SINGLE_BATTLE_TEST("Eject Pack will not activate if Parting Shot user can switch out")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PARTING_SHOT); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PARTING_SHOT, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Lopmonx is switched out with the Eject Pack!");
+            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         }
     }
 }
@@ -144,13 +124,13 @@ SINGLE_BATTLE_TEST("Eject Pack will not activate if Parting Shot user can switch
 DOUBLE_BATTLE_TEST("Eject Pack will not trigger if the conditions are not met")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_FUGAMON) { Ability(ABILITY_CLEAR_BODY); };
-        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_BELDUM) { Ability(ABILITY_CLEAR_BODY); }
+        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponentLeft, 2); SEND_OUT(playerLeft, 2); }
     } SCENE {
@@ -161,10 +141,10 @@ DOUBLE_BATTLE_TEST("Eject Pack will not trigger if the conditions are not met")
 SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Eject Button was activated on target")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
-        OPPONENT(SPECIES_LOPMON_X) { Speed(5); Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(10); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); Item(ITEM_EJECT_BUTTON); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(10); }
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -172,12 +152,12 @@ SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Eject Butt
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Lopmon_x is switched out with the Eject Pack!");
+            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
     } THEN {
-        EXPECT(player->species == SPECIES_LOPMON_X);
-        EXPECT(opponent->species == SPECIES_EXVEEMON);
+        EXPECT(player->species == SPECIES_WOBBUFFET);
+        EXPECT(opponent->species == SPECIES_WYNAUT);
     }
 }
 
@@ -186,18 +166,18 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     u32 speed;
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_PAFUMON; ability = ABILITY_INTIMIDATE; speed = 1; }
-    PARAMETRIZE { species = SPECIES_PAFUMON; ability = ABILITY_INTIMIDATE; speed = 11; }
+    PARAMETRIZE { species = SPECIES_EKANS; ability = ABILITY_INTIMIDATE; speed = 1; }
+    PARAMETRIZE { species = SPECIES_EKANS; ability = ABILITY_INTIMIDATE; speed = 11; }
 
     PARAMETRIZE { species = SPECIES_DIPPLIN; ability = ABILITY_SUPERSWEET_SYRUP; speed = 1; }
     PARAMETRIZE { species = SPECIES_DIPPLIN; ability = ABILITY_SUPERSWEET_SYRUP; speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMON_X) { Speed(3); }
-        OPPONENT(SPECIES_EXVEEMON)  { Speed(4); }
-        OPPONENT(SPECIES_LOPMON_X)  { Speed(5); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
+        OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
+        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
         OPPONENT(species) { Speed(6); Ability(ability); }
     } WHEN {
         TURN {
@@ -233,11 +213,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMON_X) { Speed(3); }
-        OPPONENT(SPECIES_EXVEEMON)  { Speed(4); }
-        OPPONENT(SPECIES_LOPMON_X)  { Speed(5); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
+        OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
+        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_BUBBLE);
@@ -268,11 +248,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
         OPPONENT(SPECIES_WYNAUT)  { HP(1); Speed(4); }
-        OPPONENT(SPECIES_LOPMONX)  { Speed(5); }
+        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
         OPPONENT(SPECIES_EKANS) { Speed(6); Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN {
@@ -306,11 +286,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
         OPPONENT(SPECIES_WYNAUT)  { HP(1); Speed(4); }
-        OPPONENT(SPECIES_LOPMONX)  { Speed(5); }
+        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
         OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
         OPPONENT(SPECIES_EKANS) { Speed(6); Ability(ABILITY_INTIMIDATE); }
     } WHEN {
@@ -343,7 +323,7 @@ SINGLE_BATTLE_TEST("Eject Pack does not activate if mon is switched in due to Ej
     GIVEN {
         PLAYER(SPECIES_DUGTRIO) { Ability(ABILITY_ARENA_TRAP); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); };
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {

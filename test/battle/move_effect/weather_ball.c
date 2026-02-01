@@ -12,8 +12,8 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Fire-type move
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_SUNNY_DAY; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_FLAMEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_MEGANIUM);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -30,8 +30,8 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Water-type mov
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_RAIN_DANCE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GIGIMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ARCANINE);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -48,8 +48,8 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Rock-type move
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_SANDSTORM; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CHIKURIMON) { Item(ITEM_SAFETY_GOGGLES); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_MAGMAR) { Item(ITEM_SAFETY_GOGGLES); }
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -67,8 +67,8 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to an Ice-type move
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ELECMON_VIOLET) { Item(ITEM_SAFETY_GOGGLES); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_DRAGONAIR) { Item(ITEM_SAFETY_GOGGLES); }
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }

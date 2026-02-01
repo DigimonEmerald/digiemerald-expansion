@@ -6,16 +6,12 @@ SINGLE_BATTLE_TEST("Stench has a 10% chance to flinch")
     PASSES_RANDOMLY(1, 10, RNG_STENCH);
     GIVEN {
         ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
-        PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_GRIMER) { Ability(ABILITY_STENCH); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx flinched!");
-=======
-        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
     }
 }
 
@@ -26,16 +22,12 @@ SINGLE_BATTLE_TEST("Stench does not stack with King's Rock")
         ASSUME(gItemsInfo[ITEM_KINGS_ROCK].holdEffect == HOLD_EFFECT_FLINCH);
         ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 
-        PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); Item(ITEM_KINGS_ROCK); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_GRIMER) { Ability(ABILITY_STENCH); Item(ITEM_KINGS_ROCK); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx flinched!");
-=======
-        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
     }
 }
 
@@ -44,10 +36,10 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
     GIVEN {
         ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_GRIMER) { Ability(ABILITY_STENCH); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
@@ -59,11 +51,7 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
             MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
         }
     } SCENE {
-<<<<<<< HEAD
-        NONE_OF { MESSAGE("Exveemon flinched!"); }
-=======
-        NONE_OF { MESSAGE("Exveemon flinched and couldn't move!"); }
->>>>>>> upstream/master
+        NONE_OF { MESSAGE("Wynaut flinched and couldn't move!"); }
     }
 }
 
@@ -72,10 +60,10 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
     GIVEN {
         ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_LOPMONX) { Speed(20); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
-        OPPONENT(SPECIES_SAKUTTOMON) { Speed(100); Ability(ABILITY_STENCH); }
-        OPPONENT(SPECIES_LOPMONX) {Speed(50); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(20); }
+        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        OPPONENT(SPECIES_GRIMER) { Speed(100); Ability(ABILITY_STENCH); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
@@ -84,15 +72,9 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, playerLeft);
-<<<<<<< HEAD
-        MESSAGE("Foe Sakuttomon flinched!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
-        NOT MESSAGE("Exveemon flinched!");
-=======
-        MESSAGE("The opposing Sakuttomon flinched and couldn't move!");
+        MESSAGE("The opposing Grimer flinched and couldn't move!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentRight);
-        NOT MESSAGE("Exveemon flinched and couldn't move!");
->>>>>>> upstream/master
+        NOT MESSAGE("Wynaut flinched and couldn't move!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
     }
 }

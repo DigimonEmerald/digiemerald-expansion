@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Battle Message: Send-in message depends on foe HP")
         PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { HP(hp); MaxHP(100); }
     } WHEN {
-        TURN { SWITCH(player, 1);  }
+        TURN { SWITCH(player, 1); }
     } SCENE {
         if (hp > 69)
             MESSAGE("Go! Exveemon!");
@@ -34,7 +34,7 @@ TO_DO_BATTLE_TEST("Battle Message: Switch-out message changes based on condition
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { SWITCH(player, 1);  }
+        TURN { SWITCH(player, 1); }
     } SCENE {
         if (???)
             MESSAGE("Exveemon, that's enough! Come back!");

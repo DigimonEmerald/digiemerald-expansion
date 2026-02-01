@@ -10,17 +10,17 @@ SINGLE_BATTLE_TEST("Embargo blocks the effect of an affected Pokémon's held ite
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(player, MOVE_FISSURE); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("Lopmonx used Fissure!");
+        MESSAGE("Wobbuffet used Fissure!");
         HP_BAR(opponent, hp: 0);
     }
 }
@@ -32,14 +32,14 @@ SINGLE_BATTLE_TEST("Embargo blocks an affected Pokémon's trainer from using ite
     KNOWN_FAILING;
     GIVEN {
         ASSUME(gItemsInfo[ITEM_POTION].battleUsage == EFFECT_ITEM_RESTORE_HP);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { USE_ITEM(opponent, ITEM_POTION, partyIndex: 0); }
     } SCENE {
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
     } THEN {
         EXPECT_EQ(opponent->hp, 1);
     }
@@ -53,15 +53,15 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect experience
     PARAMETRIZE { item = ITEM_NONE; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Level(20); Item(item); }
+        PLAYER(SPECIES_WOBBUFFET) { Level(20); Item(item); }
         OPPONENT(SPECIES_CATERPIE) { Level(10); HP(1); }
         ASSUME(gItemsInfo[ITEM_LUCKY_EGG].holdEffect == HOLD_EFFECT_LUCKY_EGG);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         MESSAGE("The wild Caterpie used Embargo!");
-        MESSAGE("Lopmonx can't use items anymore!");
-        MESSAGE("Lopmonx used Scratch!");
+        MESSAGE("Wobbuffet can't use items anymore!");
+        MESSAGE("Wobbuffet used Scratch!");
         MESSAGE("The wild Caterpie fainted!");
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
@@ -74,7 +74,7 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
     u32 finalHPEVAmount;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_POWER_WEIGHT); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POWER_WEIGHT); }
         OPPONENT(SPECIES_CATERPIE) { HP(1); }
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffect == HOLD_EFFECT_POWER_ITEM);
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam != 0);
@@ -85,9 +85,9 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
     } SCENE {
         // Turn 1
         MESSAGE("The wild Caterpie used Embargo!");
-        MESSAGE("Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("Lopmonx used Scratch!");
+        MESSAGE("Wobbuffet used Scratch!");
         MESSAGE("The wild Caterpie fainted!");
     } THEN {
         finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_CATERPIE].evYield_HP);
@@ -98,19 +98,19 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
 SINGLE_BATTLE_TEST("Embargo negates a held item's Speed reduction")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(19); }
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_MACHO_BRACE); Speed(20); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(19); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_MACHO_BRACE); Speed(20); }
         ASSUME(gItemsInfo[ITEM_MACHO_BRACE].holdEffect == HOLD_EFFECT_MACHO_BRACE);
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Lopmonx used Scratch!");
-        MESSAGE("Lopmonx used Scratch!");
+        MESSAGE("The opposing Wobbuffet used Scratch!");
+        MESSAGE("Wobbuffet used Scratch!");
     }
 }
 
@@ -126,14 +126,14 @@ SINGLE_BATTLE_TEST("Embargo negates a held item's Speed reduction")
 //     KNOWN_FAILING; // Pokémon are currently not obtaining Friendship for using items in battle.
 //     GIVEN {
 //         ASSUME(gItemsInfo[ITEM_X_ACCURACY].battleUsage == EFFECT_ITEM_INCREASE_STAT);
-//         PLAYER(SPECIES_LOPMONX) { Item(ITEM_SOOTHE_BELL); };
-//         OPPONENT(SPECIES_LOPMONX);
+//         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_SOOTHE_BELL); }
+//         OPPONENT(SPECIES_WOBBUFFET);
 //     } WHEN {
 //         TURN { USE_ITEM(player, ITEM_X_ACCURACY); }
 //         TURN { MOVE(player, MOVE_SING); }
 //     } SCENE {
-//         MESSAGE("Lopmonx used Sing!");
-//         MESSAGE("Wild Lopmonx fell asleep!");
+//         MESSAGE("Wobbuffet used Sing!");
+//         MESSAGE("Wild Wobbuffet fell asleep!");
 //     } THEN {
 //         initialFriendship = GetMonData(&PLAYER_PARTY[0], MON_DATA_FRIENDSHIP);
 //         finalFriendship = GetMonData(&gPlayerParty[0], MON_DATA_FRIENDSHIP);
@@ -148,8 +148,8 @@ SINGLE_BATTLE_TEST("Embargo doesn't block a held item's form-changing effect, bu
     PARAMETRIZE { heldItem = ITEM_NONE; }
     PARAMETRIZE { heldItem = ITEM_MEADOW_PLATE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ARCEUS_GRASS) { Item(heldItem); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ARCEUS_GRASS) { Item(heldItem); }
         ASSUME(gItemsInfo[ITEM_MEADOW_PLATE].holdEffect == HOLD_EFFECT_PLATE);
         ASSUME(gItemsInfo[ITEM_MEADOW_PLATE].holdEffectParam == 20);
         ASSUME(gItemsInfo[ITEM_MEADOW_PLATE].secondaryId == TYPE_GRASS);
@@ -169,20 +169,20 @@ SINGLE_BATTLE_TEST("Embargo makes Fling and Natural Gift fail")
     PARAMETRIZE { heldItem = ITEM_LIGHT_BALL; moveId = MOVE_FLING; }
     PARAMETRIZE { heldItem = ITEM_CHERI_BERRY; moveId = MOVE_NATURAL_GIFT; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(heldItem); };
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Item(heldItem); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); }
         TURN { MOVE(player, moveId); }
     } SCENE {
         // Turn 1
-        MESSAGE("The opposing Lopmonx used Embargo!");
-        MESSAGE("Lopmonx can't use items anymore!");
+        MESSAGE("The opposing Wobbuffet used Embargo!");
+        MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
         if (moveId == MOVE_FLING)
-            MESSAGE("Lopmonx used Fling!");
+            MESSAGE("Wobbuffet used Fling!");
         else
-            MESSAGE("Lopmonx used Natural Gift!");
+            MESSAGE("Wobbuffet used Natural Gift!");
         MESSAGE("But it failed!");
     }
 }
@@ -190,39 +190,39 @@ SINGLE_BATTLE_TEST("Embargo makes Fling and Natural Gift fail")
 SINGLE_BATTLE_TEST("Embargo doesn't stop an item flung at an affected target from activating")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIGHT_BALL); };
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIGHT_BALL); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(player, MOVE_FLING); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("Lopmonx used Fling!");
-        MESSAGE("Lopmonx flung its Light Ball!");
+        MESSAGE("Wobbuffet used Fling!");
+        MESSAGE("Wobbuffet flung its Light Ball!");
         HP_BAR(opponent);
-        MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
+        MESSAGE("The opposing Wobbuffet is paralyzed, so it may be unable to move!");
     }
 }
 
 SINGLE_BATTLE_TEST("Baton Pass passes Embargo's effect")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIGHT_BALL); };
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIGHT_BALL); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); }
         TURN { MOVE(player, MOVE_BATON_PASS); SEND_OUT(player, 1); }
         TURN { MOVE(player, MOVE_FLING); }
     } SCENE {
         // Turn 1
-        MESSAGE("The opposing Lopmonx used Embargo!");
-        MESSAGE("Lopmonx can't use items anymore!");
+        MESSAGE("The opposing Wobbuffet used Embargo!");
+        MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("Lopmonx used Baton Pass!");
+        MESSAGE("Wobbuffet used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, player);
         SEND_IN_MESSAGE("Wynaut");
         // Turn 3
@@ -236,19 +236,19 @@ SINGLE_BATTLE_TEST("Embargo doesn't block the effects of berries obtained throug
     u32 hp = 10;
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); };
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ORAN_BERRY); };
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ORAN_BERRY); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); }
         TURN { MOVE(player, MOVE_PLUCK); }
     } SCENE {
         // Turn 1
-        MESSAGE("The opposing Lopmonx used Embargo!");
-        MESSAGE("Lopmonx can't use items anymore!");
+        MESSAGE("The opposing Wobbuffet used Embargo!");
+        MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("Lopmonx used Pluck!");
+        MESSAGE("Wobbuffet used Pluck!");
         HP_BAR(opponent);
-        MESSAGE("Lopmonx stole and ate its target's Oran Berry!");
+        MESSAGE("Wobbuffet stole and ate its target's Oran Berry!");
         HP_BAR(player, damage: -hp);
     }
 }
@@ -260,7 +260,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Plate items on the move J
     PARAMETRIZE { heldItem = ITEM_NONE; }
     PARAMETRIZE { heldItem = ITEM_PIXIE_PLATE; }
     GIVEN {
-        PLAYER(SPECIES_ARCEUS) { Item(heldItem); };
+        PLAYER(SPECIES_ARCEUS) { Item(heldItem); }
         OPPONENT(SPECIES_DRAGONITE);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_JUDGMENT); }
@@ -281,7 +281,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Drive items on the move T
     PARAMETRIZE { heldItem = ITEM_NONE; }
     PARAMETRIZE { heldItem = ITEM_SHOCK_DRIVE; }
     GIVEN {
-        PLAYER(SPECIES_GENESECT) { Item(heldItem); };
+        PLAYER(SPECIES_GENESECT) { Item(heldItem); }
         OPPONENT(SPECIES_GYARADOS);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_TECHNO_BLAST); }
@@ -302,12 +302,12 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
     PARAMETRIZE { heldItem = ITEM_NONE; }
     PARAMETRIZE { heldItem = ITEM_FIRE_MEMORY; }
     GIVEN {
-        PLAYER(SPECIES_SILVALLY) { Item(heldItem); };
-        OPPONENT(SPECIES_BOMMON);
+        PLAYER(SPECIES_SILVALLY) { Item(heldItem); }
+        OPPONENT(SPECIES_VENUSAUR);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_MULTI_ATTACK); }
     } SCENE {
-        MESSAGE("The opposing Bommon used Embargo!");
+        MESSAGE("The opposing Venusaur used Embargo!");
         MESSAGE("Silvally can't use items anymore!");
         MESSAGE("Silvally used Multi-Attack!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
@@ -319,20 +319,20 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
 SINGLE_BATTLE_TEST("Embargo can be reflected by Magic Coat")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LIGHT_BALL); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LIGHT_BALL); }
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_FLING); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Magic Coat!");
-        MESSAGE("Lopmonx shrouded itself with Magic Coat!");
-        MESSAGE("The opposing Lopmonx used Embargo!");
-        MESSAGE("Lopmonx bounced the Embargo back!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Magic Coat!");
+        MESSAGE("Wobbuffet shrouded itself with Magic Coat!");
+        MESSAGE("The opposing Wobbuffet used Embargo!");
+        MESSAGE("Wobbuffet bounced the Embargo back!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Lopmonx used Fling!");
+        MESSAGE("The opposing Wobbuffet used Fling!");
         MESSAGE("But it failed!");
     }
 }
@@ -340,19 +340,19 @@ SINGLE_BATTLE_TEST("Embargo can be reflected by Magic Coat")
 SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CHARIZARD) { Item(ITEM_CHARIZARDITE_Y); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_CHARIZARD) { Item(ITEM_CHARIZARDITE_Y); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
         TURN { MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Lopmonx used Baton Pass!");
+        MESSAGE("The opposing Wobbuffet used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
         MESSAGE("2 sent out Charizard!");
         // Turn 3
@@ -365,26 +365,26 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
 SINGLE_BATTLE_TEST("Embargo doesn't prevent Primal Reversion")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
         TURN { MOVE(opponent, MOVE_FLING); }
     } SCENE {
         // Turn 1
-        MESSAGE("Lopmonx used Embargo!");
-        MESSAGE("The opposing Lopmonx can't use items anymore!");
+        MESSAGE("Wobbuffet used Embargo!");
+        MESSAGE("The opposing Wobbuffet can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Lopmonx used Baton Pass!");
+        MESSAGE("The opposing Wobbuffet used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
-        MESSAGE("2 sent out Gekomon!");
+        MESSAGE("2 sent out Groudon!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponent);
-        MESSAGE("The opposing Gekomon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Groudon's Primal Reversion! It reverted to its primal state!");
         ABILITY_POPUP(opponent);
         // Turn 3
-        MESSAGE("The opposing Gekomon used Fling!");
+        MESSAGE("The opposing Groudon used Fling!");
         MESSAGE("But it failed!");
     }
 }

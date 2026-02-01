@@ -20,22 +20,22 @@ SINGLE_BATTLE_TEST("Stamina raises Defense by 1 when hit by a move")
     s16 turnOneHit, turnTwoHit;
     u16 move;
 
-    PARAMETRIZE {move = MOVE_SCRATCH; }
-    PARAMETRIZE {move = MOVE_GUST; }
+    PARAMETRIZE { move = MOVE_SCRATCH; }
+    PARAMETRIZE { move = MOVE_GUST; }
 
     GIVEN {
         ASSUME(!IsBattleMoveStatus(MOVE_SCRATCH));
         ASSUME(!IsBattleMoveStatus(MOVE_GUST));
         ASSUME(GetMoveCategory(MOVE_GUST) == DAMAGE_CATEGORY_SPECIAL);
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_STAMINA); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_STAMINA); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
         TURN { MOVE(opponent, move); }
     } SCENE {
-        STAMINA_HIT(opponent, player, move, "Lopmonx's Defense rose!", turnOneHit);
-        STAMINA_HIT(opponent, player, move, "Lopmonx's Defense rose!", turnTwoHit);
+        STAMINA_HIT(opponent, player, move, "Wobbuffet's Defense rose!", turnOneHit);
+        STAMINA_HIT(opponent, player, move, "Wobbuffet's Defense rose!", turnTwoHit);
     }
     THEN {
         if (move == MOVE_SCRATCH) {
@@ -51,18 +51,18 @@ DOUBLE_BATTLE_TEST("Stamina activates correctly for every battler with the abili
 {
     enum Ability abilityLeft, abilityRight;
 
-    PARAMETRIZE {abilityLeft = ABILITY_NONE, abilityRight = ABILITY_STAMINA; }
-    PARAMETRIZE {abilityLeft = ABILITY_STAMINA, abilityRight = ABILITY_NONE; }
-    PARAMETRIZE {abilityLeft = ABILITY_STAMINA, abilityRight = ABILITY_STAMINA; }
+    PARAMETRIZE { abilityLeft = ABILITY_NONE, abilityRight = ABILITY_STAMINA; }
+    PARAMETRIZE { abilityLeft = ABILITY_STAMINA, abilityRight = ABILITY_NONE; }
+    PARAMETRIZE { abilityLeft = ABILITY_STAMINA, abilityRight = ABILITY_STAMINA; }
 
     GIVEN {
         ASSUME(GetMoveTarget(MOVE_EARTHQUAKE) == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_LOPMONX) { Ability(abilityLeft); Speed(10); }
-        PLAYER(SPECIES_LOPMONX) { Ability(abilityRight); Speed(5); }
-        OPPONENT(SPECIES_LOPMONX) {Speed(20); }
-        OPPONENT(SPECIES_LOPMONX) {Speed(15); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(abilityLeft); Speed(10); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(abilityRight); Speed(5); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(20); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(15); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_EARTHQUAKE);}
+        TURN { MOVE(opponentLeft, MOVE_EARTHQUAKE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentLeft);
 
@@ -72,11 +72,11 @@ DOUBLE_BATTLE_TEST("Stamina activates correctly for every battler with the abili
         HP_BAR(opponentRight);
 
         if (abilityLeft == ABILITY_STAMINA) {
-            STAMINA_STAT_RAISE(playerLeft, "Lopmonx's Defense rose!");
+            STAMINA_STAT_RAISE(playerLeft, "Wobbuffet's Defense rose!");
         }
 
         if (abilityRight == ABILITY_STAMINA) {
-            STAMINA_STAT_RAISE(playerRight, "Lopmonx's Defense rose!");
+            STAMINA_STAT_RAISE(playerRight, "Wobbuffet's Defense rose!");
         }
 
         NOT HP_BAR(opponentLeft); // We need to check the attacker itself does NOT get damaged. There was an issue when the targets would get overwritten by the Stamina's stat raise.
@@ -92,7 +92,7 @@ DOUBLE_BATTLE_TEST("Stamina activates correctly for every battler with the abili
 SINGLE_BATTLE_TEST("Stamina activates for every hit of a multi hit move")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_MUDBRAY) { Ability(ABILITY_STAMINA); }
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_KICK); }
@@ -110,7 +110,7 @@ SINGLE_BATTLE_TEST("Stamina is not activated by users own Substitute")
 {
     GIVEN {
         PLAYER(SPECIES_MUDBRAY) { Ability(ABILITY_STAMINA); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); }
     } SCENE {

@@ -6,38 +6,82 @@ ASSUMPTIONS
     ASSUME(GetMoveEffect(MOVE_WISH) == EFFECT_WISH);
 }
 
-SINGLE_BATTLE_TEST("Wish restores 50% of max player HP")
+SINGLE_BATTLE_TEST("Wish restores 50% of the user's HP when not switching")
 {
+    u32 config;
+    PARAMETRIZE { config = GEN_4; }
+    PARAMETRIZE { config = GEN_5; }
     GIVEN {
-        PLAYER(SPECIES_EXVEEMON) { HP(50); MaxHP(100); }
-        OPPONENT(SPECIES_LOPMON_X);
+        WITH_CONFIG(CONFIG_WISH_HP_SOURCE, config);
+        PLAYER(SPECIES_WYNAUT) { HP(50); MaxHP(100); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_WISH); }
-        TURN { }
+        TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WISH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
-        MESSAGE("Exveemon's wish came true!");
-        HP_BAR(player, hp: 100);
-        MESSAGE("Exveemon's HP was restored.");
+        MESSAGE("Wynaut's wish came true!");
+        HP_BAR(player, damage: -50);
+        MESSAGE("Wynaut's HP was restored.");
+    }
+}
+
+SINGLE_BATTLE_TEST("Wish restores 50% of the user's HP when switching (Gen5+)")
+{
+    GIVEN {
+        WITH_CONFIG(CONFIG_WISH_HP_SOURCE, GEN_5);
+        PLAYER(SPECIES_WYNAUT) { HP(50); MaxHP(100); }
+        PLAYER(SPECIES_WOBBUFFET) { HP(100); MaxHP(200); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_WISH); }
+        TURN { SWITCH(player, 1); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_WISH, player);
+        SWITCH_OUT_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Wobbuffet");
+        MESSAGE("Wynaut's wish came true!");
+        HP_BAR(player, damage: -50);
+        MESSAGE("Wobbuffet's HP was restored.");
+    }
+}
+
+SINGLE_BATTLE_TEST("Wish restores 50% of the recipient's HP when switching (Gen3-4)")
+{
+    GIVEN {
+        WITH_CONFIG(CONFIG_WISH_HP_SOURCE, GEN_4);
+        PLAYER(SPECIES_WYNAUT) { HP(50); MaxHP(100); }
+        PLAYER(SPECIES_WOBBUFFET) { HP(100); MaxHP(200); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_WISH); }
+        TURN { SWITCH(player, 1); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_WISH, player);
+        SWITCH_OUT_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Wobbuffet");
+        MESSAGE("Wynaut's wish came true!");
+        HP_BAR(player, damage: -100);
+        MESSAGE("Wobbuffet's HP was restored.");
     }
 }
 
 SINGLE_BATTLE_TEST("Wish heals the user at the end of the next turn")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_WISH); MOVE(opponent, MOVE_POUND); }
-        TURN { }
+        TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WISH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, opponent);
         HP_BAR(player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
-        MESSAGE("Lopmon_x's wish came true!");
+        MESSAGE("Wobbuffet's wish came true!");
         HP_BAR(player);
     }
 }
@@ -45,8 +89,8 @@ SINGLE_BATTLE_TEST("Wish heals the user at the end of the next turn")
 SINGLE_BATTLE_TEST("Wish is blocked by Heal Block")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_WISH); MOVE(opponent, MOVE_POUND); }
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); }
@@ -56,9 +100,7 @@ SINGLE_BATTLE_TEST("Wish is blocked by Heal Block")
         HP_BAR(player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BLOCK, opponent);
-        MESSAGE("Lopmon_x was prevented from healing!");
+        MESSAGE("Wobbuffet was prevented from healing!");
         NOT HP_BAR(player);
     }
 }
-
-TO_DO_BATTLE_TEST("TODO: Write Wish (Move Effect) test titles")

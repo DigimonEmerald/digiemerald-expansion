@@ -5,10 +5,10 @@ AI_DOUBLE_BATTLE_TEST("AI prefers Entrainment'ing good abilities onto partner wi
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_SMART_TRAINER);
-        PLAYER(SPECIES_QUAXWELL) { Level(18); Ability(ABILITY_TORRENT); Moves(MOVE_WATER_GUN); };
-        PLAYER(SPECIES_DEVIDRAMON) { Level(18); Moves(MOVE_WATER_GUN); };
-        OPPONENT(SPECIES_RYUDAMON) { Level(17); Ability(ABILITY_TECHNICIAN); Moves(MOVE_AERIAL_ACE, MOVE_ENTRAINMENT, MOVE_FLAME_WHEEL, MOVE_MAGICAL_LEAF); }
-        OPPONENT(SPECIES_ETEMON_CHAOS) { Level(17); Ability(ABILITY_DEFEATIST); Moves(MOVE_DUAL_WINGBEAT, MOVE_ROCK_TOMB); }
+        PLAYER(SPECIES_QUAXWELL) { Level(18); Ability(ABILITY_TORRENT); Moves(MOVE_WATER_GUN); }
+        PLAYER(SPECIES_CORPHISH) { Level(18); Moves(MOVE_WATER_GUN); }
+        OPPONENT(SPECIES_SMEARGLE) { Level(17); Ability(ABILITY_TECHNICIAN); Moves(MOVE_AERIAL_ACE, MOVE_ENTRAINMENT, MOVE_FLAME_WHEEL, MOVE_MAGICAL_LEAF); }
+        OPPONENT(SPECIES_ARCHEN) { Level(17); Ability(ABILITY_DEFEATIST); Moves(MOVE_DUAL_WINGBEAT, MOVE_ROCK_TOMB); }
     } WHEN {
         TURN { EXPECT_MOVE(opponentLeft, MOVE_ENTRAINMENT); EXPECT_MOVE(opponentRight, MOVE_DUAL_WINGBEAT); MOVE(playerLeft, MOVE_WATER_GUN); MOVE(playerRight, MOVE_WATER_GUN); }
     }
@@ -17,8 +17,8 @@ AI_DOUBLE_BATTLE_TEST("AI prefers Entrainment'ing good abilities onto partner wi
 SINGLE_BATTLE_TEST("Entrainment changes the target's Ability to match the user's")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Ability(ABILITY_TELEPATHY); }
-        OPPONENT(SPECIES_LOPMON_X) { Ability(ABILITY_SHADOW_TAG); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_SHADOW_TAG); }
     } WHEN {
         TURN { MOVE(player, MOVE_ENTRAINMENT); }
     } THEN {
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Entrainment fails if the user's ability has cantBeCopied fla
     GIVEN {
         ASSUME(gAbilitiesInfo[ABILITY_MULTITYPE].cantBeCopied);
         PLAYER(SPECIES_ARCEUS)   { Ability(ABILITY_MULTITYPE); }
-        OPPONENT(SPECIES_LOPMON_X) { Ability(ABILITY_SHADOW_TAG); }
+        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_SHADOW_TAG); }
     } WHEN {
         TURN { MOVE(player, MOVE_ENTRAINMENT); }
     } SCENE {
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Entrainment fails if the target's ability has cantBeOverwrit
 {
     GIVEN {
         ASSUME(gAbilitiesInfo[ABILITY_MULTITYPE].cantBeOverwritten);
-        PLAYER(SPECIES_LOPMON_X) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         OPPONENT(SPECIES_ARCEUS)  { Ability(ABILITY_MULTITYPE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ENTRAINMENT); }

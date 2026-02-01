@@ -4,7 +4,7 @@
 
 <!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
 
-**`Digimon Emerald`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon Emerald ROM hacks with Digimon. **`Digimon Emerald`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project and [RH Hideout's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion). **It is not a playable game on its own.** 
+**`Digimon Emerald`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon Emerald ROM hacks with Digimon. **`Digimon Emerald`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project and [RH Hideout's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion). **It is not a playable game on its own.**
 
 # [Features](FEATURES.md)
 
@@ -17,14 +17,14 @@
 If you use **`Digimon Emerald`**, please credit us alongside **RHH (Rom Hacking Hideout)** and **Pret**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's pokeemerald-expansion 1.14.1 https://github.com/rh-hideout/pokeemerald-expansion/
+Based off RHH's pokeemerald-expansion 1.14.3 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!
 
 # [Getting Started](INSTALL.md)
 
-❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches. 
+❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches.
 
 If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
 

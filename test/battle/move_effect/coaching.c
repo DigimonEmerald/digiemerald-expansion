@@ -3,73 +3,72 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_COACHING].effect == EFFECT_COACHING);
+    ASSUME(GetMoveEffect(MOVE_COACHING) == EFFECT_COACHING);
 }
 
 DOUBLE_BATTLE_TEST("Coaching raises Attack and Defense of ally by 1 stage each")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_COACHING, target: playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, playerLeft);
-        MESSAGE("Exveemon's Attack rose!");
-        MESSAGE("Exveemon's Defense rose!");
+        MESSAGE("Wynaut's Attack rose!");
+        MESSAGE("Wynaut's Defense rose!");
     }
 }
 
 DOUBLE_BATTLE_TEST("Coaching bypasses Protect")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_PROTECT].effect == EFFECT_PROTECT);
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveEffect(MOVE_PROTECT) == EFFECT_PROTECT);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_PROTECT); MOVE(playerLeft, MOVE_COACHING, target: playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, playerLeft);
-        MESSAGE("Exveemon's Attack rose!");
-        MESSAGE("Exveemon's Defense rose!");
+        MESSAGE("Wynaut's Attack rose!");
+        MESSAGE("Wynaut's Defense rose!");
     }
 }
 
 DOUBLE_BATTLE_TEST("Coaching bypasses Crafty Shield")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_CRAFTY_SHIELD].effect == EFFECT_PROTECT);
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveEffect(MOVE_CRAFTY_SHIELD) == EFFECT_PROTECT);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, MOVE_COACHING, target: playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, playerLeft);
-        MESSAGE("Exveemon's Attack rose!");
-        MESSAGE("Exveemon's Defense rose!");
+        MESSAGE("Wynaut's Attack rose!");
+        MESSAGE("Wynaut's Defense rose!");
     }
 }
 
 DOUBLE_BATTLE_TEST("Coaching fails if all allies are is semi-invulnerable")
 {
-    KNOWN_FAILING; // Coaching succeeds
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FLY].effect == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_LOPMONX);
+        ASSUME(GetMoveEffect(MOVE_FLY) == EFFECT_SEMI_INVULNERABLE);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_HAWLUCHA);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_FLY, target: opponentLeft); MOVE(playerLeft, MOVE_COACHING, target: playerRight); }
     } SCENE {
         MESSAGE("Hawlucha used Fly!");
-        MESSAGE("Lopmonx used Coaching!");
+        MESSAGE("Wobbuffet used Coaching!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, playerLeft);
             MESSAGE("Hawlucha's Attack rose!");
@@ -82,16 +81,16 @@ DOUBLE_BATTLE_TEST("Coaching fails if all allies are is semi-invulnerable")
 SINGLE_BATTLE_TEST("Coaching fails in single battles")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_COACHING); }
     } SCENE {
         MESSAGE("But it failed!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, player);
-            MESSAGE("Exveemon's Attack rose!");
-            MESSAGE("Exveemon's Defense rose!");
+            MESSAGE("Wynaut's Attack rose!");
+            MESSAGE("Wynaut's Defense rose!");
         }
     }
 }
@@ -99,21 +98,21 @@ SINGLE_BATTLE_TEST("Coaching fails in single battles")
 DOUBLE_BATTLE_TEST("Coaching fails if there's no ally")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON) { HP(1); };
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(playerLeft, MOVE_SCRATCH, target: playerRight); }
         TURN { MOVE(playerLeft, MOVE_COACHING, target: playerRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
-        MESSAGE("Exveemon fainted!");
-        MESSAGE("Lopmonx used Coaching!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
+        MESSAGE("Wynaut fainted!");
+        MESSAGE("Wobbuffet used Coaching!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_COACHING, playerLeft);
-            MESSAGE("Exveemon's Attack rose!");
-            MESSAGE("Exveemon's Defense rose!");
+            MESSAGE("Wynaut's Attack rose!");
+            MESSAGE("Wynaut's Defense rose!");
         }
         MESSAGE("But it failed!");
     }
@@ -133,7 +132,7 @@ AI_DOUBLE_BATTLE_TEST("AI uses Coaching")
         OPPONENT(SPECIES_WOBBUFFET) { Moves(move); }
     } WHEN {
         if (move == MOVE_HEADBUTT)
-            TURN {  EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
+            TURN { EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
         else
             TURN {  NOT_EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
     }
