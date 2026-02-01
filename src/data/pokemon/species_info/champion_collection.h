@@ -11346,7 +11346,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .categoryName = _("DNA"),
         .height = 17,
         .weight = 608,
-        .description = gGesomonNormalPokedexText,
+        .description = COMPOUND_STRING(
+            "Gesomon is highly intelligent, often\n"
+            "attending to its territory. It rarely\n"
+            "attacks Digimon outside its territory\n"
+            "but anything that enters is obliterated."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -11416,7 +11420,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .categoryName = _("DNA"),
         .height = 17,
         .weight = 608,
-        .description = gGesomonNormalPokedexText,
+        .description = COMPOUND_STRING(
+            "Gesomon is highly intelligent, often\n"
+            "attending to its territory. It rarely\n"
+            "attacks Digimon outside its territory\n"
+            "but anything that enters is obliterated."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -11487,7 +11495,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .categoryName = _("DNA"),
         .height = 17,
         .weight = 608,
-        .description = gGesomonNormalPokedexText,
+        .description = COMPOUND_STRING(
+            "Gesomon is highly intelligent, often\n"
+            "attending to its territory. It rarely\n"
+            "attacks Digimon outside its territory\n"
+            "but anything that enters is obliterated."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,

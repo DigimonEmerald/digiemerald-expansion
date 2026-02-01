@@ -7,7 +7,7 @@ static const struct FormChange sBommonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_BOMMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_VENUSAUR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_ARGOMON_F
@@ -22,7 +22,7 @@ static const struct FormChange sChibomonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_CHIBOMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_CHARIZARD},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BOTAMON
@@ -36,7 +36,7 @@ static const struct FormChange sCurimonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_CURIMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_BLASTOISE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CONOMON
@@ -47,7 +47,7 @@ static const struct FormChange sDokimonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_DOKIMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_BUTTERFREE},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DATIRIMON
@@ -58,7 +58,7 @@ static const struct FormChange sKeemonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KEEMON_MEGA, ITEM_KEEMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_BEEDRILL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_FUFUMON
@@ -69,7 +69,7 @@ static const struct FormChange sLeafmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_LEAFMON_MEGA, ITEM_LEAFMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_PIDGEOT},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_KETOMON
@@ -80,7 +80,7 @@ static const struct FormChange sPetitmonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PETITMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_PIKACHU},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_PETITMON
@@ -91,7 +91,7 @@ static const struct FormChange sCalumonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CALUMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_MEOWTH},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CALUMON
@@ -102,7 +102,7 @@ static const struct FormChange sKapurimonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KAPURIMON_MEGA, ITEM_ALAKAZITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_ALAKAZAM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_HOPMON
@@ -113,7 +113,7 @@ static const struct FormChange sKozenimonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_KOZENIMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_MACHAMP},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_KOKOMON
@@ -123,7 +123,7 @@ static const struct FormChange sPickmon_silverFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PICKMON_SILVER_MEGA, ITEM_PICKMON_SILVERNITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SLOWBRO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_PAGUMON
@@ -137,7 +137,7 @@ static const struct FormChange sTsumemonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_TSUMEMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GENGAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_TOKOMON_X
@@ -149,7 +149,7 @@ static const struct FormChange sMinidekachimonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MINIDEKACHIMON_MEGA, ITEM_MINIDEKACHIMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_STEELIX},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -161,7 +161,7 @@ static const struct FormChange sWanyamonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_WANYAMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_KINGLER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_VIXIMON
@@ -172,7 +172,7 @@ static const struct FormChange sBetamon_xFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BETAMON_X_MEGA, ITEM_BETAMON_XITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_KANGASKHAN},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BETAMON_X
@@ -184,7 +184,7 @@ static const struct FormChange sMonodramonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MONODRAMON_MEGA, ITEM_MONODRAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SCIZOR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -196,7 +196,7 @@ static const struct FormChange sChuuchuumonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHUUCHUUMON_MEGA, ITEM_CHUUCHUUMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_PINSIR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CHUUCHUUMON
@@ -207,7 +207,7 @@ static const struct FormChange sCommandramonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_COMMANDRAMON_MEGA, ITEM_COMMANDRAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GYARADOS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CLEARAGUMON
@@ -218,7 +218,7 @@ static const struct FormChange sCoronamonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CORONAMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_LAPRAS},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CORONAMON
@@ -229,7 +229,7 @@ static const struct FormChange sCrabmon_xFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CRABMON_X_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_EEVEE},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CRABMON_X
@@ -240,7 +240,7 @@ static const struct FormChange sDracmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DRACMON_MEGA, ITEM_DRACMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_AERODACTYL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DRACMON
@@ -251,7 +251,7 @@ static const struct FormChange sDracomonFormChangeTable[] =
 #if P_GIGANTAMAX_FORMS
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_DRACOMON_GMAX},
 #endif
-    {FORM_CHANGE_END_BATTLE,        SPECIES_SNORLAX},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DRACOMON
@@ -262,7 +262,7 @@ static const struct FormChange sAgumon_fake_expertFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AGUMON_FAKE_EXPERT_MEGA_X, ITEM_AGUMON_FAKE_EXPERTNITE_X},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y, ITEM_AGUMON_FAKE_EXPERTNITE_Y},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_MEWTWO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
@@ -272,7 +272,7 @@ static const struct FormChange sImpmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_IMPMON_MEGA, ITEM_IMPMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_AMPHAROS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_HYOKOMON
@@ -283,7 +283,7 @@ static const struct FormChange sMuchomonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MUCHOMON_MEGA, ITEM_HERACRONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_HERACROSS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_MUCHOMON
@@ -294,7 +294,7 @@ static const struct FormChange sPomumonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_POMUMON_MEGA, ITEM_POMUMONINITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_HOUNDOOM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_PILLOMON
@@ -305,7 +305,7 @@ static const struct FormChange sSpadamonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SPADAMON_MEGA, ITEM_SPADAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_TYRANITAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_SOLARMON
@@ -316,7 +316,7 @@ static const struct FormChange sSyakomonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SYAKOMON_MEGA, ITEM_SCEPTILITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SCEPTILE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_SUNARIZAMON
@@ -327,7 +327,7 @@ static const struct FormChange sTentomonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TENTOMON_MEGA, ITEM_TENTOMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_BLAZIKEN},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_SYAKOMON_X
@@ -338,7 +338,7 @@ static const struct FormChange sTerriermon_xFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TERRIERMON_X_MEGA, ITEM_TERRIERMON_XITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SWAMPERT},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_TERRIERMON
@@ -349,7 +349,7 @@ static const struct FormChange sArcadiamon_championFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ARCADIAMON_CHAMPION_MEGA, ITEM_ARCADIAMON_CHAMPIONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GARDEVOIR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -371,7 +371,7 @@ static const struct FormChange sBlackgargomonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLACKGARGOMON_MEGA, ITEM_SABLENITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SABLEYE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BLACKGARGOMON
@@ -382,7 +382,7 @@ static const struct FormChange sGarurumon_blackFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARURUMON_BLACK_MEGA, ITEM_MAWILITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_MAWILE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GARURUMON_BLACK
@@ -393,7 +393,7 @@ static const struct FormChange sBlackgrowlmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLACKGROWLMON_MEGA, ITEM_BLACKGROWLMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_AGGRON},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BLACKGATOMON
@@ -404,7 +404,7 @@ static const struct FormChange sBlimpmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLIMPMON_MEGA, ITEM_BLIMPMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_MEDICHAM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BLADEKUWAGAMON
@@ -415,7 +415,7 @@ static const struct FormChange sBombernanimonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BOMBERNANIMON_MEGA, ITEM_MANECTITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_MANECTRIC},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BOARMON
@@ -426,7 +426,7 @@ static const struct FormChange sCentarumonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CENTARUMON_MEGA, ITEM_CENTARUMONNITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SHARPEDO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BUTTERFLYMON
@@ -437,7 +437,7 @@ static const struct FormChange sCitramonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CITRAMON_MEGA, ITEM_CITRAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_CAMERUPT},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_CHRYSALIMON
@@ -448,7 +448,7 @@ static const struct FormChange sDarkmaildramonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DARKMAILDRAMON_MEGA, ITEM_DARKMAILDRAMONNITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_ALTARIA},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DARKLIZARDMON
@@ -459,7 +459,7 @@ static const struct FormChange sDorulumonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DORULUMON_MEGA, ITEM_BANETTITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_BANETTE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DORUGAMON
@@ -470,18 +470,17 @@ static const struct FormChange sExermonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_EXERMON_MEGA, ITEM_EXERMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_ABSOL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_EXVEEMON_VIRUS
 static const struct FormChange sEyesmonFormChangeTable[] =
 {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_EYESMON_MEGA, ITEM_GLALITITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GLALIE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -524,7 +523,7 @@ static const struct FormChange sFrogmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FROGMON_MEGA, ITEM_SALAMENCITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_SALAMENCE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_FLYMON
@@ -535,7 +534,7 @@ static const struct FormChange sGaogamonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GAOGAMON_MEGA, ITEM_GAOGAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_METAGROSS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_FUGAMON
@@ -546,7 +545,7 @@ static const struct FormChange sGarurumon_xFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARURUMON_X_MEGA, ITEM_GARURUMON_XITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_LATIAS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GARURUMON_X
@@ -557,7 +556,7 @@ static const struct FormChange sGatomonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GATOMON_MEGA, ITEM_GATOMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_LATIOS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GATOMON
@@ -568,7 +567,7 @@ static const struct FormChange sGatomon_xFormChangeTable[] =
 #if P_PRIMAL_REVERSIONS
     {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_GATOMON_X_PRIMAL, ITEM_BLUE_ORB},
 #endif
-    {FORM_CHANGE_END_BATTLE,              SPECIES_KYOGRE},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GATOMON_X
@@ -579,7 +578,7 @@ static const struct FormChange sGekomonFormChangeTable[] =
 #if P_PRIMAL_REVERSIONS
     {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_GEKOMON_PRIMAL, ITEM_RED_ORB},
 #endif
-    {FORM_CHANGE_END_BATTLE,              SPECIES_GROUDON},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GEKOMON
@@ -590,7 +589,7 @@ static const struct FormChange sGeogreymonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,    SPECIES_GEOGREYMON_MEGA, MOVE_DRAGON_ASCENT},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_RAYQUAZA},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_GEOGREYMON
@@ -667,7 +666,7 @@ static const struct FormChange sIcedevimonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ICEDEVIMON_MEGA, ITEM_LOPUNNITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_LOPUNNY},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_HYOGAMON
@@ -678,7 +677,7 @@ static const struct FormChange sPlatinumsukamonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PLATINUMSUKAMON_MEGA, ITEM_PLATINUMSUKAMONITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GARCHOMP},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_ORCAMON
@@ -689,7 +688,7 @@ static const struct FormChange sSaberdramonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SABERDRAMON_MEGA, ITEM_SABERDRAMONNITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_LUCARIO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_REDVEGIEMON
@@ -700,7 +699,7 @@ static const struct FormChange sWeedmonFormChangeTable[] =
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_WEEDMON_MEGA, ITEM_ABOMASITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_ABOMASNOW},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_YANMAMON
@@ -812,7 +811,7 @@ static const struct FormChange sDatamonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_OKUWAMON, ITEM_AUDINITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_AUDINO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DATAMON
@@ -1025,7 +1024,7 @@ static const struct FormChange sGreninjaFormChangeTable[] = {
 #if P_GEN_9_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GRENINJA_MEGA, ITEM_GRENINJITE},
 #endif
-    {FORM_CHANGE_END_BATTLE,                    SPECIES_GRENINJA},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BOMMON},
     {FORM_CHANGE_TERMINATOR},
 };
 
