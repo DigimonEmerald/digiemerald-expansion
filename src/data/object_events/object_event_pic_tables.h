@@ -1392,3 +1392,12 @@ static const struct SpriteFrameImage sPicTable_Nyaromon_OW[] = {
 static const struct SpriteFrameImage sPicTable_Tanemon_OW[] = {
     overworld_ascending_frames(gObjectEventPic_Tanemon_OW, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Kuwagamon_Shadow[] = {
+    overworld_frame(gObjectEventPic_Kuwagamon_Shadow, 6, 6, 0),
+    overworld_frame(gObjectEventPic_Kuwagamon_Shadow, 6, 6, 1),
+};
+
+static const struct SpriteFrameImage sPicTable_Tokomon_OW[] = {
+    overworld_ascending_frames(gObjectEventPic_Tokomon_OW, 2, 4),
+};

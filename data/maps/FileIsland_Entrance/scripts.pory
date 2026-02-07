@@ -1,5 +1,7 @@
 mapscripts FileIsland_Entrance_MapScripts {
-
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
 }
 
 script FileIsland_Entrance_EventScript_Starter1 {
@@ -100,9 +102,9 @@ script FileIsland_Entrance_EventScript_StarterTalkDown {
 }
 
 script FileIsland_Entrance_EventScript_StarterSpeak {
-    msgbox(format("{PLAYER}! You're finally here!"))
+    msgbox(format("???: You're finally here!"))
     msgbox(format("{PLAYER}: It's talking..."))
-    msgbox(format("Weird Blob: This is so great {PLAYER}!"))
+    msgbox(format("???: This is so great {PLAYER}!"))
     msgbox(format("{PLAYER}: Who are you?!"))
     switch(var(VAR_STARTER_MON)) {
         case 0: msgbox(format("I'm Koromon! I've been waiting for you!"))
@@ -123,9 +125,9 @@ script FileIsland_Entrance_EventScript_StarterSpeak {
     waitmovement(0)
     msgbox(format("{PLAYER}: Oh, Izzy."))
     msgbox(format("Izzy: Thank god, I thought I was alone."))
-    msgbox(format("Another Weird Blob: Whaddya talkin' about? I'm right here!"))
+    msgbox(format("???: Whaddya talkin' about? I'm right here!"))
     msgbox(format("{PLAYER}: Izzy, what is that?!"))
-    msgbox(format("Another Weird Blob: The name's Motimon."))
+    msgbox(format("???: The name's Motimon."))
     msgbox(format("Motimon: Nice ta meet ya!"))
     msgbox(format("Izzy: He's been with me ever since I got here."))
     msgbox(format("{PLAYER}: Where is 'here' anyway?"))
@@ -166,9 +168,9 @@ script FileIsland_Entrance_EventScript_StopJumpDown2 {
 
 script FileIsland_Entrance_EventScript_StarterLedgeMovement1 {
     switch(var(VAR_STARTER_MON)) {
-        case 0: applymovement(1, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
-        case 1: applymovement(2, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
-        case 2: applymovement(3, FileIsland_Entrance_EventScript_StarterApproachTrigger1)
+        case 0: applymovement(1, FileIsland_Entrance_Movement_StarterApproachTrigger1)
+        case 1: applymovement(2, FileIsland_Entrance_Movement_StarterApproachTrigger1)
+        case 2: applymovement(3, FileIsland_Entrance_Movement_StarterApproachTrigger1)
     }
     waitmovement(0)
     call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
@@ -176,9 +178,9 @@ script FileIsland_Entrance_EventScript_StarterLedgeMovement1 {
 
 script FileIsland_Entrance_EventScript_StarterLedgeMovement2 {
     switch(var(VAR_STARTER_MON)) {
-        case 0: applymovement(6, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
-        case 1: applymovement(5, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
-        case 2: applymovement(4, FileIsland_Entrance_EventScript_StarterApproachTrigger2)
+        case 0: applymovement(6, FileIsland_Entrance_Movement_StarterApproachTrigger2)
+        case 1: applymovement(5, FileIsland_Entrance_Movement_StarterApproachTrigger2)
+        case 2: applymovement(4, FileIsland_Entrance_Movement_StarterApproachTrigger2)
     }
     waitmovement(0)
     call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
@@ -186,9 +188,9 @@ script FileIsland_Entrance_EventScript_StarterLedgeMovement2 {
 
 script FileIsland_Entrance_EventScript_StarterLedgeMovement3 {
     switch(var(VAR_STARTER_MON)) {
-        case 0: applymovement(1, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
-        case 1: applymovement(2, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
-        case 2: applymovement(3, FileIsland_Entrance_EventScript_StarterApproachTrigger3)
+        case 0: applymovement(1, FileIsland_Entrance_Movement_StarterApproachTrigger3)
+        case 1: applymovement(2, FileIsland_Entrance_Movement_StarterApproachTrigger3)
+        case 2: applymovement(3, FileIsland_Entrance_Movement_StarterApproachTrigger3)
     }
     waitmovement(0)
     call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
@@ -196,9 +198,9 @@ script FileIsland_Entrance_EventScript_StarterLedgeMovement3 {
 
 script FileIsland_Entrance_EventScript_StarterLedgeMovement4 {
     switch(var(VAR_STARTER_MON)) {
-        case 0: applymovement(6, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
-        case 1: applymovement(5, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
-        case 2: applymovement(4, FileIsland_Entrance_EventScript_StarterApproachTrigger4)
+        case 0: applymovement(6, FileIsland_Entrance_Movement_StarterApproachTrigger4)
+        case 1: applymovement(5, FileIsland_Entrance_Movement_StarterApproachTrigger4)
+        case 2: applymovement(4, FileIsland_Entrance_Movement_StarterApproachTrigger4)
     }
     waitmovement(0)
     call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
@@ -212,7 +214,439 @@ script FileIsland_Entrance_EventScript_StarterLedgeTalk {
     }
     msgbox(format("Izzy: So you guys say..."))
     msgbox(format("{PLAYER}: We'll just have to check it out!"))
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonLedge {
+    lock
+    addobject(8)
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Kuwagamon_Player_React)
+    waitmovement(0)
+    playse(SE_M_WING_ATTACK)
+    delay(10)
+    msgbox(format("SCREEEEEEEEEEEEE"))
+    applymovement(8, FileIsland_Entrance_Movement_Kuwagamon_Fly)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    delay(15)
+    msgbox(format("{PLAYER}: A red... stag beetle?"))
+    msgbox(format("Motimon: Oh no! Thats Kuwagamon!"))
+    msgbox(format("Motimon: He's a real savage Digimon!"))
+    msgbox(format("Izzy: Watch out!"))
+    delay(30)
+    msgbox(format("Izzy: Kuwagamon is coming back!"))
+    msgbox(format("Motimon: Run!"))
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 3)
+    removeobject(8)
+    removeobject(7)
+    removeobject(6)
+    removeobject(5)
+    removeobject(4)
+    removeobject(3)
+    removeobject(2)
+    removeobject(1)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunBlockUp {
+    lock
+    msgbox(format("This doesn't look like a good way to escape Kuwagamon!"))
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Walk_Down)
+    waitmovement(0)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunBlockDown {
+    lock
+    msgbox(format("Izzy and Motimon ran into the tree, I should check it out."))
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Walk_Up)
+    waitmovement(0)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunBlockLeft {
+    lock
+    msgbox(format("This doesn't look like a good way to escape Kuwagamon!"))
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Walk_Right)
+    waitmovement(0)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunBlockRight {
+    lock
+    msgbox(format("This doesn't look like a good way to escape Kuwagamon!"))
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_Walk_Left)
+    waitmovement(0)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd1 {
+    lock
+    addobject(9)
+    applymovement(9, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(9, FileIsland_Entrance_Movement_Izzy_Tree1)
+    waitmovement(0)
+    removeobject(9)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd2 {
+    lock
+    addobject(10)
+    applymovement(10, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(10, FileIsland_Entrance_Movement_Izzy_Tree2)
+    waitmovement(0)
+    removeobject(10)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd3 {
+    lock
+    addobject(11)
+    applymovement(11, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(11, FileIsland_Entrance_Movement_Izzy_Tree3)
+    waitmovement(0)
+    removeobject(11)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd4 {
+    lock
+    addobject(12)
+    applymovement(12, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(12, FileIsland_Entrance_Movement_Izzy_Tree4)
+    waitmovement(0)
+    removeobject(12)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd5 {
+    lock
+    addobject(13)
+    applymovement(13, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(13, FileIsland_Entrance_Movement_Izzy_Tree5)
+    waitmovement(0)
+    removeobject(13)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd6 {
+    lock
+    addobject(14)
+    applymovement(14, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(14, FileIsland_Entrance_Movement_Izzy_Tree5)
+    waitmovement(0)
+    removeobject(14)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_KuwagamonRunEnd7 {
+    lock
+    addobject(15)
+    applymovement(15, FileIsland_Entrance_Movement_Izzy_Party )
+    waitmovement(0)
+    msgbox(format("Motimon: In here!"))
+    applymovement(15, FileIsland_Entrance_Movement_Izzy_Tree5)
+    waitmovement(0)
+    removeobject(15)
+    playse(SE_DOOR)
+    delay(10)
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 4)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_Tree_Entrance {
+    lock
+    msgbox(format("You try touching the tree."))
+    warp(MAP_INSIDE_TREE, 5, 8)
     release
+}
+
+script FileIsland_EventScript_RivalDecide {
+    lock
+    checkplayergender
+    switch (var(VAR_FILEISLAND_ENTRANCE_STATE)) {
+            case 5: call(FileIsland_EventScript_OtherGender)
+            case 6: call(FileIsland_Entrance_EventScript_Rival)
+        }
+    release
+}
+
+script FileIsland_EventScript_OtherGender {
+    lock
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: call(FileIsland_Entrance_EventScript_Sora)
+            case 1: call(FileIsland_Entrance_EventScript_Tai)
+        }
+    release
+}
+
+script FileIsland_Entrance_EventScript_Sora {
+    lock
+    faceplayer
+    msgbox(format("{PLAYER} and Izzy: Sora!"))
+    msgbox(format("Sora: That was a close one, huh?"))
+    msgbox(format("{PLAYER}: What? That was no sweat!"))
+    msgbox(format("???: Kuwagamon's sounds are far away now, Sora!"))
+    msgbox(format("Sora: Great! Thanks Yokomon"))
+    msgbox(format("Izzy: This looks like a plant, but is it..."))
+    msgbox(format("...like one of them?"))
+    addobject(25)
+    applymovement(25, FileIsland_Entrance_Movement_TokomonApproach)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(24, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_IzzyLedge2)
+    applymovement(24, FileIsland_Entrance_Movement_IzzyLedge2)
+    waitmovement(0)
+    msgbox(format("Izzy: There's another one!"))
+    msgbox(format("???: Over here, T.K!"))
+    msgbox(format("T.K: Tokomon!"))
+    msgbox(format("Matt: T.K!"))
+    addobject(26)
+    addobject(27)
+    applymovement(26, FileIsland_Entrance_Movement_TKApproach)
+    delay(15)
+    applymovement(27, FileIsland_Entrance_Movement_MattApproach)
+    waitmovement(0)
+    msgbox(format("{PLAYER}: Matt! You, too?"))
+    msgbox(format("Matt: {PLAYER}! You're all here, too!"))
+    msgbox(format("{PLAYER}: No, I mean that thing you're holding..."))
+    msgbox(format("Matt: Huh? Oh, this is..."))
+    msgbox(format("???: I'm Tsunomon."))
+    msgbox(format("Joe: AHHHHHHHHHHHHHHHHHHHH"))
+    addobject(28)
+    applymovement(28, FileIsland_Entrance_Movement_JoeApproach)
+    waitmovement(0)
+    msgbox(format("Joe: Guys!"))
+    msgbox(format("Joe: Help me!"))
+    msgbox(format("Joe: S-Some weird thing is chasing me!"))
+    msgbox(format("???: I'm not 'some weird thing'!"))
+    msgbox(format("???: Call me Bukamon."))
+    msgbox(format("Joe: AHHHHHHHHHHHHHHHHHHHH"))
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(40)
+    applymovement(28, Common_Movement_FaceRight)
+    waitmovement(0)
+    delay(5)
+    msgbox(format("Joe: Wha..."))
+    msgbox(format("Joe: What the heck are these things?!"))
+    msgbox(format("Digimon: We're Digital Monsters!"))
+    msgbox(format("{PLAYER}: Digital Monsters?"))
+    fadescreen(FADE_TO_BLACK)
+    msgbox(format("Everyone quickly introduced themselves."))
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("{PLAYER}: Right. I think that's everyone."))
+    msgbox(format("Sora: Wait, wasn't there one more?"))
+    msgbox(format("Izzy: Mimi! Mimi Tachikawa isn't here!"))
+    msgbox(format("Joe: That's right! Mimi, the fourth grader!"))
+    msgbox(format("Joe: I need to give her-"))
+    msgbox(format("Mimi: AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"))
+    msgbox(format("{PLAYER}: Quick, that sounded like it came from over here!"))
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 6)
+    release
+}
+
+script FileIsland_Entrance_EventScript_Tai {
+    lock
+    faceplayer
+    msgbox(format("{PLAYER} and Izzy: Tai!"))
+    msgbox(format("Tai: That was a close one, huh?"))
+    msgbox(format("{PLAYER}: What? That was no sweat!"))
+    msgbox(format("{PLAYER}: Huh?"))
+    msgbox(format("???: Kuwagamon's sounds are far away now, Tai!"))
+    msgbox(format("Tai: Great! Thanks Koromon"))
+    msgbox(format("Izzy: This looks like one of them..."))
+    addobject(25)
+    applymovement(25, FileIsland_Entrance_Movement_TokomonApproach)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    applymovement(24, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, FileIsland_Entrance_Movement_IzzyLedge2)
+    applymovement(24, FileIsland_Entrance_Movement_IzzyLedge2)
+    waitmovement(0)
+    msgbox(format("Izzy: There's another one!"))
+    msgbox(format("???: Over here, T.K!"))
+    msgbox(format("T.K: Tokomon!"))
+    msgbox(format("Matt: T.K!"))
+    addobject(26)
+    addobject(27)
+    applymovement(26, FileIsland_Entrance_Movement_TKApproach)
+    delay(15)
+    applymovement(27, FileIsland_Entrance_Movement_MattApproach)
+    waitmovement(0)
+    msgbox(format("{PLAYER}: Matt! You, too?"))
+    msgbox(format("Matt: {PLAYER}! You're all here, too!"))
+    msgbox(format("{PLAYER}: No, I mean that thing you're holding..."))
+    msgbox(format("Matt: Huh? Oh, this is..."))
+    msgbox(format("???: I'm Tsunomon."))
+    msgbox(format("Joe: AHHHHHHHHHHHHHHHHHHHH"))
+    addobject(28)
+    applymovement(28, FileIsland_Entrance_Movement_JoeApproach)
+    waitmovement(0)
+    msgbox(format("Joe: Guys!"))
+    msgbox(format("Joe: Help me!"))
+    msgbox(format("Joe: S-Some weird thing is chasing me!"))
+    msgbox(format("???: I'm not 'some weird thing'!"))
+    msgbox(format("???: Call me Bukamon."))
+    msgbox(format("Joe: AHHHHHHHHHHHHHHHHHHHH"))
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceDown)
+    waitmovement(0)
+    delay(10)
+    applymovement(28, Common_Movement_FaceUp)
+    waitmovement(0)
+    delay(40)
+    applymovement(28, Common_Movement_FaceRight)
+    waitmovement(0)
+    delay(5)
+    msgbox(format("Joe: Wha..."))
+    msgbox(format("Joe: What the heck are these things?!"))
+    msgbox(format("Digimon: We're Digital Monsters!"))
+    msgbox(format("{PLAYER}: Digital Monsters?"))
+    fadescreen(FADE_TO_BLACK)
+    msgbox(format("Everyone quickly introduced themselves."))
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(format("{PLAYER}: Right. I think that's everyone."))
+    msgbox(format("Tai: Wait, wasn't there one more?"))
+    msgbox(format("Izzy: Mimi! Mimi Tachikawa isn't here!"))
+    msgbox(format("Joe: That's right! Mimi, the fourth grader!"))
+    msgbox(format("Joe: I need to give her-"))
+    msgbox(format("Mimi: AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"))
+    msgbox(format("{PLAYER}: Quick, that sounded like it came from over here!"))
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 6)
+    release
+}
+
+script FileIsland_Entrance_EventScript_FirstIzzy {
+    lock
+    msgbox(format("Izzy: I wonder where we are."))
+    release
+}
+
+script FileIsland_Entrance_EventScript_Partner {
+    switch(var(VAR_STARTER_MON)) {
+        case 0: msgbox(format("Koromon: It's amazing to see you finally!"))
+        case 1: msgbox(format("Tanemon: It's amazing to see you finally!"))
+        case 2: msgbox(format("Nyaromon: It's amazing to see you finally!"))
+    }
+    release
+}
+
+script FileIsland_Entrance_EventScript_Joe {
+    lock
+    msgbox(format("Joe: What are 'Digital Monsters' and why is that one so stuck to me?"))
+    release
+}
+
+script FileIsland_Entrance_EventScript_Rival {
+    lock
+    checkplayergender
+    switch (var(VAR_FILEISLAND_ENTRANCE_STATE)) {
+            case 0: call(FileIsland_Entrance_EventScript_SoraTalk)
+            case 1: call(FileIsland_Entrance_EventScript_TaiTalk)
+        }
+    release
+}
+
+script FileIsland_Entrance_EventScript_TaiTalk {
+    lock
+    msgbox(format("Tai: I hope Mimi is okay."))
+    release
+}
+
+script FileIsland_Entrance_EventScript_SoraTalk {
+    lock
+    msgbox(format("Sora: I hope Mimi is okay."))
+    release
+}
+
+script FileIsland_Entrance_EventScript_Matt {
+    lock
+    msgbox(format("Matt: I hope these 'Digital Monsters' are safe for T.K."))
+    release
+}
+
+script FileIsland_Entrance_EventScript_TK {
+    lock
+    msgbox(format("T.K: I can't wait to play with Tokomon!"))
+    release
+}
+
+script FileIsland_Entrance_EventScript_Tokomon {
+    lock
+    msgbox(format("Tokomon: I hope T.K will play with me after this!"))
+    release
+}
+
+script FileIsland_Entrance_EventScript_Nose_Ring {
+    lock
+    giveitem(ITEM_NOSE_RING, 1)
+    removeobject(29)
+    setflag(FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING)
+    releaseall
+}
+
+script FileIsland_Entrance_EventScript_Power_Fruit {
+    lock
+    giveitem(ITEM_POWER_FRUIT, 10)
+    removeobject(30)
+    setflag(FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING)
+    releaseall
 }
 
 movement FileIsland_Entrance_Movement_Starter5 {
@@ -267,24 +701,104 @@ movement FileIsland_Entrance_Movement_IzzyLedge4 {
     face_down
 }
 
-movement FileIsland_Entrance_EventScript_StarterApproachTrigger1 {
+movement FileIsland_Entrance_Movement_StarterApproachTrigger1 {
     walk_down
     walk_left * 2
     face_down
 }
 
-movement FileIsland_Entrance_EventScript_StarterApproachTrigger2 {
+movement FileIsland_Entrance_Movement_StarterApproachTrigger2 {
     walk_down * 4
 }
 
-movement FileIsland_Entrance_EventScript_StarterApproachTrigger3 {
+movement FileIsland_Entrance_Movement_StarterApproachTrigger3 {
     walk_down
     walk_left * 3
     face_down
 }
 
-movement FileIsland_Entrance_EventScript_StarterApproachTrigger4 {
+movement FileIsland_Entrance_Movement_StarterApproachTrigger4 {
     walk_down * 4
     walk_left
     face_down
+}
+
+movement FileIsland_Entrance_Movement_Kuwagamon_Player_React {
+    face_up
+}
+
+movement FileIsland_Entrance_Movement_Kuwagamon_Fly {
+    walk_fast_left * 24
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Party {
+    walk_fast_right
+    face_left
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree1 {
+    walk_fast_down
+    walk_fast_right * 6
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree2 {
+    walk_fast_right * 5
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree3 {
+    walk_fast_right * 4
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree4 {
+    walk_fast_right * 3
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree5 {
+    walk_fast_right * 2
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree6 {
+    walk_fast_right
+}
+
+movement FileIsland_Entrance_Movement_Izzy_Tree7 {
+    walk_fast_down
+    walk_fast_right
+}
+
+movement FileIsland_Entrance_Movement_Walk_Down {
+    walk_down
+}
+
+movement FileIsland_Entrance_Movement_Walk_Up {
+    walk_up
+}
+
+movement FileIsland_Entrance_Movement_Walk_Right {
+    walk_right
+}
+
+movement FileIsland_Entrance_Movement_Walk_Left {
+    walk_left
+}
+
+movement FileIsland_Entrance_Movement_TokomonApproach {
+    walk_up * 5
+    walk_left
+    walk_up
+}
+
+movement FileIsland_Entrance_Movement_TKApproach {
+    walk_fast_up * 4
+    walk_left
+    walk_up
+}
+
+movement FileIsland_Entrance_Movement_MattApproach {
+    walk_fast_up * 5
+}
+
+movement FileIsland_Entrance_Movement_JoeApproach {
+    walk_faster_down * 8
+    walk_faster_right
 }

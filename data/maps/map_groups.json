@@ -628,6 +628,7 @@
     "SummerCamp_House"
   ],
   "gMapGroup_FileIsland": [
-    "FileIsland_Entrance"
+    "FileIsland_Entrance",
+    "InsideTree"
   ]
 }

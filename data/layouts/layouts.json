@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/FileIsland_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/FileIsland_Entrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_INSIDE_TREE",
+      "name": "InsideTree_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/InsideTree/border.bin",
+      "blockdata_filepath": "data/layouts/InsideTree/map.bin"
     }
   ]
 }

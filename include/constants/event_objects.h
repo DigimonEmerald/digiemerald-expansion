@@ -255,11 +255,13 @@
 #define OBJ_EVENT_GFX_KOROMON                    248
 #define OBJ_EVENT_GFX_NYAROMON                   249
 #define OBJ_EVENT_GFX_TANEMON                    250
+#define OBJ_EVENT_GFX_KUWAGAMON_SHADOW           251
+#define OBJ_EVENT_GFX_TOKOMON                    252
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        251
+#define NUM_OBJ_EVENT_GFX                        253
 
 
 // These are dynamic object gfx ids.
@@ -433,6 +435,8 @@
 #define OBJ_EVENT_PAL_TAG_KOROMON                 0x1171
 #define OBJ_EVENT_PAL_TAG_NYAROMON                0x1172
 #define OBJ_EVENT_PAL_TAG_TANEMON                 0x1173
+#define OBJ_EVENT_PAL_TAG_KUWAGAMON_SHADOW        0x1174
+#define OBJ_EVENT_PAL_TAG_TOKOMON                 0x1175
 #endif //OW_FOLLOWERS_POKEBALLS
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611

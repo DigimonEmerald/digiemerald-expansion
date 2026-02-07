@@ -484,3 +484,7 @@ const u32 gObjectEventPic_Nyaromon_OW[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPal_Nyaromon_OW[] = INCBIN_U16("graphics/object_events/palettes/nyaromon.gbapal");
 const u32 gObjectEventPic_Tanemon_OW[] = INCBIN_U32("graphics/object_events/pics/people/tanemon.4bpp");
 const u16 gObjectEventPal_Tanemon_OW[] = INCBIN_U16("graphics/object_events/palettes/tanemon.gbapal");
+const u32 gObjectEventPic_Kuwagamon_Shadow[] = INCBIN_U32("graphics/object_events/pics/misc/kuwagamon_shadow.4bpp");
+const u16 gObjectEventPal_Kuwagamon_Shadow[] = INCBIN_U16("graphics/object_events/palettes/kuwagamon_shadow.gbapal");
+const u32 gObjectEventPic_Tokomon_OW[] = INCBIN_U32("graphics/object_events/pics/people/tokomon.4bpp");
+const u16 gObjectEventPal_Tokomon_OW[] = INCBIN_U16("graphics/object_events/palettes/tokomon.gbapal");

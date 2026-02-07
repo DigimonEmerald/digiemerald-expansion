@@ -1224,18 +1224,18 @@
 
 #define FLAG_FILEISLAND_ENTRANCE_STARTER                            0x493
 #define FLAG_FILEISLAND_ENTRACE_IZZY                                0x494
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+#define FLAG_FILEISLAND_ENTRACE_KUWAGAMON                           0x495
+#define FLAG_FILEISLAND_ENTRACE_IZZY_TREE                           0x496
+#define FLAG_ITEM_FILEISLAND_DARK_DIGITRON                          0x497
+#define FLAG_ITEM_FILEISLAND_POKEBALLS                              0x498
+#define FLAG_HIDE_IZZY_TREE                                         0x499
+#define FLAG_HIDE_RIVAL_TREE                                        0x49A
+#define FLAG_HIDE_TOKOMON                                           0x49B
+#define FLAG_ITEM_FILEISLAND_ENTRANCE_ORAN_BERRY                    0x49C
+#define FLAG_ITEM_FILEISLAND_ENTRANCE_POTION                        0x49D
+#define FLAG_ITEM_FILEISLAND_ENTRANCE_COURAGE                       0x49E
+#define FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING                     0x49F
+#define FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT                   0x4A0
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag

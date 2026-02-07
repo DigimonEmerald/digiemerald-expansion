@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
@@ -50,46 +50,46 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TANEMON",
       "x": 13,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NYAROMON",
       "x": 13,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KOROMON",
       "x": 13,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_Partner",
       "flag": "FLAG_FILEISLAND_ENTRANCE_STARTER"
     },
     {
@@ -102,11 +102,318 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "FileIsland_Entrance_EventScript_FirstIzzy",
       "flag": "FLAG_FILEISLAND_ENTRACE_IZZY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KUWAGAMON_SHADOW",
+      "x": 24,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_KUWAGAMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 15,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 17,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 18,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 19,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 20,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_FILEISLAND_ENTRACE_IZZY_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 23,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 23,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 23,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 24,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 25,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 25,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 24,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 20,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_EventScript_RivalDecide",
+      "flag": "FLAG_HIDE_RIVAL_TREE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TOKOMON",
+      "x": 20,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TOKOMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TK",
+      "x": 20,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_Entrance_EventScript_TK",
+      "flag": "FLAG_HIDE_TOKOMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MATT",
+      "x": 20,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_Entrance_EventScript_Matt",
+      "flag": "FLAG_HIDE_TOKOMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JOE",
+      "x": 17,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_Entrance_EventScript_Joe",
+      "flag": "FLAG_HIDE_TOKOMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 32,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_Entrance_EventScript_Nose_Ring",
+      "flag": "FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 7,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FileIsland_Entrance_EventScript_Power_Fruit",
+      "flag": "FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_INSIDE_TREE",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [
     {
       "type": "trigger",
@@ -170,7 +477,248 @@
       "var": "VAR_FILEISLAND_ENTRANCE_STATE",
       "var_value": "1",
       "script": "FileIsland_Entrance_EventScript_StopJumpDown1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "2",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonLedge"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "2",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonLedge"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "2",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonLedge"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "2",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonLedge"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "2",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonLedge"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockUp"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockRight"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd1"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd2"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd3"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd4"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd5"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd6"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunEnd7"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "3",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockDown"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockUp"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_FILEISLAND_ENTRANCE_STATE",
+      "var_value": "4",
+      "script": "FileIsland_Entrance_EventScript_KuwagamonRunBlockRight"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 29,
+      "y": 17,
+      "elevation": 0,
+      "item": "ITEM_ORAN_BERRY",
+      "flag": "FLAG_ITEM_FILEISLAND_ENTRANCE_ORAN_BERRY"
+    },
+    {
+      "type": "hidden_item",
+      "x": 23,
+      "y": 26,
+      "elevation": 0,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_ITEM_FILEISLAND_ENTRANCE_POTION"
+    },
+    {
+      "type": "hidden_item",
+      "x": 8,
+      "y": 37,
+      "elevation": 0,
+      "item": "ITEM_COURAGE_EGG",
+      "flag": "FLAG_ITEM_FILEISLAND_ENTRANCE_COURAGE"
+    }
+  ]
 }

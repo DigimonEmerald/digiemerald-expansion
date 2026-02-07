@@ -1,0 +1,40 @@
+mapscripts InsideTree_MapScripts {
+
+}
+
+script InsideTree_EventScript_PokeBall {
+    lock
+    giveitem(ITEM_POKE_BALL, 10)
+    removeobject(2)
+    setflag(FLAG_ITEM_FILEISLAND_POKEBALLS)
+    releaseall
+}
+
+script InsideTree_EventScript_DarkDigitron {
+    lock
+    giveitem(ITEM_DARK_DIGITRON, 1)
+    removeobject(3)
+    setflag(FLAG_ITEM_FILEISLAND_DARK_DIGITRON)
+    releaseall
+}
+
+script InsideTree_EventScript_IzzyTree {
+    lock
+    faceplayer
+    msgbox(format("Izzy: This place..."))
+    msgbox(format("Izzy: ... only looks like a tree!"))
+    delay(15)
+    playse(SE_M_WING_ATTACK)
+    delay(30)
+    playse(SE_M_WING_ATTACK)
+    delay(45)
+    playse(SE_M_WING_ATTACK)
+    delay(90)
+    playse(SE_M_WING_ATTACK)
+    delay(120)
+    msgbox(format("???: It's safe now!"))
+    setvar(VAR_FILEISLAND_ENTRANCE_STATE, 5)
+    setflag(FLAG_HIDE_IZZY_TREE)
+    clearflag(FLAG_HIDE_RIVAL_TREE)
+    release
+}
