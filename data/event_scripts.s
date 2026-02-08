@@ -1166,3 +1166,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FileIsland_Entrance/scripts.inc"
 
 	.include "data/maps/InsideTree/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/FileIslandCliffEdge/scripts.inc"

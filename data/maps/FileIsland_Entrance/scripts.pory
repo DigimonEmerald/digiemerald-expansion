@@ -645,7 +645,7 @@ script FileIsland_Entrance_EventScript_Power_Fruit {
     lock
     giveitem(ITEM_POWER_FRUIT, 10)
     removeobject(30)
-    setflag(FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING)
+    setflag(FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT)
     releaseall
 }
 
