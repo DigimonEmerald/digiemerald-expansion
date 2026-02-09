@@ -567,6 +567,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Tanemon_OW,            OBJ_EVENT_PAL_TAG_TANEMON},
     {gObjectEventPal_Kuwagamon_Shadow,      OBJ_EVENT_PAL_TAG_KUWAGAMON_SHADOW},
     {gObjectEventPal_Tokomon_OW,            OBJ_EVENT_PAL_TAG_TOKOMON},
+    {gObjectEventPal_Kuwagamon_OW,          OBJ_EVENT_PAL_TAG_KUWAGAMON},
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteLight,              OBJ_EVENT_PAL_TAG_LIGHT},

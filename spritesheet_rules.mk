@@ -4983,3 +4983,6 @@ $(OBJEVENTGFXDIR)/misc/kuwagamon_shadow.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/tokomon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/kuwagamon.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 6 -mheight 6

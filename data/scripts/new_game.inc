@@ -278,5 +278,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_FILEISLAND_ENTRACE_IZZY_TREE
 	setflag FLAG_HIDE_RIVAL_TREE
 	setflag FLAG_HIDE_TOKOMON
+	setflag FLAG_ROUTE_1_HIDE_KUWAGAMON
+	setflag FLAG_CLIFF_EDGE_HIDE_KIDS
 	call EventScript_ResetAllBerries
 	end

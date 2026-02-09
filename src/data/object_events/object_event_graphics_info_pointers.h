@@ -259,6 +259,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nyaromon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tanemon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kuwagamon_Shadow;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tokomon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kuwagamon;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -514,6 +515,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TANEMON] =                  &gObjectEventGraphicsInfo_Tanemon,
     [OBJ_EVENT_GFX_KUWAGAMON_SHADOW] =         &gObjectEventGraphicsInfo_Kuwagamon_Shadow,
     [OBJ_EVENT_GFX_TOKOMON] =                  &gObjectEventGraphicsInfo_Tokomon,
+    [OBJ_EVENT_GFX_KUWAGAMON] =                &gObjectEventGraphicsInfo_Kuwagamon,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

@@ -1236,9 +1236,9 @@
 #define FLAG_ITEM_FILEISLAND_ENTRANCE_COURAGE                       0x49E
 #define FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING                     0x49F
 #define FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT                   0x4A0
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
+#define FLAG_ROUTE_1_MIMI_HIDE                                      0x4A1
+#define FLAG_ROUTE_1_HIDE_KUWAGAMON                                 0x4A2
+#define FLAG_CLIFF_EDGE_HIDE_KIDS                                   0x4A3
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag

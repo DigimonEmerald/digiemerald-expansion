@@ -19,8 +19,146 @@
       "direction": "up"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MIMI",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JOE",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MATT",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TK",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_IZZY",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KUWAGAMON",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CLIFF_EDGE_HIDE_KIDS"
+    }
+  ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_FILE_ISLAND_CLIFF_EDGE_STATE",
+      "var_value": "0",
+      "script": "FileIslandCliffEdge_EventScript_ApproachCliff1"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_FILE_ISLAND_CLIFF_EDGE_STATE",
+      "var_value": "0",
+      "script": "FileIslandCliffEdge_EventScript_ApproachCliff2"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_FILE_ISLAND_CLIFF_EDGE_STATE",
+      "var_value": "0",
+      "script": "FileIslandCliffEdge_EventScript_ApproachCliff3"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_FILE_ISLAND_CLIFF_EDGE_STATE",
+      "var_value": "0",
+      "script": "FileIslandCliffEdge_EventScript_ApproachCliff4"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_FILE_ISLAND_CLIFF_EDGE_STATE",
+      "var_value": "0",
+      "script": "FileIslandCliffEdge_EventScript_ApproachCliff5"
+    }
+  ],
   "bg_events": []
 }

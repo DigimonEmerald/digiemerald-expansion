@@ -1,0 +1,216 @@
+mapscripts FileIslandCliffEdge_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script FileIslandCliffEdge_EventScript_ApproachCliff1 {
+    lock
+    applymovement(LOCALID_PLAYER, FileIslandCliffEdge_Movement_ApproachCliff1)
+    waitmovement(0)
+    call(FileIslandCliffEdge_EventScript_KidLineUp)
+}
+
+script FileIslandCliffEdge_EventScript_ApproachCliff2 {
+    lock
+    applymovement(LOCALID_PLAYER, FileIslandCliffEdge_Movement_ApproachCliff2)
+    waitmovement(0)
+    call(FileIslandCliffEdge_EventScript_KidLineUp)
+}
+
+script FileIslandCliffEdge_EventScript_ApproachCliff3 {
+    lock
+    applymovement(LOCALID_PLAYER, FileIslandCliffEdge_Movement_ApproachCliff3)
+    waitmovement(0)
+    call(FileIslandCliffEdge_EventScript_KidLineUp)
+}
+
+script FileIslandCliffEdge_EventScript_ApproachCliff4 {
+    lock
+    applymovement(LOCALID_PLAYER, FileIslandCliffEdge_Movement_ApproachCliff4)
+    waitmovement(0)
+    call(FileIslandCliffEdge_EventScript_KidLineUp)
+}
+
+script FileIslandCliffEdge_EventScript_ApproachCliff5 {
+    lock
+    applymovement(LOCALID_PLAYER, FileIslandCliffEdge_Movement_ApproachCliff5)
+    waitmovement(0)
+    call(FileIslandCliffEdge_EventScript_KidLineUp)
+}
+
+script FileIslandCliffEdge_EventScript_KidLineUp {
+    addobject(1)
+    addobject(2)
+    addobject(3)
+    addobject(4)
+    addobject(5)
+    addobject(6)
+    applymovement(1, FileIslandCliffEdge_Movement_MimiLineUp)
+    applymovement(2, FileIslandCliffEdge_Movement_JoeLineUp)
+    applymovement(3, FileIslandCliffEdge_Movement_MattLineUp)
+    applymovement(4, FileIslandCliffEdge_Movement_TKLineUp)
+    applymovement(5, FileIslandCliffEdge_Movement_IzzyLineUp)
+    applymovement(6, FileIslandCliffEdge_Movement_RivalLineUp)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_WalkDown)
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceRight)
+    waitmovement(0)
+    delay(30)
+    applymovement(LOCALID_PLAYER, Common_Movement_FaceLeft)
+    waitmovement(0)
+    delay(30)
+    applymovement(LOCALID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    msgbox(format("{PLAYER}: It's a dead end!"))
+    msgbox(format("{PLAYER}: We have to find another path!"))
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("Sora: A-Another path where?!"))
+            case 1: msgbox(format("Tai: A-Another path where?!"))
+        }
+    playse(SE_M_WING_ATTACK)
+    delay(30)
+    addobject(7)
+    applymovement(7, FileIslandCliffEdge_Movement_KuwagamonApproach)
+    waitmovement(0)
+    switch(var(VAR_STARTER_MON)) {
+        case 0: msgbox(format("Koromon: We have to go and fight!"))
+        case 1: msgbox(format("Tanemon: We have to go and fight!"))
+        case 2: msgbox(format("Nyaromon: We have to go and fight!"))
+    }
+    msgbox(format("{PLAYER}: What are you saying?!"))
+    msgbox(format("Motimon: He's right. It's what we've been waitin' fer all along."))
+    msgbox(format("Izzy: But.."))
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("Yokomon: I'm going."))
+            case 1: msgbox(format("Koromon: I'm going."))
+        }
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("Sora: Are you insane?"))
+            case 1: msgbox(format("Tai: Are you insane?"))
+        }
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("Sora: You guys can't beat him!"))
+            case 1: msgbox(format("Tai: You guys can't beat him!"))
+        }
+    msgbox(format("Tsunomon: Still, we have to go!"))
+    msgbox(format("Matt: Hey!"))
+    msgbox(format("Tokomon: Me, too!"))
+    msgbox(format("Bukamon: And me!"))
+    msgbox(format("Mimi: Tanemon... you, too?"))
+    msgbox(format("Koromon: Let's go!"))
+    special(HealPlayerParty)
+    seteventmon(SPECIES_KUWAGAMON, 25)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(FileIslandCliffEdge_EventScript_BattleWon)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(FileIslandCliffEdge_EventScript_BattleEnded)
+	}
+    elif(var(VAR_RESULT) == B_OUTCOME_LOST){
+		call(FileIslandCliffEdge_EventScript_BattleEnded)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(FileIslandCliffEdge_EventScript_BattleEnded)
+	}
+}
+
+script FileIslandCliffEdge_EventScript_BattleWon {
+    removeobject(7)
+    msgbox(format("After miraculously taming the Kuwagamon, you notice the cliff edge has suffered great damage."))
+    msgbox(format("Before anyone can react, the cliff edge starts to rip away from the mountain."))
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FALL)
+    delay(120)
+    msgbox(format("Bukamon: Marching Fishes!"))
+    msgbox(format("From seemingly nowhere, a school of fish form a makeshift raft for the kids and their Digimon."))
+    msgbox(format("After avoiding almost certain death, the kids float safely down the river until they find a safe embankment to disembark on."))
+    fadescreen(FADE_FROM_BLACK)
+}
+
+script FileIslandCliffEdge_EventScript_BattleEnded {
+    msgbox(format("Despite everyones efforts, the Kuwagamon barely takes a step back."))
+    msgbox(format("Before anyone can react, the Kuwagamon shoves its pincers into the ground and tears away the cliff edge that the kids are standing on."))
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_FALL)
+    delay(120)
+    msgbox(format("Bukamon: Marching Fishes!"))
+    playse(SE_PUDDLE)
+    delay(45)
+    msgbox(format("From seemingly nowhere, a school of fish form a makeshift raft for the kids and their Digimon."))
+    msgbox(format("Matt: Hey, Look!"))
+    msgbox(format("A weakened Kuwagamon falls with more rubble from the shattering cliff causing the river to rock with ferocious waves."))
+    msgbox(format("After riding out the ferocious waves, the kids eventually crash onto a safe embankment."))
+    fadescreen(FADE_FROM_BLACK)
+}
+
+movement FileIslandCliffEdge_Movement_ApproachCliff1 {
+    walk_fast_right
+    walk_fast_down * 18
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_ApproachCliff2 {
+    walk_fast_down * 18
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_ApproachCliff3 {
+    walk_fast_left
+    walk_fast_down * 18
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_ApproachCliff4 {
+    walk_fast_left * 2
+    walk_fast_down * 18
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_ApproachCliff5 {
+    walk_fast_left * 3
+    walk_fast_down * 18
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_MimiLineUp {
+    walk_right * 2
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_JoeLineUp {
+    walk_right * 3
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_MattLineUp {
+    walk_left
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_TKLineUp {
+    walk_left * 2
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_IzzyLineUp {
+    walk_right
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_RivalLineUp {
+    walk_left * 3
+    face_up
+}
+
+movement FileIslandCliffEdge_Movement_KuwagamonApproach {
+    walk_slow_down * 4
+}

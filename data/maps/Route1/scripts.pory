@@ -1,0 +1,122 @@
+mapscripts Route1_MapScripts {
+
+}
+
+script Route1_EventScript_MimiStop1 {
+    lock
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi1)
+    waitmovement(0)
+    call(Route1_EventScript_MimiCheck)
+}
+
+script Route1_EventScript_MimiStop2 {
+    lock
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi2)
+    waitmovement(0)
+    call(Route1_EventScript_MimiCheck)
+}
+
+script Route1_EventScript_MimiStop3 {
+    lock
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi3)
+    waitmovement(0)
+    call(Route1_EventScript_MimiCheck)
+}
+
+script Route1_EventScript_MimiStop4 {
+    lock
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi4)
+    waitmovement(0)
+    call(Route1_EventScript_MimiCheck)
+}
+
+script Route1_EventScript_MimiStop5 {
+    lock
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi5)
+    waitmovement(0)
+    call(Route1_EventScript_MimiCheck)
+}
+
+script Route1_EventScript_MimiCheck {
+    setflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
+    msgbox(format("Mimi: AHHHHHHHHHHHHHHHHHHHHHHHH"))
+    applymovement(1, Route1_Movement_MimiRun)
+    waitmovement(0)
+    addobject(2)
+    applymovement(2, Route1_Movement_KuwagamonChase)
+    waitmovement(0)
+    removeobject(2)
+    msgbox(format("???: Mimi, are you okay?"))
+    msgbox(format("Mimi: Tanemon..."))
+    checkplayergender
+    switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("Sora: Hang in there!"))
+            case 1: msgbox(format("Tai: Hang in there!"))
+        }
+    playse(SE_M_WING_ATTACK)
+    delay(45)
+    playse(SE_M_WING_ATTACK)
+    delay(30)
+    msgbox(format("{PLAYER}: Here he comes again!"))
+    applymovement(1, Common_Movement_WalkUp)
+    waitmovement(0)
+    removeobject(1)
+    setvar(VAR_ROUTE_1_STATE, 1)
+    clearflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
+    releaseall
+}
+
+script Route1_EventScript_KuwagamonSecondAttack {
+    lock
+    playse(SE_M_WING_ATTACK)
+    delay(30)
+    msgbox(format("Matt: Get down!"))
+    applymovement(LOCALID_PLAYER, Route1_Movement_LineUpMimi3)
+    waitmovement(0)
+    addobject(3)
+    applymovement(3, Route1_Movement_KuwagamonChase)
+    waitmovement(0)
+    removeobject(3)
+    msgbox(format("Joe: Wh-What the heck is going?!"))
+    msgbox(format("Joe: What kind of place is this?!"))
+    msgbox(format("Yokomon: He's circling back!"))
+    msgbox(format("Izzy: We have to keep running!"))
+    setvar(VAR_ROUTE_1_STATE, 2)
+    releaseall
+}
+
+movement Route1_Movement_LineUpMimi1 {
+    walk_fast_down * 2
+    walk_fast_left * 2
+    face_down
+}
+
+movement Route1_Movement_LineUpMimi2 {
+    walk_fast_down * 2
+    walk_fast_left
+    face_down
+}
+
+movement Route1_Movement_LineUpMimi3 {
+    walk_fast_down * 2
+}
+
+movement Route1_Movement_LineUpMimi4 {
+    walk_fast_down * 2
+    walk_fast_right
+    face_down
+}
+
+movement Route1_Movement_LineUpMimi5 {
+    walk_fast_down * 2
+    walk_fast_right * 2
+    face_down
+}
+
+movement Route1_Movement_MimiRun {
+    walk_fast_up * 5
+}
+
+movement Route1_Movement_KuwagamonChase {
+    walk_fast_left * 18
+}

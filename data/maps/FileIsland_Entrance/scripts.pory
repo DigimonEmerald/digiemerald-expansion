@@ -85,8 +85,8 @@ script FileIsland_Entrance_EventScript_StarterTalk {
 script FileIsland_Entrance_EventScript_StarterTalkRight {
     switch(var(VAR_STARTER_MON)) {
         case 0: addobject(6)
-        case 1: addobject(5)
-        case 2: addobject(4)
+        case 1: addobject(4)
+        case 2: addobject(5)
     }
     call(FileIsland_Entrance_EventScript_StarterSpeak)
 }
@@ -149,7 +149,6 @@ script FileIsland_Entrance_EventScript_StopJumpDown1 {
         case 0: call(FileIsland_Entrance_EventScript_StarterLedgeMovement2)
         case 1: call(FileIsland_Entrance_EventScript_StarterLedgeMovement1)
     }
-    call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
 }
 
 script FileIsland_Entrance_EventScript_StopJumpDown2 {
@@ -179,8 +178,8 @@ script FileIsland_Entrance_EventScript_StarterLedgeMovement1 {
 script FileIsland_Entrance_EventScript_StarterLedgeMovement2 {
     switch(var(VAR_STARTER_MON)) {
         case 0: applymovement(6, FileIsland_Entrance_Movement_StarterApproachTrigger2)
-        case 1: applymovement(5, FileIsland_Entrance_Movement_StarterApproachTrigger2)
-        case 2: applymovement(4, FileIsland_Entrance_Movement_StarterApproachTrigger2)
+        case 1: applymovement(4, FileIsland_Entrance_Movement_StarterApproachTrigger2)
+        case 2: applymovement(5, FileIsland_Entrance_Movement_StarterApproachTrigger2)
     }
     waitmovement(0)
     call(FileIsland_Entrance_EventScript_StarterLedgeTalk)
@@ -394,7 +393,6 @@ script FileIsland_Entrance_EventScript_Tree_Entrance {
 
 script FileIsland_EventScript_RivalDecide {
     lock
-    checkplayergender
     switch (var(VAR_FILEISLAND_ENTRANCE_STATE)) {
             case 5: call(FileIsland_EventScript_OtherGender)
             case 6: call(FileIsland_Entrance_EventScript_Rival)
@@ -708,7 +706,7 @@ movement FileIsland_Entrance_Movement_StarterApproachTrigger1 {
 }
 
 movement FileIsland_Entrance_Movement_StarterApproachTrigger2 {
-    walk_down * 4
+    walk_down * 3
 }
 
 movement FileIsland_Entrance_Movement_StarterApproachTrigger3 {
@@ -718,7 +716,7 @@ movement FileIsland_Entrance_Movement_StarterApproachTrigger3 {
 }
 
 movement FileIsland_Entrance_Movement_StarterApproachTrigger4 {
-    walk_down * 4
+    walk_down * 3
     walk_left
     face_down
 }

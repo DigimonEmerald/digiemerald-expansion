@@ -21,6 +21,10 @@ script InsideTree_EventScript_DarkDigitron {
 script InsideTree_EventScript_IzzyTree {
     lock
     faceplayer
+    if(var(VAR_FILEISLAND_ENTRANCE_STATE) == 5){
+		msgbox(format("We should go outside now."))
+        releaseall
+	}
     msgbox(format("Izzy: This place..."))
     msgbox(format("Izzy: ... only looks like a tree!"))
     delay(15)
