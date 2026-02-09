@@ -105,6 +105,7 @@ script FileIslandCliffEdge_EventScript_KidLineUp {
     msgbox(format("Mimi: Tanemon... you, too?"))
     msgbox(format("Koromon: Let's go!"))
     special(HealPlayerParty)
+    setflag(FLAG_NO_WHITEOUT)
     seteventmon(SPECIES_KUWAGAMON, 25)
     special(BattleSetup_StartLegendaryBattle)
     waitstate
@@ -125,6 +126,7 @@ script FileIslandCliffEdge_EventScript_KidLineUp {
 
 script FileIslandCliffEdge_EventScript_BattleWon {
     removeobject(7)
+    clearflag(FLAG_NO_WHITEOUT)
     msgbox(format("After miraculously taming the Kuwagamon, you notice the cliff edge has suffered great damage."))
     msgbox(format("Before anyone can react, the cliff edge starts to rip away from the mountain."))
     fadescreen(FADE_TO_BLACK)
@@ -134,9 +136,11 @@ script FileIslandCliffEdge_EventScript_BattleWon {
     msgbox(format("From seemingly nowhere, a school of fish form a makeshift raft for the kids and their Digimon."))
     msgbox(format("After avoiding almost certain death, the kids float safely down the river until they find a safe embankment to disembark on."))
     fadescreen(FADE_FROM_BLACK)
+    releaseall
 }
 
 script FileIslandCliffEdge_EventScript_BattleEnded {
+    clearflag(FLAG_NO_WHITEOUT)
     msgbox(format("Despite everyones efforts, the Kuwagamon barely takes a step back."))
     msgbox(format("Before anyone can react, the Kuwagamon shoves its pincers into the ground and tears away the cliff edge that the kids are standing on."))
     fadescreen(FADE_TO_BLACK)
@@ -150,6 +154,7 @@ script FileIslandCliffEdge_EventScript_BattleEnded {
     msgbox(format("A weakened Kuwagamon falls with more rubble from the shattering cliff causing the river to rock with ferocious waves."))
     msgbox(format("After riding out the ferocious waves, the kids eventually crash onto a safe embankment."))
     fadescreen(FADE_FROM_BLACK)
+    releaseall
 }
 
 movement FileIslandCliffEdge_Movement_ApproachCliff1 {

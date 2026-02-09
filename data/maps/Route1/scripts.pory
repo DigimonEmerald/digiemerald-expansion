@@ -38,7 +38,6 @@ script Route1_EventScript_MimiStop5 {
 }
 
 script Route1_EventScript_MimiCheck {
-    setflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
     msgbox(format("Mimi: AHHHHHHHHHHHHHHHHHHHHHHHH"))
     applymovement(1, Route1_Movement_MimiRun)
     waitmovement(0)
@@ -62,7 +61,6 @@ script Route1_EventScript_MimiCheck {
     waitmovement(0)
     removeobject(1)
     setvar(VAR_ROUTE_1_STATE, 1)
-    clearflag(FLAG_FORCE_LOAD_OFFSCREEN_OBJEV)
     releaseall
 }
 

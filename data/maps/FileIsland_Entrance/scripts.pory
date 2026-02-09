@@ -567,6 +567,7 @@ script FileIsland_Entrance_EventScript_Tai {
     msgbox(format("Mimi: AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"))
     msgbox(format("{PLAYER}: Quick, that sounded like it came from over here!"))
     setvar(VAR_FILEISLAND_ENTRANCE_STATE, 6)
+    setflag(FLAG_HIDE_RIVAL_TREE)
     release
 }
 

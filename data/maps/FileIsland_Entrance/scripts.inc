@@ -1264,560 +1264,562 @@ FileIsland_Entrance_EventScript_Tai::
 # 569 "data/maps/FileIsland_Entrance/scripts.pory"
 	setvar VAR_FILEISLAND_ENTRANCE_STATE, 6
 # 570 "data/maps/FileIsland_Entrance/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_TREE
+# 571 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_FirstIzzy::
-# 574 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 575 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_FirstIzzy_Text_0
+	lock
 # 576 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_FirstIzzy_Text_0
+# 577 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_Partner::
-# 580 "data/maps/FileIsland_Entrance/scripts.pory"
-	switch VAR_STARTER_MON
 # 581 "data/maps/FileIsland_Entrance/scripts.pory"
-	case 0, FileIsland_Entrance_EventScript_Partner_3
+	switch VAR_STARTER_MON
 # 582 "data/maps/FileIsland_Entrance/scripts.pory"
-	case 1, FileIsland_Entrance_EventScript_Partner_4
+	case 0, FileIsland_Entrance_EventScript_Partner_3
 # 583 "data/maps/FileIsland_Entrance/scripts.pory"
+	case 1, FileIsland_Entrance_EventScript_Partner_4
+# 584 "data/maps/FileIsland_Entrance/scripts.pory"
 	case 2, FileIsland_Entrance_EventScript_Partner_5
 FileIsland_Entrance_EventScript_Partner_1:
-# 585 "data/maps/FileIsland_Entrance/scripts.pory"
+# 586 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 FileIsland_Entrance_EventScript_Partner_3:
-# 581 "data/maps/FileIsland_Entrance/scripts.pory"
+# 582 "data/maps/FileIsland_Entrance/scripts.pory"
 	msgbox FileIsland_Entrance_EventScript_Partner_Text_0
 	goto FileIsland_Entrance_EventScript_Partner_1
 
 FileIsland_Entrance_EventScript_Partner_4:
-# 582 "data/maps/FileIsland_Entrance/scripts.pory"
+# 583 "data/maps/FileIsland_Entrance/scripts.pory"
 	msgbox FileIsland_Entrance_EventScript_Partner_Text_1
 	goto FileIsland_Entrance_EventScript_Partner_1
 
 FileIsland_Entrance_EventScript_Partner_5:
-# 583 "data/maps/FileIsland_Entrance/scripts.pory"
+# 584 "data/maps/FileIsland_Entrance/scripts.pory"
 	msgbox FileIsland_Entrance_EventScript_Partner_Text_2
 	goto FileIsland_Entrance_EventScript_Partner_1
 
 
 FileIsland_Entrance_EventScript_Joe::
-# 589 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 590 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_Joe_Text_0
+	lock
 # 591 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_Joe_Text_0
+# 592 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_Rival::
-# 595 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 596 "data/maps/FileIsland_Entrance/scripts.pory"
-	checkplayergender
+	lock
 # 597 "data/maps/FileIsland_Entrance/scripts.pory"
-	switch VAR_FILEISLAND_ENTRANCE_STATE
+	checkplayergender
 # 598 "data/maps/FileIsland_Entrance/scripts.pory"
-	case 0, FileIsland_Entrance_EventScript_Rival_3
+	switch VAR_FILEISLAND_ENTRANCE_STATE
 # 599 "data/maps/FileIsland_Entrance/scripts.pory"
+	case 0, FileIsland_Entrance_EventScript_Rival_3
+# 600 "data/maps/FileIsland_Entrance/scripts.pory"
 	case 1, FileIsland_Entrance_EventScript_Rival_4
 FileIsland_Entrance_EventScript_Rival_1:
-# 601 "data/maps/FileIsland_Entrance/scripts.pory"
+# 602 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 FileIsland_Entrance_EventScript_Rival_3:
-# 598 "data/maps/FileIsland_Entrance/scripts.pory"
+# 599 "data/maps/FileIsland_Entrance/scripts.pory"
 	call FileIsland_Entrance_EventScript_SoraTalk
 	goto FileIsland_Entrance_EventScript_Rival_1
 
 FileIsland_Entrance_EventScript_Rival_4:
-# 599 "data/maps/FileIsland_Entrance/scripts.pory"
+# 600 "data/maps/FileIsland_Entrance/scripts.pory"
 	call FileIsland_Entrance_EventScript_TaiTalk
 	goto FileIsland_Entrance_EventScript_Rival_1
 
 
 FileIsland_Entrance_EventScript_TaiTalk::
-# 605 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 606 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_TaiTalk_Text_0
+	lock
 # 607 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_TaiTalk_Text_0
+# 608 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_SoraTalk::
-# 611 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 612 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_SoraTalk_Text_0
+	lock
 # 613 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_SoraTalk_Text_0
+# 614 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_Matt::
-# 617 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 618 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_Matt_Text_0
+	lock
 # 619 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_Matt_Text_0
+# 620 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_TK::
-# 623 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 624 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_TK_Text_0
+	lock
 # 625 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_TK_Text_0
+# 626 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_Tokomon::
-# 629 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 630 "data/maps/FileIsland_Entrance/scripts.pory"
-	msgbox FileIsland_Entrance_EventScript_Tokomon_Text_0
+	lock
 # 631 "data/maps/FileIsland_Entrance/scripts.pory"
+	msgbox FileIsland_Entrance_EventScript_Tokomon_Text_0
+# 632 "data/maps/FileIsland_Entrance/scripts.pory"
 	release
 	return
 
 
 FileIsland_Entrance_EventScript_Nose_Ring::
-# 635 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 636 "data/maps/FileIsland_Entrance/scripts.pory"
-	giveitem ITEM_NOSE_RING, 1
+	lock
 # 637 "data/maps/FileIsland_Entrance/scripts.pory"
-	removeobject 29
+	giveitem ITEM_NOSE_RING, 1
 # 638 "data/maps/FileIsland_Entrance/scripts.pory"
-	setflag FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING
+	removeobject 29
 # 639 "data/maps/FileIsland_Entrance/scripts.pory"
+	setflag FLAG_ITEM_FILEISLAND_ENTRANCE_NOSE_RING
+# 640 "data/maps/FileIsland_Entrance/scripts.pory"
 	releaseall
 	return
 
 
 FileIsland_Entrance_EventScript_Power_Fruit::
-# 643 "data/maps/FileIsland_Entrance/scripts.pory"
-	lock
 # 644 "data/maps/FileIsland_Entrance/scripts.pory"
-	giveitem ITEM_POWER_FRUIT, 10
+	lock
 # 645 "data/maps/FileIsland_Entrance/scripts.pory"
-	removeobject 30
+	giveitem ITEM_POWER_FRUIT, 10
 # 646 "data/maps/FileIsland_Entrance/scripts.pory"
-	setflag FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT
+	removeobject 30
 # 647 "data/maps/FileIsland_Entrance/scripts.pory"
+	setflag FLAG_ITEM_FILEISLAND_ENTRANCE_POWER_FRUIT
+# 648 "data/maps/FileIsland_Entrance/scripts.pory"
 	releaseall
 	return
 
 
-# 650 "data/maps/FileIsland_Entrance/scripts.pory"
+# 651 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Starter5:
-# 651 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
-# 651 "data/maps/FileIsland_Entrance/scripts.pory"
+# 652 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
 # 652 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_down
-	step_end
-
-# 655 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Starter4:
-# 656 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
-# 657 "data/maps/FileIsland_Entrance/scripts.pory"
+# 653 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_down
 	step_end
 
-# 660 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Starter1:
+# 656 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Starter4:
+# 657 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 658 "data/maps/FileIsland_Entrance/scripts.pory"
+	face_down
+	step_end
+
 # 661 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_down
+FileIsland_Entrance_Movement_Starter1:
 # 662 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_down
+# 663 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_left
 	step_end
 
-# 665 "data/maps/FileIsland_Entrance/scripts.pory"
+# 666 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_IzzyTree1:
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_right
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_right
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_right
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_right
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_right
-# 666 "data/maps/FileIsland_Entrance/scripts.pory"
+# 667 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
 # 667 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_up
+	walk_right
 # 667 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_right
+# 667 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_right
+# 667 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_right
+# 667 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_right
+# 668 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_up
 # 668 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_up
+# 669 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_right
 	step_end
 
-# 671 "data/maps/FileIsland_Entrance/scripts.pory"
+# 672 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_IzzyTree2:
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
-# 672 "data/maps/FileIsland_Entrance/scripts.pory"
+# 673 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
 	step_end
 
-# 676 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_LookAround:
 # 677 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_up
+FileIsland_Entrance_Movement_LookAround:
 # 678 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_down
+	face_up
 # 679 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_right
+	face_down
 # 680 "data/maps/FileIsland_Entrance/scripts.pory"
+	face_right
+# 681 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_left
 	step_end
 
-# 683 "data/maps/FileIsland_Entrance/scripts.pory"
+# 684 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_IzzyLedge1:
-# 684 "data/maps/FileIsland_Entrance/scripts.pory"
+# 685 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
-# 684 "data/maps/FileIsland_Entrance/scripts.pory"
+# 685 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
 	step_end
 
-# 687 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_IzzyLedge2:
 # 688 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_IzzyLedge2:
+# 689 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_down
 	step_end
 
-# 691 "data/maps/FileIsland_Entrance/scripts.pory"
+# 692 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_IzzyLedge3:
-# 692 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_down
-# 692 "data/maps/FileIsland_Entrance/scripts.pory"
+# 693 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
 # 693 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
-# 694 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_down
-	step_end
-
-# 697 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_IzzyLedge4:
-# 698 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
-# 699 "data/maps/FileIsland_Entrance/scripts.pory"
-	face_down
-	step_end
-
-# 702 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_StarterApproachTrigger1:
-# 703 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
-# 704 "data/maps/FileIsland_Entrance/scripts.pory"
+# 694 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
+# 695 "data/maps/FileIsland_Entrance/scripts.pory"
+	face_down
+	step_end
+
+# 698 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_IzzyLedge4:
+# 699 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 700 "data/maps/FileIsland_Entrance/scripts.pory"
+	face_down
+	step_end
+
+# 703 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_StarterApproachTrigger1:
 # 704 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_down
+# 705 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
 # 705 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 706 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_down
 	step_end
 
-# 708 "data/maps/FileIsland_Entrance/scripts.pory"
+# 709 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_StarterApproachTrigger2:
-# 709 "data/maps/FileIsland_Entrance/scripts.pory"
+# 710 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
-# 709 "data/maps/FileIsland_Entrance/scripts.pory"
+# 710 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
-# 709 "data/maps/FileIsland_Entrance/scripts.pory"
+# 710 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
 	step_end
 
-# 712 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_StarterApproachTrigger3:
 # 713 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_StarterApproachTrigger3:
+# 714 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
-# 714 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
-# 714 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
-# 714 "data/maps/FileIsland_Entrance/scripts.pory"
+# 715 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
 # 715 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 715 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 716 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_down
 	step_end
 
-# 718 "data/maps/FileIsland_Entrance/scripts.pory"
+# 719 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_StarterApproachTrigger4:
-# 719 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_down
-# 719 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_down
-# 719 "data/maps/FileIsland_Entrance/scripts.pory"
+# 720 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
 # 720 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
+	walk_down
+# 720 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_down
 # 721 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 722 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_down
 	step_end
 
-# 724 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Kuwagamon_Player_React:
 # 725 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Kuwagamon_Player_React:
+# 726 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_up
 	step_end
 
-# 728 "data/maps/FileIsland_Entrance/scripts.pory"
+# 729 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Kuwagamon_Fly:
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
-# 729 "data/maps/FileIsland_Entrance/scripts.pory"
+# 730 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 732 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Izzy_Party:
 # 733 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_fast_right
+FileIsland_Entrance_Movement_Izzy_Party:
 # 734 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_fast_right
+# 735 "data/maps/FileIsland_Entrance/scripts.pory"
 	face_left
 	step_end
 
-# 737 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Izzy_Tree1:
 # 738 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Izzy_Tree1:
+# 739 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_down
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 739 "data/maps/FileIsland_Entrance/scripts.pory"
+# 740 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 742 "data/maps/FileIsland_Entrance/scripts.pory"
+# 743 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Izzy_Tree2:
-# 743 "data/maps/FileIsland_Entrance/scripts.pory"
+# 744 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 743 "data/maps/FileIsland_Entrance/scripts.pory"
+# 744 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 743 "data/maps/FileIsland_Entrance/scripts.pory"
+# 744 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 743 "data/maps/FileIsland_Entrance/scripts.pory"
+# 744 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 743 "data/maps/FileIsland_Entrance/scripts.pory"
+# 744 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 746 "data/maps/FileIsland_Entrance/scripts.pory"
+# 747 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Izzy_Tree3:
-# 747 "data/maps/FileIsland_Entrance/scripts.pory"
+# 748 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 747 "data/maps/FileIsland_Entrance/scripts.pory"
+# 748 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 747 "data/maps/FileIsland_Entrance/scripts.pory"
+# 748 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 747 "data/maps/FileIsland_Entrance/scripts.pory"
+# 748 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 750 "data/maps/FileIsland_Entrance/scripts.pory"
+# 751 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Izzy_Tree4:
-# 751 "data/maps/FileIsland_Entrance/scripts.pory"
+# 752 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 751 "data/maps/FileIsland_Entrance/scripts.pory"
+# 752 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 751 "data/maps/FileIsland_Entrance/scripts.pory"
+# 752 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 754 "data/maps/FileIsland_Entrance/scripts.pory"
+# 755 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_Izzy_Tree5:
-# 755 "data/maps/FileIsland_Entrance/scripts.pory"
+# 756 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
-# 755 "data/maps/FileIsland_Entrance/scripts.pory"
+# 756 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 758 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Izzy_Tree6:
 # 759 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Izzy_Tree6:
+# 760 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 762 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Izzy_Tree7:
 # 763 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_fast_down
+FileIsland_Entrance_Movement_Izzy_Tree7:
 # 764 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_fast_down
+# 765 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 767 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Walk_Down:
 # 768 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Walk_Down:
+# 769 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_down
 	step_end
 
-# 771 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Walk_Up:
 # 772 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Walk_Up:
+# 773 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_up
 	step_end
 
-# 775 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Walk_Right:
 # 776 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Walk_Right:
+# 777 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_right
 	step_end
 
-# 779 "data/maps/FileIsland_Entrance/scripts.pory"
-FileIsland_Entrance_Movement_Walk_Left:
 # 780 "data/maps/FileIsland_Entrance/scripts.pory"
+FileIsland_Entrance_Movement_Walk_Left:
+# 781 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_left
 	step_end
 
-# 783 "data/maps/FileIsland_Entrance/scripts.pory"
+# 784 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_TokomonApproach:
-# 784 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_up
-# 784 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_up
-# 784 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_up
-# 784 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_up
-# 784 "data/maps/FileIsland_Entrance/scripts.pory"
+# 785 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_up
 # 785 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
+	walk_up
+# 785 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_up
+# 785 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_up
+# 785 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_up
 # 786 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 787 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_up
 	step_end
 
-# 789 "data/maps/FileIsland_Entrance/scripts.pory"
+# 790 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_TKApproach:
-# 790 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_fast_up
-# 790 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_fast_up
-# 790 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_fast_up
-# 790 "data/maps/FileIsland_Entrance/scripts.pory"
+# 791 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
 # 791 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_left
+	walk_fast_up
+# 791 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_fast_up
+# 791 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_fast_up
 # 792 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_left
+# 793 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_up
 	step_end
 
-# 795 "data/maps/FileIsland_Entrance/scripts.pory"
+# 796 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_MattApproach:
-# 796 "data/maps/FileIsland_Entrance/scripts.pory"
+# 797 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
-# 796 "data/maps/FileIsland_Entrance/scripts.pory"
+# 797 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
-# 796 "data/maps/FileIsland_Entrance/scripts.pory"
+# 797 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
-# 796 "data/maps/FileIsland_Entrance/scripts.pory"
+# 797 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
-# 796 "data/maps/FileIsland_Entrance/scripts.pory"
+# 797 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 799 "data/maps/FileIsland_Entrance/scripts.pory"
+# 800 "data/maps/FileIsland_Entrance/scripts.pory"
 FileIsland_Entrance_Movement_JoeApproach:
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
-	walk_faster_down
-# 800 "data/maps/FileIsland_Entrance/scripts.pory"
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_faster_down
 # 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 801 "data/maps/FileIsland_Entrance/scripts.pory"
+	walk_faster_down
+# 802 "data/maps/FileIsland_Entrance/scripts.pory"
 	walk_faster_right
 	step_end
 
@@ -2150,47 +2152,47 @@ FileIsland_Entrance_EventScript_Tai_Text_6:
 	.string "Tai: Wait, wasn't there one more?$"
 
 FileIsland_Entrance_EventScript_FirstIzzy_Text_0:
-# 575 "data/maps/FileIsland_Entrance/scripts.pory"
+# 576 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Izzy: I wonder where we are.$"
 
 FileIsland_Entrance_EventScript_Partner_Text_0:
-# 581 "data/maps/FileIsland_Entrance/scripts.pory"
+# 582 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Koromon: It's amazing to see you\n"
 	.string "finally!$"
 
 FileIsland_Entrance_EventScript_Partner_Text_1:
-# 582 "data/maps/FileIsland_Entrance/scripts.pory"
+# 583 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Tanemon: It's amazing to see you\n"
 	.string "finally!$"
 
 FileIsland_Entrance_EventScript_Partner_Text_2:
-# 583 "data/maps/FileIsland_Entrance/scripts.pory"
+# 584 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Nyaromon: It's amazing to see you\n"
 	.string "finally!$"
 
 FileIsland_Entrance_EventScript_Joe_Text_0:
-# 590 "data/maps/FileIsland_Entrance/scripts.pory"
+# 591 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Joe: What are 'Digital Monsters' and why\n"
 	.string "is that one so stuck to me?$"
 
 FileIsland_Entrance_EventScript_TaiTalk_Text_0:
-# 606 "data/maps/FileIsland_Entrance/scripts.pory"
+# 607 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Tai: I hope Mimi is okay.$"
 
 FileIsland_Entrance_EventScript_SoraTalk_Text_0:
-# 612 "data/maps/FileIsland_Entrance/scripts.pory"
+# 613 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Sora: I hope Mimi is okay.$"
 
 FileIsland_Entrance_EventScript_Matt_Text_0:
-# 618 "data/maps/FileIsland_Entrance/scripts.pory"
+# 619 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Matt: I hope these 'Digital Monsters'\n"
 	.string "are safe for T.K.$"
 
 FileIsland_Entrance_EventScript_TK_Text_0:
-# 624 "data/maps/FileIsland_Entrance/scripts.pory"
+# 625 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "T.K: I can't wait to play with Tokomon!$"
 
 FileIsland_Entrance_EventScript_Tokomon_Text_0:
-# 630 "data/maps/FileIsland_Entrance/scripts.pory"
+# 631 "data/maps/FileIsland_Entrance/scripts.pory"
 	.string "Tokomon: I hope T.K will play with me\n"
 	.string "after this!$"

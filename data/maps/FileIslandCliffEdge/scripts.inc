@@ -196,9 +196,9 @@ FileIslandCliffEdge_EventScript_KidLineUp_18:
 # 107 "data/maps/FileIslandCliffEdge/scripts.pory"
 	special HealPlayerParty
 # 108 "data/maps/FileIslandCliffEdge/scripts.pory"
-	seteventmon SPECIES_KUWAGAMON, 25
+	setflag FLAG_NO_WHITEOUT
 # 109 "data/maps/FileIslandCliffEdge/scripts.pory"
-	setflag B_FLAG_NO_WHITEOUT
+	seteventmon SPECIES_KUWAGAMON, 25
 # 110 "data/maps/FileIslandCliffEdge/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
 # 111 "data/maps/FileIslandCliffEdge/scripts.pory"
@@ -299,349 +299,357 @@ FileIslandCliffEdge_EventScript_BattleWon::
 # 128 "data/maps/FileIslandCliffEdge/scripts.pory"
 	removeobject 7
 # 129 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_0
+	clearflag FLAG_NO_WHITEOUT
 # 130 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_1
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_0
 # 131 "data/maps/FileIslandCliffEdge/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_1
 # 132 "data/maps/FileIslandCliffEdge/scripts.pory"
-	playse SE_FALL
+	fadescreen FADE_TO_BLACK
 # 133 "data/maps/FileIslandCliffEdge/scripts.pory"
-	delay 120
+	playse SE_FALL
 # 134 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_2
+	delay 120
 # 135 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_3
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_2
 # 136 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_4
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_3
 # 137 "data/maps/FileIslandCliffEdge/scripts.pory"
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_4
+# 138 "data/maps/FileIslandCliffEdge/scripts.pory"
 	fadescreen FADE_FROM_BLACK
+# 139 "data/maps/FileIslandCliffEdge/scripts.pory"
+	releaseall
 	return
 
 
 FileIslandCliffEdge_EventScript_BattleEnded::
-# 141 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_0
-# 142 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_1
 # 143 "data/maps/FileIslandCliffEdge/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	clearflag FLAG_NO_WHITEOUT
 # 144 "data/maps/FileIslandCliffEdge/scripts.pory"
-	playse SE_FALL
+	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_0
 # 145 "data/maps/FileIslandCliffEdge/scripts.pory"
-	delay 120
+	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_1
 # 146 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_2
+	fadescreen FADE_TO_BLACK
 # 147 "data/maps/FileIslandCliffEdge/scripts.pory"
-	playse SE_PUDDLE
+	playse SE_FALL
 # 148 "data/maps/FileIslandCliffEdge/scripts.pory"
-	delay 45
+	delay 120
 # 149 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_3
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_2
 # 150 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_2
+	playse SE_PUDDLE
 # 151 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_3
+	delay 45
 # 152 "data/maps/FileIslandCliffEdge/scripts.pory"
-	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_4
+	msgbox FileIslandCliffEdge_EventScript_BattleWon_Text_3
 # 153 "data/maps/FileIslandCliffEdge/scripts.pory"
+	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_2
+# 154 "data/maps/FileIslandCliffEdge/scripts.pory"
+	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_3
+# 155 "data/maps/FileIslandCliffEdge/scripts.pory"
+	msgbox FileIslandCliffEdge_EventScript_BattleEnded_Text_4
+# 156 "data/maps/FileIslandCliffEdge/scripts.pory"
 	fadescreen FADE_FROM_BLACK
+# 157 "data/maps/FileIslandCliffEdge/scripts.pory"
+	releaseall
 	return
 
 
-# 156 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 160 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_ApproachCliff1:
-# 157 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 161 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_right
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 158 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 159 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 162 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 166 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_ApproachCliff2:
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 163 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 164 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 167 "data/maps/FileIslandCliffEdge/scripts.pory"
-FileIslandCliffEdge_Movement_ApproachCliff3:
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 167 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
 # 168 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_left
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 169 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 170 "data/maps/FileIslandCliffEdge/scripts.pory"
 	face_up
 	step_end
 
+# 171 "data/maps/FileIslandCliffEdge/scripts.pory"
+FileIslandCliffEdge_Movement_ApproachCliff3:
+# 172 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_left
 # 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 173 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 174 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 177 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_ApproachCliff4:
-# 174 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 178 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_left
-# 174 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 178 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_left
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 175 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 176 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 179 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 180 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 183 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_ApproachCliff5:
-# 180 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 184 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_left
-# 180 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 184 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_left
-# 180 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 184 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_fast_left
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 181 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_fast_down
-# 182 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 185 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_fast_down
+# 186 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 189 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_MimiLineUp:
-# 186 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_right
-# 186 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_right
-# 187 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 190 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_right
+# 190 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_right
+# 191 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 194 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_JoeLineUp:
-# 191 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_right
-# 191 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_right
-# 191 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_right
-# 192 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
 # 195 "data/maps/FileIslandCliffEdge/scripts.pory"
-FileIslandCliffEdge_Movement_MattLineUp:
-# 196 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 197 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
-# 200 "data/maps/FileIslandCliffEdge/scripts.pory"
-FileIslandCliffEdge_Movement_TKLineUp:
-# 201 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 201 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 202 "data/maps/FileIslandCliffEdge/scripts.pory"
-	face_up
-	step_end
-
-# 205 "data/maps/FileIslandCliffEdge/scripts.pory"
-FileIslandCliffEdge_Movement_IzzyLineUp:
-# 206 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_right
-# 207 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 195 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_right
+# 195 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_right
+# 196 "data/maps/FileIslandCliffEdge/scripts.pory"
 	face_up
 	step_end
 
+# 199 "data/maps/FileIslandCliffEdge/scripts.pory"
+FileIslandCliffEdge_Movement_MattLineUp:
+# 200 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 201 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 204 "data/maps/FileIslandCliffEdge/scripts.pory"
+FileIslandCliffEdge_Movement_TKLineUp:
+# 205 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 205 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 206 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 209 "data/maps/FileIslandCliffEdge/scripts.pory"
+FileIslandCliffEdge_Movement_IzzyLineUp:
 # 210 "data/maps/FileIslandCliffEdge/scripts.pory"
-FileIslandCliffEdge_Movement_RivalLineUp:
+	walk_right
 # 211 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 211 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 211 "data/maps/FileIslandCliffEdge/scripts.pory"
-	walk_left
-# 212 "data/maps/FileIslandCliffEdge/scripts.pory"
 	face_up
 	step_end
 
+# 214 "data/maps/FileIslandCliffEdge/scripts.pory"
+FileIslandCliffEdge_Movement_RivalLineUp:
 # 215 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 215 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 215 "data/maps/FileIslandCliffEdge/scripts.pory"
+	walk_left
+# 216 "data/maps/FileIslandCliffEdge/scripts.pory"
+	face_up
+	step_end
+
+# 219 "data/maps/FileIslandCliffEdge/scripts.pory"
 FileIslandCliffEdge_Movement_KuwagamonApproach:
-# 216 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 220 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_slow_down
-# 216 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 220 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_slow_down
-# 216 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 220 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_slow_down
-# 216 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 220 "data/maps/FileIslandCliffEdge/scripts.pory"
 	walk_slow_down
 	step_end
 
@@ -736,58 +744,58 @@ FileIslandCliffEdge_EventScript_KidLineUp_Text_21:
 	.string "Koromon: Let's go!$"
 
 FileIslandCliffEdge_EventScript_BattleWon_Text_0:
-# 129 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 130 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "After miraculously taming the\n"
 	.string "Kuwagamon, you notice the cliff edge\l"
 	.string "has suffered great damage.$"
 
 FileIslandCliffEdge_EventScript_BattleWon_Text_1:
-# 130 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 131 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "Before anyone can react, the cliff edge\n"
 	.string "starts to rip away from the mountain.$"
 
 FileIslandCliffEdge_EventScript_BattleWon_Text_2:
-# 134 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 135 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "Bukamon: Marching Fishes!$"
 
 FileIslandCliffEdge_EventScript_BattleWon_Text_3:
-# 135 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 136 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "From seemingly nowhere, a school of\n"
 	.string "fish form a makeshift raft for the kids\l"
 	.string "and their Digimon.$"
 
 FileIslandCliffEdge_EventScript_BattleWon_Text_4:
-# 136 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 137 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "After avoiding almost certain death,\n"
 	.string "the kids float safely down the river\l"
 	.string "until they find a safe embankment to\l"
 	.string "disembark on.$"
 
 FileIslandCliffEdge_EventScript_BattleEnded_Text_0:
-# 141 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 144 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "Despite everyones efforts, the\n"
 	.string "Kuwagamon barely takes a step back.$"
 
 FileIslandCliffEdge_EventScript_BattleEnded_Text_1:
-# 142 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 145 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "Before anyone can react, the Kuwagamon\n"
 	.string "shoves its pincers into the ground and\l"
 	.string "tears away the cliff edge that the kids\l"
 	.string "are standing on.$"
 
 FileIslandCliffEdge_EventScript_BattleEnded_Text_2:
-# 150 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 153 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "Matt: Hey, Look!$"
 
 FileIslandCliffEdge_EventScript_BattleEnded_Text_3:
-# 151 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 154 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "A weakened Kuwagamon falls with more\n"
 	.string "rubble from the shattering cliff\l"
 	.string "causing the river to rock with\l"
 	.string "ferocious waves.$"
 
 FileIslandCliffEdge_EventScript_BattleEnded_Text_4:
-# 152 "data/maps/FileIslandCliffEdge/scripts.pory"
+# 155 "data/maps/FileIslandCliffEdge/scripts.pory"
 	.string "After riding out the ferocious waves,\n"
 	.string "the kids eventually crash onto a safe\l"
 	.string "embankment.$"
