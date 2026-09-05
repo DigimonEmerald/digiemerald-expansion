@@ -4470,6 +4470,16 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/FileIslandCliffEdge/border.bin",
       "blockdata_filepath": "data/layouts/FileIslandCliffEdge/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 81,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }
