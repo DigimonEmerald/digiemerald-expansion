@@ -1164,7 +1164,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Aruraumon,
         .shinyPalette = gMonShinyPalette_Aruraumon,
         .iconSprite = gMonIcon_Aruraumon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_AruraumonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 40),
