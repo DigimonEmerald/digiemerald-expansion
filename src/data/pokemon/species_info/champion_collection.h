@@ -1600,7 +1600,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Arresterdramon,
         .shinyPalette = gMonShinyPalette_Arresterdramon,
         .iconSprite = gMonIcon_Arresterdramon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, 0, SHADOW_SIZE_S)
         FOOTPRINT(Arresterdramon)
