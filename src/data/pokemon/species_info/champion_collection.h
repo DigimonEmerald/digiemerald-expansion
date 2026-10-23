@@ -360,7 +360,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Agunimon,
         .shinyPalette = gMonShinyPalette_Agunimon,
         .iconSprite = gMonIcon_Agunimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_AgunimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
