@@ -1674,7 +1674,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Atamadekachimon,
         .shinyPalette = gMonShinyPalette_Atamadekachimon,
         .iconSprite = gMonIcon_Atamadekachimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 9, SHADOW_SIZE_M)
         FOOTPRINT(Atamadekachimon)
