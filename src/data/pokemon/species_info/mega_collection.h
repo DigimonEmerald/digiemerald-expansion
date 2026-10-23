@@ -1412,7 +1412,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sApocalymonLevelUpLearnset,
         .teachableLearnset = sApocalymonTeachableLearnset,
         .eggMoveLearnset = sApocalymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BABAMON}),
     },
 
     [SPECIES_BABAMON] =
@@ -1467,7 +1466,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .palette = gMonPalette_Babamon,
         .shinyPalette = gMonShinyPalette_Babamon,
         .iconSprite = gMonIcon_Babamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 5,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BabamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
