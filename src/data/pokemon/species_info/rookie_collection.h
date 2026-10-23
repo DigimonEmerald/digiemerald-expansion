@@ -559,7 +559,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Agumon_x,
         .shinyPalette = gMonShinyPalette_Agumon_x,
         .iconSprite = gMonIcon_Agumon_x,
-        .iconPalIndex = 2,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 8, SHADOW_SIZE_M)
         FOOTPRINT(Agumon_x)
