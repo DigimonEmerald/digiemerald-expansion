@@ -1005,7 +1005,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Apemon,
         .shinyPalette = gMonShinyPalette_Apemon,
         .iconSprite = gMonIcon_Apemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Apemon)
