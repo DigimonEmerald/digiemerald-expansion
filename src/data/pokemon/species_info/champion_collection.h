@@ -529,7 +529,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Akatorimon,
         .shinyPalette = gMonShinyPalette_Akatorimon,
         .iconSprite = gMonIcon_Akatorimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_AkatorimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 56),
