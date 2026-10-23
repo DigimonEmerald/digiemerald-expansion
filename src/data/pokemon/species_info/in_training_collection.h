@@ -54,7 +54,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Arcadiamon_it,
         .shinyPalette = gMonShinyPalette_Arcadiamon_it,
         .iconSprite = gMonIcon_Arcadiamon_it,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_Arcadiamon_itF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
