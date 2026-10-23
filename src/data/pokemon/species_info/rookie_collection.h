@@ -784,7 +784,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Arcadiamon_rookie,
         .shinyPalette = gMonShinyPalette_Arcadiamon_rookie,
         .iconSprite = gMonIcon_Arcadiamon_rookie,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 0,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 6, SHADOW_SIZE_M)
         FOOTPRINT(Arcadiamon_rookie)
