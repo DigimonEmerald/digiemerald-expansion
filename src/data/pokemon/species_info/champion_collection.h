@@ -703,7 +703,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Allomon_x,
         .shinyPalette = gMonShinyPalette_Allomon_x,
         .iconSprite = gMonIcon_Allomon_x,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Allomon_x)
