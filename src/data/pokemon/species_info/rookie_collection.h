@@ -6908,7 +6908,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Agumon_fake_expert,
         .shinyPalette = gMonShinyPalette_Agumon_fake_expert,
         .iconSprite = gMonIcon_Agumon_fake_expert,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(6, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Agumon_fake_expert)
