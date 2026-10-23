@@ -208,7 +208,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Agumon_06,
         .shinyPalette = gMonShinyPalette_Agumon_06,
         .iconSprite = gMonIcon_Agumon_06,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-1, 6, SHADOW_SIZE_M)
         FOOTPRINT(Agumon_06)
