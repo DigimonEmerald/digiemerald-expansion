@@ -154,7 +154,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Argomon_it,
         .shinyPalette = gMonShinyPalette_Argomon_it,
         .iconSprite = gMonIcon_Argomon_it,
-        .iconPalIndex = 0,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(7, -11, SHADOW_SIZE_M)
         FOOTPRINT(Argomon_it)
