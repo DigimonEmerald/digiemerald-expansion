@@ -58,7 +58,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Aegiomon,
         .shinyPalette = gMonShinyPalette_Aegiomon,
         .iconSprite = gMonIcon_Aegiomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 2, SHADOW_SIZE_S)
         FOOTPRINT(Aegiomon)
