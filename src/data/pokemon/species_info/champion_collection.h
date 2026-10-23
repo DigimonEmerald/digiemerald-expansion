@@ -1075,7 +1075,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Aquilamon,
         .shinyPalette = gMonShinyPalette_Aquilamon,
         .iconSprite = gMonIcon_Aquilamon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-2, 7, SHADOW_SIZE_S)
         FOOTPRINT(Aquilamon)
