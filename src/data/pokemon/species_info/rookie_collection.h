@@ -1490,7 +1490,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Bearmon,
         .shinyPalette = gMonShinyPalette_Bearmon,
         .iconSprite = gMonIcon_Bearmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 4, SHADOW_SIZE_L)
         FOOTPRINT(Bearmon)
