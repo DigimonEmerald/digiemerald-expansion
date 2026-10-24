@@ -7429,7 +7429,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Floramon,
         .shinyPalette = gMonShinyPalette_Floramon,
         .iconSprite = gMonIcon_Floramon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, -1, SHADOW_SIZE_S)
         FOOTPRINT(Floramon)
