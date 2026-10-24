@@ -1970,7 +1970,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bakemon,
         .shinyPalette = gMonShinyPalette_Bakemon,
         .iconSprite = gMonIcon_Bakemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, -3, SHADOW_SIZE_M)
         FOOTPRINT(Bakemon)
