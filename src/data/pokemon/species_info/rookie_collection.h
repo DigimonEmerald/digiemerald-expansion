@@ -1247,7 +1247,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Bakomon,
         .shinyPalette = gMonShinyPalette_Bakomon,
         .iconSprite = gMonIcon_Bakomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BakomonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
