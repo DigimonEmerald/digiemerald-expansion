@@ -2726,7 +2726,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Birdramon,
         .shinyPalette = gMonShinyPalette_Birdramon,
         .iconSprite = gMonIcon_Birdramon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Birdramon)
