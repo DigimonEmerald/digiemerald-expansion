@@ -2057,7 +2057,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Ballistamon,
         .shinyPalette = gMonShinyPalette_Ballistamon,
         .iconSprite = gMonIcon_Ballistamon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 10, SHADOW_SIZE_S)
         FOOTPRINT(Ballistamon)
