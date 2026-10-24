@@ -228,7 +228,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Babydmon,
         .shinyPalette = gMonShinyPalette_Babydmon,
         .iconSprite = gMonIcon_Babydmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 2, SHADOW_SIZE_L)
         FOOTPRINT(Babydmon)
