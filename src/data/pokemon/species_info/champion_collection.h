@@ -1823,7 +1823,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Deadlyaxemon,
         .shinyPalette = gMonShinyPalette_Deadlyaxemon,
         .iconSprite = gMonIcon_Deadlyaxemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 6, SHADOW_SIZE_M)
         FOOTPRINT(Deadlyaxemon)
