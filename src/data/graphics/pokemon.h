@@ -12049,7 +12049,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_COREDRAMON_BLUE
 #if !P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Coredramon_blue[] = INCBIN_U32("graphics/pokemon/coredramon_blue/anim_front.4bpp.smol");
@@ -12068,9 +12067,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
     const u8 gMonIcon_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/icon.4bpp");
-    const u8 gMonIcon_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/icon.4bpp");
 #else
-    const u8 gMonIcon_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/icon_gba.4bpp");
     const u8 gMonIcon_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
@@ -14004,20 +14001,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/back.4bpp.smol");
     const u16 gMonShinyPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/shiny.gbapal");
 
-    const u32 gMonFrontPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/anim_front.4bpp.smol");
-    const u16 gMonPalette_GesomonAttack[] = INCBIN_U16("graphics/pokemon/gesomon/attack/normal.gbapal");
-    const u32 gMonBackPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/back.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonAttack[] = INCBIN_U16("graphics/pokemon/gesomon/attack/shiny.gbapal");
-
-    const u32 gMonFrontPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/anim_front.4bpp.smol");
-    const u16 gMonPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/normal.gbapal");
-    const u32 gMonBackPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/back.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/shiny.gbapal");
-
-    const u32 gMonFrontPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/anim_front.4bpp.smol");
-    const u16 gMonPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/normal.gbapal");
-    const u32 gMonBackPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/back.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/shiny.gbapal");
 #else
     const u32 gMonFrontPic_GesomonNormal[] = INCBIN_U32("graphics/pokemon/gesomon/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_GesomonNormal[] = INCBIN_U16("graphics/pokemon/gesomon/normal_gba.gbapal");
@@ -14029,24 +14012,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/back_gba.4bpp.smol");
     const u16 gMonShinyPalette_GesomonAttack[] = INCBIN_U16("graphics/pokemon/gesomon/attack/shiny_gba.gbapal");
 
-    const u32 gMonFrontPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/front_gba.4bpp.smol");
-    const u16 gMonPalette_GesomonAttack[] = INCBIN_U16("graphics/pokemon/gesomon/attack/normal_gba.gbapal");
-    const u32 gMonBackPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonAttack[] = INCBIN_U16("graphics/pokemon/gesomon/attack/shiny_gba.gbapal");
-
-    const u32 gMonFrontPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/front_gba.4bpp.smol");
-    const u16 gMonPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/normal_gba.gbapal");
-    const u32 gMonBackPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/shiny_gba.gbapal");
     const u32 gMonFrontPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/front_gba.4bpp.smol");
     const u16 gMonPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/normal_gba.gbapal");
     const u32 gMonBackPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/back_gba.4bpp.smol");
     const u16 gMonShinyPalette_GesomonDefense[] = INCBIN_U16("graphics/pokemon/gesomon/defense/shiny_gba.gbapal");
 
-    const u32 gMonFrontPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/front_gba.4bpp.smol");
-    const u16 gMonPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/normal_gba.gbapal");
-    const u32 gMonBackPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/shiny_gba.gbapal");
     const u32 gMonFrontPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/front_gba.4bpp.smol");
     const u16 gMonPalette_GesomonSpeed[] = INCBIN_U16("graphics/pokemon/gesomon/speed/normal_gba.gbapal");
     const u32 gMonBackPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/back_gba.4bpp.smol");
