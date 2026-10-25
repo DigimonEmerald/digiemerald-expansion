@@ -14349,7 +14349,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Pulsemon,
         .shinyPalette = gMonShinyPalette_Pulsemon,
         .iconSprite = gMonIcon_Pulsemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(3, -2, SHADOW_SIZE_M)
         FOOTPRINT(Pulsemon)
