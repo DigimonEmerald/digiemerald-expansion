@@ -17234,7 +17234,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Zenimon,
         .shinyPalette = gMonShinyPalette_Zenimon,
         .iconSprite = gMonIcon_Zenimon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 5,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_ZenimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 48),
