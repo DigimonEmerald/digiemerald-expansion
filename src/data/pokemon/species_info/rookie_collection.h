@@ -16968,7 +16968,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Vorvomon,
         .shinyPalette = gMonShinyPalette_Vorvomon,
         .iconSprite = gMonIcon_Vorvomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_VorvomonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
