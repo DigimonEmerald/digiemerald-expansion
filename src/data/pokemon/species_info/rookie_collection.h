@@ -4493,7 +4493,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Crabmon,
         .shinyPalette = gMonShinyPalette_Crabmon,
         .iconSprite = gMonIcon_Crabmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, -4, SHADOW_SIZE_M)
         FOOTPRINT(Crabmon)
