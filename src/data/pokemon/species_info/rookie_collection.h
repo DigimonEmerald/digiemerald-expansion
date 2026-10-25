@@ -16537,7 +16537,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Tsukaimon,
         .shinyPalette = gMonShinyPalette_Tsukaimon,
         .iconSprite = gMonIcon_Tsukaimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-6, 0, SHADOW_SIZE_L)
         FOOTPRINT(Tsukaimon)
