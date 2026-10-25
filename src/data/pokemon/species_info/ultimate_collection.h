@@ -3055,7 +3055,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Pumpkinmon,
         .shinyPalette = gMonShinyPalette_Pumpkinmon,
         .iconSprite = gMonIcon_Pumpkinmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-4, 2, SHADOW_SIZE_S)
         FOOTPRINT(Pumpkinmon)
