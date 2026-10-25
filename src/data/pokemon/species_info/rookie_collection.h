@@ -3315,7 +3315,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Candlemon,
         .shinyPalette = gMonShinyPalette_Candlemon,
         .iconSprite = gMonIcon_Candlemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 9, SHADOW_SIZE_L)
         FOOTPRINT(Candlemon)
