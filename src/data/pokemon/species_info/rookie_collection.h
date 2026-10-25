@@ -4789,7 +4789,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Cutemon,
         .shinyPalette = gMonShinyPalette_Cutemon,
         .iconSprite = gMonIcon_Cutemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 3, SHADOW_SIZE_M)
         FOOTPRINT(Cutemon)
