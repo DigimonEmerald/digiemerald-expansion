@@ -13832,7 +13832,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Penguinmon,
         .shinyPalette = gMonShinyPalette_Penguinmon,
         .iconSprite = gMonIcon_Penguinmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 7, SHADOW_SIZE_M)
         FOOTPRINT(Penguinmon)
