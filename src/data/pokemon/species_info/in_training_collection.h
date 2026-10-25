@@ -2473,7 +2473,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Koromon,
         .shinyPalette = gMonShinyPalette_Koromon,
         .iconSprite = gMonIcon_Koromon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 6, SHADOW_SIZE_S)
         FOOTPRINT(Koromon)
