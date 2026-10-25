@@ -14122,7 +14122,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Pillomon,
         .shinyPalette = gMonShinyPalette_Pillomon,
         .iconSprite = gMonIcon_Pillomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 4, SHADOW_SIZE_M)
         FOOTPRINT(Pillomon)
