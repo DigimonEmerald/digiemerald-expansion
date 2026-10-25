@@ -17939,7 +17939,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Zubamon,
         .shinyPalette = gMonShinyPalette_Zubamon,
         .iconSprite = gMonIcon_Zubamon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(2, -3, SHADOW_SIZE_S)
         FOOTPRINT(Zubamon)
