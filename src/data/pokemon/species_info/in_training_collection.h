@@ -4443,7 +4443,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Pinamon,
         .shinyPalette = gMonShinyPalette_Pinamon,
         .iconSprite = gMonIcon_Pinamon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pinamon)
