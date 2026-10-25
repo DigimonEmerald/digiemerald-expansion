@@ -13749,7 +13749,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Pawnchessmon_white,
         .shinyPalette = gMonShinyPalette_Pawnchessmon_white,
         .iconSprite = gMonIcon_Pawnchessmon_white,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_Pawnchessmon_whiteF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
