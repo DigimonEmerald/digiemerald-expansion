@@ -2355,7 +2355,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Trailmon_battle_armament,
         .shinyPalette = gMonShinyPalette_Trailmon_battle_armament,
         .iconSprite = gMonIcon_Trailmon_battle_armament,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Trailmon_battle_armament)
