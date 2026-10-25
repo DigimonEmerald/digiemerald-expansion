@@ -5881,7 +5881,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Trailmon_dark,
         .shinyPalette = gMonShinyPalette_Trailmon_dark,
         .iconSprite = gMonIcon_Trailmon_dark,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_Trailmon_darkF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
