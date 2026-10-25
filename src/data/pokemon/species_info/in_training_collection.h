@@ -5402,7 +5402,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Tokomon_x,
         .shinyPalette = gMonShinyPalette_Tokomon_x,
         .iconSprite = gMonIcon_Tokomon_x,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 11, SHADOW_SIZE_S)
         FOOTPRINT(Tokomon_x)
