@@ -13676,7 +13676,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Pawnchessmon_black,
         .shinyPalette = gMonShinyPalette_Pawnchessmon_black,
         .iconSprite = gMonIcon_Pawnchessmon_black,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 0, SHADOW_SIZE_S)
         FOOTPRINT(Pawnchessmon_black)
