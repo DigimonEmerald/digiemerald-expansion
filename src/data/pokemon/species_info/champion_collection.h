@@ -5809,7 +5809,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Darcmon,
         .shinyPalette = gMonShinyPalette_Darcmon,
         .iconSprite = gMonIcon_Darcmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, 1, SHADOW_SIZE_S)
         FOOTPRINT(Darcmon)
