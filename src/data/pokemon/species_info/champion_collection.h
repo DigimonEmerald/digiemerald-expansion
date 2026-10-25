@@ -9760,7 +9760,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Frogmon,
         .shinyPalette = gMonShinyPalette_Frogmon,
         .iconSprite = gMonIcon_Frogmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 8, SHADOW_SIZE_L)
         FOOTPRINT(Frogmon)
