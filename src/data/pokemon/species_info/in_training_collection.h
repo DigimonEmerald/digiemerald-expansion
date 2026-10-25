@@ -5554,7 +5554,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Tsumemon,
         .shinyPalette = gMonShinyPalette_Tsumemon,
         .iconSprite = gMonIcon_Tsumemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 5, SHADOW_SIZE_S)
         FOOTPRINT(Tsumemon)
