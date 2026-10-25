@@ -16463,7 +16463,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Toyagumon,
         .shinyPalette = gMonShinyPalette_Toyagumon,
         .iconSprite = gMonIcon_Toyagumon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-4, 0, SHADOW_SIZE_M)
         FOOTPRINT(Toyagumon)
