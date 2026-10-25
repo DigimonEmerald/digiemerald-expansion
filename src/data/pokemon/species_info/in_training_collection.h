@@ -5980,7 +5980,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Upamon,
         .shinyPalette = gMonShinyPalette_Upamon,
         .iconSprite = gMonIcon_Upamon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_UpamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
