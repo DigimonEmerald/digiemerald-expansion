@@ -8091,7 +8091,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Ghostmon,
         .shinyPalette = gMonShinyPalette_Ghostmon,
         .iconSprite = gMonIcon_Ghostmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 18, SHADOW_SIZE_S)
         FOOTPRINT(Ghostmon)
