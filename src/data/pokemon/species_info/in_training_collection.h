@@ -3574,7 +3574,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Nyaromon,
         .shinyPalette = gMonShinyPalette_Nyaromon,
         .iconSprite = gMonIcon_Nyaromon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 3,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 4, SHADOW_SIZE_S)
         FOOTPRINT(Nyaromon)
