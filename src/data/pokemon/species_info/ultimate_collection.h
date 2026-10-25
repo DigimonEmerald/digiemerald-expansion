@@ -3637,7 +3637,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Tinmon,
         .shinyPalette = gMonShinyPalette_Tinmon,
         .iconSprite = gMonIcon_Tinmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 0, SHADOW_SIZE_S)
         FOOTPRINT(Tinmon)
