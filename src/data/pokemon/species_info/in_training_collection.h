@@ -4651,7 +4651,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Poromon,
         .shinyPalette = gMonShinyPalette_Poromon,
         .iconSprite = gMonIcon_Poromon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_PoromonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
