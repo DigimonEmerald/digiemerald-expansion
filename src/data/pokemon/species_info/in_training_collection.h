@@ -6358,7 +6358,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Yaamon,
         .shinyPalette = gMonShinyPalette_Yaamon,
         .iconSprite = gMonIcon_Yaamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 2, SHADOW_SIZE_M)
         FOOTPRINT(Yaamon)
