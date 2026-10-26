@@ -16085,7 +16085,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Terriermon,
         .shinyPalette = gMonShinyPalette_Terriermon,
         .iconSprite = gMonIcon_Terriermon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 1, SHADOW_SIZE_S)
         FOOTPRINT(Terriermon)
