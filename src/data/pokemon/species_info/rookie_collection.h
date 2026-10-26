@@ -15755,7 +15755,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Syakomon_x,
         .shinyPalette = gMonShinyPalette_Syakomon_x,
         .iconSprite = gMonIcon_Syakomon_x,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .backPicFemale = gMonBackPic_Syakomon_xF,
         .backPicSizeFemale = MON_COORDS_SIZE(40, 48),
