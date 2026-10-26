@@ -5253,7 +5253,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Tanemon,
         .shinyPalette = gMonShinyPalette_Tanemon,
         .iconSprite = gMonIcon_Tanemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 6, SHADOW_SIZE_S)
         FOOTPRINT(Tanemon)
