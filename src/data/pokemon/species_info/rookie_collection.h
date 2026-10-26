@@ -11198,7 +11198,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Lopmonx,
         .shinyPalette = gMonShinyPalette_Lopmonx,
         .iconSprite = gMonIcon_Lopmonx,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_LopmonxF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
@@ -16303,7 +16303,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Terriermon_xMega,
         .shinyPalette = gMonShinyPalette_Terriermon_xMega,
         .iconSprite = gMonIcon_Terriermon_xMega,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(6, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Terriermon_x)
