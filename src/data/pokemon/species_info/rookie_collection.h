@@ -10987,7 +10987,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Loogamon,
         .shinyPalette = gMonShinyPalette_Loogamon,
         .iconSprite = gMonIcon_Loogamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 10, SHADOW_SIZE_S)
         FOOTPRINT(Loogamon)
