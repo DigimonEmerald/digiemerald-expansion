@@ -11444,7 +11444,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Ludomon,
         .shinyPalette = gMonShinyPalette_Ludomon,
         .iconSprite = gMonIcon_Ludomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, 2, SHADOW_SIZE_S)
         FOOTPRINT(Ludomon)
