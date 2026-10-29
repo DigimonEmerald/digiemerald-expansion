@@ -11289,7 +11289,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Lucemon,
         .shinyPalette = gMonShinyPalette_Lucemon,
         .iconSprite = gMonIcon_Lucemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_LucemonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
