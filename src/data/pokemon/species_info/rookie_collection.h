@@ -10823,7 +10823,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Lalamon,
         .shinyPalette = gMonShinyPalette_Lalamon,
         .iconSprite = gMonIcon_Lalamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_LalamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 40),
