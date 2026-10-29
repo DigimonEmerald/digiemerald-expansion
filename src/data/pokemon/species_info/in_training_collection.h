@@ -5043,7 +5043,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Sunmon,
         .shinyPalette = gMonShinyPalette_Sunmon,
         .iconSprite = gMonIcon_Sunmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 6, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Sunmon)
