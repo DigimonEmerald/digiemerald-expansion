@@ -11590,7 +11590,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Luxmon,
         .shinyPalette = gMonShinyPalette_Luxmon,
         .iconSprite = gMonIcon_Luxmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, -4, SHADOW_SIZE_M)
         FOOTPRINT(Luxmon)
