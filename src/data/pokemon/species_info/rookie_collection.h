@@ -11198,7 +11198,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Lopmonx,
         .shinyPalette = gMonShinyPalette_Lopmonx,
         .iconSprite = gMonIcon_Lopmonx,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_LopmonxF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
