@@ -15386,7 +15386,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Strabimon,
         .shinyPalette = gMonShinyPalette_Strabimon,
         .iconSprite = gMonIcon_Strabimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 14, SHADOW_SIZE_S)
         FOOTPRINT(Strabimon)
