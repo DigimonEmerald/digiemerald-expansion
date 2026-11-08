@@ -16567,7 +16567,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Soulmon,
         .shinyPalette = gMonShinyPalette_Soulmon,
         .iconSprite = gMonIcon_Soulmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 6, SHADOW_SIZE_L)
         FOOTPRINT(Soulmon)
