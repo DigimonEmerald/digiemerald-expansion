@@ -14867,7 +14867,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Snowgoblimon,
         .shinyPalette = gMonShinyPalette_Snowgoblimon,
         .iconSprite = gMonIcon_Snowgoblimon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Snowgoblimon)
