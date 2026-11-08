@@ -16310,7 +16310,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Sandyanmamon,
         .shinyPalette = gMonShinyPalette_Sandyanmamon,
         .iconSprite = gMonIcon_Sandyanmamon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .paletteFemale = gMonPalette_SandyanmamonF,
         .shinyPaletteFemale = gMonShinyPalette_SandyanmamonF,
