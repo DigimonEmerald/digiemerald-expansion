@@ -14942,7 +14942,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Solarmon,
         .shinyPalette = gMonShinyPalette_Solarmon,
         .iconSprite = gMonIcon_Solarmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 3, SHADOW_SIZE_S)
         FOOTPRINT(Solarmon)
