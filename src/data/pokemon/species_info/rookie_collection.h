@@ -3465,7 +3465,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Shadowtoyagumon,
         .shinyPalette = gMonShinyPalette_Shadowtoyagumon,
         .iconSprite = gMonIcon_Shadowtoyagumon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 2, SHADOW_SIZE_S)
         FOOTPRINT(Shadowtoyagumon)
