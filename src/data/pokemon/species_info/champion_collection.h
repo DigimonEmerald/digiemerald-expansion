@@ -2132,7 +2132,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Baluchimon,
         .shinyPalette = gMonShinyPalette_Baluchimon,
         .iconSprite = gMonIcon_Baluchimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 9, SHADOW_SIZE_S)
         FOOTPRINT(Baluchimon)
