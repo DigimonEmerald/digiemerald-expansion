@@ -15236,7 +15236,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Sparrowmon,
         .shinyPalette = gMonShinyPalette_Sparrowmon,
         .iconSprite = gMonIcon_Sparrowmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 17, SHADOW_SIZE_L)
         FOOTPRINT(Sparrowmon)
