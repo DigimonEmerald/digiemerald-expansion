@@ -2285,7 +2285,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Baromon,
         .shinyPalette = gMonShinyPalette_Baromon,
         .iconSprite = gMonIcon_Baromon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 9, SHADOW_SIZE_M)
         FOOTPRINT(Baromon)
