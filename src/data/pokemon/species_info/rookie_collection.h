@@ -3092,7 +3092,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Sangomon,
         .shinyPalette = gMonShinyPalette_Sangomon,
         .iconSprite = gMonIcon_Sangomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-1, 0, SHADOW_SIZE_S)
         FOOTPRINT(Sangomon)
