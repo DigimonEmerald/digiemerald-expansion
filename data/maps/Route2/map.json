@@ -14,12 +14,17 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ABANDONED_SHIP_DECK",
+      "map": "MAP_ROUTE1",
       "offset": 0,
       "direction": "up"
     },
     {
-      "map": "MAP_ABANDONED_SHIP_DECK",
+      "map": "MAP_ROUTE3",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE3",
       "offset": 0,
       "direction": "left"
     }
