@@ -16166,7 +16166,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Saberdramon,
         .shinyPalette = gMonShinyPalette_Saberdramon,
         .iconSprite = gMonIcon_Saberdramon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Saberdramon)
