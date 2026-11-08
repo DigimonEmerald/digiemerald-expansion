@@ -16394,7 +16394,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Shimaunimon,
         .shinyPalette = gMonShinyPalette_Shimaunimon,
         .iconSprite = gMonIcon_Shimaunimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
         .paletteFemale = gMonPalette_ShimaunimonF,
         .shinyPaletteFemale = gMonShinyPalette_ShimaunimonF,
