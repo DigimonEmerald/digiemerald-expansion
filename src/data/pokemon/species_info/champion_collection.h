@@ -2504,7 +2504,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bioquetzalmon,
         .shinyPalette = gMonShinyPalette_Bioquetzalmon,
         .iconSprite = gMonIcon_Bioquetzalmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 9, SHADOW_SIZE_L)
         FOOTPRINT(Bioquetzalmon)
