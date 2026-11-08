@@ -4968,7 +4968,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Sakuttomon,
         .shinyPalette = gMonShinyPalette_Sakuttomon,
         .iconSprite = gMonIcon_Sakuttomon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 3, SHADOW_SIZE_M)
         FOOTPRINT(Sakuttomon)
