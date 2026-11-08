@@ -14794,7 +14794,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Snowagumon_06,
         .shinyPalette = gMonShinyPalette_Snowagumon_06,
         .iconSprite = gMonIcon_Snowagumon_06,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_L)
         FOOTPRINT(Snowagumon_06)
