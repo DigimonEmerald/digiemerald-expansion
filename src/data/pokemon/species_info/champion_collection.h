@@ -2432,7 +2432,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Betelgammamon,
         .shinyPalette = gMonShinyPalette_Betelgammamon,
         .iconSprite = gMonIcon_Betelgammamon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 5, SHADOW_SIZE_M)
         FOOTPRINT(Betelgammamon)
