@@ -12848,7 +12848,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Otamamon,
         .shinyPalette = gMonShinyPalette_Otamamon,
         .iconSprite = gMonIcon_Otamamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_OtamamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
