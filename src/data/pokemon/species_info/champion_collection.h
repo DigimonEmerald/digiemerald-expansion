@@ -2580,7 +2580,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Biothunderbirdmon,
         .shinyPalette = gMonShinyPalette_Biothunderbirdmon,
         .iconSprite = gMonIcon_Biothunderbirdmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_M)
         FOOTPRINT(Biothunderbirdmon)
