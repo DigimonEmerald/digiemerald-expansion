@@ -284,7 +284,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Biostegomon,
         .shinyPalette = gMonShinyPalette_Biostegomon,
         .iconSprite = gMonIcon_Biostegomon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-4, 3, SHADOW_SIZE_S)
         FOOTPRINT(Biostegomon)
