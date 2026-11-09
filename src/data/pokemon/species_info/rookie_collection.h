@@ -2020,7 +2020,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Blackagumon,
         .shinyPalette = gMonShinyPalette_Blackagumon,
         .iconSprite = gMonIcon_Blackagumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Blackagumon)
