@@ -3319,7 +3319,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Blackgrowlmon,
         .shinyPalette = gMonShinyPalette_Blackgrowlmon,
         .iconSprite = gMonIcon_Blackgrowlmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 12, SHADOW_SIZE_L)
         FOOTPRINT(Blackgrowlmon)
