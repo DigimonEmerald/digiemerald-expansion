@@ -2172,7 +2172,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Blackagumon_x,
         .shinyPalette = gMonShinyPalette_Blackagumon_x,
         .iconSprite = gMonIcon_Blackagumon_x,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_Blackagumon_xF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 40),
