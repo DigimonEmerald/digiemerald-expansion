@@ -3464,7 +3464,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bladekuwagamon,
         .shinyPalette = gMonShinyPalette_Bladekuwagamon,
         .iconSprite = gMonIcon_Bladekuwagamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BladekuwagamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
