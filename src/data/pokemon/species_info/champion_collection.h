@@ -3175,7 +3175,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Blackgatomon,
         .shinyPalette = gMonShinyPalette_Blackgatomon,
         .iconSprite = gMonIcon_Blackgatomon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, -3, SHADOW_SIZE_S)
         FOOTPRINT(Blackgatomon)
