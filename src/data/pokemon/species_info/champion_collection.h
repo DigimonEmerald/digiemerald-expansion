@@ -3552,7 +3552,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Blimpmon,
         .shinyPalette = gMonShinyPalette_Blimpmon,
         .iconSprite = gMonIcon_Blimpmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 5,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BlimpmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 64),
