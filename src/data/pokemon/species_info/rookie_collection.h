@@ -2574,7 +2574,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Bulucomon,
         .shinyPalette = gMonShinyPalette_Bulucomon,
         .iconSprite = gMonIcon_Bulucomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Bulucomon)
