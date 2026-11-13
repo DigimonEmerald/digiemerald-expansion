@@ -2785,7 +2785,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Burgermon,
         .shinyPalette = gMonShinyPalette_Burgermon,
         .iconSprite = gMonIcon_Burgermon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BurgermonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
