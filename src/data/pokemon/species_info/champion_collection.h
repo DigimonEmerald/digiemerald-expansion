@@ -3930,7 +3930,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Boogiemon,
         .shinyPalette = gMonShinyPalette_Boogiemon,
         .iconSprite = gMonIcon_Boogiemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, 3, SHADOW_SIZE_S)
         FOOTPRINT(Boogiemon)
