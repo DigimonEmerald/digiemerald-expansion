@@ -4480,7 +4480,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Buraimon,
         .shinyPalette = gMonShinyPalette_Buraimon,
         .iconSprite = gMonIcon_Buraimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BuraimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
