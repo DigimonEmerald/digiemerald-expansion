@@ -4157,7 +4157,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bulkmon,
         .shinyPalette = gMonShinyPalette_Bulkmon,
         .iconSprite = gMonIcon_Bulkmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(Bulkmon)
