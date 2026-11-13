@@ -3857,7 +3857,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Brachiomon,
         .shinyPalette = gMonShinyPalette_Brachiomon,
         .iconSprite = gMonIcon_Brachiomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, -3, SHADOW_SIZE_M)
         FOOTPRINT(Brachiomon)
