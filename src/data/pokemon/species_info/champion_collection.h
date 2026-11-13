@@ -3713,7 +3713,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Boarmon,
         .shinyPalette = gMonShinyPalette_Boarmon,
         .iconSprite = gMonIcon_Boarmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(3, -1, SHADOW_SIZE_M)
         FOOTPRINT(Boarmon)
