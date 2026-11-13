@@ -4302,7 +4302,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bullmon,
         .shinyPalette = gMonShinyPalette_Bullmon,
         .iconSprite = gMonIcon_Bullmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 4,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BullmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
