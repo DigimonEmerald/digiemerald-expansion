@@ -4006,7 +4006,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bucchiemon_red,
         .shinyPalette = gMonShinyPalette_Bucchiemon_red,
         .iconSprite = gMonIcon_Bucchiemon_red,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-4, 3, SHADOW_SIZE_S)
         FOOTPRINT(Bucchiemon_red)
@@ -4084,7 +4084,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Bucchiemon_green,
         .shinyPalette = gMonShinyPalette_Bucchiemon_green,
         .iconSprite = gMonIcon_Bucchiemon_green,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(Bucchiemon_green)
