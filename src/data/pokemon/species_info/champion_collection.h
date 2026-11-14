@@ -4883,7 +4883,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Chamblemon,
         .shinyPalette = gMonShinyPalette_Chamblemon,
         .iconSprite = gMonIcon_Chamblemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 3, SHADOW_SIZE_L)
         FOOTPRINT(Chamblemon)
