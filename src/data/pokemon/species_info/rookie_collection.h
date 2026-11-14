@@ -4357,7 +4357,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Coronamon,
         .shinyPalette = gMonShinyPalette_Coronamon,
         .iconSprite = gMonIcon_Coronamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Coronamon)
