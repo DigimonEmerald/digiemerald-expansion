@@ -3166,7 +3166,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Bushiagumon,
         .shinyPalette = gMonShinyPalette_Bushiagumon,
         .iconSprite = gMonIcon_Bushiagumon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 3, SHADOW_SIZE_L)
         FOOTPRINT(Bushiagumon)
