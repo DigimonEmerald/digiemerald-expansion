@@ -4734,7 +4734,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Centarumon,
         .shinyPalette = gMonShinyPalette_Centarumon,
         .iconSprite = gMonIcon_Centarumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 14, SHADOW_SIZE_M)
         FOOTPRINT(Centarumon)
