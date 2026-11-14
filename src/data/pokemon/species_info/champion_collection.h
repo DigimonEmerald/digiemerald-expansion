@@ -6042,7 +6042,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Darkmaildramon,
         .shinyPalette = gMonShinyPalette_Darkmaildramon,
         .iconSprite = gMonIcon_Darkmaildramon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 14, SHADOW_SIZE_L)
         FOOTPRINT(Darkmaildramon)
