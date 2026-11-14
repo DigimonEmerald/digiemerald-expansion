@@ -5029,7 +5029,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Chrysalimon,
         .shinyPalette = gMonShinyPalette_Chrysalimon,
         .iconSprite = gMonIcon_Chrysalimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_ChrysalimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
