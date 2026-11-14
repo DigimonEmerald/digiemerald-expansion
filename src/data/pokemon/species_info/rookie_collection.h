@@ -4113,7 +4113,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Clearagumon,
         .shinyPalette = gMonShinyPalette_Clearagumon,
         .iconSprite = gMonIcon_Clearagumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_ClearagumonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
