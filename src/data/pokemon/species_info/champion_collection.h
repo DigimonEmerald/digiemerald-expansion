@@ -5428,7 +5428,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Coelamon,
         .shinyPalette = gMonShinyPalette_Coelamon,
         .iconSprite = gMonIcon_Coelamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
         FOOTPRINT(Coelamon)
