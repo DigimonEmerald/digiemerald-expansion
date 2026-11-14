@@ -3684,7 +3684,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Chuuchuumon,
         .shinyPalette = gMonShinyPalette_Chuuchuumon,
         .iconSprite = gMonIcon_Chuuchuumon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 7, SHADOW_SIZE_L)
         FOOTPRINT(Chuuchuumon)
