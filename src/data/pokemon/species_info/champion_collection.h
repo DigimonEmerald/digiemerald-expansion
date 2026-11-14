@@ -5653,7 +5653,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Cyclonemon,
         .shinyPalette = gMonShinyPalette_Cyclonemon,
         .iconSprite = gMonIcon_Cyclonemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 0, SHADOW_SIZE_L)
         FOOTPRINT(Cyclonemon)
