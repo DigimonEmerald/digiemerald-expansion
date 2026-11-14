@@ -4568,7 +4568,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Crabmon_x,
         .shinyPalette = gMonShinyPalette_Crabmon_x,
         .iconSprite = gMonIcon_Crabmon_x,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_Crabmon_xF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
