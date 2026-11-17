@@ -11598,7 +11598,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Deathmon_cmon_digimon,
         .shinyPalette = gMonShinyPalette_Deathmon_cmon_digimon,
         .iconSprite = gMonIcon_Deathmon_cmon_digimon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Deathmon_cmon_digimon)
