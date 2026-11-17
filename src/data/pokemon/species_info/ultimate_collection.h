@@ -276,7 +276,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_D_metalgreymon,
         .shinyPalette = gMonShinyPalette_D_metalgreymon,
         .iconSprite = gMonIcon_D_metalgreymon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(D_metalgreymon)
