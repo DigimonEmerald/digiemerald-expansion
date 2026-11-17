@@ -349,7 +349,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_D_tyrannomon,
         .shinyPalette = gMonShinyPalette_D_tyrannomon,
         .iconSprite = gMonIcon_D_tyrannomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, -2, SHADOW_SIZE_S)
         FOOTPRINT(D_tyrannomon)
