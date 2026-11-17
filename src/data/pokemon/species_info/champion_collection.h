@@ -6346,7 +6346,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Deckerdramon,
         .shinyPalette = gMonShinyPalette_Deckerdramon,
         .iconSprite = gMonIcon_Deckerdramon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 15, SHADOW_SIZE_S)
         FOOTPRINT(Deckerdramon)
