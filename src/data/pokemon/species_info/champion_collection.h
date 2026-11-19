@@ -6584,7 +6584,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Deputymon,
         .shinyPalette = gMonShinyPalette_Deputymon,
         .iconSprite = gMonIcon_Deputymon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 3, SHADOW_SIZE_L)
         FOOTPRINT(Deputymon)
