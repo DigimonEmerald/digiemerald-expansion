@@ -2119,7 +2119,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .palette = gMonPalette_Devitamamon,
         .shinyPalette = gMonShinyPalette_Devitamamon,
         .iconSprite = gMonIcon_Devitamamon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, 2, SHADOW_SIZE_S)
         FOOTPRINT(Devitamamon)
