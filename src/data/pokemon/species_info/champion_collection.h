@@ -6811,7 +6811,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Dexdorugamon,
         .shinyPalette = gMonShinyPalette_Dexdorugamon,
         .iconSprite = gMonIcon_Dexdorugamon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 5, SHADOW_SIZE_S)
         FOOTPRINT(Dexdorugamon)
