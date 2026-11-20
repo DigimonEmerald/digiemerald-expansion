@@ -6959,7 +6959,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Digmon,
         .shinyPalette = gMonShinyPalette_Digmon,
         .iconSprite = gMonIcon_Digmon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 5, SHADOW_SIZE_S)
         FOOTPRINT(Digmon)
