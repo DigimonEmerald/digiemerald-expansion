@@ -6885,7 +6885,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Diatrymon,
         .shinyPalette = gMonShinyPalette_Diatrymon,
         .iconSprite = gMonIcon_Diatrymon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 18, SHADOW_SIZE_M)
         FOOTPRINT(Diatrymon)
