@@ -7033,7 +7033,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Dinohyumon,
         .shinyPalette = gMonShinyPalette_Dinohyumon,
         .iconSprite = gMonIcon_Dinohyumon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 1,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(Dinohyumon)
