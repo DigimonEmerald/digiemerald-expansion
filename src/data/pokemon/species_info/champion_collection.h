@@ -7184,7 +7184,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Dobermon_x,
         .shinyPalette = gMonShinyPalette_Dobermon_x,
         .iconSprite = gMonIcon_Dobermon_x,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 11, SHADOW_SIZE_L)
         FOOTPRINT(Dobermon_x)
