@@ -2680,7 +2680,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Megaseadramon,
         .shinyPalette = gMonShinyPalette_Megaseadramon,
         .iconSprite = gMonIcon_Megaseadramon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 17, SHADOW_SIZE_M)
         FOOTPRINT(Megaseadramon)
