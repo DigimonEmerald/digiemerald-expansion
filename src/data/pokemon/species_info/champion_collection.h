@@ -7261,7 +7261,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Doggymon,
         .shinyPalette = gMonShinyPalette_Doggymon,
         .iconSprite = gMonIcon_Doggymon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 2, SHADOW_SIZE_S)
         FOOTPRINT(Doggymon)
