@@ -7426,7 +7426,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_DolphmonNormal,
         .shinyPalette = gMonShinyPalette_DolphmonNormal,
         .iconSprite = gMonIcon_DolphmonNormal,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 10, SHADOW_SIZE_S)
         FOOTPRINT(Dolphmon)
