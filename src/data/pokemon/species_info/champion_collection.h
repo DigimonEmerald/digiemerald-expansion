@@ -7803,7 +7803,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Dorugamon,
         .shinyPalette = gMonShinyPalette_Dorugamon,
         .iconSprite = gMonIcon_Dorugamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 12, SHADOW_SIZE_S)
         FOOTPRINT(Dorugamon)
