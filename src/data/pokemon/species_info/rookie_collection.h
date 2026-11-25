@@ -17053,7 +17053,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Minidekachimon,
         .shinyPalette = gMonShinyPalette_Minidekachimon,
         .iconSprite = gMonIcon_Minidekachimon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_MinidekachimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
