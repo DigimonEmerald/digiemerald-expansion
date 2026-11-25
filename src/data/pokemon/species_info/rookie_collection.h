@@ -5578,7 +5578,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Dondokomon,
         .shinyPalette = gMonShinyPalette_Dondokomon,
         .iconSprite = gMonIcon_Dondokomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, -2, SHADOW_SIZE_S)
         FOOTPRINT(Dondokomon)
