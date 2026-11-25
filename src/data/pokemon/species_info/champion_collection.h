@@ -7725,7 +7725,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Donshoutmon,
         .shinyPalette = gMonShinyPalette_Donshoutmon,
         .iconSprite = gMonIcon_Donshoutmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 8, SHADOW_SIZE_S)
         FOOTPRINT(Donshoutmon)
