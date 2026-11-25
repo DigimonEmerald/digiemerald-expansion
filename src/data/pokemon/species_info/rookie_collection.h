@@ -11935,7 +11935,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Monitamon,
         .shinyPalette = gMonShinyPalette_Monitamon,
         .iconSprite = gMonIcon_Monitamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 10, SHADOW_SIZE_L)
         FOOTPRINT(Monitamon)
