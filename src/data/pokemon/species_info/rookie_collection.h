@@ -5349,7 +5349,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Dokunemon,
         .shinyPalette = gMonShinyPalette_Dokunemon,
         .iconSprite = gMonIcon_Dokunemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, -2, SHADOW_SIZE_S)
         FOOTPRINT(Dokunemon)
