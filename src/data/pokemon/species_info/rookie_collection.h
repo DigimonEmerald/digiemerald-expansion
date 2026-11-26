@@ -5875,7 +5875,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Dracmon,
         .shinyPalette = gMonShinyPalette_Dracmon,
         .iconSprite = gMonIcon_Dracmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 16, SHADOW_SIZE_M)
         FOOTPRINT(Dracmon)
