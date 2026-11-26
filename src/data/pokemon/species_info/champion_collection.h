@@ -8026,7 +8026,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Drimogemon,
         .shinyPalette = gMonShinyPalette_Drimogemon,
         .iconSprite = gMonIcon_Drimogemon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_S)
         FOOTPRINT(Drimogemon)
