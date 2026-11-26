@@ -5650,7 +5650,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Dorumon,
         .shinyPalette = gMonShinyPalette_Dorumon,
         .iconSprite = gMonIcon_Dorumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 4, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Dorumon)
