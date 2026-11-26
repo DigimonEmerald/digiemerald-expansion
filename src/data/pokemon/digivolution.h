@@ -364,7 +364,6 @@ static const struct Digivolution sChicchimonDigivolveTable[] = {
     {30, 11, 12, 13, 13, 13, SPECIES_PENGUINMON},
     {30, 11, 12, 13, 13, 13, SPECIES_MUCHOMON},
     {30, 11, 14, 12, 13, 13, SPECIES_FALCOMON_06},
-    {31, 12, 12, 12, 13, 13, SPECIES_DOTFALCOMON},
     DIGIVOLUTION_END,
 };
 
@@ -485,7 +484,6 @@ static const struct Digivolution sKoromonDigivolveTable[] = {
     {26, 14, 11, 13, 12, 10, SPECIES_SNOWAGUMON_06},
     {26, 12, 11, 12, 12, 12, SPECIES_BETAMON},
     {27, 14, 11, 13, 11, 10, SPECIES_BUSHIAGUMON},
-    {26, 12, 11, 12, 13, 10, SPECIES_DOTAGUMON},
     {26, 12, 11, 14, 12, 9, SPECIES_KUNEMON},
     {34, 17, 14, 15, 12, 11, SPECIES_LUCEMON},
     DIGIVOLUTION_END,
