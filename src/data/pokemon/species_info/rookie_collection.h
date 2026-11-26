@@ -12226,7 +12226,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Morphomon,
         .shinyPalette = gMonShinyPalette_Morphomon,
         .iconSprite = gMonIcon_Morphomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, 3, SHADOW_SIZE_M)
         FOOTPRINT(Morphomon)
