@@ -3154,7 +3154,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Moonmon,
         .shinyPalette = gMonShinyPalette_Moonmon,
         .iconSprite = gMonIcon_Moonmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 3, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Moonmon)
