@@ -7274,7 +7274,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Fanbeemon,
         .shinyPalette = gMonShinyPalette_Fanbeemon,
         .iconSprite = gMonIcon_Fanbeemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 10, SHADOW_SIZE_M)
         FOOTPRINT(Fanbeemon)
