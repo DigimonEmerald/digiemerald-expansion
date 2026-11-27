@@ -8719,7 +8719,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Exveemon_virus,
         .shinyPalette = gMonShinyPalette_Exveemon_virus,
         .iconSprite = gMonIcon_Exveemon_virus,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(Exveemon_virus)
