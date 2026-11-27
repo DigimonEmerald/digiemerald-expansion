@@ -3502,7 +3502,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .palette = gMonPalette_Negamon,
         .shinyPalette = gMonShinyPalette_Negamon,
         .iconSprite = gMonIcon_Negamon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 3,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Negamon)
