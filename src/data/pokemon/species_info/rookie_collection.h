@@ -12302,7 +12302,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Muchomon,
         .shinyPalette = gMonShinyPalette_Muchomon,
         .iconSprite = gMonIcon_Muchomon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_MuchomonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
