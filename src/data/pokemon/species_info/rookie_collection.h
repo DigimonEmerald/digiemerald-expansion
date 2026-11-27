@@ -7130,7 +7130,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Falcomon,
         .shinyPalette = gMonShinyPalette_Falcomon,
         .iconSprite = gMonIcon_Falcomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 13, SHADOW_SIZE_S)
         FOOTPRINT(Falcomon)
