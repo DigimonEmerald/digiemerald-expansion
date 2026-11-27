@@ -11387,10 +11387,27 @@ static void Cmd_setsubstitute(void)
     u32 factor = GetMoveEffect(gCurrentMove) == EFFECT_SHED_TAIL ? 2 : 4;
     s32 hp = 0;
 
-    if (factor == 2)
+    if (factor == 2 && GetBattlerAbility(gBattlerAttacker) == ABILITY_ILLUSIVE_DECEIT)
+        {
+        factor = factor * 2;
+        hp = (GetNonDynamaxMaxHP(gBattlerAttacker)+1) / factor;
+        }
+    else if (factor == 4 && GetBattlerAbility(gBattlerAttacker) == ABILITY_ILLUSIVE_DECEIT)
+        {
+        factor = factor * 2;
+        hp = (GetNonDynamaxMaxHP(gBattlerAttacker)+1) / factor;
+        }
+    else if (factor == 2)
+        {
         hp = (GetNonDynamaxMaxHP(gBattlerAttacker)+1) / factor; // shed tail rounds up
+        }
     else
+        {
         hp = GetNonDynamaxMaxHP(gBattlerAttacker) / factor; // one bit value will only work for Pokémon which max hp can go to 1020(which is more than possible in games)
+        }
+
+    if (GetBattlerAbility(gBattlerAttacker) == ABILITY_ILLUSIVE_DECEIT)
+        factor = factor / 2;
 
     if (hp == 0)
         hp = 1;
@@ -11405,7 +11422,11 @@ static void Cmd_setsubstitute(void)
         gBattleMons[gBattlerAttacker].volatiles.substitute = TRUE;
         gBattleMons[gBattlerAttacker].volatiles.wrapped = FALSE;
         // gDisableStructs[gBattlerAttacker].substituteHP = (factor == 2) ? (hp / 2) : hp;
-        if (factor == 2)
+        if (factor == 2 && GetBattlerAbility(gBattlerAttacker) == ABILITY_ILLUSIVE_DECEIT)
+            gDisableStructs[gBattlerAttacker].substituteHP = hp * 2;
+        else if (factor == 4 && GetBattlerAbility(gBattlerAttacker) == ABILITY_ILLUSIVE_DECEIT)
+            gDisableStructs[gBattlerAttacker].substituteHP = hp * 4;
+        else if (factor == 2)
             gDisableStructs[gBattlerAttacker].substituteHP = hp / 2;
         else
             gDisableStructs[gBattlerAttacker].substituteHP = hp;

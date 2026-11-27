@@ -2688,4 +2688,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Body burns foe when bitten."),
         .aiRating = 3,
     },
+
+    [ABILITY_ILLUSIVE_DECEIT] =
+    {
+        .name = _("Illusive Deceit"),
+        .description = COMPOUND_STRING("Substitute uses less HP."),
+        .aiRating = 3,
+    },
 };
