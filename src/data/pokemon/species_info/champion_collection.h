@@ -8493,7 +8493,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Exermon,
         .shinyPalette = gMonShinyPalette_Exermon,
         .iconSprite = gMonIcon_Exermon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 6, SHADOW_SIZE_L)
         FOOTPRINT(Exermon)
