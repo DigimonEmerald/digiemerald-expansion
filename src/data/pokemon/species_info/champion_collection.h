@@ -8261,7 +8261,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_Elephantmon,
         .shinyPalette = gMonShinyPalette_Elephantmon,
         .iconSprite = gMonIcon_Elephantmon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-6, 13, SHADOW_SIZE_L)
         FOOTPRINT(Elephantmon)
