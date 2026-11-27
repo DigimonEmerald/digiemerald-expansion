@@ -6766,7 +6766,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .palette = gMonPalette_Elecmon_violet,
         .shinyPalette = gMonShinyPalette_Elecmon_violet,
         .iconSprite = gMonIcon_Elecmon_violet,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Elecmon_violet)
